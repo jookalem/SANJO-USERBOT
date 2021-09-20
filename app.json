@@ -1,7 +1,7 @@
 {
-  "name": "RAM-UBOT",
-  "description": "[RAM-UBOT] USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg",
+  "name": "DIOR-UBOT",
+  "description": "[DIOR-UBOT] NGEDEP CUMAN BUAT GCAST NGENTOT ALAY GOBLOK!.",
+  "logo": "https://telegra.ph/file/5e0c4d6ff521d55d164e7.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/ramadhani892/RAM-UBOT",
-  "telegram": "https://t.me/Ramadhaniiiiiii1",
-  "success_url": "https://t.me/teman_random",
+  "repository": "https://github.com/DIORrios285/DIOR-UBOT",
+  "telegram": "https://t.me/uurfavboys1",
+  "success_url": "https://t.me/MBsokin",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -24,11 +24,11 @@
     },
     "ALIVE_LOGO": {
       "description": "BUAT ALIVE LOGO MU SENDIRI.",
-      "value": "https://telegra.ph/file/e590ad501ad8981fb4684.jpg",
+      "value": "https://telegra.ph/file/5e0c4d6ff521d55d164e7.jpg",
       "required": true
      },
      "STRING_SESSION": {
-      "description": "Ambil String Session di @ramubotspam dengan cara ketik #string.",
+      "description": "Ambil String Session di @diorspambot dengan cara ketik #string.",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -46,8 +46,8 @@
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Masuk @ootspambot atau Buatlah sebuah grup private/public masukan @goku_isbot lalu ketik /id, Salin dan hapus id dibawah ini, Lalu tempel.",
-      "value": "-1001122897608",
+      "description": "Masuk @diorspambot atau Buatlah sebuah grup private/public masukan @MissRose_bot trs ketik /id, Copy dan delete id dibawah ini, trs paste.",
+      "value": "-1001220971181",
       "required": true
     },
     "COUNTRY": {
@@ -90,8 +90,8 @@
       "required": false
     },
     "G_BAN_LOGGER_GROUP": {
-      "description": "Masuk @ootspambot Atau Buatlah Sebuah Grup Private/Public Lalu Masukkan @goku_isbot Lalu Ketik /id, Salin dan hapus id dibawah ini lalu tempel.",
-      "value": "-1001122897608",
+      "description": "Masuk @diorspambot atau Buatlah sebuah grup private/public masukan @MissRose_bot trs ketik /id, Copy dan delete id dibawah ini, trs paste.",
+      "value": "-1001220971181",
       "required": false
     },
     "LOGSPAMMER": {
