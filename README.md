@@ -1,11 +1,11 @@
-<a href="https://www.instagram.com/ramadh20?r=nametag"><img src="https://images.cooltext.com/5537105.png" width="320" height="211" alt="  RAM-UBOT" /></a>
+<a href="https://www.instagram.com/fatur.285?r=nametag"><img src="https://telegra.ph/file/5e0c4d6ff521d55d164e7.jpg" width="320" height="211" alt="  DIOR-UBOT" /></a>
 
 <p align="center">
-  <a href="https://github.com/ramadhani892/RAM-UBOT/fork">
+  <a href="https://github.com/DIORrios285/DIOR-UBOT/fork">
     <img src="https://img.shields.io/github/forks/ramadhani892/RAM-UBOT?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/ramadhani892/RAM-UBOT">
+  <a href="https://github.com/DIORrios285/DIOR-UBOT">
     <img src="https://img.shields.io/github/stars/ramadhani892/RAM-UBOT?style=social">
   </a>
 </p>  
@@ -14,45 +14,45 @@
 
 <a href="https://t.me/ramubotspam"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
 
-## PEMILIK REPO
-* **Landak** 🦔
+## REPO MILIK
+* **FATUR** 
 [<img src="https://media.giphy.com/media/o97Wl6qaoJytXcppUj/giphy.gif">](https://t.me/maafgausahsokap)
 
   
   
   
   
-# KALO FORK TUH KASIH BINTANG YA TOLOL!
+# KALO FORK KASIH BINTANG YA NGENTOT!
 
 
-### JOIN DULU TOT!!:
+### JOIN GA LU!!:
 
-<a href="https://t.me/ramubotinfo"><img src="https://img.shields.io/badge/Channel%20RAM%20UBOT-red.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/teman_random"><img src="https://img.shields.io/badge/Join-TEMAN%20RANDOM-purple.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/Channel%20SUKA-SUKA%20DIOR-red.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/MBsokin"><img src="https://img.shields.io/badge/Join-TEMAN%20RANDOM-purple.svg?style=for-the-badge&logo=Telegram"></a>
 
 ## Penjelasan:
-* **Repo Nya toxic, Gajelas pokoknya mah.** 
-[<img src="https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg">](https://t.me/ootspambott)
+* **Asikin aja repo nya mah,Gcast alay bego!** 
+[<img src="https://telegra.ph/file/be5a4a2cb6aac37ca7945.jpg">](https://t.me/diorspambot)
 
 
-<h3 align="center">REPO RAM UBOT DIBUAT KARNA YAA MEMANG PENGEN DIBUAT WKWKWK.</h3>
+<h3 align="center">REPO DIOR-UBOT DIBUAT KARENA FATUR SAYANG MANDA.</h3>
 <p align="center">&nbsp;</p>
 
-### <a href="https://t.me/ootspambot"><img src="https://img.shields.io/badge/GROUP%20SPAM%20RAM%20UBOT-blue?style=flat&logo=Telegram" width="250" height="40.100" />
+### <a href="https://t.me/diorspambot"><img src="https://img.shields.io/badge/GROUP%20DIOR%20SPAM%20BOT-blue?style=flat&logo=Telegram" width="250" height="40.100" />
 
 
-## Bagaimana Cara Deploy?
+## Gimana sih cara deploy?
 
 
-* **VIDEO TUTORIAL DEPLOY!** 🔧
+* **NIH TUTOR SIMAK YA NGENTOT!** 🔧
 [<img src="https://media.giphy.com/media/XD4BoRtenzE1eTIHzZ/giphy.gif">](https://t.me/UserbotChannel/36)
 
-### AMBIL STRING DI BAWAH INI:
+### AMBIL STRING LU DISINI:
 
 ##
-[![RAM-UBOT-STRING](https://replit.com/badge/github/@ramadhani892/RAM-UBOT)](https://replit.com/@ramadhani892/RAM-UBOT-STRING)
+[![DIOR-UBOT-STRING](https://replit.com/badge/github/@DIORrios285/DIOR-UBOT)](https://replit.com/@DIORrios285/DIOR-UBOT-STRING)
 ##
-<a href="https://heroku.com/deploy?template=https://github.com/ramadhani892/RAM-UBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20RAM%20UBOT%20DI%20HEROKU-red?style=flat&logo=Heroku" width="325" height="50.100" />
+<a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20KE%20HEROKU%20YA%20KONTOL-red?style=flat&logo=Heroku" width="325" height="50.100" />
 
 <br>
 </p>
