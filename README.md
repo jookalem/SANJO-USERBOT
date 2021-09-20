@@ -12,7 +12,7 @@
 
 ![VIEWS](https://komarev.com/ghpvc/?username=ramadhani892)
 
-<a href="https://t.me/ramubotspam"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
+<a href="https://t.me/diorspambot"><img src="https://img.shields.io/badge/KODE%20PENILAIAN-A+-blue.svg?style=for-the-badge&logo=Factor.">
 
 ## REPO MILIK
 * **FATUR** 
@@ -27,8 +27,8 @@
 
 ### JOIN GA LU!!:
 
-<a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/Channel%20SUKA-SUKA%20DIOR-red.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/MBsokin"><img src="https://img.shields.io/badge/Join-TEMAN%20RANDOM-purple.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/Channel%20SUKA-SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/MBsokin"><img src="https://img.shields.io/badge/Join-FAMILY%20M&B-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 ## Penjelasan:
 * **Asikin aja repo nya mah,Gcast alay bego!** 
