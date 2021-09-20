@@ -27,7 +27,7 @@
 
 ### JOIN GA LU!!:
 
-<a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/Channel%20SUKA-SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/Channel%20SUKA%20SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/MBsokin"><img src="https://img.shields.io/badge/Join-FAMILY%20M&B-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 ## Penjelasan:
