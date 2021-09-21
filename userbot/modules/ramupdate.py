@@ -65,7 +65,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 break
         if heroku_app is None:
             await event.edit(
-                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy RAM-UBOT dyno.`'
+                f'{txt}\n`Kredensial Heroku tidak valid untuk deploy DIOR-UBOT dyno.`'
             )
             return repo.__del__()
         await event.edit(f'`{REPO_NAME}:'
@@ -100,7 +100,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`RAM-UBOT Berhasil Di Update`")
+                "`DIOR-UBOT Berhasil Di Update`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -236,9 +236,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru RAM-UBOT."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru DIOR-UBOT."
     "\n\n.update one"
-    "\nUsage: Memperbarui RAM-UBOT."
+    "\nUsage: Memperbarui DIOR-UBOT."
     "\n\n.update all"
-    "\nUsage: Memperbarui RAM-UBOT Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui DIOR-UBOT Dengan Cara Deploy Ulang."
 })
