@@ -28,6 +28,20 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
+@register(outgoing=True, pattern='^.kiaa(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("Kenalin nama gua kiaa")
+    sleep(3)
+    await typew.edit("17 tahun")
+    sleep(1)
+    await typew.edit("Tinggal Di Palembang, Salam Kenal ya:)")
+    sleep(1)
+    await typew.edit("Kiaa jomblo ni bg pacarin dong!")
+# Create by myself @localheart
+
+
 @register(outgoing=True, pattern='^.semangat(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
