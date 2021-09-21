@@ -21,9 +21,9 @@ async def typewriter(typew):
     await typew.edit("`Manda itu cantik`")
     sleep(3)
     await typew.edit("`Manda punya fatur...lu ganggu disambit pala lu!`")
-    sleep(1)
+    sleep(3)
     await typew.edit("`pada intinya fatur sayang banget sama manda`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`I LOVE YOU MANDA💝💕`")
 # Create by myself @localheart
 
@@ -35,9 +35,9 @@ async def typewriter(typew):
     await typew.edit("Kenalin nama gua kiaa")
     sleep(3)
     await typew.edit("17 tahun")
-    sleep(1)
+    sleep(3)
     await typew.edit("Tinggal Di Palembang, Salam Kenal ya:)")
-    sleep(1)
+    sleep(2)
     await typew.edit("Kiaa jomblo ni bg pacarin dong!")
 # Create by myself @localheart
 
@@ -51,6 +51,6 @@ async def typewriter(typew):
     await typew.edit("`Tetaplah Bersemangat`")
     sleep(3)
     await typew.edit("`Jangan Bersedih`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`NAFAS MANUALNYA KAKA...HAHAHA MAMPUS LO!`")
 # Create by myself @localheart
