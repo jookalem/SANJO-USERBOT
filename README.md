@@ -2,11 +2,11 @@
 
 <p align="center">
   <a href="https://github.com/DIORrios285/DIOR-UBOT/fork">
-    <img src="https://img.shields.io/github/forks/ramadhani892/RAM-UBOT?label=Fork&style=social">
+    <img src="https://img.shields.io/github/forks/DIORrios285/DIOR-UBOT?label=Fork&style=social">
     
   </a>
   <a href="https://github.com/DIORrios285/DIOR-UBOT">
-    <img src="https://img.shields.io/github/stars/ramadhani892/RAM-UBOT?style=social">
+    <img src="https://img.shields.io/github/stars/DIORrios285/DIOR-UBOT?style=social">
   </a>
 </p>  
 
@@ -16,7 +16,7 @@
 
 ## REPO MILIK
 * **FATUR** 
-[<img src="https://media.giphy.com/media/o97Wl6qaoJytXcppUj/giphy.gif">](https://t.me/maafgausahsokap)
+[<img src="">](https://t.me/uurfavboys1)
 
   
   
@@ -27,7 +27,7 @@
 
 ### JOIN GA LU!!:
 
-<a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/Channel%20SUKA%20SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/Channel-SUKA%20SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/MBsokin"><img src="https://img.shields.io/badge/Join-FAMILY%20M&B-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 ## Penjelasan:
