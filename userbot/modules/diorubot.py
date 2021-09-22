@@ -37,8 +37,8 @@ async def typewriter(typew):
     await typew.edit("**Farhan Ribet☑️**")
     await typew.edit("**Farhan Ribet✅**")
     sleep(2)
-    await typew.edit("**Muza Buaya Betina☑️**")
-    await typew.edit("**Muza Buaya Betina✅**")
+    await typew.edit("**Papoy Buaya Betina☑️**")
+    await typew.edit("**Papoy Buaya Betina✅**")
     sleep(2)
     await typew.edit("**Gita Bawel☑️**")
     await typew.edit("**Gita Bawel✅**")
@@ -53,6 +53,19 @@ async def typewriter(typew):
     await typew.edit("**Manda Kesayangan Fatur✅**")
     sleep(2)
     await typew.edit("**FATUR PALING TAMPAN!**")
+
+@register(outgoing=True, pattern='^.pbl(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    await typew.edit("`PP bule?`")
+    sleep(2)
+    await typew.edit("`ANJINK...ada PP bule`")
+    sleep(2)
+    await typew.edit("`BABI!!!`")
+    sleep(2)
+    await typew.edit("`Udah PP bule PINTEREST lagi, goblok!!!`")
+    sleep(1)
+    await typew.edit("`Kalo ga punya muka minimal modal lah BANGSAT...Dasar bocah pinterest`")
 
 
 @register(outgoing=True, pattern='^.lahk(?: |$)(.*)')
