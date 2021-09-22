@@ -10,16 +10,16 @@ from userbot import bot, TEMP_DOWNLOAD_DIRECTORY, CMD_HELP
 
 @register(outgoing=True, pattern=r"^.hz(:? |$)(.*)?")
 async def _(hazmat):
-    await hazmat.edit("`Lord Ingin Mengaktifkan Perintah Hazmat ヅ`")
+    await hazmat.edit("`Tuan Ingin Mengaktifkan Perintah Hazmat ヅ`")
     level = hazmat.pattern_match.group(2)
     if hazmat.fwd_from:
         return
     if not hazmat.reply_to_msg_id:
-        await hazmat.edit("`Mohon Balas Ke Sticker/Gambar Tot!`")
+        await hazmat.edit("`Mohon Balas Ke Sticker/Gambar Jelek!`")
         return
     reply_message = await hazmat.get_reply_message()
     if not reply_message.media:
-        await hazmat.edit("`Kata Bisa Menghancurkan Apapun Tot!`")
+        await hazmat.edit("`Kata Bisa Menghancurkan Apa Aja Ngentot!`")
         return
     chat = "@hazmat_suit_bot"
     await hazmat.edit("```Perintah Hazmat Diaktifkan, Sedang Memproses.... ヅ```")
@@ -40,10 +40,10 @@ async def _(hazmat):
             """ - don't spam notif - """
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await hazmat.reply("` Mohon Buka Blokir` @hazmat_suit_bot `Lalu Coba Lagi Tot!`")
+            await hazmat.reply("` Buka Dulu Blokir Si` @hazmat_suit_bot `Trus Cobain Lagi Jelek!`")
             return
         if response.text.startswith("I can't"):
-            await hazmat.edit("`Sorry Tot, GIF Tidak Bisa...`")
+            await hazmat.edit("`Sorry Nyet, GIF Tidak Bisa...`")
             await hazmat.client.delete_messages(
                 conv.chat_id, [msg.id, response.id, r.id, msg_reply.id]
             )
