@@ -3,6 +3,7 @@
 # you may not use this file except in compliance with the License.
 # Credits @keselekpermen69 / @Ultroid / @RAM-UBOT
 # Ported @MaafGausahSokap / JANGAN DI APUS BABI
+# nimbrung ah @uurfavboys1 / ikutan biar kek orang-orang
 """Userbot initialization."""
 
 import os
@@ -275,7 +276,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "```║⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡AKTIF YA KONTOL!║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nKalo nda bisa di .ping\nBerarti akun lu jelek\nCanda ngentot\nCek view log di heroku.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
+    "BOTLOG_MSG") or "```║⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡AKTIF YA KONTOL!║\n\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\nKalo nda bisa di .ping\nBerarti akun lu jelek\nCanda ngentot\nCek view log di heroku.\n▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰```"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -399,7 +400,7 @@ ISAFK = False
 AFKREASON = None
 ZALG_LIST = {}
 
-#Import Userbot - Ported by RAMADHANI892
+#Import Userbot - Ported by DIORrios285
 from userbot import (
     ALIVE_NAME
 )
