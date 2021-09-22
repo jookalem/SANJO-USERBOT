@@ -3,6 +3,8 @@ FROM xluxz/geezproject:buster
 # RAM-UBOT
 # Geez-UserBot
 #yaudah iya
+#soasik gua ikutan
+#DIOR-UBOT
 
 RUN git clone -b DIOR-UBOT https://github.com/DIORrios285/DIOR-UBOT /root/userbot
 RUN mkdir /root/userbot/.bin
