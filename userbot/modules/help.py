@@ -20,14 +20,14 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 @register(outgoing=True, pattern="^.help(?: |$)(.*)")
 async def help(diorbot):
     """ For .help command,"""
-    args = rambot.pattern_match.group(1).lower()
+    args = diorbot.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:
-            await rambot.edit(str(CMD_HELP[args]))
+            await diorbot.edit(str(CMD_HELP[args]))
         else:
             await diorbot.edit("**`NGETIK APAANSI TOLOL!`**")
             await asyncio.sleep(50)
-            await rambot.delete()
+            await diorbot.delete()
     else:
         string = ""
         for i in CMD_HELP:
@@ -37,6 +37,6 @@ async def help(diorbot):
                          f"**{EMOJI_HELP} 𝙿𝙴𝙼𝙸𝙻𝙸𝙺 𝙱𝙾𝚃 : {DEFAULTUSER}**\n**{EMOJI_HELP}  𝙼𝙾𝙳𝚄𝙻𝙴𝚂 : {len(modules)}**\n\n"
                          f"**{EMOJI_HELP} 𝚂𝙴𝙼𝚄𝙰 𝙼𝙴𝙽𝚄 :**\n\n ══════════╣❃ ♕ ❃╠══════════\n\n"
                          f"{EMOJI_HELP} {string}\n\n ══════════╣❃ ♕ ❃╠══════════\n\nNGETIK YANG BENER YA SIAL!!\n\n")
-        await rambot.reply(f"\n**Contoh** : Ketik <`.help ping`> Untuk Informasi Pengunaan.\nJangan Lupa Berdoa Sebelum Mencoba Hmm..")
+        await diorbot.reply(f"\n**Contoh** : Ketik <`.help ping`> Untuk Informasi Pengunaan.\nJangan Lupa Berdoa Sebelum Mencoba Hmm..")
         await asyncio.sleep(50)
-        await rambot.delete()
+        await diorbot.delete()
