@@ -3,7 +3,7 @@
 # Piki mintaa yaaa
 # Mks sm sm
 # Rama ganteng mks sm sm
-
+#Fatur paling cakep y
 
 from telethon.errors import ChatSendInlineForbiddenError, ChatSendStickersForbiddenError
 
