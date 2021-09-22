@@ -25,20 +25,23 @@ async def typewriter(typew):
                      "`\n┻┳|￣  )`"
                      "`\n┳ﾐ(￣ ／`"
                      "`\n┻┳T￣|`"
-                     "\n**Permisi Aku mau nimbrung Kk..**")
+                     "\n**Permisi Seleb Mau Nimbrung Kaka..**")
 
 
-@register(outgoing=True, pattern='^.mb(?: |$)(.*)')
+@register(outgoing=True, pattern='^.bf(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("**Panjul Kepala Suku☑️**")
     await typew.edit("**Panjul Kepala Suku✅**")
-    sleep(1)
+    sleep(2)
     await typew.edit("**Farhan Ribet☑️**")
     await typew.edit("**Farhan Ribet✅**")
     sleep(2)
-    await typew.edit("**Gita Cantik☑️**")
-    await typew.edit("**Gita Cantik✅**")
+    await typew.edit("**Muza Buaya Betina☑️**")
+    await typew.edit("**Muza Buaya Betina✅**")
+    sleep(2)
+    await typew.edit("**Gita Bawel☑️**")
+    await typew.edit("**Gita Bawel✅**")
     sleep(2)
     await typew.edit("**Nigel Wibu☑️**")
     await typew.edit("**Nigel Wibu✅**")
@@ -56,30 +59,30 @@ async def typewriter(typew):
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("`Lahk, Lu Goblok Apa Tolol?`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`Apa Autis?`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`Gosah sokeras jelek`")
     sleep(1)
     await typew.edit("`Gua ga takut sama bocah bocah ampas kek lu!`")
 
 
-@register(outgoing=True, pattern='^.wah(?: |$)(.*)')
+@register(outgoing=True, pattern='^.war(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("`Wahh, War nya keren bang`")
+    await typew.edit("`Wah, Ada war gais...`")
     sleep(2)
-    await typew.edit("`Tapi, Yang gua liat, kok Kaya lawakan`")
+    await typew.edit("`Tapi, kalo diliat-liat kesannya lebih ke stand up komedi😅`")
     sleep(2)
-    await typew.edit("`Oh iya, Kan lo badut 🤡`")
+    await typew.edit("`eh iya, Lu kan badut🤡`")
     sleep(2)
-    await typew.edit("`Kosa kata pas ngelawak, Jangan di pake war bang`")
+    await typew.edit("`Disuruh war malah cerpen`")
     sleep(2)
-    await typew.edit("`Kesannya lo ngasih kita hiburan.`")
+    await typew.edit("`kebanyakan baca dongeng ya gini.`")
     sleep(2)
-    await typew.edit("`Kasian badut🤡, Ga di hargain pengunjung, Eh lampiaskan nya ke Tele, Wkwkwk`")
+    await typew.edit("`Keras kaga dongo iya,kek badut ulang tahun yg kaga di gaji`")
     sleep(3)
-    await typew.edit("`Dah sana cabut, Makasih hiburannya, Udah bikin Gua tawa ngakak`")
+    await typew.edit("`Bocah goblok yang goblok goblok banget seperti rucika mengalir sampai jauh, Lu lebih goblok lagi gobloknya keturunan sampai lahir!`")
 
 CMD_HELP.update({
     "diorbot":
@@ -87,6 +90,6 @@ CMD_HELP.update({
     \nUsage: menampilkan alive bot.\
     \n\n`.sadboy`\
     \nUsage: hiks\
-    \n\n`.punten` ; `.mb`\
+    \n\n`.punten` ; `.bf`\
     \nUsage: misi."
 })
