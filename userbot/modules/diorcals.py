@@ -38,47 +38,47 @@ async def _(rambot):
     creator = chat.creator
 
     if not admin and not creator:
-        return await rambot.edit(NO_ADMIN)
+        return await diorbot.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await rambot.client(startvc(rambot.chat_id))
-        await rambot.edit("`OBROLAN SUARA DIMULAI, YANG ONCAM LO NGENTOT...`")
+        await diorbot.client(startvc(diorbot.chat_id))
+        await diorbot.edit("`OBROLAN SUARA DIMULAI, GOSAH ONCAM MUKA LO JELEK...`")
     except Exception as ex:
-        await rambot.edit(f"`{str(ex)}`")
+        await diorbot.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def _(rambot):
-    chat = await rambot.get_chat()
+async def _(diorbot):
+    chat = await diorbot.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
     if not admin and not creator:
-        return await rambot.edit(NO_ADMIN)
+        return await diorbot.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await rambot.client(stopvc(await get_call(rambot)))
-        await rambot.edit("`OBROLAN SUARA DIHENTIKAN, TYPING AJAYA NGENTOT...`")
+        await diorbot.client(stopvc(await get_call(rambot)))
+        await diorbot.edit("`OBROLAN SUARA DIHENTIKAN, TYPING BE NGENTOT...`")
     except Exception as ex:
-        await rambot.edit(f"`{str(ex)}`")
+        await diorbot.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
-async def _(rambot):
-    await rambot.edit("`Memulai Invite member group...`")
+async def _(diorbot):
+    await diorbot.edit("`Memulai Invite member group...`")
     users = []
     z = 0
-    async for x in rambot.client.iter_participants(rambot.chat_id):
+    async for x in diorbot.client.iter_participants(diorbot.chat_id):
         if not x.bot:
             users.append(x.id)
     hmm = list(user_list(users, 6))
     for p in hmm:
         try:
-            await rambot.client(invitetovc(call=await get_call(rambot), users=p))
+            await diorbot.client(invitetovc(call=await get_call(diorbot), users=p))
             z += 6
         except BaseException:
             pass
-    await rambot.edit(f"`Menginvite {z} Member`")
+    await diorbot.edit(f"`Menginvite {z} Member`")
 
 
 CMD_HELP.update(
