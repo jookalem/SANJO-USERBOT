@@ -385,7 +385,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.kickme(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit(f"`{ALIVE_NAME}, Saat Nya Pergi...`")
+    await typew.edit(f"`{ALIVE_NAME}, Gc nya jelek...Keluar aja lah`")
     sleep(3)
     await typew.edit(f"`{ALIVE_NAME} Telah meninggalkan Group....`")
 
