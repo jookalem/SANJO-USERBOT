@@ -276,7 +276,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "```⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡AKTIF YA KONTOL!!!\n\n• • ━━━━❪ヾ 𝗞𝗢𝗡𝗧𝗢𝗟ヾ❫━━━━ • •\nKalo nda bisa di .ping\nBerarti akun lu jelek\nCanda ngentot\nCek view log di heroku.\n━━━━━━━━━━━━━━━━━━━━━```"
+    "BOTLOG_MSG") or "```⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡AKTIF YA KONTOL!!!\n\n• • ━━❪ヾ 𝗞𝗢𝗡𝗧𝗢𝗟ヾ❫━━ • •\nKalo nda bisa di .ping\nBerarti akun lu jelek\nCanda ngentot\nCek view log di heroku.\n━━━━━━━━━━━━━━━━━```"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
