@@ -65,23 +65,23 @@ async def sleepybot(time):
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
     """ For .shutdown command, shut the bot down."""
-    await event.edit("`Menonaktifkan RAM-UBOT....`")
+    await event.edit("`Menonaktifkan DIOR-UBOT....`")
     await asyncio.sleep(7)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`RAM-UBOT Telah Dinonaktifkan`")
+                                        "`DIOR-UBOT Telah Dinonaktifkan`")
     await bot.disconnect()
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting RAM-UBOT...`")
+    await event.edit("`Restarting DIOR-UBOT...`")
     await asyncio.sleep(10)
     await event.delete()
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`RAM-UBOT Telah Di Restart`")
+                                        "`DIOR-UBOT Telah Di Restart`")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -93,7 +93,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Here's something for you to read:\n"
-        "\n[RAM-UBOT Repo](https://github.com/ramadhani892/RAM-UBOT/blob/RAM-UBOT/README.md)"
+        "\n[DIOR-UBOT Repo](https://github.com/DIORrios285/DIOR-UBOT/blob/DIOR-UBOT/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -120,7 +120,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n             [{REPO_NAME}](https://github.com/ramadhani892/RAM-UBOT)\n╰✠╼━━━━━━❖━━━━━━━✠╯\n•PEMILIK         : [𝐎𝐖𝐍𝐄𝐑]({OWNER_BOT})\n•CHANNEL      : [𝐈𝐍𝐅𝐎](t.me/RAMUBOTINFO)\n•GROUP           : [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK})\n•INSTAGRAM  :  [𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE})"
+        f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n             [{REPO_NAME}](https://github.com/DIORrios285/DIOR-UBOT)\n╰✠╼━━━━━━❖━━━━━━━✠╯\n•PEMILIK         : [𝐎𝐖𝐍𝐄𝐑]({OWNER_BOT})\n•CHANNEL      : [𝐈𝐍𝐅𝐎](t.me/diorspambot)\n•GROUP           : [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK})\n•INSTAGRAM  :  [𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE})"
     )
 
 
