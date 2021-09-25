@@ -57,13 +57,13 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^Y(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**𝐘 𝐈𝐍 𝐃𝐄𝐇 𝐉𝐄𝐋𝐄𝐊**")
+    await typew.edit("**Y IN DEH JELEK
 
 
 @register(outgoing=True, pattern='^C(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**𝗠𝗨𝗞𝗔 𝗟𝗢 𝗝𝗘𝗟𝗘𝗞, 𝗕𝗘𝗡𝗘𝗥𝗜𝗡 𝗗𝗨𝗟𝗨 𝗧𝗨𝗛 𝗞𝗢𝗠𝗨𝗞 𝗚𝗢𝗕𝗟𝗢𝗞!!**")
+    await typew.edit("**MUKA LO JELEK BANGET, BENERIN DULU TUH KOMUK BANGSAT!!**")
 
 
 @register(outgoing=True, pattern='^S(?: |$)(.*)')
@@ -75,7 +75,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^V(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**𝗠𝗔𝗖𝗔𝗠 𝗕𝗔𝗚𝗨𝗦 𝗕𝗘 𝗟𝗨 𝗕𝗘𝗚𝗜𝗧𝗨 𝗧𝗢𝗟𝗢𝗟!!**")
+    await typew.edit("**MACAM BAGUS BE LU BEGITU KONTOL!!**")
 
 
 @register(outgoing=True, pattern='^J(?: |$)(.*)')
@@ -93,7 +93,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^X(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**𝗚𝗖 𝗦𝗔𝗠𝗣𝗔𝗛 𝗝𝗘𝗟𝗘𝗞 𝗞𝗘𝗞 𝗠𝗨𝗞𝗔 𝗦𝗜 𝗚𝗢𝗡𝗗𝗥𝗢𝗡𝗚...𝗖𝗨𝗜𝗛𝗛𝗛!!!!!!!!!!!**")
+    await typew.edit("**GC JELEK SAMPAH GINI BISA ADA DITELE...CUIHH!!!!!!!!!!!**")
 
 
 @register(outgoing=True, pattern='^Z(?: |$)(.*)')
@@ -105,7 +105,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^H(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**𝗛𝗔𝗛𝗔 𝗟𝗨 𝗟𝗔𝗚𝗜 𝗡𝗚𝗘𝗕𝗔𝗖𝗢𝗧?...𝗚𝗔 𝗗𝗔𝗡𝗧𝗔 𝗕𝗘𝗚𝗢 𝗞𝗘𝗦𝗔𝗡𝗡𝗬𝗔 𝗞𝗘𝗞 𝗕𝗢𝗖𝗔𝗛 𝗦𝗗 𝗚𝗔 𝗞𝗘𝗕𝗔𝗚𝗜𝗔𝗡 𝗣𝗘𝗥𝗠𝗘𝗡 𝗡𝗘𝗡𝗘𝗡 𝗧𝗔𝗨 𝗣𝗘𝗥𝗠𝗘𝗡 𝗡𝗘𝗡𝗘𝗡 𝗚𝗔?...𝗣𝗘𝗡𝗧𝗜𝗟 𝗘𝗠𝗔𝗞 𝗟𝗨 𝗗𝗜𝗣𝗢𝗧𝗢𝗡𝗚 𝗝𝗔𝗗𝗜𝗜𝗡 𝗣𝗘𝗥𝗠𝗘𝗡!!!**")
+    await typew.edit("**HAHAHA LU LAGI NGEBACOT?...GA DANTA BEGO KESANNYA KEK BOCAH SD GA KEBAGIAN PERMEN NENEN TAU PERMEN NENEN GA LU? PENTIL NENEN EMAK LU DIPOTONG JADIIN PERMEN TOLOL!!!**")
 
 
 @register(outgoing=True, pattern='^O(?: |$)(.*)')
@@ -117,7 +117,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^G(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**𝗚𝗔 𝗞𝗘𝗥𝗘𝗡 𝗟𝗨 𝗕𝗘𝗚𝗜𝗧𝗨 𝗧𝗔𝗜...𝗞𝗨𝗕𝗨𝗥𝗔𝗡 𝗕𝗔𝗣𝗔𝗞 𝗟𝗨 𝗚𝗨𝗔 𝗚𝗔𝗟𝗜 𝗕𝗨𝗔𝗧 𝗞𝗢𝗟𝗔𝗠 𝗕𝗔𝗣𝗧𝗜𝗦 𝗚𝗢𝗕𝗟𝗢𝗞!!!**")
+    await typew.edit("**GA KEREN LU BEGITU TAI...KUBURAN BAPAK LU GUA GALI BUAT KOLAM BAPTIS GOBLOK!!!**")
 
 CMD_HELP.update({
     "salam":
