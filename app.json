@@ -57,7 +57,7 @@
     },
     "PM_AUTO_BAN": {
       "description": "Ini berguna Untuk Mengaktifkan pesan otomatis di room chat anda.",
-      "value": "False",
+      "value": "true",
       "required": true
     },
     "ANTI_SPAMBOT": {
