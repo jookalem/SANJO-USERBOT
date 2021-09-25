@@ -9,9 +9,9 @@ async def typewriter(typew):
     await typew.edit("`Hai Perkenalkan Namaku Fatur`")
     sleep(3)
     await typew.edit("16 Tahun`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`Tinggal Di Kalimantan, Salam Kenal ya:)`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`Gua ga jago, Tapi gua ganteng!`")
 # Create by myself @localheart
 
@@ -37,9 +37,9 @@ async def typewriter(typew):
     await typew.edit("`Hai,Papoy disini...`")
     sleep(3)
     await typew.edit("`17 tahun`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`Tinggal Di Kalimantan, Salam Kenal ya:)`")
-    sleep(1)
+    sleep(2)
     await typew.edit("`Saya tidak cantik, Tapi kalo jadi cantiknya kamu sabi kali... Ajakin sleepcall dong bang🤣`")
 # Create by myself @localheart
 
