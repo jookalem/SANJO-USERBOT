@@ -31,7 +31,7 @@ DEF_UNAPPROVED_MSG = (
     f"**╭━━━━━━━━━━━━━━━━━╮**\n    ✨SELAMAT WELCOME✨\n"
     "**╰━━━━━━━━━━━━━━━━━╯**\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-    f"**ANAK KONTOL ANAK NGENTOT,KALO NGECHAT MAJIKAN {DEFAULTUSER} ITU SALAM,\nHABIS ITU SABAR TUNGGU MAJIKAN GUA BALES,\nKALO GA DI BALES - BALES, LU JANGAN NYEPAM KONTOL, KAYA ANAK YATIM MAU MINTA SEMBAKO LU ANJING, APA LAGI LU NGECHAT NYA CUMA MINTA VCS, BISA GUA BLOKIR!! KALO NYEPAM JUGA TAR GUA BLOKIR!!!! TUNGGU SI {DEFAULTUSER} NERIMA PESAN LU**\n"
+    f"**EH JELEK,KALO NGECHAT TUAN {DEFAULTUSER} ITU SALAM DULU LAH KONTOL,\nHABIS ITU SABAR TUNGGU TUAN GUA BALES,\nKALO GA DI BALES - BALES BERARTI LU ITU JELEK BANGET HINA DI MATA TUAN GUA, LU GAUSAH SPAM JUGA, KAYA ANAK YATIM MAU MINTA SEMBAKO LU ANJING, APA LAGI LU NGECHAT NYA CUMA BUAT NGINJEM DUIT, BISA GUA BLOKIR LU TAI!! KALO NYEPAM JUGA TAR GUA BLOKIR!!!! TUNGGU TUAN {DEFAULTUSER} KONFIRMASI PESAN LU BABI**\n"
     "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
     "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
     "┣[• 𝐁𝐎𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄\n"
@@ -94,7 +94,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
-                    "`Bacot bat Jamet tolol, Gua blok ajalah`\n"
+                    "`EH ANJING KAN UDAH GUA BILANG JANGAN NORAK JANGAN SPAM, GUA BLOKIR LU TAI!!!`\n"
                     f"`Tunggu {DEFAULTUSER} Bales ya`"
                 )
 
@@ -122,7 +122,7 @@ async def permitpm(event):
                         + "](tg://user?id="
                         + str(event.chat_id)
                         + ")"
-                        + " Telah Diblokir Karna Melakukan Spam Ke Room Chat",
+                        + "GUA BLOKIR KARENA TOLOL GOBLOK DIBILANG JANGAN SPAM",
                     )
 
 
@@ -236,7 +236,7 @@ async def approvepm(apprvpm):
     except IntegrityError:
         return await apprvpm.edit("`Oke Pesan Anda Sudah Diterima ツ`")
 
-    await apprvpm.edit(f"`Baik` [{name0}](tg://user?id={uid}) `Pesan Lu udah di terima ya babi!!`")
+    await apprvpm.edit(f"`Fine` [{name0}](tg://user?id={uid}) `Pesan Lu udah di terima majikan gua yeh jelek!!`")
     await apprvpm.delete(getmsg)
     await message.delete()
 
@@ -286,12 +286,12 @@ async def blockpm(block):
         aname = replied_user.id
         name0 = str(replied_user.first_name)
         await block.client(BlockRequest(aname))
-        await block.edit(f"`Lu jamet, Maaf Gua block ya ngentot!`")
+        await block.edit(f"`Lu Jelek, Mon maaf be lu gua blok kontol!!`")
         uid = replied_user.id
     else:
         await block.client(BlockRequest(block.chat_id))
         aname = await block.client.get_entity(block.chat_id)
-        await block.edit(f"`Lu Jamet, Maaf Gua blok ya ngentot!!`")
+        await block.edit(f"`Lu Jelek, Mon maaf be lu gua blok kontol!!`")
         name0 = str(aname.first_name)
         uid = block.chat_id
 
@@ -317,12 +317,12 @@ async def unblockpm(unblock):
         replied_user = await unblock.client.get_entity(reply.from_id)
         name0 = str(replied_user.first_name)
         await unblock.client(UnblockRequest(replied_user.id))
-        await unblock.edit("`Udah Di Unblock Jangan ngejamet lagi ya ngentot!`")
+        await unblock.edit("`Udah Di Unblock Gausah goblok lagi ya bangsat!`")
 
     if BOTLOG:
         await unblock.client.send_message(
             BOTLOG_CHATID,
-            f"[{name0}](tg://user?id={replied_user.id})" " Tidak Lagi Diblokir.",
+            f"[{name0}](tg://user?id={replied_user.id})" " Udah kaga Diblokir.",
         )
 
 
