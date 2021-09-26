@@ -547,9 +547,41 @@ with bot:
                                 "FATUR",
                                 f"{OWNER_BOT}")] 
                     ],
-                    link_preview=False,
+                    link_preview=True,
                 )
             await event.answer([result] if result else None)
+
+        @tgbot.on(
+            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
+                data=re.compile(rb"openplugins")
+            )
+        )
+        async def on_plug_in_callback_query_handler(event):
+            if event.query.user_id == uid:
+                buttons = paginate_help(0, dugmeler, "helpme")
+                text = f"{REPO_NAME}\n\n𝗣𝗘𝗠𝗜𝗟𝗜𝗞 𝗕𝗢𝗧 : {DEFAULTUSER}\n\n🐯 𝗩𝗘𝗥𝗦𝗜 𝗕𝗢𝗧 : `7.0`\n🐯 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 : `{len(plugins)}`\n\n🔥 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : [{DEFAULTUSER}]({OWNER_BOT}) "
+                await event.edit(text,
+                    file=daplogo,
+                    buttons=buttons,
+                    link_preview=False,
+                )
+            else:
+                reply_pop_up_alert = f"WOI NGENTOT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG BABI."
+                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)            
+            
+        @tgbot.on(
+             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
+                 data=re.compile(rb"nepo")
+            )
+        )
+        async def on_plug_in_callback_query_handler(event):
+            current_page_number = int(lockpage)
+            buttons = paginate_help(current_page_number, plugins, "helpme")
+            await event.edit(
+                file=daplogo,
+                buttons=buttons,
+                link_preview=False,
+            )
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -565,7 +597,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"EH BANGSAT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG ANJING."
+                reply_pop_up_alert = f"WOI NGENTOT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG BABI."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -575,24 +607,20 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @dior-ubot
+            if event.query.user_id == uid:  # @Ram-ubot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=diorlogo,
+                    file=daplogo,
                     link_preview=True,
                     buttons=[
                         [
                             Button.url(f"{REPO_NAME}",
-                                       "t.me/diorspambot"),
-                            Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
-                                       "t.me/MBsokin")],
-                        [Button.url(f"{EMOJI_HELP} OWNER {EMOJI_HELP} ",
-                                    f"{OWNER_BOT}"),
+                                       "https://zee.gl/DAPAUBOT"),
                             Button.url(f"{EMOJI_HELP} INSTAGRAM {EMOJI_HELP} ",
                                    f"{IG_ALIVE}")],
-                        [custom.Button.inline(
-                            f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
-                       ]
+                        [Button.inline("𝗕𝗮𝗰𝗸 𝗧𝗼 𝗠𝗲𝗻𝘂", data="nepo")],
+                        [Button.inline("𝗘𝗫𝗜𝗧", data="close")],
+                        ]
                 )
 
 
@@ -611,7 +639,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"EH BANGSAT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG ANJING."
+                reply_pop_up_alert = f"WOI NGENTOT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG BABI."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -643,14 +671,25 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"EH BANGSAT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG ANJING."
+                reply_pop_up_alert = f"WOI NGENTOT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG BABI."
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @tgbot.on(events.CallbackQuery(data=b"close"))
-        async def close(event):
-            await event.edit("Menu di tutup!\nUntuk Melihat Menu, Silahkan Ketik `.rhelp`", buttons=Button.clear())
-
+        @tgbot.on(
+            events.callbackquery.CallbackQuery(  # pylint:disable=E0602
+                data=re.compile(rb"close")
+            )
+        )
+        async def on_plug_in_callback_query_handler(event):
+            if event.query.user_id == uid:
+                buttons = [
+                    (custom.Button.inline("𝗢𝗣𝗘𝗡 𝗣𝗟𝗨𝗚𝗜𝗡𝗦 𝗔𝗚𝗔𝗜𝗡", data="openplugins"),),
+                ]
+                await event.edit(f"{REPO_NAME}\n\n𝗣𝗘𝗠𝗜𝗟𝗜𝗞 𝗕𝗢𝗧 : {DEFAULTUSER}\n\n🐯 𝗩𝗘𝗥𝗦𝗜 𝗕𝗢𝗧 : `7.0`\n🐯 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 : `{len(plugins)}`\n\n🔥 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : [{DEFAULTUSER}]({OWNER_BOT}) ", buttons=buttons)
+            else:
+                reply_pop_up_alert =  f"WOI NGENTOT!! JANGAN PAKE PUNYA {DEFAULTUSER} DONG BABI."
+                await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
+                        
 
     except BaseException:
         LOGS.info(
