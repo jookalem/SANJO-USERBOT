@@ -9,8 +9,8 @@ async def typewriter(typew):
     await typew.edit("`Hai Perkenalkan Namaku Fatur`")
     sleep(3)
     await typew.edit("16 Tahun`")
-    sleep(2)
-    await typew.edit("`Tinggal Di Kalimantan, Salam Kenal ya:)`")
+    sleep(3)
+    await typew.edit("`Tinggal Di Kalimantan`")
     sleep(2)
     await typew.edit("`Gua ga jago, Tapi gua ganteng!`")
 # Create by myself @localheart
@@ -19,14 +19,14 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.manda(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(3)
+    sleep(1)
     await typew.edit("`Manda itu cantik`")
     sleep(3)
     await typew.edit("`Manda punya fatur...lu ganggu disambit pala lu!`")
     sleep(3)
     await typew.edit("`pada intinya fatur sayang banget sama manda`")
     sleep(2)
-    await typew.edit("`I LOVE YOU MANDA💝💕`")
+    await typew.edit("`I LOVE YOU MANDA♥️`")
 # Create by myself @localheart
 
 
@@ -37,8 +37,8 @@ async def typewriter(typew):
     await typew.edit("`Hai,Papoy disini...`")
     sleep(3)
     await typew.edit("`17 tahun`")
-    sleep(2)
-    await typew.edit("`Tinggal Di Kalimantan, Salam Kenal ya:)`")
+    sleep(3)
+    await typew.edit("`Tinggal Di Kalimantan`")
     sleep(2)
     await typew.edit("`Saya tidak cantik, Tapi kalo jadi cantiknya kamu sabi kali... Ajakin sleepcall dong bang🤣`")
 # Create by myself @localheart
@@ -58,10 +58,24 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
+@register(outgoing=True, pattern='^.ivann(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("Kenalin nih IVANN")
+    sleep(3)
+    await typew.edit("Bocah Tanggerang")
+    sleep(3)
+    await typew.edit("Lu senggol gua sambit pake kontol ragil")
+    sleep(2)
+    await typew.edit("JOMBLO NI MBA PACARIN DONG!")
+# Create by myself @localheart
+
+
 @register(outgoing=True, pattern='^.semangat(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    sleep(3)
+    sleep(1)
     await typew.edit("`Apapun Yang Terjadi`")
     sleep(3)
     await typew.edit("`Tetaplah Bersemangat`")
