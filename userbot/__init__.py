@@ -518,14 +518,14 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@Ram_ubot"):
-                buttons = paginate_help(0, dugmeler, "helpme")
-                result = builder.photo(
-                    file=ramlogo,
+            if event.query.user_id == uid and query.startswith("@diorubot"):
+                buttons = [
+                    (Button.inline("𝗢𝗣𝗘𝗡 𝗣𝗟𝗨𝗚𝗜𝗡𝗦", data="openplugins"),),
+                ]
+                photo_bytesio = diorlogo
+                result = builder.photo(photo_bytesio,
                     link_preview=False,
-                    text=f"{REPO_NAME}\n\n𝗣𝗘𝗠𝗜𝗟𝗜𝗞 𝗕𝗢𝗧 : {DEFAULTUSER}\n\n✨ 𝗩𝗘𝗥𝗦𝗜 𝗕𝗢𝗧 : `7.0`\n✨ 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 : `{len(plugins)}`\n\n💦 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : [{DEFAULTUSER}]({OWNER_BOT}) ".format(
-                        len(dugmeler),
-                    ),
+                    text=f"{REPO_NAME}\n\n𝗣𝗘𝗠𝗜𝗟𝗜𝗞 𝗕𝗢𝗧 : {DEFAULTUSER}\n\n✨ 𝗩𝗘𝗥𝗦𝗜 𝗕𝗢𝗧 : `7.0`\n✨ 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 : `{len(plugins)}`\n\n💦 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : [{DEFAULTUSER}]({OWNER_BOT}) ",
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
