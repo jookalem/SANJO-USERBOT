@@ -81,7 +81,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^K(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("𝗞𝗢𝗡𝗧𝗢𝗟𝗟𝗟𝗟𝗟...")
+    await typew.edit("**KONTOL...**")
 
 
 @register(outgoing=True, pattern='^N(?: |$)(.*)')
@@ -117,7 +117,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^S(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("𝗦𝗢𝗞𝗔𝗣 𝗟𝗢 𝗕𝗔𝗡𝗚𝗦𝗔𝗧!!")
+    await typew.edit("**SOKAP LO BANGSAT!!**")
 
 
 @register(outgoing=True, pattern='^V(?: |$)(.*)')
@@ -202,7 +202,7 @@ CMD_HELP.update({
 \n\nR\
 \nUsage: Bully orang tolol.\
 \n\n\
-\nUsage: Lerai keributan.\"
+\nUsage: Lerai keributan."
 })
 
 CMD_HELP.update({
