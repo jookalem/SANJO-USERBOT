@@ -6,6 +6,7 @@
 # nimbrung ah @uurfavboys1 / ikutan biar kek orang-orang
 """Userbot initialization."""
 
+
 import os
 import time
 import re
@@ -198,7 +199,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "DIOR-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "7.0")
@@ -221,7 +222,7 @@ HELP_LOGO = os.environ.get(
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/fatur.285"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✨"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "⚡"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
@@ -276,7 +277,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "```⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡AKTIF YA KONTOL!!!\n\n• • ━━❪ヾ 𝗞𝗢𝗡𝗧𝗢𝗟ヾ❫━━ • •\nKalo nda bisa di .ping\nBerarti akun lu jelek\nCanda ngentot\nCek view log di heroku.\n━━━━━━━━━━━━━━━━━```"
+    "BOTLOG_MSG") or "```⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡AKTIF YA KONTOL!!!\n\n• • ━━❪ヾ 𝗞𝗢𝗡𝗧𝗢𝗟ヾ❫━━ • •\nKalo nda bisa di .ping\nBerarti akun lu jelek\nCanda ngentot\nCek view log di heroku\n━━━━━━━━━━━━━━━━━```"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -400,7 +401,7 @@ ISAFK = False
 AFKREASON = None
 ZALG_LIST = {}
 
-#Import Userbot - Ported by DIORrios285
+#Import Userbot - Ported by RAMADHANI892
 from userbot import (
     ALIVE_NAME
 )
@@ -412,6 +413,8 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 def paginate_help(page_number, loaded_modules, prefix):
     number_of_rows = 5
     number_of_cols = 2
+    global lockpage
+    lockpage = page_number
     helpable_modules = [p for p in loaded_modules if not p.startswith("_")]
     helpable_modules = sorted(helpable_modules)
     modules = [
@@ -430,13 +433,13 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "< ̤< ̤", data="{}_prev({})".format(prefix, modulo_page)
+                    "↩️", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
                     f"{EMOJI_HELP} 𝗖𝗟𝗢𝗦𝗘 {EMOJI_HELP}", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "> ̤> ̤", data="{}_next({})".format(prefix, modulo_page)
+                    "↪️", data="{}_next({})".format(prefix, modulo_page)
                 )
             )
         ]
@@ -480,7 +483,7 @@ with bot:
                 )
 
 
-        diorlogo = HELP_LOGO
+        daplogo = HELP_LOGO
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -489,13 +492,15 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"EH ANJING [{get_display_name(u)}](tg://user?id={u.id}) NGAPAIN LU DI\n**DIOR-UBOT**\nKALO MAU TAU LEBIH DETAIL MENDING LU KE\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
+                    f"WOI NGENTOT [{get_display_name(u)}](tg://user?id={u.id}) NGAPAIN LU DI\n**DAPA-UBOT**\nKALO MAU TAU LEBIH DETAIL MENDING LU KE\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
                     buttons=[
                         [
                              Button.url(f"{EMOJI_HELP} 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 {EMOJI_HELP}",
                                         "t.me/diorplayingwords"),
                              Button.url(f"{EMOJI_HELP} 𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 {EMOJI_HELP}",
                                         "t.me/diorspambot")],
+                             [Button.url("🎯𝗗𝗘𝗣𝗟𝗢𝗬🎯",
+                                        "https://zee.gl/DAPAUBOT")],
                              [Button.url("👤 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 👤",
                                         "t.me/uurfavboys1")],
                     ]
@@ -510,7 +515,7 @@ with bot:
                 ms = (end - start).microseconds / 1000
                 await tgbot.send_message(
                     event.chat_id,
-                    f"**NGENTOT!!**\n `{ms}ms`",
+                    f"**ANJAY GOKIL!!**\n `{ms}ms`",
                 )
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
@@ -522,7 +527,7 @@ with bot:
                 buttons = [
                     (Button.inline("𝗢𝗣𝗘𝗡 𝗣𝗟𝗨𝗚𝗜𝗡𝗦", data="openplugins"),),
                 ]
-                photo_bytesio = diorlogo
+                photo_bytesio = daplogo
                 result = builder.photo(photo_bytesio,
                     link_preview=False,
                     text=f"{REPO_NAME}\n\n𝗣𝗘𝗠𝗜𝗟𝗜𝗞 𝗕𝗢𝗧 : {DEFAULTUSER}\n\n🐼 𝗩𝗘𝗥𝗦𝗜 𝗕𝗢𝗧 : `7.0`\n🐼 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 : `{len(plugins)}`\n\n💦 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : [{DEFAULTUSER}]({OWNER_BOT}) ",
@@ -537,7 +542,7 @@ with bot:
             else:
                 result = builder.article(
                     f" ━━━━━━━❖━━━━━━━━\n       {REPO_NAME}\n━━━━━━━❖━━━━━━━━ ",
-                    text=f"""**━━━━━━━❖━━━━━━━━\nLU BIKIN \n{REPO_NAME}\nSENDIRI DONG JELEK!!\n━━━━━━━❖━━━━━━━━\nNIH CARANYA:**__TEKEN DIBAWAH INI BABI!__ 👇""",
+                    text=f"""**━━━━━━━❖━━━━━━━━\nLU BIKIN \n{REPO_NAME}\nSENDIRI DONG NGENTOT!!\n━━━━━━━❖━━━━━━━━\nNIH CARANYA:**__TEKEN DIBAWAH INI NGENTOT!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
@@ -578,7 +583,7 @@ with bot:
             current_page_number = int(lockpage)
             buttons = paginate_help(current_page_number, plugins, "helpme")
             await event.edit(
-                file=diorlogo,
+                file=daplogo,
                 buttons=buttons,
                 link_preview=False,
             )
@@ -607,10 +612,10 @@ with bot:
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @diorubot
+            if event.query.user_id == uid:  # @Ram-ubot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=diorlogo,
+                    file=daplogo,
                     link_preview=True,
                     buttons=[
                         [
