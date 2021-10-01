@@ -135,7 +135,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^A(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**APA LU LIAT LIAT, MINTA BANSOS?"*)
+    await typew.edit("**APA LU LIAT LIAT, MINTA BANSOS?**")
 
 
 @register(outgoing=True, pattern='^X(?: |$)(.*)')
