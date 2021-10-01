@@ -24,8 +24,8 @@ from userbot.events import register
 
 
 KANGING_STR = [
-    "BERUSAHA MENCURY TIKEL INI! HAHAHA",
-    "GUA NYOLONG TIKEL LU YA NGENTOTTTT!",
+    "MANA SI YG PUNYA TIKEL INI?",
+    "GUA COLONG TIKEL LU YA JELEK! HAHAHA",
 ]
 
 
@@ -54,7 +54,7 @@ async def kang(args):
                 in message.media.document.attributes
             ):
                 emoji = message.media.document.attributes[1].alt
-                if emoji != "⭐":
+                if emoji != "✨":
                     emojibypass = True
         elif "tgsticker" in message.media.document.mime_type:
             await args.edit(f"`{random.choice(KANGING_STR)}`")
@@ -69,14 +69,14 @@ async def kang(args):
             is_anim = True
             photo = 1
         else:
-            return await args.edit("`Mohon Maaf, File Tidak Didukug!`")
+            return await args.edit("`Sorry nyet, File kaga didukung!`")
     else:
-        return await args.edit("`Mohon Maaf, Saya Gagal Mengambil Sticker Ini!`")
+        return await args.edit("`Yah nyet, Gua gagal nyolong tikel ni nih!`")
 
     if photo:
         splat = args.text.split()
         if not emojibypass:
-            emoji = "⭐"
+            emoji = "✨"
         pack = 1
         if len(splat) == 3:
             pack = splat[2]  # User sent both
@@ -173,9 +173,9 @@ async def kang(args):
                         # Ensure user doesn't get spamming notifications
                         await bot.send_read_acknowledge(conv.chat_id)
                         return await args.edit(
-                            "`Sticker telah dibuat ke pack baru !"
-                            "\nIni Pack Yang Baru Saja Anda Buat !"
-                            f"Berhasil Mencuri!\n\n╭✠━━━━❖━━━━✠╮\n            [TEKAN](t.me/addstickers/{packname})\n╰✠━━━━❖━━━━✠╯\n\nUntuk Melihat Sticker Anda.",
+                            "`Tike berhasil dicolong dan disimpan ke tikel pack baru!"
+                            "\nNi tikel pack yg baru lu buat!"
+                            f"Berhasil nyolong!\n\n╭✠━━━━❖━━━━✠╮\n            [KENTOT](t.me/addstickers/{packname})\n╰✠━━━━❖━━━━✠╯\n\nBuat ngeliat tikel lu.",
                             parse_mode="md",
                         )
                 if is_anim:
@@ -187,7 +187,7 @@ async def kang(args):
                 rsp = await conv.get_response()
                 if "Sorry, the file type is invalid." in rsp.text:
                     return await args.edit(
-                        "`Maaf Saya Gagal Menambahkan Sticker, Gunakan` @Stickers ` Bot Untuk Menambahkan Sticker Anda.`"
+                        "`Eh nyet, Gua gagal Nambahin Tikel, Coba pake` @Stickers ` Bot buat nambahin tikel.`"
                     )
                 await conv.send_message(emoji)
                 # Ensure user doesn't get spamming notifications
@@ -217,7 +217,7 @@ async def kang(args):
                 rsp = await conv.get_response()
                 if "Sorry, the file type is invalid." in rsp.text:
                     return await args.edit(
-                        "`Mohon Maaf, Saya Gagal Menambahkan Sticker, Gunakan` @Stickers ` Bot Untuk Menambahkan Sticker.`"
+                        "`Eh nyet, Gua gagal Nambahin Tikel, Coba pake` @Stickers ` Bot buat nambahin tikel.`"
                     )
                 await conv.send_message(emoji)
                 # Ensure user doesn't get spamming notifications
@@ -242,7 +242,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            f"Berhasil Mencuri!\n\n╭✠━━━━❖━━━━✠╮\n            [TEKAN](t.me/addstickers/{packname})\n╰✠━━━━❖━━━━✠╯\n\nUntuk Melihat Sticker Anda.",
+            f"Berhasil Nyolong!\n\n╭✠━━━━❖━━━━✠╮\n            [PERKOSA](t.me/addstickers/{packname})\n╰✠━━━━❖━━━━✠╯\n\nBuat ngeliat tikel lu.",
             parse_mode="md",
         )
 
