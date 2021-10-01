@@ -51,7 +51,7 @@ async def get_chatinfo(event):
     return chat_info
 
 
-@register(outgoing=True, pattern=r"^\.inviteall(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.nyulikdulu(?: |$)(.*)")
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
@@ -83,6 +83,6 @@ async def get_users(event):
 
 CMD_HELP.update({
     "invite":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteall groups username`\
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.nyulikdulu groups username`\
           \n📌 : __Scrapes users from the given chat to your group__."
 })
