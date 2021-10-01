@@ -12,7 +12,7 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`Tinggal Di Kalimantan`")
     sleep(2)
-    await typew.edit("`**Gua ga jago, Tapi gua ganteng!**`")
+    await typew.edit("**Saya tidak jago, Tapi saya tampan!**")
 # Create by myself @localheart
 
 
