@@ -32,6 +32,20 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
+@register(outgoing=True, pattern='^.beby(?: |$)(.*)')
+async def typewriter(typew):
+    typew.pattern_match.group(1)
+    sleep(1)
+    await typew.edit("`Heyy!`")
+    sleep(3)
+    await typew.edit("`beby disini...`")
+    sleep(3)
+    await typew.edit("`orang Palembang nih bang:)..`")
+    sleep(2)
+    await typew.edit("`Saya tidak cantik, Tapi kalo jadi cantiknya kamu sabi kali ya...anjayy srepet!`")
+# Create by myself @localheart
+
+
 @register(outgoing=True, pattern='^.papoy(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
