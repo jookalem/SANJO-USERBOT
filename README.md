@@ -35,7 +35,7 @@
 * **Gcast alay bego!** 
 
 <h3 align="center">REPO DIOR-UBOT DIBUAT KARENA FATUR SAYANG MANDA!</h3>
-<img src="https://telegra.ph/file/8733bf00b7bf85de6b97f.jpg">
+<img src="https://telegra.ph/file/1e07e251f96184b78a3c3.jpg">
 
 ## INFORMASI LANJUTAN:
 <a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/GROUP%20DIOR%20SPAM%20BOT-blue?style=flat&logo=Telegram" width="250" height="40.100" />
