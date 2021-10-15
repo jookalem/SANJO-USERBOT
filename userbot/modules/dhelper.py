@@ -13,8 +13,8 @@ async def usit(e):
     await e.edit(
         f"**Hai {DEFAULTUSER} Kalau Anda Tidak Tau Perintah Untuk Memerintah Ku Ketik** `.helpme` Atau Bisa `.help` atau Minta Bantuan Ke:\n"
         "\n[FATUR](t.me/uurfavboys1)"
-        "\n\n[SUPPORT](https://t.me/MBsokin)"
-        "\n\n[SPAM/HELP](https://t.me/diorspambot)")
+        "\n\n[SUPPORT](https://t.me/diorplayingwords)"
+        "\n\n[SPAM/HELP](https://t.me/fandasupport)")
 
 
 @register(outgoing=True, pattern="^.rvars$")
