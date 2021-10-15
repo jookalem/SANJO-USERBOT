@@ -92,7 +92,7 @@ async def redis(pong):
 @register(outgoing=True, pattern="^Speed$")
 async def speedtst(spd):
     """ For .speed command, use SpeedTest to check server speeds. """
-    await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Mohon Tunggu...✨`")
+    await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Sabar nyet...`")
     test = Speedtest()
 
     test.get_best_server()
