@@ -57,7 +57,7 @@ async def _(diorbot):
         return await diorbot.edit(NO_ADMIN)
     new_rights = ChatAdminRights(invite_users=True)
     try:
-        await diorbot.client(stopvc(await get_call(rambot)))
+        await diorbot.client(stopvc(await get_call(diorbot)))
         await diorbot.edit("`OBROLAN SUARA DIHENTIKAN, TYPING BE NGENTOT...`")
     except Exception as ex:
         await diorbot.edit(f"`{str(ex)}`")
