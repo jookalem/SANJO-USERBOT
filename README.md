@@ -18,7 +18,7 @@
 <a href="https://www.instagram.com/fatur.285?=nametag"><img src="https://img.shields.io/badge/INSTAGRAM-GA%20FOLLOW%20GUA%20INJAK%20LU-blue.svg?style=for-the-badge&logo=Instagram"></a>
 
 
-## REPO MILIK:
+## REPO PUNYA SI:
 [<img src="https://telegra.ph/file/c15cced59c474a33cb9bb.jpg">](https://t.me/uurfavboys1)
   
   
