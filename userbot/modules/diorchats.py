@@ -120,7 +120,7 @@ async def kickme(leave):
                      "╬═╬ \n"
                      "╬═╬ \n"
                      "╬═╬ \n"
-                     "╬═╬ AKU PERGI YA NGENTOT, BABAY! \n"
+                     "╬═╬ AKU PERGI YA NGENTOT, PAPAY ANAK ANJING! \n"
                      "╬═╬☻/ \n"
                      "╬═╬/▌ \n"
                      "╬═╬/ \\ \n")
