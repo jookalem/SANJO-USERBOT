@@ -56,7 +56,7 @@ async def get_readable_time(seconds: int) -> str:
 @register(outgoing=True, pattern=r"^\.spc")
 async def psu(event):
     uname = platform.uname()
-    softw = "**Informasi Sistem**\n"
+    softw = "**Sistem**\n"
     softw += f"`Sistem   : {uname.system}`\n"
     softw += f"`Rilis    : {uname.release}`\n"
     softw += f"`Versi    : {uname.version}`\n"
@@ -66,7 +66,7 @@ async def psu(event):
     bt = datetime.fromtimestamp(boot_time_timestamp)
     softw += f"`Waktu Hidup: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
     # CPU Cores
-    cpuu = "**Informasi CPU**\n"
+    cpuu = "**CPU**\n"
     cpuu += "`Physical cores   : " + \
         str(psutil.cpu_count(logical=False)) + "`\n"
     cpuu += "`Total cores      : " + \
@@ -159,9 +159,9 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**☛**DIOR-UBOT Versi:** \n "
+            "**DIOR-UBOT Versi:** \n "
             f"{verout}"
-            "\n**☛**Revisi:**\n "
+            "\n**Revisi:**\n "
             f"{revout}"
         )
     else:
@@ -222,7 +222,7 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`Kenalin seleb...`")
+    await alive.edit("`Kenalin Orang Ganteng...`")
     await asyncio.sleep(1)
     await alive.edit("⚡")
     await asyncio.sleep(3)
@@ -304,13 +304,13 @@ async def amireallyalive(alive):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`Perkenalan diri...⭐`")
+    await alive.edit("`Perkenalan diri...`")
     await asyncio.sleep(1)
-    await alive.edit("✨")
+    await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
         f"**✠╼━━━━━━━━━━━━━━✠ ** \n"
-        f"          [{𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧}](https://github.com/DIORrios285/DIOR-UBOT) \n"
+        f"**          ⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡** \n"
         f"**✠╼━━━━━━━━━━━━━━✠** \n"
         f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
         f"┣|• `🤴 Majikan  :`{DEFAULTUSER} \n"
