@@ -51,11 +51,19 @@
 <br>
 </p>
 
-## Credit
-TERIMAKASIH UNTUK
-*   [FATUR](https://github.com/DIORrios285) - ⚡DIOR-UBOT⚡
-*   [RAMA](https://github.com/ramadhani892) - RAM-UBOT
-*   [VICKY](https://t.me/vckyouubitch) - ⚡Geez-Userbot⚡
-*   [KOALA](https://t.me/manusiarakitann) - KAMPANG BOT
-*   [TEAMULTROID](https://github.com/TeamUltroid) - ULTROID
-*    DAN MASIH BANYAK LAGI DAH!
+
+details>
+  <summary><b>© Credits</b></summary>
+
+
+  **TERIMAKASIH BANYAK BUAT**
+
+*   [FATUR](https://github.com/DIORrios285)    Fanda - Project
+*   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
+*   [X_iMFiNe](https://github.com/ximfine/xBot-Remix)    XBOT-REMIX
+*   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
+*   [RaphielGang](https://github.com/RaphielGang)    Telegram - Paperplane
+*   [AvinashReddy3108](https://github.com/AvinashReddy3108)    PaperplaneExtended
+*   [TeamUserge](https://github.com/UsergeTeam/Userge)    Userge
+*   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
+*   DAN BANYAK LAGI DAH
