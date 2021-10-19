@@ -260,15 +260,15 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤㅤㅤ ⚡F A N D A - ＰＲＯＪＥＣＴ⚡**\n"
-        f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)             ㅤ ║\n"
-        f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
-        f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
-        f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
-        f"╟⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
-        f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
-        f"╚══════════╬════╬══════════╝ \n"
+        f"**ㅤㅤㅤ⚡F A N D A - ＰＲＯＪＥＣＴ⚡**\n"
+        f"╔════════╬════╬══════════╗ \n"
+        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)               ║\n"
+        f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10          ║\n"
+        f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                  ║\n"
+        f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ       ║\n"
+        f"╟⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤ ║\n"
+        f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤ  ㅤ  ║\n"
+        f"╚════════╬════╬══════════╝ \n"
         f"🔰 : [𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧](https://github.com/DIORrios285/DIOR-UBOT)\n👥 : [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport)\n🤴 : [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)\n"
     )
     if ALIVE_LOGO:
