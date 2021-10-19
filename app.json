@@ -1,6 +1,6 @@
 {
   "name": "DIOR-UBOT",
-  "description": "[DIOR-UBOT] NGEDEP CUMAN BUAT GCAST NGENTOT ALAY GOBLOK!.",
+  "description": "[DIOR-UBOT] DEPLOY CUMAN BUAT GCAST NGENTOT ALAY GOBLOK!.",
   "logo": "https://telegra.ph/file/5e0c4d6ff521d55d164e7.jpg",
   "keywords": [
     "telegram",
@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/DIORrios285/DIOR-UBOT",
   "telegram": "https://t.me/uurfavboys1",
-  "success_url": "https://t.me/MBsokin",
+  "success_url": "https://t.me/fandasupport",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -28,7 +28,7 @@
       "required": true
      },
      "STRING_SESSION": {
-      "description": "Ambil String Session di @diorspambot dengan cara ketik #string.",
+      "description": "Ambil String Session di @fandasupport dengan cara ketik #string.",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -100,7 +100,7 @@
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Untuk menampilkam mode tombol .rhelp, Ambil token di @BotFather",
+      "description": "Untuk menampilkam mode tombol .helpme, Ambil token di @BotFather",
       "required": true
     },
     "BOT_USERNAME": {
