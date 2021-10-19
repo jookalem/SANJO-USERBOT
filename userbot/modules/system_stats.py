@@ -1,4 +1,4 @@
-# System Stats RAM-UBOT
+# System Stats DIOR-UBOT
 
 import asyncio
 from asyncio import create_subprocess_exec as asyncrunapp
@@ -310,7 +310,7 @@ async def amireallyalive(alive):
     await asyncio.sleep(3)
     output = (
         f"**✠╼━━━━━━━━━━━━━━✠ ** \n"
-        f"          [{⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡}](https://github.com/DIORrios285/DIOR-UBOT) \n"
+        f"          [{𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧}](https://github.com/DIORrios285/DIOR-UBOT) \n"
         f"**✠╼━━━━━━━━━━━━━━✠** \n"
         f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
         f"┣|• `🤴 Majikan  :`{DEFAULTUSER} \n"
