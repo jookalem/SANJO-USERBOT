@@ -52,10 +52,7 @@
 </p>
 
 
-details>
-  <summary><b>© Credits</b></summary>
-
-
+ ## Credits
   **TERIMAKASIH BANYAK BUAT**
 
 *   [FATUR](https://github.com/DIORrios285)    Fanda - Project
