@@ -218,37 +218,29 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:dior|diorbot)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:falive)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`Kenalin Orang Ganteng...`")
-    await asyncio.sleep(1)
-    await alive.edit("⚡")
-    await asyncio.sleep(3)
     output = (
-        f"**     ۩  ⬚⃝⃟    {REPO_NAME} ⬚⃝⃟     ۩ ** \n"
-        f"\n__**{RAM_TEKS_KOSTUM}**__\n"
-        f"**━━━━━━━━━━━━━━━━━━━━**\n"
-        f"**🤴 TUAN** \n"
-        f" ➥ `{DEFAULTUSER}` \n"
-        f"**👩‍💻 Username** \n"
-        f" ➥ `@{user.username}` \n"
-        f"╭╼━━━━━━━━━━━━━━━━╮\n"
-        f"┣• `⚡ Telethon :`Ver {version.__version__} \n"
-        f"┣• `🐍 Python   :`Ver {python_version()} \n"
-        f"┣• `🤖 Bot Ver  :`7.0 \n"
-        f"┣• `✨ Modules  :`{len(modules)} \n"
-        f"╰╼━━━━━━━━━━━━━━━━╯\n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE}) || [{REPO_NAME}](https://github.com/DIORrios285/DIOR-UBOT) || [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) \n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
+        f"\n__**{GEEZ_TEKS_KUSTOM}**__\n"
+        f"**╭───────────────────**\n"
+        f"**├[• 🧑‍💻 Fanda Owner** \n"
+        f"├[•   : `{DEFAULTUSER}` \n"
+        f"**├[• 👁️‍🗨️ Username** \n"
+        f"├[•   : `@{user.username}` \n"
+        f"├──────────────────\n"
+        f"├[•⚙️ `Telethon :`Ver {version.__version__} \n"
+        f"├[•🐍 `Python   :`Ver {python_version()} \n"
+        f"├[•🤖 `Bot Ver  :`{BOT_VER} \n"
+        f"├[•📂 `Modules  :`{len(modules)} \n"
+        f"╰─────────────────")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(50)
+            await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
             await alive.edit(
@@ -263,29 +255,28 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:dalive|ron)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:dior)\s?(.)?")
 async def amireallyalive(alive):
-    user = await bot.get_me()
+    await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**╭╼━━━━━━━━━━━━━━━━╮**\n"
-        f"       **♕  ⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡  ♕** \n"
-        f"**╰╼━━━━━━━━━━━━━━━━╯**\n"
-        f"❃ **Tuan**             ➥ `{DEFAULTUSER}` \n"
-        f"❃ **Username**    ➥ `@{user.username}` \n"
-        f"❃ **Telethon**       ➥ `Versi {version.__version__}` \n"
-        f"❃ **Python**          ➥ `Versi {python_version()}` \n"
-        f"❃ **Versi Bot**      ➥ `7.0` \n"
-        f"❃ **Modul**           ➥ `{len(modules)}` \n\n"
-        f"**━━━━━━━━━━━━━━━━━━━━━━━━**\n"
-        f"[{REPO_NAME}](https://github.com/DIORrios285/DIOR-UBOT) || [𝗚𝗥𝗢𝗨𝗣]({GROUP_LINK}) || [𝗖𝗛𝗔𝗡𝗡𝗘𝗟]({CHANNEL_LINK}) || [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠]({IG_ALIVE})\n"
-        f"**━━━━━━━━━━━━━━━━━━━━━━━━ **")
+        f"**ㅤㅤㅤㅤ ⚡F A N D A - ＰＲＯＪＥＣＴ⚡**\n"
+        f"╔══════════╬════╬══════════╗ \n"
+        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)             ㅤ ║\n"
+        f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10            ║\n"
+        f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
+        f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
+        f"╟⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
+        f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
+        f"╚══════════╬════╬══════════╝ \n"
+        f"🔰 : [𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧](https://github.com/DIORrios285/DIOR-UBOT)\n👥 : [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport)\n🤴 : [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)\n"
+    )
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(50)
+            await asyncio.sleep(200)
             await msg.delete()
         except BaseException:
             await alive.edit(
@@ -301,37 +292,39 @@ async def amireallyalive(alive):
 
 
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
-async def amireallyalive(alive):
+async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("`Perkenalan diri...`")
-    await asyncio.sleep(1)
+    await alive.edit("__Reconnect.__")
+    await alive.edit("__Reconnect..__")
+    await alive.edit("__Reconnect.__")
+    await alive.edit("__Reconnect..__")
+    await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting..__")
+    await alive.edit("__Connecting...__")
     await alive.edit("⚡")
-    await asyncio.sleep(3)
+    await asyncio.sleep(2)
     output = (
-        f"**✠╼━━━━━━━━━━━━━━✠ ** \n"
-        f"**          ⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡** \n"
-        f"**✠╼━━━━━━━━━━━━━━✠** \n"
-        f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
-        f"┣|• `🤴 Majikan  :`{DEFAULTUSER} \n"
-        f"┣|• `💳 Username :`@{user.username} \n"
-        f"┣|• `🤖 Telethon :`Ver {version.__version__} \n"
-        f"┣|• `🐍 Python   :`Ver {python_version()} \n"
-        f"╰✠╼━━━━━━❖━━━━━━━✠╯ \n"
-        f"╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
-        f"┣|• `Branch      :`DIOR-UBOT \n"
-        f"┣|• `Bot Ver     :`7.0 \n"
-        f"┣|• `Modules     :`{len(modules)} Modules \n"
-        f"╰✠╼━━━━━━❖━━━━━━━✠╯ \n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-        f"[𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK}) || [𝗖𝗛𝗔𝗡𝗡𝗘𝗟]({CHANNEL_LINK}) \n"
-        f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰")
+        f"╭═──────╼═⌘═╾───────═\n"
+        f"┃⚡F A N D A - ＰＲＯＪＥＣＴ⚡\n"
+        f"╰═─────╼══⌘══╾─────═ \n"
+        f" ❍ `Name     :` {DEFAULTUSER} \n"
+        f" ❍ `Username :` @{user.username} \n"
+        f" ❍ `Telethon :` Ver {version.__version__} \n"
+        f" ❍ `Python   :` Ver {python_version()} \n"
+        f" ❍ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
+        f" ❍ `Bot Ver  :` {BOT_VER} \n"
+        f" ❍ `Modules  :` {len(modules)} Modules \n"
+        f"╭═───────╼⌘╾───────═ \n"
+        f"┃[𝗥𝗲𝗽𝗼](https://github.com/DIORrios285/DIOR-UBOT)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fandasupport)  |  "
+        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/fatur.285)\n"
+        f"╰═──────╼═⌘═╾───────═")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(50)
+            await asyncio.sleep(500)
             await msg.delete()
         except BaseException:
             await alive.edit(
@@ -372,15 +365,15 @@ CMD_HELP.update({
 \n\n`.botver`\
 \nUsage: Shows the userbot version.\
 \n\n`.pip` <module(s)>\
-\nUsage: Does a search of pip modules(s).\
+\nUsage: Melakukan pencarian modul pip(s).\
 \n\n`.start`\
-\nUsage: Type .start to see whether your bot is working or not.\
+\nUsage: Ketik .start untuk melihat apakah bot Anda berfungsi atau tidak.\
 \n\n`.aliveu` <text>\
-\nUsage: Changes the 'user' in alive to the text you want.\
+\nUsage: Ubah 'user' menjadi teks yang Anda inginkan.\
 \n\n`.resetalive`\
-\nUsage: Resets the user to default.\
+\nUsage: Menyetel ulang pengguna ke default.\
 \n\n`.db`\
-\nUsage:Shows database related info.\
+\nUsage:Menampilkan info terkait basis data.\
 \n\n.`.spc`\
-\nUsage:Show system specification."
+\nUsage:Tampilkan spesifikasi sistem."
 })
