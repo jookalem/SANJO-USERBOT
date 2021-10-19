@@ -86,16 +86,16 @@ async def typewriter(typew):
     await typew.edit("`Wah, Ada war gais...`")
     sleep(2)
     await typew.edit("`Tapi, kalo diliat-liat kesannya lebih ke stand up komedi😅`")
-    sleep(2)
+    sleep(3)
     await typew.edit("`eh iya, Lu kan badut🤡`")
-    sleep(2)
+    sleep(3)
     await typew.edit("`Disuruh war malah cerpen`")
-    sleep(2)
+    sleep(3)
     await typew.edit("`kebanyakan baca dongeng ya gini.`")
-    sleep(2)
+    sleep(3)
     await typew.edit("`Keras kaga dongo iya,kek badut ulang tahun yg kaga di gaji`")
     sleep(3)
-    await typew.edit("`Bocah goblok yang goblok goblok banget seperti rucika mengalir sampai jauh, Lu lebih goblok lagi gobloknya keturunan sampai lahir!`")
+    await typew.edit("`Bocah goblok yang goblok goblok banget seperti rucika mengalir sampai jauh, Lu lebih goblok lagi goblok gobloknya keturunan sampai lu lahir!`")
 
 CMD_HELP.update({
     "diorbot":
