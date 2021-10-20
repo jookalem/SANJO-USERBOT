@@ -1,10 +1,4 @@
-# Copyright (C) 2019 The Raphielscape Company LLC.
-#
-# Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License.
-#
-""" Userbot module for getting information about the server. """
-
+# System Stats DIOR-UBOT
 
 import asyncio
 from asyncio import create_subprocess_exec as asyncrunapp
@@ -12,13 +6,15 @@ from asyncio.subprocess import PIPE as asyncPIPE
 from platform import python_version, uname
 from shutil import which
 from os import remove
+from telethon import version
 from telethon import __version__, version
 import platform
 import sys
 import time
 from datetime import datetime
 import psutil
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, GEEZ_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot
+
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, RAM_TEKS_KOSTUM, IG_ALIVE, REPO_NAME, GROUP_LINK, StartTime, bot
 from userbot.events import register
 
 
@@ -48,7 +44,6 @@ async def get_readable_time(seconds: int) -> str:
 
     for x in range(len(time_list)):
         time_list[x] = str(time_list[x]) + time_suffix_list[x]
-
     if len(time_list) == 4:
         up_time += time_list.pop() + ", "
 
@@ -150,28 +145,20 @@ async def bot_ver(event):
             stderr=asyncPIPE,
         )
         stdout, stderr = await ver.communicate()
-        str(stdout.decode().strip()) + str(stderr.decode().strip())
-
-        rev = await asyncrunapp(
-            "git",
-            "rev-list",
-            "--all",
-            "--count",
-            stdout=asyncPIPE,
-            stderr=asyncPIPE,
-        )
-        stdout, stderr = await rev.communicate()
-        revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
+        verout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**⚜-**⚡DIOR-UBOT⚡ Versi:** \n "
-            f"heads/dior-ubot-0-x634i7u1"
-            "\n**⚜-**Revisi:**\n "
-            f"{revout}"
+            "`╭━━━━━━━━━━━━━━━━━━━━╮\n "
+            "` Userbot Version: \n "
+            f"{verout}"
+            "` \n"
+            "   Revision: "
+            f"{revout}🇲🇨\n"
+            "╰━━━━━━━━━━━━━━━━━━━━╯ "
         )
     else:
         await event.edit(
-            "Sayang sekali anda tidak memiliki git, Anda Menjalankan Bot - 'v1.beta.4'!"
+            "Shame that you don't have git, you're running - 'v1.beta.4' anyway!"
         )
 
 
@@ -227,12 +214,16 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
+    await alive.edit("`Kenalin seleb...`")
+    await asyncio.sleep(1)
+    await alive.edit("⚡")
+    await asyncio.sleep(3)
     output = (
-        f"\n__**{RAM_TEKS_KOSTUM}**__\n"
+        f"\n__**{RAM_TEKS_KUSTOM}**__\n"
         f"**╭───────────────────**\n"
         f"**├[• 🤴 Fanda Owner** \n"
         f"├[•   : `{DEFAULTUSER}` \n"
-        f"**├[• 🔎 Username** \n"
+        f"**├[• 👁️‍🗨️ Username** \n"
         f"├[•   : `@{user.username}` \n"
         f"├──────────────────\n"
         f"├[•⚙️ `Telethon :`Ver {version.__version__} \n"
@@ -245,7 +236,7 @@ async def amireallyalive(alive):
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(200)
+            await asyncio.sleep(50)
             await msg.delete()
         except BaseException:
             await alive.edit(
@@ -260,28 +251,28 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.(?:dior)\s?(.)?")
+@register(outgoing=True, pattern=r"^\.(?:dalive)\s?(.)?")
 async def amireallyalive(alive):
-    await bot.get_me()
+    user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤㅤㅤ ⚡F A N D A - ＰＲＯＪＥＣＴ⚡**\n"
+        f"**ㅤㅤㅤㅤ ⚡FANDA - PROJECT⚡**\n"
         f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[FANDA](t.me/uurfavboys1)             ㅤ ║\n"
-        f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Android 10            ║\n"
+        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)             ㅤ ║\n"
+        f"╟⟩⟩ 💻 • `ꜱʏꜱᴛᴇᴍ.   :`Android 10            ║\n"
         f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
         f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
         f"╟⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
         f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
         f"╚══════════╬════╬══════════╝ \n"
-        f"🔰 : [𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT)\n👥 : [SUPPORT](t.me/fandasupport)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)\n"
+        f"🔰 : [𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT)\n👥 : [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)\n"
     )
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(200)
+            await asyncio.sleep(50)
             await msg.delete()
         except BaseException:
             await alive.edit(
@@ -297,16 +288,16 @@ async def amireallyalive(alive):
 
 
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
-async def redis(alive):
+async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("__Hubungkan kembali.__")
-    await alive.edit("__Hubungkan kembali...__")
-    await alive.edit("__Hubungkan kembali.__")
-    await alive.edit("__Hubungkan kembali..__")
-    await alive.edit("__Menghubungkan...__")
-    await alive.edit("__Menghubungkan..__")
-    await alive.edit("__Menghubungkan...__")
+    await alive.edit("__Reconnect.__")
+    await alive.edit("__Reconnect..__")
+    await alive.edit("__Reconnect.__")
+    await alive.edit("__Reconnect..__")
+    await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting..__")
+    await alive.edit("__Connecting...__")
     await alive.edit("⚡")
     await asyncio.sleep(2)
     output = (
@@ -329,7 +320,7 @@ async def redis(alive):
             logo = ALIVE_LOGO
             await alive.delete()
             msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(500)
+            await asyncio.sleep(50)
             await msg.delete()
         except BaseException:
             await alive.edit(
@@ -344,49 +335,41 @@ async def redis(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern="^.aliveu")
+@register(outgoing=True, pattern=r"^\.aliveu")
 async def amireallyaliveuser(username):
-    """ For .aliveu command, change the username in the .alive command. """
     message = username.text
-    output = ".aliveu [new username] tidak boleh kosong"
-    if not (message == ".aliveu" and message[7:8] != " "):
+    output = ".aliveu [new user without brackets] nor can it be empty"
+    if message != ".aliveu" and message[7:8] == " ":
         newuser = message[8:]
-        global DEFAULTUSER  # global statement
-        DEFAULTUSER = username
+        global DEFAULTUSER
+        DEFAULTUSER = newuser
         output = "Successfully changed user to " + newuser + "!"
     await username.edit("`" f"{output}" "`")
 
 
 @register(outgoing=True, pattern=r"^\.resetalive$")
 async def amireallyalivereset(ureset):
-    global DEFAULTUSER  # global statement
+    global DEFAULTUSER
     DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
     await ureset.edit("`" "Successfully reset user for alive!" "`")
 
 
 CMD_HELP.update({
-    "system":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
-    "\n↳ : Shows system information using neofetch."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.db`"
-    "\n↳ : Shows database related info."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spc`"
-    "\n↳ : Show system specification."
+    "sistem":
+    "`.sysd`\
+\nUsage: Shows system information using neofetch.\
+\n\n`.botver`\
+\nUsage: Shows the userbot version.\
+\n\n`.pip` <module(s)>\
+\nUsage: Does a search of pip modules(s).\
+\n\n`.start`\
+\nUsage: Type .start to see whether your bot is working or not.\
+\n\n`.aliveu` <text>\
+\nUsage: Changes the 'user' in alive to the text you want.\
+\n\n`.resetalive`\
+\nUsage: Resets the user to default.\
+\n\n`.db`\
+\nUsage:Shows database related info.\
+\n\n.`.spc`\
+\nUsage:Show system specification."
 })
-CMD_HELP.update({
-    "alive":
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.geezalive`"
-    "\n↳ : To see whether your bot is working or not."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
-    "\n↳ : Changes the 'user' in alive to the text you want."
-    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.restalive`"
-    "\n↳ : Resets the user to default."
-})
-CMD_HELP.update(
-    {
-        "botversion":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.botver`"
-        "\n↳ : Shows the userbot version."
-        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pip` <module(s)>"
-        "\n↳ : Does a search of pip modules(s)."
-    })
