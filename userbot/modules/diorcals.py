@@ -22,7 +22,7 @@ NO_ADMIN = "`LU BUKAN ADMIN NGENTOT!!`"
 
 async def get_call(event):
     rambot = await event.client(getchat(event.chat_id))
-    rama = await event.client(getvc(rambot.full_chat.call))
+    rama = await event.client(getvc(diorbot.full_chat.call))
     return rama.call
 
 
@@ -31,7 +31,7 @@ def user_list(l, n):
         yield l[i: i + n]
 
 
-@register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
+@register(outgoing=True, pattern=r"^\.bukainos$", groups_only=True)
 async def _(rambot):
     chat = await rambot.get_chat()
     admin = chat.admin_rights
@@ -47,7 +47,7 @@ async def _(rambot):
         await diorbot.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
+@register(outgoing=True, pattern=r"^\.matiinos$", groups_only=True)
 async def _(diorbot):
     chat = await diorbot.get_chat()
     admin = chat.admin_rights
@@ -63,7 +63,7 @@ async def _(diorbot):
         await diorbot.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
+@register(outgoing=True, pattern=r"^\.naiklusemua", groups_only=True)
 async def _(diorbot):
     await diorbot.edit("`Memulai Invite member group...`")
     users = []
@@ -83,11 +83,11 @@ async def _(diorbot):
 
 CMD_HELP.update(
     {
-        "ramcalls": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startvc`\
+        "ramcalls": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bukainos`\
          \n↳ : Memulai Obrolan Suara dalam Group.\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stopvc`\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.matiinos`\
          \n↳ : `Menghentikan Obrolan Suara Pada Group.`\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcinvite`\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.naiklusemua`\
          \n↳ : Invite semua member yang berada di group. (Kadang bisa kadang kaga)."
     }
 )
