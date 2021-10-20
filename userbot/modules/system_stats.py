@@ -1,4 +1,10 @@
-# System Stats DIOR-UBOT
+# Copyright (C) 2019 The Raphielscape Company LLC.
+#
+# Licensed under the Raphielscape Public License, Version 1.d (the "License");
+# you may not use this file except in compliance with the License.
+#
+""" Userbot module for getting information about the server. """
+
 
 import asyncio
 from asyncio import create_subprocess_exec as asyncrunapp
@@ -6,15 +12,13 @@ from asyncio.subprocess import PIPE as asyncPIPE
 from platform import python_version, uname
 from shutil import which
 from os import remove
-from telethon import version
 from telethon import __version__, version
 import platform
 import sys
 import time
 from datetime import datetime
 import psutil
-
-from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, RAM_TEKS_KOSTUM, IG_ALIVE, REPO_NAME, GROUP_LINK, StartTime, bot
+from userbot import ALIVE_LOGO, ALIVE_NAME, BOT_VER, CMD_HELP, GEEZ_TEKS_KUSTOM, StartTime, UPSTREAM_REPO_BRANCH, bot
 from userbot.events import register
 
 
@@ -44,6 +48,7 @@ async def get_readable_time(seconds: int) -> str:
 
     for x in range(len(time_list)):
         time_list[x] = str(time_list[x]) + time_suffix_list[x]
+
     if len(time_list) == 4:
         up_time += time_list.pop() + ", "
 
@@ -56,7 +61,7 @@ async def get_readable_time(seconds: int) -> str:
 @register(outgoing=True, pattern=r"^\.spc")
 async def psu(event):
     uname = platform.uname()
-    softw = "**Sistem**\n"
+    softw = "**Informasi Sistem**\n"
     softw += f"`Sistem   : {uname.system}`\n"
     softw += f"`Rilis    : {uname.release}`\n"
     softw += f"`Versi    : {uname.version}`\n"
@@ -66,7 +71,7 @@ async def psu(event):
     bt = datetime.fromtimestamp(boot_time_timestamp)
     softw += f"`Waktu Hidup: {bt.day}/{bt.month}/{bt.year}  {bt.hour}:{bt.minute}:{bt.second}`\n"
     # CPU Cores
-    cpuu = "**CPU**\n"
+    cpuu = "**Informasi CPU**\n"
     cpuu += "`Physical cores   : " + \
         str(psutil.cpu_count(logical=False)) + "`\n"
     cpuu += "`Total cores      : " + \
@@ -145,7 +150,7 @@ async def bot_ver(event):
             stderr=asyncPIPE,
         )
         stdout, stderr = await ver.communicate()
-        verout = str(stdout.decode().strip()) + str(stderr.decode().strip())
+        str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         rev = await asyncrunapp(
             "git",
@@ -159,9 +164,9 @@ async def bot_ver(event):
         revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "**DIOR-UBOT Versi:** \n "
-            f"{verout}"
-            "\n**Revisi:**\n "
+            "**⚜-**⚡DIOR-UBOT⚡ Versi:** \n "
+            f"heads/dior-ubot-0-x634i7u1"
+            "\n**⚜-**Revisi:**\n "
             f"{revout}"
         )
     else:
@@ -225,9 +230,9 @@ async def amireallyalive(alive):
     output = (
         f"\n__**{GEEZ_TEKS_KUSTOM}**__\n"
         f"**╭───────────────────**\n"
-        f"**├[• 🧑‍💻 Fanda Owner** \n"
+        f"**├[• 🤴 Fanda Owner** \n"
         f"├[•   : `{DEFAULTUSER}` \n"
-        f"**├[• 👁️‍🗨️ Username** \n"
+        f"**├[• 🔎 Username** \n"
         f"├[•   : `@{user.username}` \n"
         f"├──────────────────\n"
         f"├[•⚙️ `Telethon :`Ver {version.__version__} \n"
@@ -260,16 +265,16 @@ async def amireallyalive(alive):
     await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤㅤ⚡F A N D A - ＰＲＯＪＥＣＴ⚡**\n"
-        f"╔════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)               ║\n"
-        f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Ubuntu 20.10          ║\n"
-        f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                  ║\n"
-        f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ       ║\n"
-        f"╟⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤ ║\n"
-        f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤ  ㅤ  ║\n"
-        f"╚════════╬════╬══════════╝ \n"
-        f"🔰 : [𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧](https://github.com/DIORrios285/DIOR-UBOT)\n👥 : [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport)\n🤴 : [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)\n"
+        f"**ㅤㅤㅤㅤ ⚡F A N D A - ＰＲＯＪＥＣＴ⚡**\n"
+        f"╔══════════╬════╬══════════╗ \n"
+        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[FANDA](t.me/uurfavboys1)             ㅤ ║\n"
+        f"╟⟩⟩ 🖥️ • `ꜱʏꜱᴛᴇᴍ.   :`Android 10            ║\n"
+        f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
+        f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
+        f"╟⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
+        f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
+        f"╚══════════╬════╬══════════╝ \n"
+        f"🔰 : [𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT)\n👥 : [SUPPORT](t.me/fandasupport)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)\n"
     )
     if ALIVE_LOGO:
         try:
@@ -295,18 +300,18 @@ async def amireallyalive(alive):
 async def redis(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("__Reconnect.__")
-    await alive.edit("__Reconnect..__")
-    await alive.edit("__Reconnect.__")
-    await alive.edit("__Reconnect..__")
-    await alive.edit("__Connecting...__")
-    await alive.edit("__Connecting..__")
-    await alive.edit("__Connecting...__")
+    await alive.edit("__Hubungkan kembali.__")
+    await alive.edit("__Hubungkan kembali...__")
+    await alive.edit("__Hubungkan kembali.__")
+    await alive.edit("__Hubungkan kembali..__")
+    await alive.edit("__Menghubungkan...__")
+    await alive.edit("__Menghubungkan..__")
+    await alive.edit("__Menghubungkan...__")
     await alive.edit("⚡")
     await asyncio.sleep(2)
     output = (
         f"╭═──────╼═⌘═╾───────═\n"
-        f"┃⚡F A N D A - ＰＲＯＪＥＣＴ⚡\n"
+        f"┃⚡FANDA - PROJECT⚡\n"
         f"╰═─────╼══⌘══╾─────═ \n"
         f" ❍ `Name     :` {DEFAULTUSER} \n"
         f" ❍ `Username :` @{user.username} \n"
@@ -316,7 +321,7 @@ async def redis(alive):
         f" ❍ `Bot Ver  :` {BOT_VER} \n"
         f" ❍ `Modules  :` {len(modules)} Modules \n"
         f"╭═───────╼⌘╾───────═ \n"
-        f"┃[𝗥𝗲𝗽𝗼](https://github.com/DIORrios285/DIOR-UBOT)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fandasupport)  |  "
+        f"┃[𝗥𝗲𝗽𝗼](https://github.com/DIORrios285)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fandasupport)  |  "
         f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/fatur.285)\n"
         f"╰═──────╼═⌘═╾───────═")
     if ALIVE_LOGO:
@@ -339,41 +344,49 @@ async def redis(alive):
         await alive.delete()
 
 
-@register(outgoing=True, pattern=r"^\.aliveu")
+@register(outgoing=True, pattern="^.aliveu")
 async def amireallyaliveuser(username):
+    """ For .aliveu command, change the username in the .alive command. """
     message = username.text
-    output = ".aliveu [new user without brackets] nor can it be empty"
-    if message != ".aliveu" and message[7:8] == " ":
+    output = ".aliveu [new username] tidak boleh kosong"
+    if not (message == ".aliveu" and message[7:8] != " "):
         newuser = message[8:]
-        global DEFAULTUSER
-        DEFAULTUSER = newuser
+        global DEFAULTUSER  # global statement
+        DEFAULTUSER = username
         output = "Successfully changed user to " + newuser + "!"
     await username.edit("`" f"{output}" "`")
 
 
 @register(outgoing=True, pattern=r"^\.resetalive$")
 async def amireallyalivereset(ureset):
-    global DEFAULTUSER
+    global DEFAULTUSER  # global statement
     DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
     await ureset.edit("`" "Successfully reset user for alive!" "`")
 
 
 CMD_HELP.update({
-    "sistem":
-    "`.sysd`\
-\nUsage: Shows system information using neofetch.\
-\n\n`.botver`\
-\nUsage: Shows the userbot version.\
-\n\n`.pip` <module(s)>\
-\nUsage: Melakukan pencarian modul pip(s).\
-\n\n`.start`\
-\nUsage: Ketik .start untuk melihat apakah bot Anda berfungsi atau tidak.\
-\n\n`.aliveu` <text>\
-\nUsage: Ubah 'user' menjadi teks yang Anda inginkan.\
-\n\n`.resetalive`\
-\nUsage: Menyetel ulang pengguna ke default.\
-\n\n`.db`\
-\nUsage:Menampilkan info terkait basis data.\
-\n\n.`.spc`\
-\nUsage:Tampilkan spesifikasi sistem."
+    "system":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.sysd`"
+    "\n↳ : Shows system information using neofetch."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.db`"
+    "\n↳ : Shows database related info."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.spc`"
+    "\n↳ : Show system specification."
 })
+CMD_HELP.update({
+    "alive":
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.alive` or `.on` or `.geezalive`"
+    "\n↳ : To see whether your bot is working or not."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.aliveu` <text>"
+    "\n↳ : Changes the 'user' in alive to the text you want."
+    "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.restalive`"
+    "\n↳ : Resets the user to default."
+})
+CMD_HELP.update(
+    {
+        "botversion":
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.botver`"
+        "\n↳ : Shows the userbot version."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pip` <module(s)>"
+        "\n↳ : Does a search of pip modules(s)."
+    })
