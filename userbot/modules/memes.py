@@ -15,6 +15,37 @@ import random
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 # ============================================
 
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+async def _(event):
+
+    if event.fwd_from:
+
+        return
+
+    animation_interval = 3
+
+    animation_ttl = range(0, 103)
+
+    input_str = event.pattern_match.group(1)
+
+    if input_str == "motor":
+
+        await event.edit(input_str)
+
+        animation_chars = [
+
+            "Kalo gua punya motor",
+            "Gua tabrakin kaki lo pada satu satu",
+            "Liat aja nanti",
+            "Serius gua mah!"
+        ]
+
+        for i in animation_ttl:
+
+            await asyncio.sleep(animation_interval)
+
+            await event.edit(animation_chars[i % 103])
+
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 async def _(event):
@@ -29,7 +60,48 @@ async def _(event):
 
     input_str = event.pattern_match.group(1)
 
-    if input_str == "tol":
+    if input_str == "pensi":
+
+        await event.edit(input_str)
+
+        animation_chars = [
+
+            "Userbot sedang tidak baik-baik saja",
+            "Sepertinya gua harus pensi",
+            "Buat lo semua",
+            "NGENTOT!!!",
+            "Liat aja gua pensi nanti",
+            "Serius gua mah",
+            "Bye anjing",
+            "{ALIVE_NAME} Mau pensi",
+            "{ALIVE_NAME} Udah pensi",
+            "Tapi boong",
+            "Hahaha BANGSAT",
+            "Yatim kena prank",
+            "Yatim lo ya, bapak lo mana pea!"
+        ]
+
+        for i in animation_ttl:
+
+            await asyncio.sleep(animation_interval)
+
+            await event.edit(animation_chars[i % 103])
+
+
+@bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
+async def _(event):
+
+    if event.fwd_from:
+
+        return
+
+    animation_interval = 3
+
+    animation_ttl = range(0, 103)
+
+    input_str = event.pattern_match.group(1)
+
+    if input_str == "babi":
 
         await event.edit(input_str)
 
@@ -2985,12 +3057,16 @@ CMD_HELP.update({
     "memes":
     "`.eye`\
 \nUsage: Lihat Sendiri.\
+\n\n`.pensi`\
+\nusage: Pensi boongan\
 \n\n`.earth`\
 \nusage: Memutar Bumi 🌎🌎\
 \n\n`.bombs`\
 \nUsage: Bom Telegram🤣🤣\
 \n\n`.think`\
 \nUsage: hmmm berpikir\
+\n\n`.motor`\
+\nusage: Ga tau cek aja sendiri\
 \n\n`.gotm` atau `.gott`\
 \nUsage: dapatkan sucks🤣\
 \n\n`.snake`\
