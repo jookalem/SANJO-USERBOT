@@ -70,7 +70,7 @@ async def redis(pong):
     await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**NGENTOTTT!!**\n**KEKUATAN NGENTOTTT** : `%sms`\n**DURASI NGENTOTTT** : `{uptime}🕛`" % (duration))
+    await pong.edit(f"**NGENTOTTT!!**\n**KEKUATAN NGENTOT:** `%sms`\n**DURASI NGENTOT:** `{uptime}🕛`" % (duration))
 
 
 @register(outgoing=True, pattern="^Ping$")
@@ -84,9 +84,9 @@ async def redis(pong):
     await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"{REPO_NAME}!!\n"
-                    f"OWNER : {ALIVE_NAME}\n `%sms`\n"
-                    f"`{uptime}` \n" % (duration))
+    await pong.edit(f"{REPO_NAME}\n\n"
+                    f"OWNER: `{ALIVE_NAME}'\nSIGNAL: `%sms`\n"
+                    f"UPTIME: `{uptime}` \n" % (duration))
 
 
 @register(outgoing=True, pattern="^Speed$")
@@ -102,23 +102,23 @@ async def speedtst(spd):
     result = test.results.dict()
 
     await spd.edit("**Kecepatan Jaringan:\n**"
-                   "✧ **Dimulai Pada :** "
+                   "❍ **Dimulai Pada :** "
                    f"`{result['timestamp']}` \n"
                    f" **━━━━━━━━━━━━━━━━━**\n\n"
-                   "✧ **Download:** "
+                   "❍ **Download:** "
                    f"`{speed_convert(result['download'])}` \n"
-                   "✧ **Upload:** "
+                   "❍ **Upload:** "
                    f"`{speed_convert(result['upload'])}` \n"
-                   "✧ **Signal:** "
+                   "❍ **Signal:** "
                    f"`{result['ping']}` \n"
-                   "✧ **ISP:** "
+                   "❍ **ISP:** "
                    f"`{result['client']['isp']}` \n"
-                   f"✧ **BOT:** {REPO_NAME}")
+                   f"❍ **BOT:** {REPO_NAME}")
 
 
 def speed_convert(size):
     """
-    Hi human, you can't read bytes?
+    Hai manusia, Anda tidak bisa membaca byte?
     """
     power = 2**10
     zero = 0
@@ -135,7 +135,7 @@ async def pingme(pong):
     start = datetime.now()
     await pong.edit("PONG")
     await asyncio.sleep(1)
-    await pong.edit("✨")
+    await pong.edit("⚡")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
