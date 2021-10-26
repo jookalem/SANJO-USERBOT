@@ -2,33 +2,37 @@ from time import sleep
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^.fatur(?: |$)(.*)')
+@register(outgoing=True, pattern='^.dior(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Hai Perkenalkan Namaku Fatur`")
+    await typew.edit("`kenalin gua dior`")
     sleep(3)
-    await typew.edit("16 Tahun`")
+    await typew.edit("bocah tele gabut`")
     sleep(3)
-    await typew.edit("`Tinggal Di Kalimantan`")
+    await typew.edit("'pen meet ama gua, sokin kalimantan...`")
+    sleep(4)
+    await typew.edit("'gua sambut lo dengan hangat sehangat pejuh yg baru dikeluarin dari dalem kontol!'")
     sleep(2)
-    await typew.edit("**Saya tidak jago, Tapi saya tampan!**")
+    await typew.edit("**salam kenal yeh**")
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.manda(?: |$)(.*)')
+@register(outgoing=True, pattern='^.april(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`**pertama tama manda itu cantik**`")
+    await typew.edit("`pertama tama april itu cantik`")
     sleep(3)
-    await typew.edit("`**Kedua manda itu manis**`")
+    await typew.edit("`Kedua, april itu manis`")
     sleep(3)
-    await typew.edit("`**Manda punya fatur...lu ganggu disambit pala lu!**`")
+    await typew.edit("`april itu ngangenin...`")
     sleep(3)
-    await typew.edit("`**pada intinya fatur sayang banget sama manda**`")
+    await typew.edit("`april punya fatur...lu ganggu dibedel sama fatur!`")
+    sleep(3)
+    await typew.edit("`pada intinya fatur sayang banget sama april`")
     sleep(2)
-    await typew.edit("`**I LOVE YOU MANDA♥️**`")
+    await typew.edit("**ILY APRILIA ♥️**")
 # Create by myself @localheart
 
 
@@ -56,7 +60,7 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`Tinggal Di Kalimantan`")
     sleep(2)
-    await typew.edit("`Saya tidak cantik, Tapi kalo jadi cantiknya kamu sabi kali... Ajakin sleepcall dong bang🤣`")
+    await typew.edit("**Saya tidak cantik, Tapi kalo jadi cantiknya kamu sabi kali... Ajakin sleepcall dong bang🤣**")
 # Create by myself @localheart
 
 
@@ -112,5 +116,5 @@ async def typewriter(typew):
     sleep(3)
     await typew.edit("`Jangan Bersedih`")
     sleep(2)
-    await typew.edit("`**NAFAS MANUALNYA KAKA...HAHAHA MAMPUS LO!**`")
+    await typew.edit("`**NAFAS MANUALNYA KAKA...HAHAHA BANGSAT MAMPUS LO!**`")
 # Create by myself @localheart
