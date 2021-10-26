@@ -21,7 +21,7 @@ async def _(event):
             response = await response
             await bot.send_read_acknowledge(conv.chat_id)
         except YouBlockedUserError:
-            await event.edit("`Boss! Please Unblock @SpamBot`")
+            await event.edit("`Unblock @SpamBot dulu Pea`")
             return
         await event.edit(f"~ {response.message.message}")
 
