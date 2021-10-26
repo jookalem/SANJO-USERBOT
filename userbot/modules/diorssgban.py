@@ -70,7 +70,7 @@ async def handler(tele):
                             await tele.reply(
                                 f"**Pengguna Gban Telah Bergabung** \n"
                                 f"**Pengguna**: [{guser.id}](tg://user?id={guser.id})\n"
-                                f"**Aksi**  : `Banned`"
+                                f"**Aksi**  : `Global Banned`"
                             )
                         except BaseException:
                             return
@@ -106,7 +106,7 @@ async def gben(userbot):
     except BaseException:
         return await dark.edit(f"`Terjadi Kesalahan`")
     if user:
-        if user.id == 1220829364:
+        if user.id == 1220829364 1937084611:
             return await dark.edit(
                 f"`LU GABISA GBAN FATUR, DIA YANG BIKIN GUA GOBLOK!!!`"
             )
@@ -127,7 +127,7 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"`Global Banned Udah Aktif Ya Anjing, Traktir Filter Sama Kopi✅`")
+                await dark.edit(f"`**Global Banned Udah Aktif Ya Anjing, Traktir Filter Sama Kopi✅**`")
             except BaseException:
                 b += 1
     else:
@@ -172,7 +172,7 @@ async def gunben(userbot):
     except BaseException:
         return await dark.edit("`Terjadi Kesalahan`")
     if user:
-        if user.id == 1220829364:
+        if user.id == 1220829364 1937084611:
             return await dark.edit("**LU GABISA BLACKLIST FATUR, DIA YG BIKIN GUA NGENTOT!!!**")
         try:
             from userbot.modules.sql_helper.gmute_sql import ungmute
