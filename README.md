@@ -1,44 +1,22 @@
-## GITHUB INFO:
 <p align="center">
-  <a href="https://github.com/DIORrios285/DIOR-UBOT/fork">
-    <img src="https://img.shields.io/github/forks/DIORrios285/DIOR-UBOT?label=Fork&style=social">
-    
-  </a>
-  <a href="https://github.com/DIORrios285/DIOR-UBOT">
-    <img src="https://img.shields.io/github/stars/DIORrios285/DIOR-UBOT?style=social">
-  </a>
-</p>  
-
-![VIEWS](https://komarev.com/ghpvc/?username=DIORrios285)
-
-<a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/RATE-A+-blue.svg?style=for-the-badge&logo=Factor.">
-
+    <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=flat-square&logo=python&logoColor=blue&color=blue" /></a>
+    <a href="https://app.codacy.com/gh/DIORrios285/DIOR-UBOT/dashboard"> <img src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=blue&logo=codacy&style=flat-square" alt="Codacy" /></a><br>
+    <a href="https://github.com/DIORrios285/DIOR-UBOT"> <img src="https://img.shields.io/github/repo-size/DIORrios285/DIOR-UBOT?color=green&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/DIORrios285/DIOR-UBOT/commits/main"> <img src="https://img.shields.io/github/last-commit/DIORrios285/FandaMusic?color=green&logo=github&logoColor=blue&style=flat-square" /></a>
+    <a href="https://github.com/DIORrios285/DIOR-UBOT/network/members"> <img src="https://img.shields.io/github/forks/DIORrios285/DIOR-UBOT?color=red&logo=github&logoColor=blue&style=flat-square" /></a>  
+    <a href="https://github.com/DIORrios285/DIOR-UBOT/network/members"> <img src="https://img.shields.io/github/stars/DIORrios285/DIOR-UBOT?color=red&logo=github&logoColor=blue&style=flat-square" /></a>
 
 ## FOLLOW IG GUA NGENTOT!:
 <a href="https://www.instagram.com/fatur.285?=nametag"><img src="https://img.shields.io/badge/INSTAGRAM-GA%20FOLLOW%20GUA%20INJAK%20LU-blue.svg?style=for-the-badge&logo=Instagram"></a>
 
-
-## REPO PUNYA SI:
-[<img src="https://telegra.ph/file/c15cced59c474a33cb9bb.jpg">](https://t.me/uurfavboys1)
-  
-  
-## KALO FORK TUH KASIH BINTANG YA NGENTOT!
-[<img src="https://telegra.ph/file/5e0c4d6ff521d55d164e7.jpg">](https://github.com/DIORrios285)
 
 ## JOIN GA LU!!:
 
 <a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/CH-SUKA%20SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/GROUP-FANDA%20SUPPORT-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
-## PENJELASAN:
-* **Asikin aja repo nya mah**
-* **Gcast alay bego!** 
-
-<h3 align="center">REPO DIOR-UBOT DIBUAT KARENA FATUR SAYANG MANDA!</h3>
-<img src="https://telegra.ph/file/1e07e251f96184b78a3c3.jpg">
-
-## INFORMASI LANJUTAN:
-<a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/GROUP%20DIOR%20SPAM%20BOT-blue?style=flat&logo=Telegram" width="250" height="40.100" />
+<h3 align="center">REPO DIOR-UBOT DIBUAT KARENA FATUR SAYANG APRIL!</h3>
+<img src="https://telegra.ph/file/07530521d9f5d0596d207.jpg">
 
 
 ## AMBIL STRING LU DISINI:
