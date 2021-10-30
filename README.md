@@ -23,16 +23,15 @@
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-marine)](https://replit.com/@DIORrios285/DIORPyrogramString#main.py)
 
 ##
-<a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20KE%20HEROKU%20YA%20KONTOL-orange?style=flat&logo=Heroku" width="325" height="40.900" />
-
-<br>
-</p>
+<a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20KE%20HEROKU%20YA%20KONTOL-purple?style=flat&logo=Heroku" width="325" height="40.900" />
 
 
- ## Credits
-  **TERIMAKASIH BANYAK BUAT**
+<details>
+  <summary><b>© Credits</b></summary>
 
-*   [FATUR](https://github.com/DIORrios285)    Fanda - Project
+
+ 🙏 **TERIMAKASIH BANYAK KEPADA**
+
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
 *   [X_iMFiNe](https://github.com/ximfine/xBot-Remix)    XBOT-REMIX
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
@@ -40,4 +39,8 @@
 *   [AvinashReddy3108](https://github.com/AvinashReddy3108)    PaperplaneExtended
 *   [TeamUserge](https://github.com/UsergeTeam/Userge)    Userge
 *   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
-*   DAN BANYAK LAGI DAH
+*   BANYAK LAGI DAH!.
+
+
+## Stay Support 🚀
+*   [LonamiWebs](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
