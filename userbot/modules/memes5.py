@@ -493,7 +493,7 @@ CMD_HELP.update({
     "`.cinta`\
     \nUsage: mengirim cintamu ke seseorang.\
     \n\n`.roasting` ; `.ko`\
-    \nUsage: simpenan kosa kata copas:).
+    \nUsage: simpenan kosa kata copas:).\
     \n\n`.sange` ; `.gblk`\
     \nUsage: cobalah sndiri ngentot."
 })
