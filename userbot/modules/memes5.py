@@ -462,7 +462,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("TINGGALIN AJA YA AJG!!!!")
     
-    @register(outgoing=True, pattern='^.roasting(?: |$)(.*)')
+@register(outgoing=True, pattern='^.roasting(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     await typew.edit("Segitu doang bacotan lu?")
