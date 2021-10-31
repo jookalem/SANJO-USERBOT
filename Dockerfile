@@ -6,7 +6,7 @@ FROM xluxz/geezproject:buster
 #soasik gua ikutan
 #dior nyimak
 
-RUN git clone -b DIOR-UBOT https://github.com/DIORrios285/DIOR-UBOT /root/userbot
+RUN git clone -b main https://github.com/DIORrios285/DIOR-UBOT /root/userbot
 RUN mkdir /root/userbot/.bin
 RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
