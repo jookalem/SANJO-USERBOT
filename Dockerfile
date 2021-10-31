@@ -1,13 +1,18 @@
-FROM sandy1709/catuserbot:slim-buster
+# Using Python Slim-Buster
+FROM xluxz/geezproject:buster
+# RAM-UBOT
+# Geez-UserBot
+#yaudah iya
 
-#clonning repo 
-RUN git clone https://github.com/DIORrios285/DIOR-UBOT.git /root/userbot
-#working directory 
+RUN git clone -b main https://github.com/DIORrios285/DIOR-UBOT /root/userbot
+RUN mkdir /root/userbot/.bin
+RUN pip install --upgrade pip setuptools
 WORKDIR /root/userbot
 
-# Install requirements
-RUN pip3 install --no-cache-dir requirements.txt
+#Install python requirements
+RUN pip3 install -r https://raw.githubusercontent.com/ramadhani892/RAM-UBOT/main/requirements.txt
 
-ENV PATH="/home/userbot/bin:$PATH"
+EXPOSE 80 443
 
+# Finalization
 CMD ["python3","-m","userbot"]
