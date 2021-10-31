@@ -475,6 +475,8 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.ko(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
+    await typew.edit("Cie ilah kaga ada rasa pisan")
+    sleep(2)
     await typew.edit("**LIAT KOSA KATA LO YANG UDAH BASI TOLOL YANG BANYAK DI PAKE ORANG SAMA KAYA EMAK LO YANG SERING DI PAKAI ORANG TOLOL, MAK NYA UDAH KAYA ROKOK SATU BATANG BISA DI PAKE RAME RAME YAKAN ITU MAK LO TOLOL KASIAN DIA JAM SEGINI BELOM PULANG KARENA MASI CARI UANG PAKAI MEMEK NYA YANG UDAH BECEK ITU TOLOL APA LO KAGA KASIAN BEGO LIAT MAK LO YANG KEK GITU MENDINH MAMAK LO SURUH KERJA YANG BENER TOLOL JANGAN NGELONTE MULU, KASIAN JUGA LIAT BAPAK LO BAU TANAH YHAHAHAHA**")
 
 
@@ -492,6 +494,6 @@ CMD_HELP.update({
     \nUsage: mengirim cintamu ke seseorang.\
     \n\n`.roasting` ; `.ko`\
     \nUsage: simpenan kosa kata copas:).
-    \n\n`.sange` ;  `.gblk`\
+    \n\n`.sange` ; `.gblk`\
     \nUsage: cobalah sndiri ngentot."
 })
