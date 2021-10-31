@@ -9,6 +9,8 @@
     <a href="https://github.com/DIORrios285/DIOR-UBOT/network/members"> <img src="https://img.shields.io/github/forks/DIORrios285/DIOR-UBOT?color=marine&logo=github&logoColor=white&style=flat-square" /></a>  
     <a href="https://github.com/DIORrios285/DIOR-UBOT/network/members"> <img src="https://img.shields.io/github/stars/DIORrios285/DIOR-UBOT?color=marine&logo=github&logoColor=white&style=flat-square" /></a>
 
+[![Sparkline](https://stars.medv.io/DIORrios285/DIOR-UBOT.svg)](https://stars.medv.io/DIORrios285/DIOR-UBOT)
+
 ## SOKIN MAS!
 <a href="https://www.instagram.com/fatur.285?=nametag"><img src="https://img.shields.io/badge/INSTAGRAM-GA%20FOLLOW%20GUA%20INJAK%20LU-blue.svg?style=for-the-badge&logo=Instagram"></a>
 <a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/CH-SUKA%20SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
@@ -26,6 +28,8 @@
 <a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
 <img src="https://telegra.ph/file/ad90f9f9f2f12d3d65552.jpg">
 
+
+## Credits:
 <details>
   <summary><b>© Credits</b></summary>
 
