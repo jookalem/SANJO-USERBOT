@@ -23,8 +23,8 @@
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-marine)](https://replit.com/@DIORrios285/DIORPyrogramString#main.py)
 
 ##
-<a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git"><img src="https://img.shields.io/badge/DEPLOY%20KE%20HEROKU%20YA%20KONTOL-purple?style=flat&logo=Heroku" width="325" height="40.900" />
-
+<a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
+<img src="https://telegra.ph/file/ad90f9f9f2f12d3d65552.jpg">
 
 <details>
   <summary><b>© Credits</b></summary>
