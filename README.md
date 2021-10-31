@@ -15,7 +15,7 @@
 <a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/GROUP-FANDA%20SUPPORT-blue.svg?style=for-the-badge&logo=Telegram"></a>
 
 <h3 align="center">REPO DIOR-UBOT DIBUAT KARENA FATUR SAYANG APRIL!</h3>
-<img src="https://telegra.ph/file/07530521d9f5d0596d207.jpg">
+<img src="https://telegra.ph/file/88d170ab07ae953b6d422.jpg">
 
 
 ## AMBIL STRING LU DISINI:
