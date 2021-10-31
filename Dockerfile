@@ -4,7 +4,7 @@ FROM xluxz/geezproject:buster
 # Geez-UserBot
 #yaudah iya
 #soasik gua ikutan
-#DIOR-UBOT
+#dior nyimak
 
 RUN git clone -b DIOR-UBOT https://github.com/DIORrios285/DIOR-UBOT /root/userbot
 RUN mkdir /root/userbot/.bin
