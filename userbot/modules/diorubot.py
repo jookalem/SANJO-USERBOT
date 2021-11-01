@@ -31,27 +31,30 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^.bf(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**Panjul Kepala Suku☑️**")
-    await typew.edit("**Panjul Kepala Suku✅**")
-    sleep(2)
+    await typew.edit("**Panjul Kang roasting☑️**")
+    await typew.edit("**Panjul Kang roasting✅**")
+    sleep(3)
     await typew.edit("**Farhan Ribet☑️**")
     await typew.edit("**Farhan Ribet✅**")
-    sleep(2)
+    sleep(3)
     await typew.edit("**Papoy Buaya Betina☑️**")
     await typew.edit("**Papoy Buaya Betina✅**")
-    sleep(2)
+    sleep(3)
     await typew.edit("**Gita Bawel☑️**")
     await typew.edit("**Gita Bawel✅**")
-    sleep(2)
+    sleep(3)
+    await typew.edit("**April Badgirl☑️**")
+    await typew.edit("**April Badgirl✅**")
+    sleep(3)
     await typew.edit("**Nigel Wibu☑️**")
     await typew.edit("**Nigel Wibu✅**")
-    sleep(2)
+    sleep(3)
     await typew.edit("**Kiaa Cantik Banget☑️**")
     await typew.edit("**Kiaa Cantik Banget✅**")
-    sleep(2)
-    await typew.edit("**Manda Kesayangan Fatur☑️**")
-    await typew.edit("**Manda Kesayangan Fatur✅**")
-    sleep(2)
+    sleep(3)
+    await typew.edit("**Manda Nak erpeh☑️**")
+    await typew.edit("**Manda Nak erpeh✅**")
+    sleep(3)
     await typew.edit("**FATUR PALING TAMPAN!**")
 
 @register(outgoing=True, pattern='^.pbl(?: |$)(.*)')
@@ -62,9 +65,9 @@ async def typewriter(typew):
     await typew.edit("`ANJINK...ada PP bule`")
     sleep(2)
     await typew.edit("`BABI!!!`")
-    sleep(2)
+    sleep(3)
     await typew.edit("`Udah PP bule PINTEREST lagi, goblok!!!`")
-    sleep(1)
+    sleep(3)
     await typew.edit("`Kalo ga punya muka minimal modal lah BANGSAT...Dasar bocah pinterest`")
 
 
@@ -103,6 +106,6 @@ CMD_HELP.update({
     \nUsage: menampilkan alive bot.\
     \n\n`.sadboy`\
     \nUsage: hiks\
-    \n\n`.punten` ; `.bf`\
-    \nUsage: misi."
+    \n\n`.punten` ; `.bf` ; `.war` ; `.lahk` ; `.pbl`\
+    \nUsage: liat aza."
 })
