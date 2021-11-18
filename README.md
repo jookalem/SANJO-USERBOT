@@ -11,7 +11,7 @@
 
 [![Sparkline](https://stars.medv.io/DIORrios285/DIOR-UBOT.svg)](https://stars.medv.io/DIORrios285/DIOR-UBOT)
 
-## SOKIN MAS!
+## SOKIN PLER!
 <a href="https://www.instagram.com/fatur.285?=nametag"><img src="https://img.shields.io/badge/INSTAGRAM-GA%20FOLLOW%20GUA%20INJAK%20LU-blue.svg?style=for-the-badge&logo=Instagram"></a>
 <a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/CH-SUKA%20SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
 <a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/GROUP-FANDA%20SUPPORT-blue.svg?style=for-the-badge&logo=Telegram"></a>
@@ -21,7 +21,7 @@
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-marine)](https://replit.com/@DIORrios285/DIORPyrogramString#main.py)
 
-## Deploy disini iya disini ga liat gua tusuk mata lu
+## Deploy disini iya disini ga liat gua tusuk mata lu:
 <a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
 <img src="https://telegra.ph/file/ad90f9f9f2f12d3d65552.jpg">
 
