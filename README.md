@@ -21,7 +21,7 @@
 
 [![GenerateString](https://img.shields.io/badge/repl.it-generateString-marine)](https://replit.com/@DIORrios285/DIORPyrogramString#main.py)
 
-##
+## Deploy disini iya disini ga liat gua tusuk mata lu
 <a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
 <img src="https://telegra.ph/file/ad90f9f9f2f12d3d65552.jpg">
 
