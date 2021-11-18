@@ -1,3 +1,6 @@
+# kumpulin kosakata makanya bgst
+# mks smsm
+
 from time import sleep
 from userbot.events import register
 
