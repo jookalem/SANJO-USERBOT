@@ -1,32 +1,44 @@
 # Copyright (C) 2019 The Raphielscape Company LLC.
-# RAM-UBOT MINTA
+#
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
-# you may not use this file except in compliance with the License
-""" Userbot module containing commands related to the \
-    Information Superhighway (yes, Internet). """
+# you may not use this file except in compliance with the License.
+#
+# ReCode by @mrismanaziz
+# FROM Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
+# t.me/SharingUserbot & t.me/Lunatic0de
+#
+# Dior ambil ya
 
-import asyncio
+import random
 import time
-import redis
-
 from datetime import datetime
 
 from speedtest import Speedtest
-from userbot import CMD_HELP, StartTime, ALIVE_NAME, REPO_NAME
+
+from userbot import CMD_HANDLER as cmd
+from userbot import CMD_HELP, StartTime, bot
 from userbot.events import register
+from userbot.utils import edit_or_reply, humanbytes, man_cmd
+
+absen = [
+    "**Hadir bang** 😁",
+    "**Hadir kak** 😉",
+    "**Hadir dong** 😁",
+    "**Hadir ganteng** 🥵",
+    "**Hadir sayang** 😘",
+    "**Hadir kak maap telat** 🥺",
+]
 
 
 async def get_readable_time(seconds: int) -> str:
     count = 0
     up_time = ""
     time_list = []
-    time_suffix_list = ["Dtk", "Mnt", "Jam", "Hari"]
+    time_suffix_list = ["s", "m", "Jam", "Hari"]
 
     while count < 4:
         count += 1
-        remainder, result = divmod(
-            seconds, 60) if count < 3 else divmod(
-            seconds, 24)
+        remainder, result = divmod(seconds, 60) if count < 3 else divmod(seconds, 24)
         if seconds == 0 and remainder == 0:
             break
         time_list.append(int(result))
@@ -43,109 +55,182 @@ async def get_readable_time(seconds: int) -> str:
     return up_time
 
 
-
-@register(outgoing=True, pattern="^.pings$")
-async def redis(pong):
-    """ For .ping command, ping the userbot from any chat.  """
+@man_cmd(pattern="ping$")
+async def _(ping):
+    """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("`Connecting to server...`")
-    await pong.edit("☠️")
-    await asyncio.sleep(3)
+    xx = await edit_or_reply(ping, "**✣**")
+    await xx.edit("**✣✣**")
+    await xx.edit("**✣✣✣**")
+    await xx.edit("**✣✣✣✣**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**`{ALIVE_NAME}`**\n"
-                    f"✧ **-ꜱɪɢɴᴀʟ- :** "
-                    f"`%sms` \n"
-                    f"✧ **-ᴜᴘᴛɪᴍᴇ- :** "
-                    f"`{uptime}` \n" % (duration))
+    user = await bot.get_me()
+    await xx.edit(
+        f"**PONG!!🏓**\n"
+        f"✣ **Pinger** - `%sms`\n"
+        f"✣ **Uptime -** `{uptime}` \n"
+        f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+    )
 
 
-@register(outgoing=True, pattern="^.ping$")
-async def redis(pong):
-    """ For .ping command, ping the userbot from any chat.  """
+@man_cmd(pattern=r"xping$")
+async def _(ping):
+    """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Assalamualaikum...Yesus Memberkati!")
-    await asyncio.sleep(1)
+    xping = await edit_or_reply(ping, "`Pinging....`")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**NGENTOTTT!!**\n**KEKUATAN NGENTOT:** `%sms`\n**DURASI NGENTOT:** `{uptime}🕛`" % (duration))
+    await xping.edit(
+        f"**PONG!! 🍭**\n**Pinger** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+    )
 
 
-@register(outgoing=True, pattern="^Ping$")
-async def redis(pong):
-    """ For .ping command, ping the userbot from any chat.  """
+@man_cmd(pattern=r"lping$")
+async def _(ping):
+    """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("PONG!!")
-    await asyncio.sleep(2)
-    await pong.edit(f"{REPO_NAME}")
-    await asyncio.sleep(3)
+    lping = await edit_or_reply(ping, "**★ PING ★**")
+    await lping.edit("**★★ PING ★★**")
+    await lping.edit("**★★★ PING ★★★**")
+    await lping.edit("**★★★★ PING ★★★★**")
+    await lping.edit("**✦҈͜͡➳ PONG!**")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"{REPO_NAME}\n\n"
-                    f"OWNER: `{ALIVE_NAME}'\nSIGNAL: `%sms`\n"
-                    f"UPTIME: `{uptime}` \n" % (duration))
+    user = await bot.get_me()
+    await lping.edit(
+        f"❃ **Ping !!** "
+        f"`%sms` \n"
+        f"❃ **Uptime -** "
+        f"`{uptime}` \n"
+        f"**✦҈͜͡➳ Master :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+    )
 
 
-@register(outgoing=True, pattern="^Speed$")
-async def speedtst(spd):
-    """ For .speed command, use SpeedTest to check server speeds. """
-    await spd.edit("`Menjalankan Tes Kecepatan Jaringan, Sabar nyet...`")
+@man_cmd(pattern=r"keping$")
+async def _(pong):
+    await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    kopong = await edit_or_reply(pong, "**『⍟𝐊𝐎𝐍𝐓𝐎𝐋』**")
+    await kopong.edit("**◆◈𝐊𝐀𝐌𝐏𝐀𝐍𝐆◈◆**")
+    await kopong.edit("**𝐏𝐄𝐂𝐀𝐇𝐊𝐀𝐍 𝐁𝐈𝐉𝐈 𝐊𝐀𝐔 𝐀𝐒𝐔**")
+    await kopong.edit("**☬𝐒𝐈𝐀𝐏 𝐊𝐀𝐌𝐏𝐀𝐍𝐆 𝐌𝐄𝐍𝐔𝐌𝐁𝐔𝐊 𝐀𝐒𝐔☬**")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    user = await bot.get_me()
+    await kopong.edit(
+        f"**✲ 𝙺𝙾𝙽𝚃𝙾𝙻 𝙼𝙴𝙻𝙴𝙳𝚄𝙶** "
+        f"\n ⫸ ᴷᵒⁿᵗᵒˡ `%sms` \n"
+        f"**✲ 𝙱𝙸𝙹𝙸 𝙿𝙴𝙻𝙴𝚁** "
+        f"\n ⫸ ᴷᵃᵐᵖᵃⁿᵍ『[{user.first_name}](tg://user?id={user.id})』 \n" % (duration)
+    )
+
+
+# .keping & kping Coded by Koala
+
+
+@man_cmd(pattern=r"kping$")
+async def _(pong):
+    uptime = await get_readable_time((time.time() - StartTime))
+    start = datetime.now()
+    kping = await edit_or_reply(pong, "8✊===D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8✊===D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8✊===D")
+    await kping.edit("8=✊==D")
+    await kping.edit("8==✊=D")
+    await kping.edit("8===✊D")
+    await kping.edit("8===✊D💦")
+    await kping.edit("8====D💦💦")
+    await kping.edit("**CROOTTTT PINGGGG!**")
+    end = datetime.now()
+    duration = (end - start).microseconds / 1000
+    await kping.edit(
+        f"**NGENTOT!! 🐨**\n**KAMPANG** : %sms\n**Bot Uptime** : {uptime}🕛" % (duration)
+    )
+
+
+@man_cmd(pattern="speedtest$")
+async def _(speed):
+    """For .speedtest command, use SpeedTest to check server speeds."""
+    xxnx = await edit_or_reply(speed, "`Running speed test...`")
     test = Speedtest()
-
     test.get_best_server()
     test.download()
     test.upload()
     test.results.share()
     result = test.results.dict()
-
-    await spd.edit("**Kecepatan Jaringan:\n**"
-                   "❍ **Dimulai Pada :** "
-                   f"`{result['timestamp']}` \n"
-                   f" **━━━━━━━━━━━━━━━━━**\n\n"
-                   "❍ **Download:** "
-                   f"`{speed_convert(result['download'])}` \n"
-                   "❍ **Upload:** "
-                   f"`{speed_convert(result['upload'])}` \n"
-                   "❍ **Signal:** "
-                   f"`{result['ping']}` \n"
-                   "❍ **ISP:** "
-                   f"`{result['client']['isp']}` \n"
-                   f"❍ **BOT:** {REPO_NAME}")
-
-
-def speed_convert(size):
-    """
-    Hai manusia, Anda tidak bisa membaca byte?
-    """
-    power = 2**10
-    zero = 0
-    units = {0: '', 1: 'Kb/s', 2: 'Mb/s', 3: 'Gb/s', 4: 'Tb/s'}
-    while size > power:
-        size /= power
-        zero += 1
-    return f"{round(size, 2)} {units[zero]}"
+    msg = (
+        f"**Started at {result['timestamp']}**\n\n"
+        "**Client**\n"
+        f"**ISP :** `{result['client']['isp']}`\n"
+        f"**Country :** `{result['client']['country']}`\n\n"
+        "**Server**\n"
+        f"**Name :** `{result['server']['name']}`\n"
+        f"**Country :** `{result['server']['country']}`\n"
+        f"**Sponsor :** `{result['server']['sponsor']}`\n\n"
+        f"**Ping :** `{result['ping']}`\n"
+        f"**Upload :** `{humanbytes(result['upload'])}/s`\n"
+        f"**Download :** `{humanbytes(result['download'])}/s`"
+    )
+    await xxnx.delete()
+    await speed.client.send_file(
+        speed.chat_id,
+        result["share"],
+        caption=msg,
+        force_document=False,
+    )
 
 
-@register(outgoing=True, pattern="^Pong$")
-async def pingme(pong):
-    """ For .ping command, ping the userbot from any chat.  """
+@man_cmd(pattern="pong$")
+async def _(pong):
+    """For .ping command, ping the userbot from any chat."""
     start = datetime.now()
-    await pong.edit("PONG")
-    await asyncio.sleep(1)
-    await pong.edit("⚡")
-    await asyncio.sleep(2)
+    xx = await edit_or_reply(pong, "`Sepong.....🏓`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit(f"**Oᴡɴᴇʀ : {ALIVE_NAME}**\n`%sms`" % (duration))
+    await xx.edit("🏓 **Ping!**\n`%sms`" % (duration))
 
 
-CMD_HELP.update({
-    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `.pings`\
-         \n↳ : Untuk Menunjukkan Ping Bot Anda.\
-         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Speed`\
-         \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
-         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Pong`\
-         \n↳ : Sama Seperti Perintah Ping."})
+# KALO NGEFORK absen ini GA USAH DI HAPUS YA GOBLOK 😡
+@register(incoming=True, from_users=844432220, pattern=r"^.absen$")
+async def risman(ganteng):
+    await ganteng.reply(random.choice(absen))
+
+
+# JANGAN DI HAPUS GOBLOK 😡 LU COPY AJA TINGGAL TAMBAHIN
+# DI HAPUS GUA GBAN YA 🥴 GUA TANDAIN LU AKUN TELENYA 😡
+
+
+CMD_HELP.update(
+    {
+        "ping": f"**Plugin : **`ping`\
+        \n\n  •  **Syntax :** `{cmd}ping` ; `{cmd}lping` ; `{cmd}xping` ; `{cmd}kping`\
+        \n  •  **Function : **Untuk menunjukkan ping userbot.\
+        \n\n  •  **Syntax :** `{cmd}pong`\
+        \n  •  **Function : **Sama seperti perintah ping\
+    "
+    }
+)
+
+
+CMD_HELP.update(
+    {
+        "speedtest": f"**Plugin : **`speedtest`\
+        \n\n  •  **Syntax :** `{cmd}speedtest`\
+        \n  •  **Function : **Untuk Mengetes kecepatan server userbot.\
+    "
+    }
+)
