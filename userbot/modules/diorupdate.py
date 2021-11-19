@@ -1,5 +1,5 @@
 """
-This module updates the userbot based on upstream revision
+Modul ini memperbarui userbot berdasarkan revisi upstream
 """
 
 from os import remove, execle, path, environ
@@ -69,7 +69,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit(f'`{REPO_NAME}:'
-                         f'\nSedang Dalam proses Update {REPO_NAME}, Mohon Menunggu beberapa Menit`'
+                         f'\nLagi update {REPO_NAME} pler, Tenang ga lama kok sejam doang, canda jelek`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -93,14 +93,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!\n" "Restarting, Mohon Menunggu.....`")
+            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!\n" "Restarting, Sabar nyet.....`")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#BOT \n"
-                "`DIOR-UBOT Berhasil Di Update`")
+                "`DIOR-UBOT Berhasil Di Update nyet`")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -121,14 +121,14 @@ async def update(event, repo, ups_rem, ac_br):
     await asyncio.sleep(1)
     await event.edit(f'**{REPO_NAME}** `Di Restart....`')
     await asyncio.sleep(1)
-    await event.edit('`Mohon Menunggu Beberapa Detik...ツ`')
+    await event.edit('`Tunggu bentar pler...ツ`')
     await asyncio.sleep(10)
     await event.delete()
 
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#BOT \n"
-            "**RAM-UBOT Telah Di Perbarui ツ**")
+            "**{REPO_NAME} Udah Di Perbarui anjass ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -141,12 +141,12 @@ async def update(event, repo, ups_rem, ac_br):
 @ register(outgoing=True, pattern=r"^.update(?: |$)(one|all)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
-    await event.edit("`Mengecek Pembaruan, Silakan Menunggu....`")
+    await event.edit("`Mengecek Pembaruan, Silakan Menunggu pler....`")
     conf = event.pattern_match.group(1)
     off_repo = UPSTREAM_REPO_URL
     force_update = False
     try:
-        txt = "`Maaf Pembaruan Tidak Dapat Di Lanjutkan Karna "
+        txt = "`Yah pembaruan ga bisa dilanjutin pler karena "
         txt += "Beberapa Masalah Terjadi`\n\n**LOGTRACE:**\n"
         repo = Repo()
     except NoSuchPathError as error:
