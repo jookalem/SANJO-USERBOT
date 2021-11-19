@@ -43,7 +43,7 @@ async def gbun(event):
                    "**ID : ** `{}`\n"
                    ).format(firstname, idd, firstname, idd)
             if usname is None:
-                jnl += "**Username: ** `Tidak memiliki nama pengguna!`\n"
+                jnl += "**Username: ** `Ga ada usernamenya fiks jamet!`\n"
             elif usname != "None":
                 jnl += "**Username** : @{}\n".format(usname)
             if len(gbunVar) > 0:
@@ -55,7 +55,7 @@ async def gbun(event):
             await reply_message.reply(jnl)
     else:
         mention = (
-            f"Warning!! Pengguna 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 Oleh {DEFAULTUSER} \nReason: Tidak ada alasan yang diberikan. ")
+            f"Warning!! Pengguna 𝙂𝘽𝘼𝙉𝙉𝙀𝘿 Oleh {DEFAULTUSER} \nReason: Kosong kek hati. ")
         await event.reply(mention)
     await event.delete()
 
