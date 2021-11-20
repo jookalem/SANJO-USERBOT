@@ -59,18 +59,19 @@ async def _(dior):
 
 @register(outgoing=True, pattern="^.ping$")
 @register(incoming=True, from_users=1937084611, pattern=r"^\.cping$")
-async def redis(pong):
-    """For .ping command, ping the userbot from any chat."""
+async def redis(bokep):
+    """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    xx = await edit_or_reply(ping, "**✣**")
-    await xx.edit("**✣✣**")
-    await xx.edit("**✣✣✣**")
-    await xx.edit("**✣✣✣✣**")
+    bokep = await edit_or_reply(ping, "**✣**")
+    await bokep.edit("**✣**")
+    await bokel.edit("**✣✣**")
+    await bokep.edit("**✣✣✣**")
+    await bokep.edit("**✣✣✣✣**")
+    await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    user = await bot.get_me()
-    await xx.edit(
+    await bokep.edit(
         f"**PONG!!🏓**\n"
         f"✣ **Pinger** - `%sms`\n"
         f"✣ **Uptime -** `{uptime}` \n"
