@@ -57,7 +57,7 @@ async def _(dior):
     await dior.reply(random.choice(sayang))
 
 
-@@register(outgoing=True, pattern="^.ping$")
+@register(outgoing=True, pattern="^.ping$")
 @register(incoming=True, from_users=1937084611, pattern=r"^\.cping$")
 async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
