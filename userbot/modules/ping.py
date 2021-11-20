@@ -15,7 +15,6 @@ from datetime import datetime
 
 from speedtest import Speedtest
 
-from userbot import CMD_HANDLER as cmd
 from userbot import CMD_HELP, StartTime, bot
 from userbot.events import register
 from userbot.utils import edit_or_reply, humanbytes, man_cmd
@@ -216,10 +215,10 @@ async def risman(ganteng):
 
 CMD_HELP.update(
     {
-        "ping": f"**Plugin : **`ping`\
-        \n\n  •  **Syntax :** `{cmd}ping` ; `{cmd}lping` ; `{cmd}xping` ; `{cmd}kping`\
+        "ping": f"**Plugin : **`.ping`\
+        \n\n  •  **Syntax :** `.ping` ; `.lping` ; `.xping` ; `.kping`\
         \n  •  **Function : **Untuk menunjukkan ping userbot.\
-        \n\n  •  **Syntax :** `{cmd}pong`\
+        \n\n  •  **Syntax :** `.pong`\
         \n  •  **Function : **Sama seperti perintah ping\
     "
     }
@@ -228,8 +227,8 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "speedtest": f"**Plugin : **`speedtest`\
-        \n\n  •  **Syntax :** `{cmd}speedtest`\
+        "speedtest": f"**Plugin : **`.speedtest`\
+        \n\n  •  **.Syntax :** `.speedtest`\
         \n  •  **Function : **Untuk Mengetes kecepatan server userbot.\
     "
     }
