@@ -11,6 +11,16 @@
 
 [![Sparkline](https://stars.medv.io/DIORrios285/DIOR-UBOT.svg)](https://stars.medv.io/DIORrios285/DIOR-UBOT)
 
+
+## DISCLAIMER
+
+```
+Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
+Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu Anda
+mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
+Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
+```
+
 ## SOKIN PLER!
 <a href="https://www.instagram.com/fatur.285?=nametag"><img src="https://img.shields.io/badge/INSTAGRAM-GA%20FOLLOW%20GUA%20INJAK%20LU-blue.svg?style=for-the-badge&logo=Instagram"></a>
 <a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/CH-SUKA%20SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
