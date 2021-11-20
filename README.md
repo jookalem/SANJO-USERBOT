@@ -33,7 +33,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 ## Deploy disini iya disini ga liat gua tusuk mata lu:
 <a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
-<img src="https://telegra.ph/file/ad90f9f9f2f12d3d65552.jpg">
+<img src="https://telegra.ph/file/f4c59840a5988c6ffd536.png">
 
 
 ## Credits:
