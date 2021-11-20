@@ -42,7 +42,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
  🙏 **TERIMAKASIH BANYAK KEPADA**
-
+*   [Risman](https://github.com/mrismanaziz)   Man - Userbot
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
 *   [X_iMFiNe](https://github.com/ximfine/xBot-Remix)    XBOT-REMIX
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
