@@ -29,7 +29,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     "╔═════════════════════╗\n"
-    "       ⚡ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚡ \n"
+    "          ⚡ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚡ \n"
     "╚═════════════════════╝\n"
     "• Saya adalah bot yang menjaga room chat tuan {DEFAULTUSER}.\n"
     "• Tuan {DEFAULTUSER} belum menyetujui anda untuk PM.\n"
@@ -99,7 +99,7 @@ async def permitpm(event):
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
                     "`EH ANJING KAN UDAH GUA BILANG JANGAN NORAK JANGAN SPAM, GUA BLOKIR LU TAI!!!`\n"
-                    f"`Tunggu {DEFAULTUSER} Bales ya`"
+                    f"`Tunggu {DEFAULTUSER} Bales pler`"
                 )
 
                 try:
