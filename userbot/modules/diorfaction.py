@@ -18,7 +18,7 @@ async def _(landak):
                 t = await landak.ban_time(t)
             except BaseException:
                 return await landak.edit("`Incorrect Format`")
-    await landak.edit(f"`Kebanyakan fake hidup lu ngentot!`")
+    await landak.edit(f"`PP fake typing juga fake jangan jangan kontol lu fale lagi`")
     await landak.edit(f"`Memulai Fake Typing {t} detik.`")
     async with landak.client.action(landak.chat_id, "typing"):
         await asyncio.sleep(t)
