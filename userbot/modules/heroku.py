@@ -127,17 +127,12 @@ async def set_var(var):
 """
 
 
-@register(outgoing=True, pattern=r"^.usage(?: |$)")
+@register(outgoing=True, pattern=r"^.(usage|kuota)(?: |$)")
 async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
     """
-    await dyno.edit("`Memeriksa Dyno Heroku anda...`")
-    await asyncio.sleep(3)
-    await dyno.edit("⚡")
-    await asyncio.sleep(2)
-    await dyno.edit("**Dior Ganteng**")
-    await asyncio.sleep(2)
+    await dyno.edit("`Processing...`")
     useragent = (
         'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
         'AppleWebKit/537.36 (KHTML, like Gecko) '
@@ -158,7 +153,7 @@ async def dyno_usage(dyno):
                     f"`{r.reason}`",
                     reply_to=dyno.id
                 )
-                await dyno.edit("`Tidak Bisa Mendapatkan Informasi Dyno Anda`")
+                await dyno.edit("`Gagal Mendapatkan Informasi Dyno Anda`")
                 return False
             result = await r.json()
             quota = result['account_quota']
@@ -187,23 +182,18 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-                f"𝗜𝗡𝗙𝗢 𝗞𝗘𝗞𝗨𝗔𝗧𝗔𝗡 {REPO_NAME}!!\n\n"
-                "╭╼━━━━━━━❖━━━━━━━━╮\n"
-                "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗦𝗔𝗔𝗧 𝗜𝗡𝗜 : \n"
-                f"┣•   ▸ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ. \n"
-                f"┣•   ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {AppPercentage}% \n"
-                "╰╼━━━━━━━❖━━━━━━━━╯\n"
-                "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-                "╭╼━━━━━━━❖━━━━━━━━╮ \n"
-                "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗕𝗨𝗟𝗔𝗡 𝗜𝗡𝗜 : \n"
-                f"┣•  ▸ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ. \n"
-                f"┣•  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%. \n"
-                "╰╼━━━━━━━❖━━━━━━━━╯\n"
-                f"• 𝗣𝗘𝗠𝗜𝗟𝗜𝗞  : {ALIVE_NAME} \n"
-                f"**•JOIN•** : [MY GROUP]({GROUP_LINK}) \n"
-            )
-            await asyncio.sleep(5)
-            await event.delete()
+                "✥ **Informasi Dyno Heroku :**"
+            "\n╔════════════════════╗\n"
+            f" ➠ **Penggunaan Dyno** `{app.name}` :\n"
+            f"     •  `{AppHours}`**Jam**  `{AppMinutes}`**Menit**  "
+            f"**|**  [`{AppPercentage}`**%**]"
+            "\n◖════════════════════◗\n"
+            " ➠ **Sisa kuota dyno bulan ini** :\n"
+            f"     •  `{hours}`**Jam**  `{minutes}`**Menit**  "
+            f"**|**  [`{percentage}`**%**]"
+            "\n╚════════════════════╝\n"
+            f"✥ **Sisa Dyno Heroku** `{day}` **Hari Lagi**"
+        )
             return True
 
 
@@ -228,7 +218,7 @@ async def _(dyno):
     return os.remove("logs.txt")
 
 
-CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.usage`"
+CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.usage` atau `.kuota`"
                  "\n↳ : Check Quota Dyno Heroku"
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set var <NEW VAR> <VALUE>`"
                  "\n↳ : Tambahkan Variabel Baru Atau Memperbarui Variabel"
