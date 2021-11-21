@@ -80,24 +80,25 @@ async def typewriter(typew):
 # dior cakep!
 
 CMD_HELP.update({
-    "Roasting":
+    "roasting":
     "pt\
 \nUsage: Pantun berdamage mks smsm.\
-    "ptn\
+    \n\nptn\
 \nUsage: Pantun berdamage mks smsm.\
-    "pn\
+    \n\npn\
 \nUsage: Pantun berdamage mks smsm.\
-    "pan\
-\nUsage: Pantun berdamage mks smsm.\
+    \n\npan\
+\nUsage: Pantun berdamage mks smsm."
+})
         
 CMD_HELP.update({
-    "Roasting":
+    "roasting 2":
     "roas\
 \nUsage: War ngentot mks smsm.\
-    "wr\
+    \n\nwr\
 \nUsage: War ngentot mks smsm.\
-    "ro\
+    \n\nro\
 \nUsage: War ngentot mks smsm.\
-    "rst\
-\nUsage: War ngentot mks smsm."}
-)
+    \n\nrst\
+\nUsage: War ngentot mks smsm."
+})
