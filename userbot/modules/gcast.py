@@ -1,26 +1,49 @@
 from userbot.events import register
 from userbot import CMD_HELP, bot
+from userbot.utils import edit_delete, edit_or_reply
 
+GCAST_BLACKLIST = [
+    -1001473548283,  # SharingUserbot
+    -1001433238829,  # TedeSupport
+    -1001476936696,  # AnosSupport
+    -1001327032795,  # UltroidSupport
+    -1001294181499,  # UserBotIndo
+    -1001419516987,  # VeezSupportGroup
+    -1001209432070,  # GeezSupportGroup
+    -1001296934585,  # X-PROJECT BOT
+    -1001481357570,  # UsergeOnTopic
+    -1001459701099,  # CatUserbotSupport
+    -1001109837870,  # TelegramBotIndonesia
+    -1001549206558,  # FandaSupport
+    -1001752592753,  # SkyzuSupport
+    -1001626554919,  # EmikoSupport
+]
 
 @register(outgoing=True, pattern="^.gcast (.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
-    if not xx:
-        return await event.edit("`Pesannya Mana Kontol?`")
-    tt = event.text
-    msg = tt[6:]
-    kk = await event.edit("`Sabar Lg gua kirim nyet, Limit jangan salain gua ya bgst...`")
+    if xx:
+        msg = xx
+    elif event.is_reply:
+        msg = await event.get_reply_message()
+    else:
+        await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
+        return
+    kk = await edit_or_reply(event, "`Globally Broadcasting Msg...`")
     er = 0
     done = 0
-    async for x in bot.iter_dialogs():
+    async for x in event.client.iter_dialogs():
         if x.is_group:
             chat = x.id
             try:
-                done += 1
-                await bot.send_message(chat, msg)
+                if chat not in GCAST_BLACKLIST:
+                    await event.client.send_message(chat, msg)
+                    done += 1
             except BaseException:
                 er += 1
-    await kk.edit(f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**")
+    await kk.edit(
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
+    )
 
 
 @register(outgoing=True, pattern=r"^\.gucast(?: |$)(.*)")
