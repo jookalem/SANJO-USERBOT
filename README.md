@@ -28,8 +28,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
 ## AMBIL STRING LU DISINI:
-
-[![GenerateString](https://img.shields.io/badge/repl.it-generateString-marine)](https://replit.com/@DIORrios285/DIORPyrogramString#main.py)
+<a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/Repl.it-Generate%20String-marine.svg?style=for-the-badge&logo=none"></a>
 
 ## Deploy disini iya disini ga liat gua tusuk mata lu:
 <a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
