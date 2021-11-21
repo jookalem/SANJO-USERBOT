@@ -80,7 +80,7 @@ async def redis(pong):
     await pong.edit(f"**PONG!!🏓**\n"
                     f"✣ **Pinger** - `%sms`\n"
                     f"✣ **Uptime** - `{uptime}` \n"
-                    f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})"
+                    f"**✦҈͜͡Owner :** {ALIVE_NAME}"
     )
 
 
