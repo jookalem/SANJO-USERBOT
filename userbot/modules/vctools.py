@@ -1,15 +1,9 @@
-# Thanks Full To Team Ultroid
-# Ported By Vcky @VckyouuBitch + @MaafGausahSokap
-# Copyright (c) 2021 Geez - Projects
-# Geez - Projects https://github.com/Vckyou/Geez-UserBot
-# RAM - UBOT https://github.com/ramadhani892/RAM-UBOT
-# Ini Belum Ke Fix Ya Bg :')
-# Ambil aja gapapa tp Gaguna kaya hidup lu Woakkakaka
-
+# Jir keapus, lupa apa aja tulisannya :v
 
 from telethon.tl.functions.channels import GetFullChannelRequest as getchat
 from telethon.tl.functions.phone import CreateGroupCallRequest as startvc
 from telethon.tl.functions.phone import DiscardGroupCallRequest as stopvc
+from telethon.tl.functions.phone import EditGroupCallTitleRequest as settitle
 from telethon.tl.functions.phone import GetGroupCallRequest as getvc
 from telethon.tl.functions.phone import InviteToGroupCallRequest as invitetovc
 
@@ -21,9 +15,9 @@ NO_ADMIN = "`LU BUKAN ADMIN NGENTOT!!`"
 
 
 async def get_call(event):
-    rambot = await event.client(getchat(event.chat_id))
-    rama = await event.client(getvc(diorbot.full_chat.call))
-    return rama.call
+    diorbot = await event.client(getchat(event.chat_id))
+    dior = await event.client(getvc(diorbot.full_chat.call))
+    return dior.call
 
 
 def user_list(l, n):
@@ -31,9 +25,9 @@ def user_list(l, n):
         yield l[i: i + n]
 
 
-@register(outgoing=True, pattern=r"^\.bukainos$", groups_only=True)
-async def _(rambot):
-    chat = await rambot.get_chat()
+@register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
+async def _(diorbot):
+    chat = await diorbot.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
 
@@ -47,7 +41,7 @@ async def _(rambot):
         await diorbot.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.matiinos$", groups_only=True)
+@register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
 async def _(diorbot):
     chat = await diorbot.get_chat()
     admin = chat.admin_rights
@@ -58,12 +52,12 @@ async def _(diorbot):
     new_rights = ChatAdminRights(invite_users=True)
     try:
         await diorbot.client(stopvc(await get_call(diorbot)))
-        await diorbot.edit("`OBROLAN SUARA DIHENTIKAN, TYPING BE NGENTOT...`")
+        await diorbot.edit("`OBROLAN SUARA DIMATIIN, TYPING AJA NGENTOT SUARA LU CEMPRENG...`")
     except Exception as ex:
         await diorbot.edit(f"`{str(ex)}`")
 
 
-@register(outgoing=True, pattern=r"^\.naiklusemua", groups_only=True)
+@register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
 async def _(diorbot):
     await diorbot.edit("`Memulai Invite member group...`")
     users = []
@@ -81,13 +75,38 @@ async def _(diorbot):
     await diorbot.edit(f"`Menginvite {z} Member`")
 
 
+
+
+@register(outgoing=True, pattern=r"^\.vctitle", groups_only=True)
+async def _(diorbot):
+    title = e.pattern_match.group(1)
+    chat = await diorbot.get_chat()
+    admin = chat.admin_rights
+    creator = chat.creator
+
+    if not title:
+        return await diorbot.edit("**Silahkan Masukan Title Obrolan Suara Grup**")
+
+    if not admin and not creator:
+        return await diorbot.edit(f"**Maaf {ALIVE_NAME} Bukan Admin 👮**")
+    try:
+        await diorbot.edit(settitle(call=await get_call(e), title=title.strip()))
+        await diorbot.edit( f"**Berhasil Mengubah Judul VCG Menjadi** `{title}`")
+    except Exception as ex:
+        await diorbot.edit(f"**ERROR:** `{ex}`")
+
+
+
+
 CMD_HELP.update(
     {
-        "ramcalls": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.bukainos`\
+        "vcg": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.startvc`\
          \n↳ : Memulai Obrolan Suara dalam Group.\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.matiinos`\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.stopvc`\
          \n↳ : `Menghentikan Obrolan Suara Pada Group.`\
-         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.naiklusemua`\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vctitle`\
+         \n↳ : `Untuk Mengubah title/judul voice chat group.`\
+         \n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.vcinvite`\
          \n↳ : Invite semua member yang berada di group. (Kadang bisa kadang kaga)."
     }
 )
