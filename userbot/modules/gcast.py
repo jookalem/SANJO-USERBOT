@@ -18,7 +18,7 @@ GCAST_BLACKLIST = [
     -1001626554919,  # EmikoSupport
 ]
 
-@register(outgoing=True, pattern="^.gcast (.*)")
+@register(outgoing=True, pattern=r"^\.gcast(?: |$)(.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if xx:
@@ -26,9 +26,9 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await edit_delete(event, "**Berikan Sebuah Pesan atau Reply**")
+        await event.edit("**Berikan Sebuah Pesan atau Reply**")
         return
-    kk = await edit_or_reply(event, "`Globally Broadcasting Msg...`")
+    kk = await event.edit("`Globally Broadcasting Msg...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -38,6 +38,8 @@ async def gcast(event):
                 if chat not in GCAST_BLACKLIST:
                     await event.client.send_message(chat, msg)
                     done += 1
+                elif chat not in GCAST_BLACKLIST:
+                    pass
             except BaseException:
                 er += 1
     await kk.edit(
