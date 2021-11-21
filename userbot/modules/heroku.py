@@ -127,14 +127,16 @@ async def set_var(var):
 """
 
 
-@register(outgoing=True, pattern=r"^Usage(?: |$)")
+@register(outgoing=True, pattern=r"^.usage(?: |$)")
 async def dyno_usage(dyno):
     """
         Get your account Dyno Usage
     """
     await dyno.edit("`Memeriksa Dyno Heroku anda...`")
     await asyncio.sleep(3)
-    await dyno.edit("✨")
+    await dyno.edit("⚡")
+    await asyncio.sleep(2)
+    await dyno.edit("**Dior Ganteng**")
     await asyncio.sleep(2)
     useragent = (
         'Mozilla/5.0 (Linux; Android 10; SM-G975F) '
@@ -186,17 +188,17 @@ async def dyno_usage(dyno):
 
             await dyno.edit(
                 f"𝗜𝗡𝗙𝗢 𝗞𝗘𝗞𝗨𝗔𝗧𝗔𝗡 {REPO_NAME}!!\n\n"
-                "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
+                "╭╼━━━━━━━❖━━━━━━━━╮\n"
                 "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗦𝗔𝗔𝗧 𝗜𝗡𝗜 : \n"
                 f"┣•   ▸ {AppHours} ᴊᴀᴍ - {AppMinutes} ᴍᴇɴɪᴛ. \n"
                 f"┣•   ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {AppPercentage}% \n"
-                "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
+                "╰╼━━━━━━━❖━━━━━━━━╯\n"
                 "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰ \n"
-                "╭✠╼━━━━━━❖━━━━━━━✠╮ \n"
+                "╭╼━━━━━━━❖━━━━━━━━╮ \n"
                 "┣•𝗣𝗘𝗡𝗚𝗚𝗨𝗡𝗔𝗔𝗡 𝗕𝗨𝗟𝗔𝗡 𝗜𝗡𝗜 : \n"
                 f"┣•  ▸ {hours} ᴊᴀᴍ - {minutes} ᴍᴇɴɪᴛ. \n"
                 f"┣•  ▸ ᴘʀᴇꜱᴇɴᴛᴀꜱᴇ : {percentage}%. \n"
-                "╰✠╼━━━━━━❖━━━━━━━✠╯\n"
+                "╰╼━━━━━━━❖━━━━━━━━╯\n"
                 f"• 𝗣𝗘𝗠𝗜𝗟𝗜𝗞  : {ALIVE_NAME} \n"
                 f"**•JOIN•** : [MY GROUP]({GROUP_LINK}) \n"
             )
@@ -212,7 +214,7 @@ async def _(dyno):
         app = Heroku.app(HEROKU_APP_NAME)
     except BaseException:
         return await dyno.reply(
-            "`Please make sure your Heroku API Key, Your App name are configured correctly in the heroku var.`"
+            "`Harap pastikan Kunci API Heroku Anda, Nama Aplikasi Anda dikonfigurasi dengan benar di heroku var.`"
         )
     await dyno.edit("`Sedang Mengambil Logs Anda`")
     with open("logs.txt", "w") as log:
@@ -226,7 +228,7 @@ async def _(dyno):
     return os.remove("logs.txt")
 
 
-CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Usage`"
+CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.usage`"
                  "\n↳ : Check Quota Dyno Heroku"
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set var <NEW VAR> <VALUE>`"
                  "\n↳ : Tambahkan Variabel Baru Atau Memperbarui Variabel"
