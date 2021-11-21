@@ -80,7 +80,7 @@ async def typewriter(typew):
 # dior cakep!
 
 CMD_HELP.update({
-    "Pantun":
+    "Roasting":
     "pt\
 \nUsage: Pantun berdamage mks smsm.\
     "ptn\
