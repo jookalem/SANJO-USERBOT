@@ -28,15 +28,19 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    f"**╭━━━━━━━━━━━━━━━━━╮**\n    ✨SELAMAT WELCOME✨\n"
-    "**╰━━━━━━━━━━━━━━━━━╯**\n"
-    "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-    f"**EH JELEK,KALO NGECHAT TUAN {DEFAULTUSER} ITU SALAM DULU LAH KONTOL,\nHABIS ITU SABAR TUNGGU TUAN GUA BALES,\nKALO GA DI BALES - BALES BERARTI LU ITU JELEK BANGET HINA DI MATA TUAN GUA, LU GAUSAH SPAM JUGA, KAYA ANAK YATIM MAU MINTA SEMBAKO LU ANJING, APA LAGI LU NGECHAT NYA CUMA BUAT NGINJEM DUIT, BISA GUA BLOKIR LU TAI!! KALO NYEPAM JUGA TAR GUA BLOKIR!!!! TUNGGU TUAN {DEFAULTUSER} KONFIRMASI PESAN LU BABI**\n"
-    "▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n"
-    "╭✠╼━━━━━━❖━━━━━━━✠╮\n"
-    "┣[• 𝐁𝐎𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄\n"
-    "┣[• 𝐁𝐘 ⚡DIOR-UBOT⚡\n"
-    "╰✠╼━━━━━━❖━━━━━━━✠╯")
+    "╔═════════════════════╗\n"
+    "       ⚡ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚡ \n"
+    "╚═════════════════════╝\n"
+    "• Saya adalah bot yang menjaga room chat tuan {DEFAULTUSER}.\n"
+    "• Tuan {DEFAULTUSER} belum menyetujui anda untuk PM.\n"
+    "• Tunggu sampai tuan {DEFAULTUSER} menyetujui PM anda.\n"
+    "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
+    "• Tuan {DEFAULTUSER} adalah orang paling tampan.\n"
+    "╔════════════════════╗\n"
+    "   𝗽𝗲𝘀𝗮𝗻 𝗼𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗯𝘆 - 𝘂𝘀𝗲𝗿𝗯𝗼𝘁\n"
+    "   𝘀𝘂𝗽𝗽𝗼𝗿𝘁 - @fandasupport\n"
+    "╚════════════════════╝\n"
+)
 # =================================================================
 
 
