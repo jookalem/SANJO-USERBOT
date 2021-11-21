@@ -234,7 +234,7 @@ OWNER_BOT = os.environ.get(
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⚡𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧⚡"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -276,7 +276,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "**⚡DIOR-UBOT⚡ Berhasil Di Aktifkan**\n━━\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━"
+    "BOTLOG_MSG") or "**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil Di Aktifkan**\n━━\n➠ **Ketik** `.ralive` **untuk Mengecek Bot**\n━━"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
