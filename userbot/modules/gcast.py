@@ -1,6 +1,5 @@
 from userbot.events import register
 from userbot import CMD_HELP, bot
-from userbot.utils import edit_delete, edit_or_reply
 
 GCAST_BLACKLIST = [
     -1001473548283,  # SharingUserbot
