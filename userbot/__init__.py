@@ -198,7 +198,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "RAM-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "DIOR-UBOT")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "7.0")
@@ -303,8 +303,8 @@ def is_mongo_alive():
 
 
 # Init Redis
-# Redis will be hosted inside the docker container that hosts the bot
-# We need redis for just caching, so we just leave it to non-persistent
+# Redis akan di-host di dalam wadah buruh pelabuhan yang menampung bot
+# Kami membutuhkan redis hanya untuk caching, jadi kami serahkan saja ke non-persistent
 REDIS = StrictRedis(host='localhost', port=6379, db=0)
 
 
