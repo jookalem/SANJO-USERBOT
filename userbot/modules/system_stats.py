@@ -148,13 +148,13 @@ async def bot_ver(event):
         verout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "`╭━━━━━━━━━━━━━━━━━━━━╮\n "
-            "` Userbot Version: \n "
+            "`╭━━━━━━━━━━━━━━━━━━━━╮\n"
+            "` Userbot Version: \n"
             f"{verout}"
             "` \n"
-            "   Revision: "
+            "   Revision: \n"
             f"{revout}🇲🇨\n"
-            "╰━━━━━━━━━━━━━━━━━━━━╯ "
+            "╰━━━━━━━━━━━━━━━━━━━━╯"
         )
     else:
         await event.edit(
@@ -210,83 +210,6 @@ async def pipcheck(pip):
         await pip.edit("Gunakan `.help pip` Untuk Melihat Contoh")
 
 
-@register(outgoing=True, pattern=r"^\.(?:falive)\s?(.)?")
-async def amireallyalive(alive):
-    user = await bot.get_me()
-    await get_readable_time((time.time() - StartTime))
-    await alive.edit("`Kenalin seleb...`")
-    await asyncio.sleep(1)
-    await alive.edit("⚡")
-    await asyncio.sleep(3)
-    output = (
-        f"\n__**{RAM_TEKS_KUSTOM}**__\n"
-        f"**╭───────────────────**\n"
-        f"**├[• 🤴 Fanda Owner** \n"
-        f"├[•   : `{DEFAULTUSER}` \n"
-        f"**├[• 👁️‍🗨️ Username** \n"
-        f"├[•   : `@{user.username}` \n"
-        f"├──────────────────\n"
-        f"├[•⚙️ `Telethon :`Ver {version.__version__} \n"
-        f"├[•🐍 `Python   :`Ver {python_version()} \n"
-        f"├[•🤖 `Bot Ver  :`{BOT_VER} \n"
-        f"├[•📂 `Modules  :`{len(modules)} \n"
-        f"╰─────────────────")
-    if ALIVE_LOGO:
-        try:
-            logo = ALIVE_LOGO
-            await alive.delete()
-            msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(50)
-            await msg.delete()
-        except BaseException:
-            await alive.edit(
-                output + "\n\n *`The provided logo is invalid."
-                "\nMake sure the link is directed to the logo picture`"
-            )
-            await asyncio.sleep(100)
-            await alive.delete()
-    else:
-        await alive.edit(output)
-        await asyncio.sleep(100)
-        await alive.delete()
-
-
-@register(outgoing=True, pattern=r"^\.(?:dalive)\s?(.)?")
-async def amireallyalive(alive):
-    user = await bot.get_me()
-    await get_readable_time((time.time() - StartTime))
-    output = (
-        f"**ㅤㅤㅤㅤ ⚡FANDA - PROJECT⚡**\n"
-        f"╔══════════╬════╬══════════╗ \n"
-        f"╟⟩⟩ 🤴 • `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)             ㅤ ║\n"
-        f"╟⟩⟩ 💻 • `ꜱʏꜱᴛᴇᴍ.   :`Android 10            ║\n"
-        f"╟⟩⟩ ⚙️ • `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}                ㅤㅤ  ║\n"
-        f"╟⟩⟩ 🐍 • `ᴘʏᴛʜᴏɴ.   :`v.{python_version()} ㅤㅤㅤㅤ         ║\n"
-        f"╟⟩⟩ 🤖 • `ʙᴏᴛ      :`v.{BOT_VER}                ㅤㅤㅤ ║\n"
-        f"╟⟩⟩ 📂 • `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤㅤㅤㅤㅤㅤㅤ   ║\n"
-        f"╚══════════╬════╬══════════╝ \n"
-        f"🔰 : [𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT)\n👥 : [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport)\n👤 : [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)\n"
-    )
-    if ALIVE_LOGO:
-        try:
-            logo = ALIVE_LOGO
-            await alive.delete()
-            msg = await bot.send_file(alive.chat_id, logo, caption=output)
-            await asyncio.sleep(50)
-            await msg.delete()
-        except BaseException:
-            await alive.edit(
-                output + "\n\n *`The provided logo is invalid."
-                "\nMake sure the link is directed to the logo picture`"
-            )
-            await asyncio.sleep(100)
-            await alive.delete()
-    else:
-        await alive.edit(output)
-        await asyncio.sleep(100)
-        await alive.delete()
-
-
 @register(outgoing=True, pattern=r"^\.(?:alive|on)\s?(.)?")
 async def amireallyalive(alive):
     user = await bot.get_me()
@@ -299,9 +222,9 @@ async def amireallyalive(alive):
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
     await alive.edit("⚡")
-    await asyncio.sleep(2)
+    await asyncio.sleep(3)
     output = (
-        f"╭═──────╼═⌘═╾───────═\n"
+        f"╭═──────╼═⌘═╾──────═ \n"
         f"┃⚡FANDA - PROJECT⚡\n"
         f"╰═─────╼══⌘══╾─────═ \n"
         f" ❍ `Name     :` {DEFAULTUSER} \n"
@@ -312,9 +235,10 @@ async def amireallyalive(alive):
         f" ❍ `Bot Ver  :` {BOT_VER} \n"
         f" ❍ `Modules  :` {len(modules)} Modules \n"
         f"╭═───────╼⌘╾───────═ \n"
-        f"┃[𝗥𝗲𝗽𝗼](https://github.com/DIORrios285)  |  [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fandasupport)  |  "
-        f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/fatur.285)\n"
-        f"╰═──────╼═⌘═╾───────═")
+        f" [𝗥𝗲𝗽𝗼](https://github.com/DIORrios285) \n"
+        f" [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fandasupport) \n"
+        f" [𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/fatur.285) \n"
+        f"╰═──────╼═⌘═╾──────═")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -335,6 +259,42 @@ async def amireallyalive(alive):
         await alive.delete()
 
 
+@register(outgoing=True, pattern=r"^\.(?:ralive)\s?(.)?")
+async def amireallyalive(alive):
+    user = await bot.get_me()
+    await get_readable_time((time.time() - StartTime))
+    output = (
+        f"**ㅤㅤ ⚡FANDA - PROJECT⚡** \n"
+        f"╔═════════╬════╬═════════╗ \n"
+        f"• `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)    \n"
+        f"• `ꜱʏꜱᴛᴇᴍ   :`Android 10   \n"
+        f"• `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}   \n"
+        f"• `ᴘʏᴛʜᴏɴ   :`v.{python_version()} ㅤ\n"
+        f"• `ʙᴏᴛ      :`v.{BOT_VER}           \n"
+        f"• `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤ\n"
+        f"[𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT) | [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport) | [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)"
+    )
+    if ALIVE_LOGO:
+        try:
+            logo = ALIVE_LOGO
+            await alive.delete()
+            msg = await bot.send_file(alive.chat_id, logo, caption=output)
+            await asyncio.sleep(50)
+            await msg.delete()
+        except BaseException:
+            await alive.edit(
+                output + "\n\n *`Logo yang diberikan tidak valid."
+                "\nPastikan link diarahkan ke gambar logo`"
+            )
+            await asyncio.sleep(100)
+            await alive.delete()
+    else:
+        await alive.edit(output)
+        await asyncio.sleep(100)
+        await alive.delete()
+
+
+
 @register(outgoing=True, pattern=r"^\.aliveu")
 async def amireallyaliveuser(username):
     message = username.text
@@ -343,7 +303,7 @@ async def amireallyaliveuser(username):
         newuser = message[8:]
         global DEFAULTUSER
         DEFAULTUSER = newuser
-        output = "Successfully changed user to " + newuser + "!"
+        output = "Berhasil mengubah pengguna menjadi " + newuser + "!"
     await username.edit("`" f"{output}" "`")
 
 
@@ -351,19 +311,23 @@ async def amireallyaliveuser(username):
 async def amireallyalivereset(ureset):
     global DEFAULTUSER
     DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
-    await ureset.edit("`" "Successfully reset user for alive!" "`")
+    await ureset.edit("`" "Berhasil mengatur ulang pengguna untuk hidup!" "`")
 
 
 CMD_HELP.update({
     "sistem":
     "`.sysd`\
-\nUsage: Shows system information using neofetch.\
+\nUsage: Menampilkan informasi sistem menggunakan neofetch.\
+\n\n`.alive|.on`\
+\nUsage: Menunjukkan alive bot.\
+\n\n`.ralive`\
+\nUsage: Menampilkan alive repo.\
 \n\n`.botver`\
-\nUsage: Shows the userbot version.\
+\nUsage: Menunjukkan versi userbot.\
 \n\n`.pip` <module(s)>\
-\nUsage: Does a search of pip modules(s).\
+\nUsage: Melakukan pencarian modul pip(s).\
 \n\n`.start`\
-\nUsage: Type .start to see whether your bot is working or not.\
+\nUsage: Ketik .start untuk melihat apakah bot Anda berfungsi atau tidak.\
 \n\n`.aliveu` <text>\
 \nUsage: Changes the 'user' in alive to the text you want.\
 \n\n`.resetalive`\
