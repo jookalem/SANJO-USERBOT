@@ -36,7 +36,7 @@ async def tmeme(e):
             "WSpam was executed successfully")
 
 
-@register(outgoing=True, pattern="^Spam (.*)")
+@register(outgoing=True, pattern="^.spam (.*)")
 async def spammer(e):
     counter = int(e.pattern_match.group(1).split(' ', 1)[0])
     spam_message = str(e.pattern_match.group(1).split(' ', 1)[1])
@@ -62,7 +62,7 @@ async def tiny_pic_spam(e):
             "PicSpam was executed successfully")
 
 
-@register(outgoing=True, pattern="^Delayspam (.*)")
+@register(outgoing=True, pattern="^.delayspam (.*)")
 async def spammer(e):
     spamDelay = float(e.pattern_match.group(1).split(' ', 2)[0])
     counter = int(e.pattern_match.group(1).split(' ', 2)[1])
@@ -81,13 +81,13 @@ CMD_HELP.update({
     "spam":
     "`Cspam` <text>\
 \nUsage: Spam the text letter by letter.\
-\n\n`Spam` <count> <text>\
+\n\n`.spam` <count> <text>\
 \nUsage: Floods text in the chat !!\
 \n\n`Wspam` <text>\
 \nUsage: Spam the text word by word.\
 \n\n`Picspam` <count> <link to image/gif>\
 \nUsage: As if text spam was not enough !!\
-\n\n`Delayspam` <delay> <count> <text>\
+\n\n`.delayspam` <delay> <count> <text>\
 \nUsage: `Bigspam` but with custom delay.\
 \n\n\nNOTE : Spam at your own risk !!"
 })
