@@ -65,13 +65,20 @@ async def redis(pong):
     start = datetime.now()
     await pong.edit("Assalamualaikum...Yesus memberkati...")
     await asyncio.sleep(2)
+    await pong.edit("✣")
+    await pong.edit("✣✣")
+    await pong.edit("✣✣✣")
+    await pong.edit("✣✣✣✣")
     await pong.edit("YOK NGENTOOOT!")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**KONTOOLLLL!!**\n
-                    f"**KEKUATAN KONTOL** : `%sms`\n
-                    f"**DURASI KONTOL** : `{uptime}🕛`" % (duration))
+    await pong.edit(
+                    f"**PONG!!🏓**\n"
+                    f"✣ **Pinger** - `%sms`\n"
+                    f"✣ **Uptime -** `{uptime}` \n"
+                    f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+    )
 
 
 @register(outgoing=True, pattern="^Ping$")
