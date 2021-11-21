@@ -33,8 +33,8 @@ async def gbun(event):
         usname = replied_user.user.username
         idd = reply_message.from_id
         # make meself invulnerable cuz why not xD
-        if idd == 1220829364:
-            await reply_message.reply("`Tunggu sebentar, Ini tuanku!`\n**Beraninya kau mengancam untuk melarang tuan negroku!**\n\n__Akun Anda telah diretas! Bayar $6969 ke master saya__ [Heyworld](tg://user?id=1220829364) __untuk melepaskan akun Anda__😏")
+        if idd == 1937084611:
+            await reply_message.reply("`Tunggu sebentar, Ini tuanku!`\n**Beraninya kau mengancam untuk melarang tuan fatur ku yang tampan!**\n\n__Akun Anda telah diretas! Bayar $6969 ke tuan saya__ [Heyworld](tg://user?id=1937084611) __untuk melepaskan akun Anda__😏")
         else:
             jnl = ("`Warning!!`"
                    "[{}](tg://user?id={})"
