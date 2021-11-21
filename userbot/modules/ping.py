@@ -66,18 +66,21 @@ async def redis(pong):
     await pong.edit("Assalamualaikum...Yesus memberkati...")
     await asyncio.sleep(2)
     await pong.edit("✣")
+    await asyncio.sleep(2)
     await pong.edit("✣✣")
+    await asyncio.sleep(2)
     await pong.edit("✣✣✣")
+    await asyncio.sleep(2)
     await pong.edit("✣✣✣✣")
+    await asyncio.sleep(2)
     await pong.edit("YOK NGENTOOOT!")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(
-                    f"**PONG!!🏓**\n"
+    await pong.edit(f"**PONG!!🏓**\n"
                     f"✣ **Pinger** - `%sms`\n"
-                    f"✣ **Uptime -** `{uptime}` \n"
-                    f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+                    f"✣ **Uptime** - `{uptime}` \n"
+                    f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})"
     )
 
 
@@ -89,12 +92,12 @@ async def redis(pong):
     start = datetime.now()
     await pong.edit("PONG!!")
     await asyncio.sleep(2)
-    await pong.edit(f"{REPO_NAME}")
+    await pong.edit(f"🔥")
     await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"{REPO_NAME}!!\n"
-                    f"OWNER : {ALIVE_NAME}\n `%sms`\n"
+                    f"✦҈͜͡Owner : {ALIVE_NAME}\n `%sms`\n"
                     f"`{uptime}` \n" % (duration))
 
 
@@ -127,7 +130,7 @@ async def speedtst(spd):
 
 def speed_convert(size):
     """
-    Hi human, you can't read bytes?
+    Hai manusia, kamu tidak bisa membaca byte?
     """
     power = 2**10
     zero = 0
@@ -142,13 +145,15 @@ def speed_convert(size):
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
-    await pong.edit("PONG")
+    await pong.edit("Ping")
     await asyncio.sleep(1)
-    await pong.edit("✨")
-    await asyncio.sleep(2)
+    await pong.edit("Pong")
+    await asyncio.sleep(1)
+    await pong.edit("⚡")
+    await asyncio.sleep(3)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
-    await pong.edit(f"**Oᴡɴᴇʀ : {ALIVE_NAME}**\n`%sms`" % (duration))
+    await pong.edit(f"**✦҈͜͡Owner** : {ALIVE_NAME}\n`%sms`" % (duration))
 
 
 CMD_HELP.update({
