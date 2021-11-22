@@ -22,13 +22,16 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
 ## SOKIN PLER!
-<a href="https://www.instagram.com/fatur.285?=nametag"><img src="https://img.shields.io/badge/INSTAGRAM-GA%20FOLLOW%20GUA%20INJAK%20LU-blue.svg?style=for-the-badge&logo=Instagram"></a>
-<a href="https://t.me/diorplayingwords"><img src="https://img.shields.io/badge/CH-SUKA%20SUKA%20DIOR-blue.svg?style=for-the-badge&logo=Telegram"></a>
-<a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/GROUP-FANDA%20SUPPORT-blue.svg?style=for-the-badge&logo=Telegram"></a>
+<p>
+    <a href="https://t.me/uurfavboys1" target="blank"><img src="https://img.shields.io/badge/fatur-20302f?style=flat&logo=telegram" /></a>
+    <a href="https://t.me/uurfavboys1" target="blank"><img src="https://img.shields.io/badge/dior-20302f?style=flat&logo=telegram" /></a>
+    <a href="https://t.me/diorplayingwords" target="blank"><img src="https://img.shields.io/badge/grup%20support-30302f?style=flat&logo=telegram" /></a>
+    <a href="https://t.me/diorplayingwords" target="blank"><img src="https://img.shields.io/badge/ch%20dior-20302f?style=flat&logo=telegram" /></a>
+    <a href="https://instagram.com/fatur.285" target="blank"><img src="https://img.shields.io/badge/fatur-20302f?style=flat&logo=instagram" /></a>
 
 
 ## AMBIL STRING LU DISINI:
-<a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/Repl.it-Generate%20String-marine.svg?style=for-the-badge&logo=none"></a>
+<a href="https://t.me/fandasupport"><img src="https://img.shields.io/badge/Repl.it-Generate%20String-20302?style=flate&logo=replit"></a>
 
 ## Deploy disini iya disini ga liat gua tusuk mata lu:
 <a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
