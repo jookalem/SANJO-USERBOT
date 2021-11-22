@@ -63,7 +63,7 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("Assalamualaikum...Yesus memberkati...")
+    await pong.edit("**Assalamualaikum...Yesus memberkati...**")
     await asyncio.sleep(2)
     await pong.edit("✣")
     await pong.edit("✣✣")
@@ -76,7 +76,7 @@ async def redis(pong):
     await pong.edit(f"**PING!!!🍀**\n"
                     f"✣ **Pinger** - `%sms`\n"
                     f"✣ **Uptime** - `{uptime}` \n"
-                    f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})"
+                    f"**✦҈͜͡Owner :** {ALIVE_NAME}"
     )
 
 
@@ -106,7 +106,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"{REPO_NAME}!!\n"
-                    f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})\n"
+                    f"**✦҈͜͡Owner :** {ALIVE_NAME}\n"
                     f"**✦҈͜͡Uptime :**`{uptime}` \n"
                     f"**✦҈͜͡Duration :** % (duration)")
 
@@ -151,7 +151,7 @@ def speed_convert(size):
     return f"{round(size, 2)} {units[zero]}"
 
 
-@register(outgoing=True, pattern="^Pong$")
+@register(outgoing=True, pattern="^.pong$")
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
@@ -159,8 +159,8 @@ async def pingme(pong):
     await asyncio.sleep(1)
     await pong.edit("Pong")
     await asyncio.sleep(1)
-    await pong.edit("⚡")
-    await asyncio.sleep(3)
+    await pong.edit("Pler")
+    await asyncio.sleep(1)
     end = datetime.now()
     duration = (end - start).microseconds / 9000
     await pong.edit(f"**✦҈͜͡Owner** : {ALIVE_NAME}\n`%sms`" % (duration))
@@ -171,5 +171,5 @@ CMD_HELP.update({
          \n↳ : Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.speed`\
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
-         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `Pong`\
+         \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.pong`\
          \n↳ : Sama Seperti Perintah Ping."})
