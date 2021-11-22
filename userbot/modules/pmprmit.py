@@ -29,13 +29,13 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     "╔═════════════════════╗\n"
-    "          ⚡ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚡ \n"
+    "          ⚠️ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚠️ \n"
     "╚═════════════════════╝\n"
-    "• Saya adalah bot yang menjaga room chat tuan {DEFAULTUSER}.\n"
-    "• Tuan {DEFAULTUSER} belum menyetujui anda untuk PM.\n"
-    "• Tunggu sampai tuan {DEFAULTUSER} menyetujui PM anda.\n"
+    "• Saya adalah bot yang menjaga room chat ini.\n"
+    "• Tuan [{user.first_name}](tg://user?id={user.id}) belum menyetujui anda untuk PM.\n"
+    "• Tunggu sampai tuan [{user.first_name}](tg://user?id={user.id}) menyetujui PM anda.\n"
     "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
-    "• Tuan {DEFAULTUSER} adalah orang paling tampan.\n"
+    "• Tuan [{user.first_name}](tg://user?id={user.id}) adalah orang paling tampan.\n"
     "╔════════════════════╗\n"
     "   𝗽𝗲𝘀𝗮𝗻 𝗼𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗯𝘆 - 𝘂𝘀𝗲𝗿𝗯𝗼𝘁\n"
     "   𝘀𝘂𝗽𝗽𝗼𝗿𝘁 - @fandasupport\n"
