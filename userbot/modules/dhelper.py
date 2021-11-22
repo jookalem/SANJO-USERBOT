@@ -11,16 +11,18 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 @register(outgoing=True, pattern="^.helpmy$")
 async def usit(e):
     await e.edit(
-        f"**Hai {DEFAULTUSER} Kalau lu ga Tau cara buat Memerintah gua Ketik** `.helpme` Atau `.help` atau Minta Bantuan Ke:\n"
+        f"**Hai** {DEFAULTUSER} **Kalau lu ga Tau cara buat Memerintah gua Ketik** `.helpme` **Atau** `.help` **atau Minta Bantuan Ke:**\n"
         "\n[FATUR](t.me/uurfavboys1)"
-        "\n\n[SUPPORT](https://t.me/diorplayingwords)"
-        "\n\n[HELP](https://t.me/fandasupport)")
+        "\n[DIOR](t.me/faturdiorjuga)"
+        "\n\n[HELP](https://t.me/fandasupport)
+        "\n\n[SUPPORT](https://t.me/diorplayingwords)")
+
 
 
 @register(outgoing=True, pattern="^.rvars$")
 async def var(m):
     await m.edit(
-        f"**Disini Daftar Vars Dari {DEFAULTUSER}:**\n"
+        f"**Disini Daftar Vars Dari** {DEFAULTUSER}:\n"
         "\n[DAFTAR VARS](https://raw.githubusercontent.com/DIORrios285/DIOR-UBOT/DIOR-UBOT/varshelper.txt)")
 
 
