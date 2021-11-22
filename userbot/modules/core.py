@@ -6,6 +6,8 @@
 import os
 from pathlib import Path
 
+from telethon import events
+from userbot.events import register
 from userbot import CMD_HELP, bot
 from userbot.utils import edit_or_reply, load_module, remove_plugin, reply_id
 
