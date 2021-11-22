@@ -55,5 +55,5 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 *   BANYAK LAGI DAH!.
 
 
-## Stay Support 🚀
+## Stay Support 
 *   [LonamiWebs](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
