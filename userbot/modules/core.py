@@ -6,11 +6,10 @@ import os
 from pathlib import Path
 
 from userbot import CMD_HELP, bot
-from userbot.events import man_cmd
 from userbot.utils import edit_or_reply, load_module, remove_plugin, reply_id
 
 
-@bot.on(man_cmd(outgoing=True, pattern="install$"))
+@register(outgoing=True, pattern=r"^\.install(?: |$)(\S*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -40,7 +39,7 @@ async def _(event):
             os.remove(downloaded_file_name)
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"psend ([\s\S]*)"))
+@register(outgoing=True, pattern=r"^\.psend(?: |$)(\S*)")
 async def send(event):
     reply_to_id = await reply_id(event)
     input_str = event.pattern_match.group(1)
@@ -60,7 +59,7 @@ async def send(event):
         await edit_or_reply(event, "**ERROR: Modules Tidak ditemukan**")
 
 
-@bot.on(man_cmd(outgoing=True, pattern=r"uninstall (?P<shortname>\w+)"))
+@register(outgoing=True, pattern=r"^\.uninstall(?: |$)(\S*)")
 async def uninstall(event):
     if event.fwd_from:
         return
