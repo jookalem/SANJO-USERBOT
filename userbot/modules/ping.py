@@ -123,7 +123,8 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(f"{REPO_NAME}!!\n"
                     f"**✦҈͜͡Owner :** {ALIVE_NAME}\n `%sms`\n"
-                    f"**✦҈͜͡Uptime :**`{uptime}` \n**✦҈͜͡Duration :** `% (duration))
+                    f"**✦҈͜͡Uptime :**`{uptime}` \n"
+                    f"**✦҈͜͡Duration :** % (duration)")
 
 
 @register(outgoing=True, pattern="^.speed$")
