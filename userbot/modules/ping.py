@@ -69,15 +69,14 @@ async def redis(pong):
     await pong.edit("✣✣")
     await pong.edit("✣✣✣")
     await pong.edit("✣✣✣✣")
-    await asyncio.sleep(1)
     await pong.edit("**YO NGENTOOOT!**")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
-    await pong.edit(f"**STATUS:**\n"
+    await pong.edit(f"**PING!!!🍀**\n"
                     f"✣ **Pinger** - `%sms`\n"
                     f"✣ **Uptime** - `{uptime}` \n"
-                    f"**✦҈͜͡Owner :** {ALIVE_NAME}"
+                    f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})"
     )
 
 
@@ -107,7 +106,7 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(f"{REPO_NAME}!!\n"
-                    f"**✦҈͜͡Owner :** {ALIVE_NAME}\n `%sms`\n"
+                    f"**✦҈͜͡Owner :** [{user.first_name}](tg://user?id={user.id})\n"
                     f"**✦҈͜͡Uptime :**`{uptime}` \n"
                     f"**✦҈͜͡Duration :** % (duration)")
 
