@@ -1,5 +1,5 @@
 # Copyright (C) 2019 The Raphielscape Company LLC.
-# RAM-UBOT MINTA
+# Dyor
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License
 """ Userbot module containing commands related to the \
@@ -124,7 +124,7 @@ async def redis(pong):
     await pong.edit(f"{REPO_NAME}!!\n"
                     f"**✦҈͜͡Owner :** {ALIVE_NAME}\n `%sms`\n"
                     f"**✦҈͜͡Uptime :**`{uptime}` \n"
-                    f"**✦҈͜͡Duration :**`% (duration))
+                    f"**✦҈͜͡Duration :** `% (duration))
 
 
 @register(outgoing=True, pattern="^.speed$")
