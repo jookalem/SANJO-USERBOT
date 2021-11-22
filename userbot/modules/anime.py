@@ -662,20 +662,20 @@ def is_gif(file):
 
 CMD_HELP.update({
     "anime":
-    "`.anime` <anime>\
-    \nUsage: Returns with Anime information.\
+    "`.anime` <nama anime>\
+    \nUsage: mencari informasi anime.\
     \n\n`.manga` <manga name>\
-    \nUsage: Returns with the Manga information.\
+    \nUsage: mencari informasi manga.\
     \n\n`.akaizoku` or `.akayo` <anime name>\
-    \nUsage: Returns with the Anime Download link.\
+    \nUsage: Mencari anime dan memberikan link tautan Unduh Anime.\
     \n\n`.char` <character name>\
-    \nUsage: Return with character information.\
+    \nUsage: Mencari informasi karakter anime.\
     \n\n`.upcoming`\
-    \nUsage: Returns with Upcoming Anime information.\
+    \nUsage: Mencari informasi Anime yang akan datang.\
     \n\n`.scanime` <anime> or .sanime <anime>\
-    \nUsage: Search anime.\
+    \nUsage: Mencari anime.\
     \n\n`.smanga` <manga>\
-    \nUsage: Search manga.\
+    \nUsage: Mencari manga.\
     \n\n`.whatanime` Reply with media.\
-    \nUsage: Find anime from media file."
+    \nUsage: Temukan anime dari file media."
 })
