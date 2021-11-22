@@ -14,7 +14,7 @@ async def usit(e):
         f"**Hai** {DEFAULTUSER} **Kalau lu ga Tau cara buat Memerintah gua Ketik** `.helpme` **Atau** `.help` **atau Minta Bantuan Ke:**\n"
         "\n[FATUR](t.me/uurfavboys1)"
         "\n[DIOR](t.me/faturdiorjuga)"
-        "\n\n[HELP](https://t.me/fandasupport)
+        "\n\n[HELP](https://t.me/fandasupport)"
         "\n\n[SUPPORT](https://t.me/diorplayingwords)")
 
 
