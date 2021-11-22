@@ -33,9 +33,9 @@ async def _(event):
         r_msg = await event.get_reply_message()
         if r_msg.media:
             bot_api_file_id = pack_bot_file_id(r_msg.media)
-            await event.edit("ID Grup: `{}`\nID Dari Pengguna : `{}`\nID Bot File API: `{}`".format(str(event.chat_id), str(r_msg.from_id), bot_api_file_id))
+            await event.edit("ID Grup: `{}`\nID Pengguna : `{}`\nID Bot File API: `{}`".format(str(event.chat_id), str(r_msg.from_id), bot_api_file_id))
         else:
-            await event.edit("ID Grup: `{}`\nID Dari Pengguna : `{}`".format(str(event.chat_id), str(r_msg.from_id)))
+            await event.edit("ID Grup: `{}`\nID Pengguna : `{}`".format(str(event.chat_id), str(r_msg.from_id)))
     else:
         await event.edit("ID Grup: `{}`".format(str(event.chat_id)))
 
@@ -54,7 +54,7 @@ async def permalink(mention):
         await mention.edit(f"[{tag}](tg://user?id={user.id})")
 
 
-@register(outgoing=True, pattern="^.getbot(?: |$)(.*)")
+@register(outgoing=True, pattern="^.bots(?: |$)(.*)")
 async def _(event):
     if event.fwd_from:
         return
@@ -120,12 +120,12 @@ async def kickme(leave):
                      "╬═╬ \n"
                      "╬═╬ \n"
                      "╬═╬ \n"
-                     "╬═╬ AKU PERGI YA NGENTOT, PAPAY ANAK ANJING! \n"
+                     "╬═╬ GUA PERGI YA KENTOT, DAAH ANAK SIAL! \n"
                      "╬═╬☻/ \n"
                      "╬═╬/▌ \n"
                      "╬═╬/ \\ \n")
     sleep(10)
-    await leave.edit(f"`{ALIVE_NAME}, Meninggalkan Group ini, Good bye evrybody`")
+    await leave.edit(f"`Tuan {ALIVE_NAME}, Meninggalkan Group ini, Good bye bitch`")
     await leave.client.kick_participant(leave.chat_id, 'me')
 
 
@@ -138,7 +138,7 @@ async def unmute_chat(unm_e):
         await unm_e.edit('`Running on Non-SQL Mode!`')
         return
     unkread(str(unm_e.chat_id))
-    await unm_e.edit("```Berhasil Dibuka, Obrolan Tidak Lagi Dibisukan```")
+    await unm_e.edit("```Tuan {ALIVE_NAME} Telah membuka Obrolan```")
     await sleep(2)
     await unm_e.delete()
 
@@ -153,7 +153,7 @@ async def mute_chat(mute_e):
         return
     await mute_e.edit(str(mute_e.chat_id))
     kread(str(mute_e.chat_id))
-    await mute_e.edit("`Ssshssh Anda Telah Membisukan Obrolan !`")
+    await mute_e.edit("`Tuan {ALIVE_NAME} Telah Membisukan Obrolan !`")
     await sleep(2)
     await mute_e.delete()
     if BOTLOG:
@@ -445,7 +445,7 @@ CMD_HELP.update({
     "chat":
     "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.getid`\
 \n↳ : Dapatkan ID dari media Telegram mana pun, atau pengguna mana pun\
-\n\n: `.getbot`\
+\n\n: `.bots`\
 \n↳ : Dapatkan Bot dalam obrolan apa pun.\
 \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.logit`\
 \n↳ : Meneruskan pesan yang telah Anda balas di grup log bot Anda.\
