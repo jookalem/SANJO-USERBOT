@@ -31,5 +31,5 @@ async def _(event):
 CMD_HELP.update({
     "aeshtetic":
     "`.ae <teks>`\
-    \nUsage: mengubah font teks"
+    \nUsage: mengubah font teks menjadi aeshtetic"
 })
