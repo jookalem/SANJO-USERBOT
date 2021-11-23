@@ -148,17 +148,11 @@ async def bot_ver(event):
         verout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
         await event.edit(
-            "╭━━━━━━━━━━━━━━━━━━━━╮\n"
-             "Userbot Version: \n"
-             f"{verout}"
-             "`\n"
-             "Revision: \n"
-             f"{revout}🇲🇨\n"
-            "╰━━━━━━━━━━━━━━━━━━━━╯"
+            "✥ **Userbot Versi :** " f"`{verout}`" "\n✥ **Revisi :** " f"`{revout}`",
         )
     else:
         await event.edit(
-            "Shame that you don't have git, you're running - 'v1.beta.4' anyway!"
+            "Sayang sekali Anda tidak memiliki git, Anda menjalankan bot - 'v1.beta.4' anyway!"
         )
 
 
@@ -224,21 +218,14 @@ async def amireallyalive(alive):
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
-        f"╭═──────╼═⌘═╾──────═ \n"
-        f"┃⚡FANDA - PROJECT⚡\n"
-        f"╰═─────╼══⌘══╾─────═ \n"
-         f"❍ `Name     :` {DEFAULTUSER} \n"
-         f"❍ `Username :` @{user.username} \n"
-         f"❍ `Telethon :` Ver {version.__version__} \n"
-         f"❍ `Python   :` Ver {python_version()} \n"
-         f"❍ `Branch   :` {UPSTREAM_REPO_BRANCH} \n"
-         f"❍ `Bot Ver  :` {BOT_VER} \n"
-         f"❍ `Modules  :` {len(modules)} Modules \n"
-        f"╭═───────╼⌘╾───────═ \n"
-         f"[𝗥𝗲𝗽𝗼](https://github.com/DIORrios285) \n"
-         f"[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](t.me/fandasupport) \n"
-         f"[𝗜𝗻𝘀𝘁𝗮𝗴𝗿𝗮𝗺](https://Instagram.com/fatur.285) \n"
-        f"╰═──────╼═⌘═╾──────═")
+        f"**[DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT) is Up and Running.**\n\n"
+        f"⚡ **Master :** {DEFAULTUSER} \n"
+        f"⚡ **Modules :** `{len(modules)} Modules` \n"
+        f"⚡ **Bot Version :** `{BOT_VER}` \n"
+        f"⚡ **Python Version :** `{python_version()}` \n"
+        f"⚡ **Telethon Version :** `{version.__version__}` \n\n"
+        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/fandasupport)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/diorplayingwords)** | **[𝗢𝘄𝗻𝗲𝗿](https://t.me/uurfavboys1)**"
+    )
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
@@ -264,14 +251,14 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     output = (
-        f"**ㅤㅤ   ⚡FANDA - PROJECT⚡** \n"
+        f"**ㅤㅤ     ⚡FANDA - PROJECT⚡** \n"
         f"╔═════════╬════╬═════════╗ \n"
-         f"• `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)    \n"
-         f"• `ꜱʏꜱᴛᴇᴍ   :`Android 10   \n"
-         f"• `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}   \n"
-         f"• `ᴘʏᴛʜᴏɴ   :`v.{python_version()} ㅤ\n"
-         f"• `ʙᴏᴛ      :`v.{BOT_VER}           \n"
-         f"• `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤ\n\n"
+        f"• `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)    \n"
+        f"• `ꜱʏꜱᴛᴇᴍ   :`Android 10   \n"
+        f"• `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}   \n"
+        f"• `ᴘʏᴛʜᴏɴ   :`v.{python_version()} ㅤ\n"
+        f"• `ʙᴏᴛ      :`v.{BOT_VER}           \n"
+        f"• `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤ\n\n"
                   f"[𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT) **|** [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport) **|** [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)"
     )
     if ALIVE_LOGO:
