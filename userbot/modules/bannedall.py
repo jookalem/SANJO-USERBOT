@@ -1,13 +1,15 @@
+# Dior nyoba kak
+
+from telethon.tl.types import (
+    ChannelParticipantsKicked,
+)
+
 from asyncio import sleep
 from telethon.tl.types import ChatBannedRights
 from telethon.tl.functions.channels import EditBannedRequest
 from userbot.events import register
 from userbot import CMD_HELP
 
-# Aku nambah kredit sdikit
-# rama ganteng bgt kan?
-# Port By @VckyouuBitch From GeezProject
-# Perkontolan Dengan Hapus Credits
 @register(outgoing=True, pattern="^.bannedall(?: |$)(.*)")
 async def testing(event):
     nikal = await event.get_chat()
