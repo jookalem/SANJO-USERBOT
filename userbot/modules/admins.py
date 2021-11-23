@@ -134,7 +134,7 @@ async def promote(promt):
         pin_messages=True,
     )
 
-    await promt.edit("`Kita tambah admin dulu gess!!`")
+    await promt.edit("`Ranking process...`")
     user, rank = await get_user_from_event(promt)
     if not rank:
         rank = "Admin"  # Just in case.
@@ -174,7 +174,7 @@ async def demote(dmod):
         return await dmod.edit(NO_ADMIN)
 
     # If passing, declare that we're going to demote
-    await dmod.edit("`Gua turunin admin lu...`")
+    await dmod.edit("`Demotion process...`")
     rank = "Admin"  # dummy rank, lol.
     user = await get_user_from_event(dmod)
     user = user[0]
@@ -198,7 +198,7 @@ async def demote(dmod):
     # Assume we don't have permission to demote
     except BadRequestError:
         return await dmod.edit(NO_PERM)
-    await dmod.edit("`Admin Berhasil Dilepas! Makanya Jangan semena mena tolol`")
+    await dmod.edit("`Admin Berhasil Dilepas! Mentang mentang admin mau seenak pler, Jangan diulang ya lain kali **WATERPROOF MAN!!**`")
     await sleep(5)
     await dmod.delete()
 
@@ -259,7 +259,7 @@ async def ban(bon):
     if BOTLOG:
         await bon.client.send_message(
             BOTLOG_CHATID,
-            "#BAN\n"
+            "» #BAN «\n"
             f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
             f"GRUP: {bon.chat.title}(`{bon.chat_id}`)",
         )
@@ -277,7 +277,7 @@ async def nothanos(unbon):
         return await unbon.edit(NO_ADMIN)
 
     # If everything goes well...
-    await unbon.edit("`Kita Unban gess, Kasian...`")
+    await unbon.edit("`Lo gua unban, Kasian...`")
 
     user = await get_user_from_event(unbon)
     user = user[0]
@@ -286,14 +286,14 @@ async def nothanos(unbon):
 
     try:
         await unbon.client(EditBannedRequest(unbon.chat_id, user.id, UNBAN_RIGHTS))
-        await unbon.edit("```Udah di Unban Gosah ngejamet lagi!```")
+        await unbon.edit("```Udah di Unban Gosah ngejamet lagi pler!```")
         await sleep(3)
         await unbon.delete()
 
         if BOTLOG:
             await unbon.client.send_message(
                 BOTLOG_CHATID,
-                "#UNBAN\n"
+                "» #UNBAN «\n"
                 f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
                 f"GRUP: {unbon.chat.title}(`{unbon.chat_id}`)",
             )
@@ -347,7 +347,7 @@ async def spider(spdr):
             if BOTLOG:
                 await spdr.client.send_message(
                     BOTLOG_CHATID,
-                    "#MUTE\n"
+                    "» #MUTE «\n"
                     f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
                     f"GRUP: {spdr.chat.title}(`{spdr.chat_id}`)",
                 )
@@ -394,7 +394,7 @@ async def unmoot(unmot):
         if BOTLOG:
             await unmot.client.send_message(
                 BOTLOG_CHATID,
-                "#UNMUTE\n"
+                "» #UNMUTE «\n"
                 f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
                 f"GRUP: {unmot.chat.title}(`{unmot.chat_id}`)",
             )
@@ -467,7 +467,7 @@ async def ungmoot(un_gmute):
         if BOTLOG:
             await un_gmute.client.send_message(
                 BOTLOG_CHATID,
-                "#UNGMUTE\n"
+                "» #UNGMUTE «\n"
                 f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
                 f"GRUP: {un_gmute.chat.title}(`{un_gmute.chat_id}`)",
             )
@@ -507,7 +507,7 @@ async def gspider(gspdr):
         if BOTLOG:
             await gspdr.client.send_message(
                 BOTLOG_CHATID,
-                "#GLOBALMUTE\n"
+                "» #GLOBALMUTE «\n"
                 f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
                 f"GRUP: {gspdr.chat.title}(`{gspdr.chat_id}`)",
             )
@@ -530,7 +530,7 @@ async def rm_deletedacc(show):
         if del_u > 0:
             del_status = (
                 f"`Menemukan` **{del_u}** `Akun Hantu/Terhapus/Zombie Dalam Grup Ini,"
-                "\nBersihkan Itu Menggunakan Perintah .zombies clean`")
+                "\nBersihkan Menggunakan Perintah .zombies clean`")
         return await show.edit(del_status)
 
     # Here laying the sanity check
@@ -540,7 +540,7 @@ async def rm_deletedacc(show):
 
     # Well
     if not admin and not creator:
-        return await show.edit("`Mohon Maaf, Bukan Admin Disini!`")
+        return await show.edit("`Mohon Maaf, Lo bukan Admin Disini!`")
 
     await show.edit("`Menghapus Akun Terhapus...\nMohon Menunggu Sedang Dalam Proses`")
     del_u = 0
@@ -575,8 +575,8 @@ async def rm_deletedacc(show):
     if BOTLOG:
         await show.client.send_message(
             BOTLOG_CHATID,
-            "#MEMBERSIHKAN\n"
-            f"Membersihkan **{del_u}** Akun Terhapus!"
+            "» #MEMBERSIHKAN «\n"
+            f"CLEANER **{del_u}** Akun Terhapus!"
             f"\nGRUP: {show.chat.title}(`{show.chat_id}`)",
         )
 
@@ -628,7 +628,7 @@ async def pin(msg):
     except BadRequestError:
         return await msg.edit(NO_PERM)
 
-    await msg.edit("`Berhasil Melakukan Pinned!`")
+    await msg.edit("`Berhasil pin bokep!`")
     await sleep(2)
     await msg.delete()
 
@@ -637,7 +637,7 @@ async def pin(msg):
     if BOTLOG:
         await msg.client.send_message(
             BOTLOG_CHATID,
-            "#PIN\n"
+            "» #PIN «\n"
             f"ADMIN: [{user.first_name}](tg://user?id={user.id})\n"
             f"GRUP: {msg.chat.title}(`{msg.chat_id}`)\n"
             f"NOTIF: {not is_silent}",
@@ -659,7 +659,7 @@ async def kick(usr):
     if not user:
         return await usr.edit("`Tidak Dapat Menemukan Pengguna.`")
 
-    await usr.edit("`Melakukan Kick....`")
+    await usr.edit("`Kicking process....`")
 
     try:
         await usr.client.kick_participant(usr.chat_id, user.id)
@@ -679,7 +679,7 @@ async def kick(usr):
     if BOTLOG:
         await usr.client.send_message(
             BOTLOG_CHATID,
-            "#KICK\n"
+            "» #KICK «\n"
             f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
             f"GRUP: {usr.chat.title}(`{usr.chat_id}`)\n",
         )
