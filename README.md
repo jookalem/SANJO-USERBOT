@@ -33,7 +33,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ## AMBIL STRING LU DISINI:
 <a href="https://replit.com/@DIORrios285/DIOR-UBOT-STRING?v=1"><img src="https://img.shields.io/badge/Run-Generate%20String%20Sesion-marine?style=flat&logo=replit" width="300" height="30.200" />
 
-## Deploy disini iya disini ga liat gua tusuk mata lu:
+## DEPLOY DISINI 
 <a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
 <img src="https://telegra.ph/file/f4c59840a5988c6ffd536.jpg">
 
