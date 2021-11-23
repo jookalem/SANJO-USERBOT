@@ -57,7 +57,7 @@ async def add_note(fltr):
     if msg and msg.media and not string:
         if BOTLOG_CHATID:
             await fltr.client.send_message(
-                BOTLOG_CHATID, f"#NOTE\nCHAT ID: {fltr.chat_id}\nKEYWORD: {keyword}"
+                BOTLOG_CHATID, f"» #NOTE «\nCHAT ID: {fltr.chat_id}\nKEYWORD: {keyword}"
                 "\n\nPesan berikut disimpan sebagai data balasan catatan untuk obrolan, JANGAN hapus !!"
             )
             msg_o = await fltr.client.forward_messages(entity=BOTLOG_CHATID,
@@ -131,7 +131,7 @@ async def kick_marie_notes(kick):
             await kick.reply("/clear %s" % (i.strip()))
         await sleep(0.3)
     await kick.respond(
-        "```Berhasil membersihkan catatan bot yaay!```\n Beri aku kue!")
+        "```Berhasil membersihkan catatan bot yaay!```\n Beri aku kekasih!")
     if BOTLOG:
         await kick.client.send_message(
             BOTLOG_CHATID, "Saya membersihkan semua Catatan di " + str(kick.chat_id))
