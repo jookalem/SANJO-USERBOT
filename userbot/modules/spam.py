@@ -10,7 +10,7 @@ from userbot import BOTLOG, BOTLOG_CHATID, CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern="^Cspam (.*)")
+@register(outgoing=True, pattern="^.cspam (.*)")
 async def tmeme(e):
     cspam = str(e.pattern_match.group(1))
     message = cspam.replace(" ", "")
@@ -19,11 +19,11 @@ async def tmeme(e):
         await e.respond(letter)
     if BOTLOG:
         await e.client.send_message(
-            BOTLOG_CHATID, "#CSPAM\n"
+            BOTLOG_CHATID, "» #CSPAM «\n"
             "TSpam was executed successfully")
 
 
-@register(outgoing=True, pattern="^Wspam (.*)")
+@register(outgoing=True, pattern="^.wspam (.*)")
 async def tmeme(e):
     wspam = str(e.pattern_match.group(1))
     message = wspam.split()
@@ -32,7 +32,7 @@ async def tmeme(e):
         await e.respond(word)
     if BOTLOG:
         await e.client.send_message(
-            BOTLOG_CHATID, "#WSPAM\n"
+            BOTLOG_CHATID, "» #WSPAM «\n"
             "WSpam was executed successfully")
 
 
@@ -43,11 +43,11 @@ async def spammer(e):
     await e.delete()
     await asyncio.wait([e.respond(spam_message) for i in range(counter)])
     if BOTLOG:
-        await e.client.send_message(BOTLOG_CHATID, "#SPAM\n"
+        await e.client.send_message(BOTLOG_CHATID, "» #SPAM «\n"
                                     "Spam was executed successfully")
 
 
-@register(outgoing=True, pattern="^Picspam")
+@register(outgoing=True, pattern="^.picspam (.*)")
 async def tiny_pic_spam(e):
     message = e.text
     text = message.split()
@@ -58,7 +58,7 @@ async def tiny_pic_spam(e):
         await e.client.send_file(e.chat_id, link)
     if BOTLOG:
         await e.client.send_message(
-            BOTLOG_CHATID, "#PICSPAM\n"
+            BOTLOG_CHATID, "» #PICSPAM «\n"
             "PicSpam was executed successfully")
 
 
@@ -73,21 +73,21 @@ async def spammer(e):
         await sleep(spamDelay)
     if BOTLOG:
         await e.client.send_message(
-            BOTLOG_CHATID, "#DelaySPAM\n"
+            BOTLOG_CHATID, "» #DelaySPAM «\n"
             "DelaySpam was executed successfully")
 
 
 CMD_HELP.update({
     "spam":
-    "`Cspam` <text>\
-\nUsage: Spam the text letter by letter.\
+    "`.cspam` <text>\
+\nUsage: Spam teks huruf demi huruf.\
 \n\n`.spam` <count> <text>\
-\nUsage: Floods text in the chat !!\
-\n\n`Wspam` <text>\
-\nUsage: Spam the text word by word.\
-\n\n`Picspam` <count> <link to image/gif>\
-\nUsage: As if text spam was not enough !!\
+\nUsage: Membanjiri teks dalam obrolan !!\
+\n\n`.wspam` <text>\
+\nUsage: Spam teks kata demi kata.\
+\n\n`.picspam` <count> <link to image/gif>\
+\nUsage: Seolah-olah spam teks tidak cukup !!\
 \n\n`.delayspam` <delay> <count> <text>\
-\nUsage: `Bigspam` but with custom delay.\
-\n\n\nNOTE : Spam at your own risk !!"
+\nUsage: `Bigspam` tetapi dengan penundaan khusus.\
+\n\n\nNOTE : Spam dengan risiko Anda sendiri !!"
 })
