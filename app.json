@@ -24,7 +24,7 @@
     },
     "ALIVE_LOGO": {
       "description": "BUAT ALIVE LOGO MU SENDIRI.",
-      "value": "https://telegra.ph/file/5e0c4d6ff521d55d164e7.jpg",
+      "value": "https://telegra.ph/file/6ed2a8dcc300197072dc2.jpg",
       "required": true
      },
      "STRING_SESSION": {
@@ -32,7 +32,7 @@
       "required": true
     },
     "HEROKU_APP_NAME": {
-      "description": "Nama App heroku, Nama App yang paling pertama di isi (liat paling atas)",
+      "description": "Isi dengan nama App yang paling pertama di isi (liat paling atas)",
       "required": true
     },
     "HEROKU_API_KEY": {
@@ -46,12 +46,12 @@
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Masuk @diorspambot atau Buatlah sebuah grup private/public masukan @MissRose_bot trs ketik /id, Copy dan delete id dibawah ini, trs paste.",
+      "description": "Masuk @diorspambot atau Buatlah sebuah grup masukan @MissRose_bot trus ketik /id, Copy dan delete id dibawah ini, trs paste.",
       "value": "-1001220971181",
       "required": true
     },
     "COUNTRY": {
-      "description": "Set your Country to be used in the .time and .date commands.",
+      "description": "Atur Negara Anda untuk digunakan dalam perintah .time dan .date.",
       "value": "ID",
       "required": true
     },
@@ -61,23 +61,23 @@
       "required": true
     },
     "ANTI_SPAMBOT": {
-      "description": "Kicks spambots from groups after they join. [Requires admin powers in groups to kick.]",
+      "description": "Menendang robot spam dari grup setelah mereka bergabung. [Membutuhkan kekuatan admin dalam grup untuk menendang.]",
       "value": "False"
     },
     "ANTI_SPAMBOT_SHOUT": {
-      "description": "Report spambots to @admins in groups after they join, just in case when you don't have admin powers to kick that shit yourself.",
+      "description": "Laporkan robot spam ke @admin dalam grup setelah mereka bergabung, untuk berjaga-jaga jika Anda tidak memiliki kekuatan admin untuk menyelesaikannya sendiri.",
       "value": "False"
     },
     "TMP_DOWNLOAD_DIRECTORY": {
-      "description": "Download location for many modules (GDrive, .download etc..)",
+      "description": "Unduh lokasi untuk banyak modul (GDrive, .download etc..)",
       "value": "./downloads/"
     },
     "CLEAN_WELCOME": {
-      "description": "When a new person joins, the old welcome message is deleted.",
+      "description": "Ketika orang baru bergabung, pesan selamat datang yang lama akan dihapus.",
       "value": "True"
     },
     "HEROKU_MEMEZ": {
-      "description": "This should be True if the userbot is running on a Heroku Dyno.",
+      "description": "Ini seharusnya Benar jika bot pengguna berjalan di Heroku Dyno.",
       "value": "True",
       "required": true
     },
@@ -90,12 +90,12 @@
       "required": false
     },
     "G_BAN_LOGGER_GROUP": {
-      "description": "Masuk @diorspambot atau Buatlah sebuah grup private/public masukan @MissRose_bot trs ketik /id, Copy dan delete id dibawah ini, trs paste.",
+      "description": "Masuk @diorspambot atau Buatlah sebuah grup masukan @MissRose_bot trs ketik /id, Copy dan delete id dibawah ini, trs paste.",
       "value": "-1001220971181",
       "required": false
     },
     "LOGSPAMMER": {
-      "description": "Set this to True in case you want the error logs to be stored in the userbot log group, instead of spitting out the file in the current chat, requires a valid BOTLOG_CHATID to be set.",
+      "description": "Setel ini ke True jika Anda ingin log kesalahan disimpan di grup log userbot, alih-alih mengeluarkan file dalam obrolan saat ini, membutuhkan BOTLOG_CHATID yang valid untuk disetel.",
       "value": "True",
       "required": true
     },
@@ -104,7 +104,7 @@
       "required": true
     },
     "BOT_USERNAME": {
-      "description": "isi username bot mu yang dari @BotFather",
+      "description": "isi dengan username bot mu yang dari @BotFather",
       "required": true
     }
   },
