@@ -51,7 +51,7 @@ async def get_chatinfo(event):
     return chat_info
 
 
-@register(outgoing=True, pattern=r"^\.culik(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.inviteall(?: |$)(.*)")
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
@@ -71,7 +71,7 @@ async def get_users(event):
     async for user in event.client.iter_participants(ramubotteam.full_chat.id):
         try:
             if error.startswith("Too"):
-                return await ram.edit(f"**Terminal Selesai Dengan Kesalahan**\n(`Mungkin Mendapat Kesalahan Batas dari telethon Silakan coba lagi Nanti`)\n**Error** : \n`{error}`\n\n• Diculik `{s}` beban negara \n• Gagal Menyulik `{f}` anak pejabat")
+                return await ram.edit(f"**Terminal Selesai Dengan Kesalahan**\n(`Mungkin Mendapat Batasan dari telethon Silakan coba lagi Nanti`)\n**Error** : \n`{error}`\n\n• Diculik `{s}` beban negara \n• Gagal Menyulik `{f}` anak pejabat")
             await event.client(functions.channels.InviteToChannelRequest(channel=chat, users=[user.id]))
             s = s + 1
             await ram.edit(f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`")
@@ -82,7 +82,7 @@ async def get_users(event):
 
 
 CMD_HELP.update({
-    "invite":
-        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.culik groups username`\
+    "nyulik":
+        "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteall (groups username)`\
           \n📌 : __Mengikis pengguna dari obrolan yang diberikan ke grup Anda__."
 })
