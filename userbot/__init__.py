@@ -198,7 +198,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "DIOR-UBOT")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "7.0")
@@ -211,7 +211,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/1afd2afdca5012ca23c23.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/6ed2a8dcc300197072dc2.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
