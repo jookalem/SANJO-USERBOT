@@ -18,24 +18,6 @@ async def typewriter(typew):
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.april(?: |$)(.*)')
-async def typewriter(typew):
-    typew.pattern_match.group(1)
-    sleep(1)
-    await typew.edit("`pertama tama april itu cantik`")
-    sleep(3)
-    await typew.edit("`Kedua, april itu manis`")
-    sleep(3)
-    await typew.edit("`april itu ngangenin...`")
-    sleep(3)
-    await typew.edit("`april punya fatur...lu ganggu dibedel sama fatur!`")
-    sleep(3)
-    await typew.edit("`pada intinya fatur sayang banget sama april`")
-    sleep(2)
-    await typew.edit("**ILY APRILIA ♥️**")
-# Create by myself @localheart
-
-
 @register(outgoing=True, pattern='^.beby(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
