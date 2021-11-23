@@ -535,7 +535,6 @@ with bot:
                     title="Repository",
                     description="Repository DIOR - UBOT",
                     url="https://t.me/SharingUserbot",
-                    thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text="**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Fatur](https://t.me/uurfavboys1)\n✣ **Support :** @fandaproject\n✣ **Repository :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
@@ -552,7 +551,6 @@ with bot:
                     title="⚡ DIOR-UBOT ⚡",
                     description="DIOR - UBOT | Telethon",
                     url="https://t.me/fandasupport",
-                    thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
                     text=f"**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @fandaproject\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
@@ -665,7 +663,7 @@ with bot:
 
         @tgbot.on(events.CallbackQuery(data=b"close"))
         async def close(event):
-            await event.edit("Menu di tutup!\nKalo mau liat Menu, Ketik `.helpme`", buttons=Button.clear())
+            await event.edit("**Menu di tutup!**\n**Kalo mau liat Menu, Ketik** `.helpme`", buttons=Button.clear())
 
 
     except BaseException:
@@ -677,7 +675,7 @@ with bot:
     except BaseException:
         LOGS.info(
             "BOTLOG_CHATID lu belum di isi. "
-            "Bikin grup private/publik dan masukan @MissRose_bot trus ketik /id "
-            "Masukan id grup nya di var BOTLOG_CHATID"
+            "**Bikin grup private/publik dan masukan @MissRose_bot trus ketik** `/id'"
+            "**Masukan id grup nya di var** BOTLOG_CHATID"
         )
         sys.exit(1)
