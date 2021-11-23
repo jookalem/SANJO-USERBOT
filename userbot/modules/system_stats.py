@@ -147,6 +147,17 @@ async def bot_ver(event):
         stdout, stderr = await ver.communicate()
         verout = str(stdout.decode().strip()) + str(stderr.decode().strip())
 
+        rev = await asyncrunapp(
+            "git",
+            "rev-list",
+            "--all",
+            "--count",
+            stdout=asyncPIPE,
+            stderr=asyncPIPE,
+        )
+        stdout, stderr = await rev.communicate()
+        revout = str(stdout.decode().strip()) + str(stderr.decode().strip())
+
         await event.edit(
             "✥ **Userbot Versi :** " f"`{verout}`" "\n✥ **Revisi :** " f"`{revout}`",
         )
@@ -208,13 +219,38 @@ async def pipcheck(pip):
 async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
+    await alive.edit("__Reconnect....__")
+    await alive.edit("__Reconnect...__")
     await alive.edit("__Reconnect.__")
-    await alive.edit("__Reconnect..__")
-    await alive.edit("__Reconnect.__")
-    await alive.edit("__Reconnect..__")
-    await alive.edit("__Connecting...__")
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting....__")
+    await alive.edit("__Connecting.__")
+    await alive.edit("__Connecting..__")
+    await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting....__")
+    await alive.edit("__Connecting.__")
+    await alive.edit("__Connecting..__")
+    await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting....__")
+    await alive.edit("__Connecting.__")
+    await alive.edit("__Connecting..__")
+    await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting....__")
+    await alive.edit("__Connecting.__")
+    await alive.edit("__Connecting..__")
+    await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting....__")
+    await alive.edit("__Connecting.__")
+    await alive.edit("__Connecting..__")
+    await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting....__")
+    await alive.edit("__Connecting.__")
+    await alive.edit("__Connecting..__")
+    await alive.edit("__Connecting...__")
+    await alive.edit("__Connecting....__")
+    await alive.edit("**Connected ✅")
+    await asyncio.sleep(1)
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
