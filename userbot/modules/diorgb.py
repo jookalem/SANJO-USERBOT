@@ -1,5 +1,6 @@
 # GAUSAH KESINI ANJING NGENTOT
 # BUATAN VCKYOUUU
+# Dior minta
 
 import io
 import textwrap
@@ -10,7 +11,7 @@ from userbot import CMD_HELP
 from userbot.events import register
 
 
-@register(outgoing=True, pattern=r"^\.rgb (.*)")
+@register(outgoing=True, pattern=r"^\.dgb (.*)")
 async def stext(event):
     sticktext = event.pattern_match.group(1)
 
@@ -53,7 +54,7 @@ async def stext(event):
 
 
 CMD_HELP.update({
-    'ramgb':
-    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.rgb` <text>"
+    'diorgb':
+    "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.dgb` <text>"
     "\nUsage: Mengubah Teks/Kata-Kata, Menjadi Stiker Anda."
 })
