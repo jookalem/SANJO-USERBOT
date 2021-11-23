@@ -486,70 +486,87 @@ with bot:
 
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
-            if event.message.from_id != uid:
-                u = await event.client.get_entity(event.chat_id)
-                await event.reply(
-                    f"**EH JELEK** [{get_display_name(u)}](tg://user?id={u.id}) **NGAPAIN LU DI**\n{REPO_NAME} **HAH?** \n**KALO MAU TAU LEBIH DETAIL MENDING LU KE**\n𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 **Dibawah Ini.**\n",
-                    buttons=[
-                        [
-                             Button.url(f"{EMOJI_HELP} 𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 {EMOJI_HELP}",
-                                        "t.me/fandasupport"),
-                             Button.url(f"{EMOJI_HELP} 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 {EMOJI_HELP}",
-                                        "t.me/fandaproject")],
-                             [Button.url("⚡𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿⚡",
-                                        "t.me/uurfavboys1")],
-                    ]
-                )
+            await event.message.get_sender()
+            text = (
+                f"**Hey**, __I am using__ ⚡ **DIOR-UBOT** ⚡\n\n"
+                f"       __Thanks For Using me__\n\n"
+                f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
+                f"✣ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
+                f"✣ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
+                f"✣ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
+            )
+            await tgbot.send_file(
+                event.chat_id,
+                logo,
+                caption=text,
+                buttons=[
+                    [
+                        custom.Button.url(
+                            text="⛑ REPO DIOR-UBOT ⛑",
+                            url="https://github.com/DIORrios285/DIOR-UBOT",
+                        )
+                    ],
+                    [
+                        custom.Button.url(
+                            text="GROUP", url="https://t.me/fandasupport"
+                        ),
+                        custom.Button.url(
+                            text="CHANNEL", url="https://t.me/fandaproject"
+                        ),
+                    ],
+                ],
+            )
 
-
-        @tgbot.on(events.NewMessage(pattern="/ping"))
-        async def handler(event):
-            if event.message.from_id != uid:
-                start = datetime.now()
-                end = datetime.now()
-                ms = (end - start).microseconds / 1000
-                await tgbot.send_message(
-                    event.chat_id,
-                    f"🍀 **PLERRR!!**\n `{ms}ms`",
-                )
-
-        @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
+        @tgbot.on(events.InlineQuery)
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@diorubot"):
+            if event.query.user_id == uid and query.startswith("@SharingUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=diorlogo,
+                    file=logoman,
                     link_preview=False,
-                    text=f"{REPO_NAME}\n\n👨‍🔧𝗣𝗘𝗠𝗜𝗟𝗜𝗞 𝗕𝗢𝗧 : {DEFAULTUSER}\n\n⚡ 𝗩𝗘𝗥𝗦𝗜 𝗕𝗢𝗧 : `7.0`\n⚡ 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 : `{len(plugins)}`\n\n🧑‍💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : [{DEFAULTUSER}]({OWNER_BOT}) ".format(
-                        len(dugmeler),
-                    ),
+                    text=f"**⚡ DIOR-UBOT ⚡ Inline Menu**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
-            elif query.startswith("tb_btn"):
+            elif query.startswith("repo"):
                 result = builder.article(
-                    f"**Helpme** {REPO_NAME} ",
-                    text="**Daftar Plugins**",
-                    buttons=[],
-                    link_preview=True)
-            else:
-                result = builder.article(
-                    f" ━━━━━━━━━━━━━━━━\n       {REPO_NAME}\n━━━━━━━━━━━━━━━━ ",
-                    text=f"""**━━━━━━━━━━━━━━━━\nLU BIKIN \n{REPO_NAME}\nSENDIRI DONG NGENTOT!!\n━━━━━━━━━━━━━━━━\nCARANYA:**__TEKEN DIBAWAH INI NGENTOT!__ 👇""",
+                    title="Repository",
+                    description="Repository DIOR - UBOT",
+                    url="https://t.me/SharingUserbot",
+                    thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
+                    text="**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Fatur](https://t.me/uurfavboys1)\n✣ **Support :** @fandaproject\n✣ **Repository :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/fandasupport"),
                             custom.Button.url(
-                                f"{REPO_NAME}",
-                                "https://github.com/DIORrios285/DIOR-UBOT"),
-                            custom.Button.url(
-                                "FATUR/DIOR",
-                                f"{OWNER_BOT}")] 
+                                "ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"
+                            ),
+                        ],
                     ],
                     link_preview=False,
                 )
-            await event.answer([result] if result else None)
+            else:
+                result = builder.article(
+                    title="⚡ DIOR-UBOT ⚡",
+                    description="DIOR - UBOT | Telethon",
+                    url="https://t.me/fandasupport",
+                    thumb=InputWebDocument(INLINE_PIC, 0, "image/jpeg", []),
+                    text=f"**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @fandaproject\n➖➖➖➖➖➖➖➖➖➖",
+                    buttons=[
+                        [
+                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/fandasupport"),
+                            custom.Button.url(
+                                "ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"
+                            ),
+                        ],
+                    ],
+                    link_preview=False,
+                )
+            await event.answer(
+                [result], switch_pm="👥 USERBOT PORTAL", switch_pm_param="start"
+            )
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
