@@ -30,7 +30,6 @@ from telethon.sync import TelegramClient, custom, events
 from telethon.sessions import StringSession
 from telethon import Button, events, functions, types
 from telethon.utils import get_display_name
-from userbot import BOT_VER, UPSTREAM_REPO_BRANCH
 
 redis_db = None
 
@@ -277,7 +276,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil Di Aktifkan**\n━━\n➠ **Userbot Version -** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n➠ **Ketik** `.ralive` **untuk Mengecek Bot**\n━━"
+    "BOTLOG_MSG") or "**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil Di Aktifkan**\n━━\n➠ **Ketik** `.ralive` **untuk Mengecek Bot**\n━━"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
