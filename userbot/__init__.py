@@ -3,7 +3,7 @@
 # you may not use this file except in compliance with the License.
 # Credits @keselekpermen69 / @Ultroid / @RAM-UBOT
 # Ported @MaafGausahSokap / JANGAN DI APUS BABI
-# SSSSUT DIOR MAU IKUTAN
+# SSSUT DIOR MAU IKUTAN
 """Userbot initialization."""
 
 import os
@@ -316,8 +316,8 @@ def is_redis_alive():
         return False
 
 
-# Setting Up CloudMail.ru and MEGA.nz extractor binaries,
-# and giving them correct perms to work properly.
+# Setting up CloudMail.ru and MEGA.nz extractor binaries,
+# dan memberi mereka izin yang benar untuk bekerja dengan benar.
 if not os.path.exists('bin'):
     os.mkdir('bin')
 
@@ -480,7 +480,7 @@ with bot:
                 )
 
 
-        ramlogo = HELP_LOGO
+        diorlogo = HELP_LOGO
         plugins = CMD_HELP
         vr = BOT_VER
 
@@ -489,14 +489,14 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"EH PLER [{get_display_name(u)}](tg://user?id={u.id}) NGAPAIN LU DI\n**{REPO_NAME}**\nKALO MAU TAU LEBIH DETAIL MENDING LU KE\n**𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧** Dibawah Ini.\n",
+                    f"**EH JELEK** [{get_display_name(u)}](tg://user?id={u.id}) **NGAPAIN LU DI**\n{REPO_NAME} **HAH?** \n**KALO MAU TAU LEBIH DETAIL MENDING LU KE**\n𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 **Dibawah Ini.**\n",
                     buttons=[
                         [
-                             Button.url(f"{EMOJI_HELP} 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 {EMOJI_HELP}",
-                                        "t.me/fandaproject"),
                              Button.url(f"{EMOJI_HELP} 𝗚𝗥𝗢𝗨𝗣 𝗦𝗨𝗣𝗣𝗢𝗥𝗧 {EMOJI_HELP}",
-                                        "t.me/fandasupport")],
-                             [Button.url("🧑‍💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 🧑‍💻",
+                                        "t.me/fandasupport"),
+                             Button.url(f"{EMOJI_HELP} 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 {EMOJI_HELP}",
+                                        "t.me/fandaproject")],
+                             [Button.url("⚡𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿⚡",
                                         "t.me/uurfavboys1")],
                     ]
                 )
@@ -510,7 +510,7 @@ with bot:
                 ms = (end - start).microseconds / 1000
                 await tgbot.send_message(
                     event.chat_id,
-                    f"**PLERRR!!**\n `{ms}ms`",
+                    f"🍀 **PLERRR!!**\n `{ms}ms`",
                 )
 
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
@@ -521,7 +521,7 @@ with bot:
             if event.query.user_id == uid and query.startswith("@diorubot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=ramlogo,
+                    file=diorlogo,
                     link_preview=False,
                     text=f"{REPO_NAME}\n\n👨‍🔧𝗣𝗘𝗠𝗜𝗟𝗜𝗞 𝗕𝗢𝗧 : {DEFAULTUSER}\n\n⚡ 𝗩𝗘𝗥𝗦𝗜 𝗕𝗢𝗧 : `7.0`\n⚡ 𝗠𝗢𝗗𝗨𝗟𝗘𝗦 : `{len(plugins)}`\n\n🧑‍💻 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : [{DEFAULTUSER}]({OWNER_BOT}) ".format(
                         len(dugmeler),
@@ -530,14 +530,14 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    f"Bantuan Dari {REPO_NAME} ",
-                    text="Daftar Plugins",
+                    f"**Helpme** {REPO_NAME} ",
+                    text="**Daftar Plugins**",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
                     f" ━━━━━━━━━━━━━━━━\n       {REPO_NAME}\n━━━━━━━━━━━━━━━━ ",
-                    text=f"""**━━━━━━━━━━━━━━━━\nLU BIKIN \n{REPO_NAME}\nSENDIRI DONG NGENTOT!!\n━━━━━━━━━━━━━━━━\nNIH CARANYA:**__TEKEN DIBAWAH INI NGENTOT!__ 👇""",
+                    text=f"""**━━━━━━━━━━━━━━━━\nLU BIKIN \n{REPO_NAME}\nSENDIRI DONG NGENTOT!!\n━━━━━━━━━━━━━━━━\nCARANYA:**__TEKEN DIBAWAH INI NGENTOT!__ 👇""",
                     buttons=[
                         [
                             custom.Button.url(
@@ -562,10 +562,9 @@ with bot:
                     event.data_match.group(1).decode("UTF-8"))
                 buttons = paginate_help(
                     current_page_number + 1, dugmeler, "helpme")
-                # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"WOI PLER!! JANGAN PAKE PUNYA {DEFAULTUSER} LAH TAI."
+                reply_pop_up_alert = f"WOI JELEK!! JANGAN PAKE PUNYA {DEFAULTUSER} PLER."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -578,7 +577,7 @@ with bot:
             if event.query.user_id == uid:  # @diorubot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=ramlogo,
+                    file=diorlogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -611,7 +610,7 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"WOI PLER!! JANGAN PAKE PUNYA {DEFAULTUSER} LAH TAI."
+                reply_pop_up_alert = f"WOI JELEK!! JANGAN PAKE PUNYA {DEFAULTUSER} PLER."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -628,7 +627,7 @@ with bot:
                 if len(cmdhelp) > 150:
                     help_string = (
                         str(CMD_HELP[modul_name]).replace('`', '')[:150] + "..."
-                        + "\n\nBaca Text Berikutnya Ketik .help "
+                        + "\n\n**Baca text berikutnya ketik** .help "
                         + modul_name
                         + " "
                     )
@@ -643,7 +642,7 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"WOI PLER!! JANGAN PAKE PUNYA {DEFAULTUSER} LAH TAI."
+                reply_pop_up_alert = f"WOI JELEK!! JANGAN PAKE PUNYA {DEFAULTUSER} PLER."
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
@@ -654,8 +653,8 @@ with bot:
 
     except BaseException:
         LOGS.info(
-            "Mode Inline Bot lu nonaktif pea. "
-            "Aktifin dulu, Caranya Pergi Ke @BotFather Lalu, Settings Bot > Pilih Mode Inline > Turn On. ")
+            "**Mode Inline Bot lu nonaktif pea.**"
+            "**Aktifin dulu, Caranya Pergi Ke** @BotFather **Trus, Settings Bot > Pilih Mode Inline > Turn On.**")
     try:
         bot.loop.run_until_complete(check_botlog_chatid())
     except BaseException:
