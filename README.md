@@ -45,12 +45,7 @@ src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=he
 ## © Credits
 
  **TERIMAKASIH BANYAK KEPADA**
-*   [Fatur](https://github.com/DIORros285/DIOR-UBOT) DIOR-UBOT *  [Risman](https://github.com/mrismanaziz)   Man - Userbot
+*   [Fatur](https://github.com/DIORros285/DIOR-UBOT) DIOR-UBOT 
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
-*   [X_iMFiNe](https://github.com/ximfine/xBot-Remix)    XBOT-REMIX
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
-*   [RaphielGang](https://github.com/RaphielGang)    Telegram - Paperplane
-*   [AvinashReddy3108](https://github.com/AvinashReddy3108)    PaperplaneExtended
-*   [TeamUserge](https://github.com/UsergeTeam/Userge)    Userge
-*   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
 *   DAN KEPADA USERBOT INDONESIA LAINNYA!.
