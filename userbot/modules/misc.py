@@ -64,29 +64,30 @@ async def sleepybot(time):
 
 @register(outgoing=True, pattern="^.shutdown$")
 async def killdabot(event):
-    """ For .shutdown command, shut the bot down."""
-    await event.edit("`Menonaktifkan DIOR-UBOT....`")
-    await asyncio.sleep(7)
-    await event.delete()
+    if event.fwd_from:
+        return
     if BOTLOG:
-        await event.client.send_message(BOTLOG_CHATID, "#SHUTDOWN \n"
-                                        "`DIOR-UBOT Telah Dinonaktifkan`")
-    await bot.disconnect()
+        await event.client.send_message(
+            BOTLOG_CHATID,
+            "**#SHUTDOWN** \n"
+            "**DIOR-UBOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+        )
+    await event.edit("`DIOR-UBOT Berhasil di matikan!`")
+    if HEROKU_APP is not None:
+        HEROKU_APP.process_formation()["worker"].scale(0)
+    else:
+        sys.exit(0)
 
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("`Restarting DIOR-UBOT...`")
-    await asyncio.sleep(10)
-    await event.delete()
+    await event.edit("**DIOR-UBOT Berhasil di Restart**")
     if BOTLOG:
-        await event.client.send_message(BOTLOG_CHATID, "#RESTARTBOT \n"
-                                        "`DIOR-UBOT Telah Di Restart`")
-    await bot.disconnect()
+        await event.client.send_message(BOTLOG_CHATID, "» #RESTARTBOT «\n"
+                                        "**DIOR-UBOT Berhasil Di Restart**")
     # Spin a new instance of bot
-    execl(sys.executable, sys.executable, *sys.argv)
-    # Shut the existing one down
-    exit()
+    args = [sys.executable, "-m", "userbot"]
+    execle(sys.executable, *args, environ)
 
 
 @register(outgoing=True, pattern="^.readme$")
@@ -120,7 +121,12 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        f"**╭✠╼━━━━━━❖━━━━━━━✠╮**\n             [{REPO_NAME}](https://github.com/DIORrios285/DIOR-UBOT)\n╰✠╼━━━━━━❖━━━━━━━✠╯\n•PEMILIK         : [𝐎𝐖𝐍𝐄𝐑]({OWNER_BOT})\n•CHANNEL      : [𝐈𝐍𝐅𝐎](t.me/diorspambot)\n•GROUP           : [𝐆𝐑𝐎𝐔𝐏]({GROUP_LINK})\n•INSTAGRAM  :  [𝐈𝐍𝐒𝐓𝐀𝐆𝐑𝐀𝐌]({IG_ALIVE})"
+        f"**Hi**, __saya menggunakan__ {REPO_NAME}\n\n"
+        f"      __Terimakasih telah menggunakan saya__\n\n"
+        f"❍ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
+        f"❍ **Channel Man :** [Fanda Project](t.me/fandaproject)\n"
+        f"❍ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
+        f"❍ **Repo :** [DIOR-UBOT](https://github.com/mrismanaziz/Man-Userbot)\n"
     )
 
 
