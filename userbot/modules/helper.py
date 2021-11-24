@@ -27,9 +27,9 @@ async def var(m):
 
 
 CMD_HELP.update({
-    "diorhelper":
+    "helper":
     "`.helpmy`\
-\nPenjelasan: Bantuan Untuk DIOR-UBOT.\
+\nUsage: Bantuan Untuk DIOR-UBOT.\
 \n`.rvars`\
-\nPenjelasan: Untuk Melihat Beberapa Daftar Vars."
+\nUsage: Untuk Melihat Beberapa Daftar Vars."
 })
