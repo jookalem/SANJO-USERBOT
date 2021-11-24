@@ -85,9 +85,11 @@ async def killdabot(event):
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "» #RESTARTBOT «\n"
                                         "**DIOR-UBOT Berhasil Di Restart**")
+    await bot.disconnect()
     # Spin a new instance of bot
-    args = [sys.executable, "-m", "userbot"]
-    execle(sys.executable, *args, environ)
+    execl(sys.executable, sys.executable, *sys.argv)
+ 
+    exit()
 
 
 @register(outgoing=True, pattern="^.readme$")
