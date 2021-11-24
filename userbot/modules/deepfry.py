@@ -139,8 +139,7 @@ async def check_media(reply_message):
 CMD_HELP.update({
     "deepfry":
     "`.deepfry` or `.deepfry` [level(1-8)]"
-    "\nUsage: Cek Sendiri."
-    "\n@image_deepfrybot"
+    "\nUsage: Deepfry foto atau sticker dari bot @image_deepfrybot."
     "\n`.deepfry [level(1-5)]`"
-    "\nUsage: Gambar Deep Fry"
+    "\nUsage: Deepfry foto atau sticker"
 })
