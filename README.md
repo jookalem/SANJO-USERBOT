@@ -31,20 +31,17 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
 ## AMBIL STRING LU DISINI:
-<a href="https://replit.com/@DIORrios285/DIOR-UBOT-STRING?v=1"><img src="https://img.shields.io/badge/Run-Generate%20String%20Sesion-marine?style=flat&logo=replit" width="300" height="30.200" />
+<p align="center"><a href="https://replit.com/@DIORrios285/DIOR-UBOT-STRING?v=1"><img src="https://img.shields.io/badge/Run-Generate%20String%20Sesion-marine?style=flat&logo=replit" width="300" height="30.200" />
 
-## DEPLOY DISINI 
+## DEPLOY TO HEROKU 💜
 <a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
 <img src="https://telegra.ph/file/f4c59840a5988c6ffd536.jpg">
 
 
-## Credits:
-<details>
-  <summary><b>© Credits</b></summary>
+<b>© Credits</b></summary>
 
-
- 🙏 **TERIMAKASIH BANYAK KEPADA**
-*   [Risman](https://github.com/mrismanaziz)   Man - Userbot
+ **TERIMAKASIH BANYAK KEPADA**
+*   [Fatur](https://github.com/DIORros285/DIOR-UBOT) DIOR-UBOT *  [Risman](https://github.com/mrismanaziz)   Man - Userbot
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
 *   [X_iMFiNe](https://github.com/ximfine/xBot-Remix)    XBOT-REMIX
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
@@ -52,8 +49,4 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 *   [AvinashReddy3108](https://github.com/AvinashReddy3108)    PaperplaneExtended
 *   [TeamUserge](https://github.com/UsergeTeam/Userge)    Userge
 *   [sandy1709](https://github.com/sandy1709/catuserbot)    CatUserbot
-*   BANYAK LAGI DAH!.
-
-
-## Stay Support 
-*   [LonamiWebs](https://github.com/LonamiWebs/) and [Telethon](https://github.com/LonamiWebs/Telethon)
+*   DAN KEPADA USERBOT INDONESIA LAINNYA!.
