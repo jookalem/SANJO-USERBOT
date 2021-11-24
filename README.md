@@ -31,14 +31,18 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 
 
 ## AMBIL STRING LU DISINI:
-<p align="center"><a href="https://replit.com/@DIORrios285/DIOR-UBOT-STRING?v=1"><img src="https://img.shields.io/badge/Run-Generate%20String%20Sesion-marine?style=flat&logo=replit" width="300" height="30.200" />
+<p align="center"><a 
+href="https://replit.com/@DIORrios285/DIOR-UBOT-STRING?v=1"><img 
+src="https://img.shields.io/badge/Generate%20String%20Sesion-marine?style=flat&logo=replit&logoColor=white" width="250" height="38.60" />
+</a></p>
 
 ## DEPLOY TO HEROKU 💜
-<a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT.git">
-<img src="https://telegra.ph/file/f4c59840a5988c6ffd536.jpg">
+<p align="center"><a 
+href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT/tree/KEN-UBOT"> <img 
+src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
+</a></p>
 
-
-<b>© Credits</b></summary>
+## © Credits
 
  **TERIMAKASIH BANYAK KEPADA**
 *   [Fatur](https://github.com/DIORros285/DIOR-UBOT) DIOR-UBOT *  [Risman](https://github.com/mrismanaziz)   Man - Userbot
