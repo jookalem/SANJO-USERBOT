@@ -124,7 +124,7 @@ async def repo_is_here(wannasee):
         f"**Hi**, __saya menggunakan__ {REPO_NAME}\n\n"
         f"      __Terimakasih telah menggunakan saya__\n\n"
         f"❍ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
-        f"❍ **Channel Man :** [Fanda Project](t.me/fandaproject)\n"
+        f"❍ **Channel support :** [Fanda Project](t.me/fandaproject)\n"
         f"❍ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
         f"❍ **Repo :** [DIOR-UBOT](https://github.com/mrismanaziz/Man-Userbot)\n"
     )
