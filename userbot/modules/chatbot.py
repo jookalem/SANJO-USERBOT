@@ -1,24 +1,24 @@
 # 🍀 © @EntarSurenn
 # ⚠️ Do not remove credits
 
-import requests
-from googletrans import Translator
-from telethon import events
-from telethon.tl.types import User
+# import requests
+# from googletrans import Translator
+# from telethon import events
+# from telethon.tl.types import User
 
-from userbot import CMD_HELP, LOGS, bot
-from userbot.events import register
-from userbot.utils import edit_or_reply
+# from userbot import CMD_HELP, LOGS, bot
+# from userbot.events import register
+# from userbot.utils import edit_or_reply
 
-translator = Translator()
-LANGUAGE = "id"
+# translator = Translator()
+# LANGUAGE = "id"
 
-aktifnya_chat_bot = []
+# aktifnya_chat_bot = []
 
-url = "https://api-tede.herokuapp.com/api/chatbot?message={message}"
+# url = "https://api-tede.herokuapp.com/api/chatbot?message={message}"
 
 
-async def ngapain_rep(message):
+# async def ngapain_rep(message):
     hayulo_link_apa = url.format(message=message)
     try:
         data = requests.get(hayulo_link_apa)
@@ -30,7 +30,7 @@ async def ngapain_rep(message):
         LOGS.info("ERROR: {str(e)}")
 
 
-async def chat_bot_toggle(db, event):
+# async def chat_bot_toggle(db, event):
     status = event.pattern_match.group(1).lower()
     chat_id = event.chat_id
     if status == "on":
@@ -47,12 +47,12 @@ async def chat_bot_toggle(db, event):
         await edit_or_reply(event, "**Usage:**\n.chatbot <on/off>")
 
 
-@register(outgoing=True, pattern=r"^\.chatbot(?: |$)(.*)")
+# @register(outgoing=True, pattern=r"^\.chatbot(?: |$)(.*)")
 async def on_apa_off(event):
     await chat_bot_toggle(aktifnya_chat_bot, event)
 
 
-@bot.on(events.NewMessage(incoming=True))
+# @bot.on(events.NewMessage(incoming=True))
 async def tede_chatbot(event):
     sender = await event.get_sender()
     if not isinstance(sender, User):
@@ -66,7 +66,7 @@ async def tede_chatbot(event):
             await event.reply(tr.text)
 
 
-CMD_HELP.update(
+# CMD_HELP.update(
     {
         "chatbot": "**Plugin : **`chatbot`\
       \n\n  •  **Syntax :** `.chatbot` <on/off>\
