@@ -1,33 +1,25 @@
 <h1 align="center">⚡ DIOR-UBOT ⚡</h1>
 
+
 <p align="center">
-    <a href="https://github.com/DIORrios285/DIOR-UBOT/network/members"> <img 
-src="https://img.shields.io/github/forks/DIORrios285/DIOR-UBOT?color=marine&logo=github&logoColor=white&style=for-the-badge" /></a>  
-    <a href="https://github.com/DIORrios285/DIOR-UBOT/network/members"> <img 
-src="https://img.shields.io/github/stars/DIORrios285/DIOR-UBOT?style=for-the-badge&logo=github&logoColor=white" /> 
-</a> </p>
-<p align="center">
-    <a href="https://app.codacy.com/gh/DIORrios285/DIOR-UBOT/dashboard"> <img 
-src="https://img.shields.io/codacy/grade/a723cb464d5a4d25be3152b5d71de82d?color=red&logo=codacy&style=for-the-badge" alt="Codacy" /></a> 
+    <a href="https://github.com/DIORrios285/DIOR-UBOT/commits/DIOR-UBOT"><img 
+src="https://img.shields.io/github/last-commit/DIORrios285/DIOR-UBOT?color=ff0000&logo=github&logoColor=ffffff&style=for-the-badge" /></a>
     <a href="https://github.com/DIORrios285/DIOR-UBOT"> <img 
-src="https://img.shields.io/github/repo-size/DIORrios285/DIOR-UBOT?color=yellow&logo=github&logoColor=white&style=for-the-badge" /></a>
-</a> </p>
-<p align="center">
-    <a href="https://www.python.org/" alt="made-with-python"> <img 
-src="https://img.shields.io/badge/Made%20with-Python-black.svg?style=for-the-badge&logo=python&logoColor=blue&color=red" /></a>
-    <a href="https://github.com/DIORrios285/DIOR-UBOT/commits/main"> <img 
-src="https://img.shields.io/github/last-commit/DIORrios285/FandaMusic?color=yellow&logo=github&logoColor=white&style=for-the-badge" /></a>
-</a> </p>
+src="https://img.shields.io/github/repo-size/DIORrios285/DIOR-UBOT?logo=github&style=for-the-badge" /></a>
+    <a href="https://pypi.org/project/Telethon/"><img 
+src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=blue&style=for-the-badge" /></a>
+    <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.6-purple?style=for-the-badge&logo=appveyor"/>
+    </p>
 
 [![Sparkline](https://stars.medv.io/DIORrios285/DIOR-UBOT.svg)](https://stars.medv.io/DIORrios285/DIOR-UBOT)
 
 
 ## DISCLAIMER
 
+Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT), [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot), [KEN-UBOT](https://github.com/Kennedy-ex/KEN-UBOT), dengan fungsi untuk mempermudah pengelolaan gc serta menyediakan beberapa fitur otomatis dan membuat penggunaan telegram lebih menyenangkan 
+
 ```
 Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
-Bot ini dimaksudkan untuk bersenang-senang sekaligus membantu Anda
-mengelola grup secara efisien dan mengotomatiskan beberapa hal yang membosankan.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
@@ -35,13 +27,11 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 <p>
 <p align="center">
     <a href="https://t.me/uurfavboys1" target="blank">
-<img src="https://img.shields.io/badge/Fatur%201-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/PM%20me%201-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
     <a href="https://t.me/faturdiorjuga" target="blank">
-<img src="https://img.shields.io/badge/Fatur%202-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/PM%20me%202-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
     <a href="https://t.me/diorplayingwords" target="blank">
-<img src="https://img.shields.io/badge/Support%201-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
-    <a href="https://t.me/diorplayingwords" target="blank">
-<img src="https://img.shields.io/badge/Support%202-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+<img src="https://img.shields.io/badge/Support-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
     <a href="https://instagram.com/fatur.285" target="blank">
 <img src="https://img.shields.io/badge/Instagram-2CA5E0?style=for-the-badge&logo=Instagram&logoColor=white" /></a>
 </a></p>
