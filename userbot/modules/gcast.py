@@ -16,10 +16,11 @@ GCAST_BLACKLIST = [
     -1001549206558,  # FandaSupport
     -1001752592753,  # SkyzuSupport
     -1001626554919,  # EmikoSupport
-    -1001329986872,  # Yuki • Black Knights
+    -1001329986872,  # Yuki•BlackKnights
     -1001728834311,  # FlicksSupport
     -1001578091827,  # PrimeSupport
     -1001350427774,  # SayonaraSupport
+    -1001611385446,  # SolidProjectsSupport
 ]
 
 # Kalo fork atau coppy blacklist jangan dihapus bangsat,
