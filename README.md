@@ -51,11 +51,12 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 <a 
 href="https://www.python.org" target="_blank"> <img 
 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="150" height="150"/> 
-</a>
+</a> </p>
+<p align="center">
 <a 
 href="https://azure.microsoft.com/en-in/" target="_blank"> <img 
 src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="150" height="150"/> 
-</a>  </p>
+</a> </p>
 
 
 
