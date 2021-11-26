@@ -16,7 +16,15 @@ GCAST_BLACKLIST = [
     -1001549206558,  # FandaSupport
     -1001752592753,  # SkyzuSupport
     -1001626554919,  # EmikoSupport
+    -1001329986872,  # Yuki • Black Knights
+    -1001728834311,  # FlicksSupport
+    -1001578091827,  # PrimeSupport
+    -1001350427774,  # SayonaraSupport
 ]
+
+# Kalo fork atau coppy blacklist jangan dihapus bangsat,
+# Gua tandain telegram api lu
+# Hapus blacklist gua gban!.
 
 @register(outgoing=True, pattern=r"^\.gcast(?: |$)(.*)")
 async def gcast(event):
