@@ -11,7 +11,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 import asyncio
 
 
-@register(outgoing=True, pattern=r"^\.tm(?: |$)(.*)")
+@register(outgoing=True, pattern=r"^\.te(?: |$)(.*)")
 async def _(event):
     chat = "@TempMailBot"
     lord = await event.edit("Sedang Memprosess...")
@@ -19,7 +19,7 @@ async def _(event):
         try:
             response = conv.wait_event(events.NewMessage(
                 incoming=True,
-                from_users=220112646
+                from_users=1937084611
             )
             )
             await conv.send_message("/start")
@@ -37,5 +37,5 @@ async def _(event):
 # Alvin Ganteng
 # Ported For Lord Userbot From Ultroid
 
-CMD_HELP.update({"tempmail": "**Modules:** __Temp Mail__\n\n**Perintah:** `.tm`"
+CMD_HELP.update({"tempmail": "**Modules:** __Temp Mail__\n\n**Perintah:** `.te`"
                  "\n**Penjelasan:** Mendapatkan Email Gratis Dari Temp Mail"})
