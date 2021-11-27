@@ -250,7 +250,7 @@ async def amireallyalive(alive):
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
     await alive.edit("__Connecting....__")
-    await alive.edit("**Connected** ✅")
+    await alive.edit("**Connected ✅**")
     await asyncio.sleep(2)
     await alive.edit("⚡")
     await asyncio.sleep(3)
@@ -284,10 +284,10 @@ async def amireallyalive(alive):
 
 
 @register(outgoing=True, pattern=r"^\.(?:ralive)\s?(.)?")
-async def amireallyalive(ralive):
+async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await ralive.edit("__Introducing the repo...__")
+    await alive.edit("__Introducing the repo...__")
     await asyncio.sleep(2)
     output = (
         f"**ㅤㅤ   ⚡FANDA - PROJECT⚡** \n"
