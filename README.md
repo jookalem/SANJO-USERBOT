@@ -36,6 +36,8 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 <img src="https://img.shields.io/badge/Instagram-2CA5E0?style=for-the-badge&logo=Instagram&logoColor=white" /></a>
 </a></p>
 
+``more often active on the second account``
+
 ## Language
 <p align="center"> 
 <a 
