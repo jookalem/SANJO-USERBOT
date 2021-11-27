@@ -491,7 +491,7 @@ with bot:
             text = (
                 f"**Hey**, __I am using__ ⚡ **DIOR-UBOT** ⚡\n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"✣ **Userbot Version :** `{BOT_VER}@{UPSTREAM_REPO_BRANCH}`\n"
+                f"✣ **Userbot Version :** `V7.0.0`\n"
                 f"✣ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
                 f"✣ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
                 f"✣ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
@@ -523,19 +523,19 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@SharingUserbot"):
+            if event.query.user_id == uid and query.startswith("@fandasupport"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=logoman,
                     link_preview=False,
-                    text=f"**⚡ DIOR-UBOT ⚡ Inline Menu**\n\n✣ **Owner** [{user.first_name}](tg://user?id={user.id})\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"**⚡ DIOR-UBOT ⚡ Inline Menu**\n\n✣ **Owner** {ALIVE_NAME}\n✣ **Jumlah** `{len(dugmeler)}` Modules",
                     buttons=buttons,
                 )
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
                     description="Repository DIOR - UBOT",
-                    url="https://t.me/SharingUserbot",
+                    url="https://t.me/fandasupport",
                     text="**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Fatur](https://t.me/uurfavboys1)\n✣ **Support :** @fandaproject\n✣ **Repository :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
@@ -552,7 +552,7 @@ with bot:
                     title="⚡ DIOR-UBOT ⚡",
                     description="DIOR - UBOT | Telethon",
                     url="https://t.me/fandasupport",
-                    text=f"**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** [{user.first_name}](tg://user?id={user.id})\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @fandaproject\n➖➖➖➖➖➖➖➖➖➖",
+                    text=f"**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** {ALIVE_NAME}\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @fandaproject\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/fandasupport"),
