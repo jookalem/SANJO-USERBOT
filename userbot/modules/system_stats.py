@@ -222,7 +222,7 @@ async def amireallyalive(alive):
     await alive.edit("__Reconnect....__")
     await alive.edit("__Reconnect...__")
     await alive.edit("__Reconnect..__")
-    await alive.ediy("__Reconnect.__")
+    await alive.edit("__Reconnect.__")
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
     await alive.edit("__Connecting....__")
@@ -288,7 +288,6 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
     await alive.edit("__Introducing the repo...__")
-    await asyncio.sleep(2)
     output = (
         f"**ㅤㅤ   ⚡FANDA - PROJECT⚡** \n"
         f"╔════════╬════╬════════╗ \n"
