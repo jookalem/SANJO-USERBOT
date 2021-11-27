@@ -68,8 +68,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 f'{txt}\n`Kredensial Heroku tidak valid untuk deploy DIOR-UBOT dyno.`'
             )
             return repo.__del__()
-        await event.edit(f'`{REPO_NAME}:'
-                         f'\nLagi update {REPO_NAME} pler, Tenang ga lama kok sejam doang, canda jelek`'
+        await event.edit(f'`[HEROKU]:'
+                         f'\nLagi update {REPO_NAME} pler, Ga lama kok sejam doang, canda jelek`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
