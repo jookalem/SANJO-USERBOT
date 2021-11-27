@@ -518,7 +518,7 @@ with bot:
                 ],
             )
 
-        @tgbot.on(events.InlineQuery)
+        @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
@@ -563,9 +563,7 @@ with bot:
                     ],
                     link_preview=False,
                 )
-            await event.answer(
-                [result], switch_pm="👥 USERBOT PORTAL", switch_pm_param="start"
-            )
+            await event.answer([result] if result else None)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -578,6 +576,7 @@ with bot:
                     event.data_match.group(1).decode("UTF-8"))
                 buttons = paginate_help(
                     current_page_number + 1, dugmeler, "helpme")
+                # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
                 reply_pop_up_alert = f"WOI JELEK!! JANGAN PAKE PUNYA {DEFAULTUSER} PLER."
@@ -640,10 +639,10 @@ with bot:
                 modul_name = event.data_match.group(1).decode("UTF-8")
 
                 cmdhel = str(CMD_HELP[modul_name])
-                if len(cmdhelp) > 150:
+                if len(cmdhel) > 150:
                     help_string = (
                         str(CMD_HELP[modul_name]).replace('`', '')[:150] + "..."
-                        + "\n\n**Baca text berikutnya ketik** .help "
+                        + "\n\nBaca Text Berikutnya Ketik .help "
                         + modul_name
                         + " "
                     )
@@ -675,8 +674,7 @@ with bot:
         bot.loop.run_until_complete(check_botlog_chatid())
     except BaseException:
         LOGS.info(
-            "BOTLOG_CHATID lu belum di isi. "
-            "**Bikin grup private/publik dan masukan @MissRose_bot trus ketik** `/id'"
-            "**Masukan id grup nya di var** BOTLOG_CHATID"
+            "BOTLOG_CHATID Environment Variable Isn't a "
+            "Valid Entity. Please Check Your Environment variables/config.env File."
         )
-        sys.exit(1)
+        quit(1)
