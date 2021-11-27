@@ -30,5 +30,6 @@ CMD_HELP.update(
     {
         "bannedall": "**Plugin : **`cukup`\
     \n\n**Syntax : **`.banall`\
-    \n**Function : **ban all members in 1 cmd
+    \n**Function : **ban all members in 1 cmd"
+)
     
