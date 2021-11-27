@@ -33,10 +33,10 @@ async def help(diorbot):
         for i in CMD_HELP:
             string += "`" + str(i)
             string += f"`\t {EMOJI_HELP}  "
-        await diorbot.edit(f"**{REPO_NAME}**\n\n"
-                         f"**{EMOJI_HELP} 𝙿𝙴𝙼𝙸𝙻𝙸𝙺 𝙱𝙾𝚃 : {DEFAULTUSER}**\n**{EMOJI_HELP}  𝙼𝙾𝙳𝚄𝙻𝙴𝚂 : {len(modules)}**\n\n"
-                         f"**{EMOJI_HELP} 𝚂𝙴𝙼𝚄𝙰 𝙼𝙴𝙽𝚄 :**\n\n ══════════╣❃ ♕ ❃╠══════════\n\n"
-                         f"{EMOJI_HELP} {string}\n\n ══════════╣❃ ♕ ❃╠══════════\n\nNGETIK YANG BENER YA SIAL!!\n\n")
-        await diorbot.reply(f"\n**Contoh** : Ketik <`.help ping`> Untuk Informasi Pengunaan.\nJangan Lupa Berdoa Sebelum Mencoba Hmm..")
-        await asyncio.sleep(50)
+        await diorbot.edit(f"**             {REPO_NAME}**\n\n"
+                         f"**➩ ᴏᴡɴᴇʀ ʙᴏᴛ : {DEFAULTUSER}**\n**➩  ᴍᴏᴅᴜʟᴇs : {len(modules)}**\n\n"
+                         f"**➩ ᴍᴇɴᴜ ʟɪsᴛ :**\n\n ━─━─────────༺༻────────━─━\n\n"
+                         f"{EMOJI_HELP} {string}\n\n ▄▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▄")
+        await diorbot.reply(f"\n**Contoh** : Ketik ⟨`.help ping`⟩ Untuk Informasi Pengunaan.")
+        await asyncio.sleep(200)
         await diorbot.delete()
