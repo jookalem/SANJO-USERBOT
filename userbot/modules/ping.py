@@ -22,8 +22,9 @@ sayang = [
     "**Hallo kak dior** 😉",
     "**Eh sayang, apa kabar ayang dior** 😘",
     "**Hai ganteng** 🥵",
-    "**Hadir bro** 😎",
+    "**Hadir sayang** 😘",
     "**Sayang kangen** 🥺",
+    "**Duh ada dior, ga kuat aaaa** 😍🤩",
 ]
 
 
