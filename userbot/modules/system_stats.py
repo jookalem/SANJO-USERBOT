@@ -221,7 +221,8 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     await alive.edit("__Reconnect....__")
     await alive.edit("__Reconnect...__")
-    await alive.edit("__Reconnect.__")
+    await alive.edit("__Reconnect..__")
+    await alive.ediy("__Reconnect.__")
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
     await alive.edit("__Connecting....__")
@@ -249,18 +250,18 @@ async def amireallyalive(alive):
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
     await alive.edit("__Connecting....__")
-    await alive.edit("**Connected ✅")
-    await asyncio.sleep(1)
+    await alive.edit("**Connected** ✅")
+    await asyncio.sleep(2)
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
         f"**[DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT) is Up and Running.**\n\n"
-        f"⚡ **Master :** {DEFAULTUSER} \n"
+        f"⚡ **Master :** `{DEFAULTUSER}` \n"
         f"⚡ **Modules :** `{len(modules)} Modules` \n"
         f"⚡ **Bot Version :** `{BOT_VER}` \n"
         f"⚡ **Python Version :** `{python_version()}` \n"
         f"⚡ **Telethon Version :** `{version.__version__}` \n\n"
-        f"    **[𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/fandasupport)** | **[𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/diorplayingwords)** | **[𝗢𝘄𝗻𝗲𝗿](https://t.me/uurfavboys1)**"
+        f"    [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/fandasupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/fandaproject) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/uurfavboys1)"
     )
     if ALIVE_LOGO:
         try:
@@ -283,19 +284,21 @@ async def amireallyalive(alive):
 
 
 @register(outgoing=True, pattern=r"^\.(?:ralive)\s?(.)?")
-async def amireallyalive(alive):
+async def amireallyalive(ralive):
     user = await bot.get_me()
     await get_readable_time((time.time() - StartTime))
+    await ralive.edit("__Introducing the repo...__")
+    await asyncio.sleep(2)
     output = (
-        f"**ㅤㅤ     ⚡FANDA - PROJECT⚡** \n"
-        f"╔═════════╬════╬═════════╗ \n"
-        f"• `ᴏᴡɴᴇʀ    :`[DIOR](t.me/uurfavboys1)    \n"
-        f"• `ꜱʏꜱᴛᴇᴍ   :`Android 10   \n"
-        f"• `ᴛᴇʟᴇᴛʜᴏɴ  :`v.{version.__version__}   \n"
-        f"• `ᴘʏᴛʜᴏɴ   :`v.{python_version()} ㅤ\n"
-        f"• `ʙᴏᴛ      :`v.{BOT_VER}           \n"
-        f"• `ᴍᴏᴅᴜʟᴇ   :`{len(modules)} ㅤ\n\n"
-                  f"[𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT) **|** [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport) **|** [𝗢𝗪𝗡𝗘𝗥](t.me/uurfavboys1)"
+        f"**ㅤㅤ   ⚡FANDA - PROJECT⚡** \n"
+        f"╔════════╬════╬════════╗ \n"
+        f"❒ ᴏᴡɴᴇʀ    :** `[DIOR](t.me/uurfavboys1)    \n"
+        f"❒ ꜱʏꜱᴛᴇᴍ   :** `Android 10`   \n"
+        f"❒ ᴛᴇʟᴇᴛʜᴏɴ  :** `v.{version.__version__}`   \n"
+        f"❒ ᴘʏᴛʜᴏɴ   :** `v.{python_version()}` ㅤ\n"
+        f"❒ ʙᴏᴛ      :** `v.{BOT_VER}`           \n"
+        f"❒ ᴍᴏᴅᴜʟᴇ   :** `{len(modules)}` ㅤ\n\n"
+                  f"[𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT) | [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport) | [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](Instagram.com/fatur.285)"
     )
     if ALIVE_LOGO:
         try:
