@@ -16,7 +16,7 @@ src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=
 
 ## DISCLAIMER
 
-Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT), [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot), [KEN-UBOT](https://github.com/Kennedy-ex/KEN-UBOT), dengan fungsi untuk mempermudah pengelolaan gc serta menyediakan beberapa fitur otomatis dan membuat penggunaan telegram lebih menyenangkan 
+Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT), [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot), [KEN-UBOT](https://github.com/Kennedy-ex/KEN-UBOT), dengan fungsi untuk mempermudah pengelolaan (grup chat) serta menyediakan beberapa fitur (otomatis) dan membuat penggunaan telegram lebih menyenangkan 
 
 ```
 Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
@@ -36,7 +36,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 <img src="https://img.shields.io/badge/Instagram-2CA5E0?style=for-the-badge&logo=Instagram&logoColor=white" /></a>
 </a></p>
 
-##
+## Language
 <p align="center"> 
 <a 
 href="https://www.python.org" target="_blank"> <img 
