@@ -25,7 +25,7 @@ GCAST_BLACKLIST = [
 
 # Kalo fork atau coppy blacklist jangan dihapus bangsat,
 # Gua tandain telegram api lu
-# Hapus blacklist gua gban!.
+# Hapus blacklist bapak lu jelek gua gban!.
 
 @register(outgoing=True, pattern=r"^\.gcast(?: |$)(.*)")
 async def gcast(event):
@@ -52,7 +52,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil nyebarin aib Ke** `{done}` Grup**\n **Aibnya jelek gabisa disebarin ke** `{er}` **Grup**"
+        f"**Berhasil nyebarin aib Ke** `{done}` **Grup**\n **Aibnya jelek gabisa disebarin ke** `{er}` **Grup**"
     )
 
 
