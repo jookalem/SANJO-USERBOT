@@ -223,6 +223,7 @@ async def amireallyalive(alive):
     await alive.edit("__Reconnect...__")
     await alive.edit("__Reconnect..__")
     await alive.edit("__Reconnect.__")
+    await asyncio.sleep(1)
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
     await alive.edit("__Connecting....__")
@@ -291,12 +292,12 @@ async def amireallyalive(alive):
     output = (
         f"**ㅤㅤ   ⚡FANDA - PROJECT⚡** \n"
         f"╔════════╬════╬════════╗ \n"
-        f"❒ ᴏᴡɴᴇʀ    :** `[DIOR](t.me/uurfavboys1)    \n"
-        f"❒ ꜱʏꜱᴛᴇᴍ   :** `Android 10`   \n"
-        f"❒ ᴛᴇʟᴇᴛʜᴏɴ  :** `v.{version.__version__}`   \n"
-        f"❒ ᴘʏᴛʜᴏɴ   :** `v.{python_version()}` ㅤ\n"
-        f"❒ ʙᴏᴛ      :** `v.{BOT_VER}`           \n"
-        f"❒ ᴍᴏᴅᴜʟᴇ   :** `{len(modules)}` ㅤ\n\n"
+        f"❒ **ᴏᴡɴᴇʀ    :** `[DIOR](https://t.me/uurfavboys1)    \n"
+        f"❒ **ꜱʏꜱᴛᴇᴍ   :** `Android 10`   \n"
+        f"❒ **ᴛᴇʟᴇᴛʜᴏɴ  :** `v.{version.__version__}`   \n"
+        f"❒ **ᴘʏᴛʜᴏɴ   :** `v.{python_version()}` ㅤ\n"
+        f"❒ **ʙᴏᴛ      :** `v.{BOT_VER}`           \n"
+        f"❒ **ᴍᴏᴅᴜʟᴇ   :** `{len(modules)}` ㅤ\n\n"
                   f"[𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT) | [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport) | [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](Instagram.com/fatur.285)"
     )
     if ALIVE_LOGO:
