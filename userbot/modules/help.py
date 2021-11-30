@@ -34,8 +34,11 @@ async def help(diorbot):
             string += "`" + str(i)
             string += f"`\t {EMOJI_HELP}  "
         await diorbot.edit(f"**             {REPO_NAME}**\n\n"
-                         f"**➩ ᴏᴡɴᴇʀ ʙᴏᴛ : {DEFAULTUSER}**\n**➩  ᴍᴏᴅᴜʟᴇs : {len(modules)}**\n\n"
-                         f"**➩ ᴍᴇɴᴜ ʟɪsᴛ :**\n\n ━─━─────────༺༻────────━─━\n\n"
+                         f"╭──╮╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼╮\n"
+                         f"│**➩ ᴏᴡɴᴇʀ ʙᴏᴛ : {DEFAULTUSER}**\n"
+                         f"│**➩  ᴍᴏᴅᴜʟᴇs : {len(modules)}**\n"
+                         f"╰──╯╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼╯\n\n"
+                         f"**▬▬▬▬▬❒ᴍᴇɴᴜ ʟɪsᴛ❒▬▬▬▬▬**\n\n"
                          f"{EMOJI_HELP} {string}\n\n ▄▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▄")
         await diorbot.reply(f"\n**Contoh** : Ketik ⟨`.help ping`⟩ Untuk Informasi Pengunaan.")
         await asyncio.sleep(200)
