@@ -39,7 +39,7 @@ async def help(diorbot):
                          f"│**➩  ᴍᴏᴅᴜʟᴇs : {len(modules)}**\n"
                          f"╰──╯╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼╯\n\n"
                          f"**▬▬▬▬▬❒ᴍᴇɴᴜ ʟɪsᴛ❒▬▬▬▬▬**\n\n"
-                         f"{EMOJI_HELP} {string}\n\n ▄▃▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▃▄")
+                         f"{EMOJI_HELP} {string}\n\n ▬▬▬▬▬▬▬▩⃟꣄ꪾ❁⃟݄ࣾ݃⊣▬▬▬▬▬▬▬")
         await diorbot.reply(f"\n**Contoh** : Ketik ⟨`.help ping`⟩ Untuk Informasi Pengunaan.")
         await asyncio.sleep(200)
         await diorbot.delete()
