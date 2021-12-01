@@ -23,20 +23,15 @@ Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
 Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 ```
 
-## SOKIN PLER!
-<p>
-<p align="center">
-    <a href="https://t.me/uurfavboys1" target="blank">
-<img src="https://img.shields.io/badge/PM%20me%201-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
-    <a href="https://t.me/faturdiorjuga" target="blank">
-<img src="https://img.shields.io/badge/PM%20me%202-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
-    <a href="https://t.me/diorplayingwords" target="blank">
-<img src="https://img.shields.io/badge/Support-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" /></a>
-    <a href="https://instagram.com/fatur.285" target="blank">
-<img src="https://img.shields.io/badge/Instagram-2CA5E0?style=for-the-badge&logo=Instagram&logoColor=white" /></a>
-</a></p>
-
-``more often active on the second account``
+## Support!
+</p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+    <p align="center"> 
+    <a href="https://t.me/fandasupport" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://t.me/fandaproject" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://instagram.com/fatur.285" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
+</p>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## Language
 <p align="center"> 
@@ -50,7 +45,7 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/pyth
 ## AMBIL STRING LU DISINI:
 <p align="center"><a 
 href="https://replit.com/@DIORrios285/DIOR-UBOT-STRING?v=1"><img 
-src="https://img.shields.io/badge/Generate%20String%20Sesion-marine?style=flat&logo=replit&logoColor=white" width="250" height="38.60" />
+src="https://img.shields.io/badge/Generate%20String%20Sesion-000000?style=flat&logo=replit&logoColor=white" width="250" height="38.60" />
 </a></p>
 
 ## DEPLOY TO HEROKU 💜
