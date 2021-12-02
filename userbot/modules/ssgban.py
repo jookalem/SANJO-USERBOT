@@ -84,7 +84,7 @@ async def gben(userbot):
     if not sender.id == me.id:
         dark = await dc.reply("`GUA GBAN LO ANJING!`")
     else:
-        dark = await dc.edit("`Memproses Global Banned Si Anak Anjing!!!`")
+        dark = await dc.edit("`Memproses Global Banned Anak Anjing!!!`")
     me = await userbot.client.get_me()
     await dark.edit(f"`Global Banned Segera Di Aktifkan...`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
@@ -108,7 +108,7 @@ async def gben(userbot):
     if user:
         if user.id == 1937084611:
             return await dark.edit(
-                f"`LU GABISA GBAN FATUR, DIA YANG BIKIN GUA GOBLOK!!!`"
+                f"`LU GABISA GBAN FATUR, DIA YANG BIKIN GUA, GOBLOK!!!`"
             )
         try:
             from userbot.modules.sql_helper.gmute_sql import gmute
@@ -127,11 +127,11 @@ async def gben(userbot):
             try:
                 await userbot.client.edit_permissions(i, user, view_messages=False)
                 a += 1
-                await dark.edit(f"`**Global Banned Udah Aktif Ya Anjing, Traktir Filter Sama Kopi✅**`")
+                await dark.edit(f"**Global Banned** __Dah Aktif Ya Anjing!__")
             except BaseException:
                 b += 1
     else:
-        await dark.edit(f"`Reply pesan dulu lah babi!!!`")
+        await dark.edit(f"__Reply pesan dulu lah babi!!!__")
     try:
         if gmute(user.id) is False:
             return await dark.edit(f"**Kesalahan! Pengguna Ini Sudah Kena Perintah Global Banned.**")
@@ -144,8 +144,8 @@ async def gben(userbot):
         f"❒ **Aksi:** `Global Banned` \n"
         f"❒ **Reason:** 'Jamet` \n"
         f"┗━━━━━━━━━━━━━━━━━┛ \n"
-        f"   **Dior message:** \n"
-        f"`makanya jangan jamet pler` \n"
+        f"   **Dior message :**\n"
+        f" __makanya jangan jamet pler__\n"
         f"▅▄▃▁▁▁▁▁▁▁▁▁▁▁▁▁▂▃▄▅")
 
 
@@ -213,6 +213,7 @@ async def gunben(userbot):
         f"❒ **Tuan:** {ALIVE_NAME}\n"
         f"❒ **Pengguna:** [{user.first_name}](tg://user?id={user.id})\n"
         f"❒ **Aksi:** `Membatalkan Global Banned`\n"
+        f"❒ **Note:** __Jangan di ulang ya lain kali, Wadepucek men!__\n"
         f"┗━━━━━━━━━━━━━━━━━┛"
          )
 
