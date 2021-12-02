@@ -102,9 +102,7 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "diorbot":
-    "`.diorbot`\
-    \nUsage: menampilkan alive bot.\
-    \n\n`.sadboy`\
+    "`.sadboy`\
     \nUsage: hiks\
     \n\n`.punten` ; `.bf` ; `.war` ; `.lahk` ; `.pbl`\
     \nUsage: liat aza."
