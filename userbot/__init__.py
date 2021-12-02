@@ -216,7 +216,7 @@ ALIVE_LOGO = os.environ.get(
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/5534a52373c1b1b5aaeee.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/66a8087facde2fb01fa6c.jpg ni"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/fatur.285"
@@ -431,13 +431,13 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "›⟩⟩", data="{}_prev({})".format(prefix, modulo_page)
+                    "⟨⟨‹", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
                     f"✘ 𝗖𝗟𝗢𝗦𝗘 ✘", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "⟨⟨‹", data="{}_next({})".format(prefix, modulo_page)
+                    "›⟩⟩", data="{}_next({})".format(prefix, modulo_page)
                 )
             )
         ]
