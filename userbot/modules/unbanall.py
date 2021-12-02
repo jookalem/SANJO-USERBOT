@@ -28,8 +28,8 @@ async def _(event):
 
 CMD_HELP.update(
     {
-        "unbanall": "Plugin : **`unbanall`\
-    \n\n**Syntax : **`.unbanall`\
-    \n**Function : **Membatalkan semua Ban Di Anggota Grup."
+        "unbanall": "Plugin : `unbanall`\
+    \n\nSyntax : `.unbanall`\
+    \nFunction : Membatalkan semua Ban Di Anggota Grup."
     }
 )
