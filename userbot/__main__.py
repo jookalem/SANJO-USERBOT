@@ -27,7 +27,7 @@ for module_name in ALL_MODULES:
 
 
 LOGS.info(
-    f"⚡DIOR-UBOT⚡ 💦 V{BOT_VER} [AKTIF YE BANGSAT!!!!]")
+    f"⚡DIOR-UBOT⚡ ⚙️ V{BOT_VER} [BERHASIL DI AKTIFKAN PLER!]")
 
 
 if len(argv) not in (1, 3, 4):
