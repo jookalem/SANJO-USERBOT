@@ -401,7 +401,7 @@ ISAFK = False
 AFKREASON = None
 ZALG_LIST = {}
 
-#Import Userbot - Ported by RAMADHANI892
+#Import Userbot - Ported by DIORrios285
 from userbot import (
     ALIVE_NAME
 )
@@ -431,13 +431,13 @@ def paginate_help(page_number, loaded_modules, prefix):
         ] + [
             (
                 custom.Button.inline(
-                    "< ̤< ̤", data="{}_prev({})".format(prefix, modulo_page)
+                    "›⟩⟩", data="{}_prev({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    f"{EMOJI_HELP} 𝗖𝗟𝗢𝗦𝗘 {EMOJI_HELP}", data="{}_close({})".format(prefix, modulo_page)
+                    f"✘ 𝗖𝗟𝗢𝗦𝗘 ✘", data="{}_close({})".format(prefix, modulo_page)
                 ),
                 custom.Button.inline(
-                    "> ̤> ̤", data="{}_next({})".format(prefix, modulo_page)
+                    "⟨⟨‹", data="{}_next({})".format(prefix, modulo_page)
                 )
             )
         ]
@@ -473,7 +473,7 @@ with bot:
                     await event.delete()
                 else:
                     await event.edit(
-                        "`Botnya tidak berfungsi! Silakan atur Bot Token dan Nama Pengguna dengan benar. Modul telah dihentikan.`"
+                        "`Bot lu ga berfungsi, cacad aowkaowk! Silakan atur Bot Token dan Nama Pengguna dengan benar. Modul telah dihentikan.`"
                     )
             except Exception:
                 return await event.edit(
@@ -491,7 +491,7 @@ with bot:
             text = (
                 f"Hey, __I am using__ ⚡ DIOR-UBOT ⚡\n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"✣ Userbot Version : `V7.0.0`\n"
+                f"✣ Userbot Version : `V{vr}`\n"
                 f"✣ Group Support : [Fanda Support](t.me/fandasupport)\n"
                 f"✣ Owner Repo : [Fatur](t.me/uurfavboys1)\n"
                 f"✣ Repo : [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
@@ -529,7 +529,7 @@ with bot:
                 result = builder.photo(
                     file=diorlogo,
                     link_preview=False,
-                    text=f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
+                    text=f"\n\n**​​INLINE MENU :**\n\n✧ **Owner bot :** {DEFAULTUSER}\n✧ **Versi bot :** 7.0.0\n✧ **Modules :** {len(plugins)}\n✧ **Bot lu :** {BOT_USERNAME}".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
@@ -547,7 +547,7 @@ with bot:
                     buttons=[
                         [
                             custom.Button.url(
-                                "Kyy",
+                                "Repo",
                                 "https://github.com/DIORrios285/DIOR-UBOT"),
 
                             custom.Button.url(
@@ -591,14 +591,17 @@ with bot:
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈",
+                            Button.url("Sumbang Kosa kata",
+                                       "t.me/requestkatakatalubot"),],
+                        [
+                            Button.url("Support",
                                        "t.me/fandasupport"),
-                            Button.url("❈ᴄʜᴀɴɴᴇʟ❈",
+                            Button.url("Updates",
                                        "t.me/fandaproject")],
                         [custom.Button.inline(
-                            "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
+                            "Open Menu", data="open_plugin")],
                         [custom.Button.inline(
-                            "°ᴄʟᴏꜱᴇ ɪɴʟɪɴᴇ°", b"close")],
+                            "Close", b"close")],
                     ]
                 )
 
