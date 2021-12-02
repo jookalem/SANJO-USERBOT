@@ -22,8 +22,10 @@ sayang = [
     "**Hallo kak dior** 😉",
     "**Eh sayang, apa kabar ayang dior** 😘",
     "**Hai ganteng** 🥵",
+    "**Love you ayang dior** 😜",
     "**Hadir sayang** 😘",
     "**Sayang kangen** 🥺",
+    "**Sayang jangan kemana mana lagi ya** 🥺",
     "**Duh ada dior, ga kuat aaaa** 😍🤩",
 ]
 
@@ -167,7 +169,7 @@ async def pingme(pong):
 
 
 CMD_HELP.update({
-    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `.pings`\
+    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` or `Ping`\
          \n↳ : Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.speed`\
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
