@@ -69,7 +69,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit(f'`[HEROKU]:'
-                         f'\nLagi update {REPO_NAME} pler, Ga lama kok sejam doang, canda jelek`'
+                         f'\n{REPO_NAME} __Lagi di apdet pler, Ga lama kok sejam doang,__\n__canda jelek__'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -128,7 +128,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "» #BOT «\n"
-            "**{REPO_NAME} Udah Di Perbarui anjass ツ**")
+            "**{REPO_NAME} Berhasil di apdet anjass ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -138,7 +138,7 @@ async def update(event, repo, ups_rem, ac_br):
     return
 
 
-@ register(outgoing=True, pattern=r"^.update(?: |$)(one|all)?")
+@ register(outgoing=True, pattern=r"^.update(?: |$)(one|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     await event.edit("`Mengecek Pembaruan, Silakan Menunggu pler....`")
@@ -190,13 +190,13 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f"\n**{REPO_NAME} Sudah Versi Terbaru**\n")
+            f"\n**{REPO_NAME} Sudah Versi Terbaru Goblok!**\n")
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f"**Pembaruan Untuk {REPO_NAME} [{REPO_NAME}]:\n\n⚡Pembaruan:**\n`{changelog}`"
+        changelog_str = f"**Pembaruan Untuk {REPO_NAME} [{REPO_NAME}]:\n\n🚀 Pembaruan:**\n`{changelog}`"
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -210,7 +210,7 @@ async def upstream(event):
             remove("output.txt")
         else:
             await event.edit(changelog_str)
-        return await event.respond(f"**Perintah Untuk Update {REPO_NAME}**\n >`.update one`\n >`.update all`\n\n__Untuk Meng Update Fitur Terbaru Dari {REPO_NAME}.__")
+        return await event.respond(f"**Perintah Untuk Update {REPO_NAME}**\n >`.update one`\n >`.update deploy`\n\n__Untuk Meng Update Fitur Terbaru Dari {REPO_NAME}.__")
 
     if force_update:
         await event.edit(
@@ -226,7 +226,7 @@ async def upstream(event):
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(5)
         await event.delete()
-    elif conf == "all":
+    elif conf == "deploy":
         await deploy(event, repo, ups_rem, ac_br, txt)
         await asyncio.sleep(5)
         await event.delete()
@@ -239,6 +239,6 @@ CMD_HELP.update({
     "\nUsage: Untuk Melihat Pembaruan Terbaru DIOR-UBOT."
     "\n\n.update one"
     "\nUsage: Memperbarui DIOR-UBOT."
-    "\n\n.update all"
+    "\n\n.update deploy"
     "\nUsage: Memperbarui DIOR-UBOT Dengan Cara Deploy Ulang."
 })
