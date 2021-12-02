@@ -24,13 +24,13 @@ async def testing(event):
         except Exception as e:
             await event.edit(str(e))
         await sleep(.5)
-    await event.edit("Tidak Ada yang Terjadi di sini🙃🙂")
+    await event.edit("Tidak Ada yang Terjadi di sini🗿")
 
 CMD_HELP.update(
     {
-        "bannedall": "**Plugin : **`cukup`\
-    \n\n**Syntax : **`.banall`\
-    \n**Function : **ban all members in 1 cmd"
+        "bannedall": "Plugin : `cukup`\
+    \n\nSyntax : `.banall`\
+    \nUsage : ban all members in 1 cmd"
         }
 )
     
