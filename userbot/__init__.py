@@ -489,12 +489,12 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"**Hey**, __I am using__ ⚡ **DIOR-UBOT** ⚡\n\n"
+                f"Hey, __I am using__ ⚡ DIOR-UBOT ⚡\n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"✣ **Userbot Version :** `V7.0.0`\n"
-                f"✣ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
-                f"✣ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
-                f"✣ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
+                f"✣ Userbot Version : `V7.0.0`\n"
+                f"✣ Group Support : [Fanda Support](t.me/fandasupport)\n"
+                f"✣ Owner Repo : [Fatur](t.me/uurfavboys1)\n"
+                f"✣ Repo : [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -518,54 +518,50 @@ with bot:
                 ],
             )
 
-        @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
+        @ tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@fandasupport"):
+            if event.query.user_id == uid and query.startswith(
+                    ""):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=logoman,
+                    file=diorlogo,
                     link_preview=False,
-                    text=f"**⚡ DIOR-UBOT ⚡ Inline Menu**\n\n✣ **Owner** {ALIVE_NAME}\n✣ **Jumlah** `{len(dugmeler)}` Modules",
+                    text=f"Usᴇʀʙᴏᴛ​ Tᴇʟᴇɢʀᴀᴍ\n\n**ɪɴʟɪɴᴇ ᴍᴇɴᴜ​​**\n\n❥ **ʙᴏᴛ ᴏꜰ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}\n❥ **ʙᴏᴛʏᴏᴜ :** @{BOT_USERNAME}".format(
+                        len(dugmeler),
+                    ),
                     buttons=buttons,
                 )
-            elif query.startswith("repo"):
+            elif query.startswith("tb_btn"):
                 result = builder.article(
-                    title="Repository",
-                    description="Repository DIOR - UBOT",
-                    url="https://t.me/fandasupport",
-                    text="**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **Owner Repo :** [Fatur](https://t.me/uurfavboys1)\n✣ **Support :** @fandaproject\n✣ **Repository :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
-                    buttons=[
-                        [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/fandasupport"),
-                            custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"
-                            ),
-                        ],
-                    ],
-                    link_preview=False,
-                )
+                    "Bantuan Dari ⚡ DIOR-UBOT ⚡",
+                    text="Daftar Plugins",
+                    buttons=[],
+                    link_preview=True)
             else:
                 result = builder.article(
-                    title="⚡ DIOR-UBOT ⚡",
-                    description="DIOR - UBOT | Telethon",
-                    url="https://t.me/fandasupport",
-                    text=f"**DIOR - UBOT**\n➖➖➖➖➖➖➖➖➖➖\n✣ **UserMode:** {ALIVE_NAME}\n✣ **Assistant:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖\n**Support:** @fandaproject\n➖➖➖➖➖➖➖➖➖➖",
+                    "⚡ DIOR-UBOT ⚡",
+                    text="""«DIOR-UBOT»""",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴜᴘ", "https://t.me/fandasupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"
-                            ),
-                        ],
+                                "Kyy",
+                                "https://github.com/DIORrios285/DIOR-UBOT"),
+
+                            custom.Button.url(
+                                "Channel",
+                                "t.me/fandaproject")],
+                        [custom.Button.url(
+                            "License",
+                            "https://github.com/DIORrios285/DIOR-UBOT/LICENSE")],
                     ],
                     link_preview=False,
                 )
             await event.answer([result] if result else None)
 
-        @tgbot.on(
+        @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_next\((.+?)\)")
             )
@@ -579,38 +575,41 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"WOI JELEK!! JANGAN PAKE PUNYA {DEFAULTUSER} PLER."
+                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-
-        @tgbot.on(
+        @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_close\((.+?)\)")
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @diorubot
+            if event.query.user_id == uid:  # userbot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=diorlogo,
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url(f"{REPO_NAME}",
-                                       "https://github.com/DIORrios285/DIOR-UBOT"),
-                            Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
-                                       "t.me/fandasupport")],
-                        [Button.url(f"{EMOJI_HELP} OWNER {EMOJI_HELP} ",
-                                    f"{OWNER_BOT}"),
-                            Button.url(f"{EMOJI_HELP} INSTAGRAM {EMOJI_HELP} ",
-                                   f"{IG_ALIVE}")],
+                            Button.url("❈ꜱᴜᴘᴘᴏʀᴛ❈",
+                                       "t.me/fandasupport"),
+                            Button.url("❈ᴄʜᴀɴɴᴇʟ❈",
+                                       "t.me/fandaproject")],
                         [custom.Button.inline(
-                            f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
-                       ]
+                            "°ᴏᴘᴇɴ ᴍᴇɴᴜ°", data="open_plugin")],
+                        [custom.Button.inline(
+                            "°ᴄʟᴏꜱᴇ ɪɴʟɪɴᴇ°", b"close")],
+                    ]
                 )
 
+        @ tgbot.on(events.CallbackQuery(data=b"close"))
+        async def close(event):
+            buttons = [
+                (custom.Button.inline("Open Menu", data="open_plugin"),),
+            ]
+            await event.edit(f"Menu Ditutup! ", buttons=buttons)
 
-        @tgbot.on(
+        @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_prev\((.+?)\)")
             )
@@ -625,11 +624,10 @@ with bot:
                 # https://t.me/TelethonChat/115200
                 await event.edit(buttons=buttons)
             else:
-                reply_pop_up_alert = f"WOI JELEK!! JANGAN PAKE PUNYA {DEFAULTUSER} PLER."
+                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-
-        @tgbot.on(
+        @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"ub_modul_(.*)")
             )
@@ -639,9 +637,10 @@ with bot:
                 modul_name = event.data_match.group(1).decode("UTF-8")
 
                 cmdhel = str(CMD_HELP[modul_name])
-                if len(cmdhel) > 150:
+                if len(cmdhel) > 180:
                     help_string = (
-                        str(CMD_HELP[modul_name]).replace('`', '')[:150] + "..."
+                        str(CMD_HELP[modul_name]).replace(
+                            '`', '')[:180] + "..."
                         + "\n\nBaca Text Berikutnya Ketik .help "
                         + modul_name
                         + " "
@@ -657,24 +656,18 @@ with bot:
                     )
                 )
             else:
-                reply_pop_up_alert = f"WOI JELEK!! JANGAN PAKE PUNYA {DEFAULTUSER} PLER."
+                reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
 
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-        @tgbot.on(events.CallbackQuery(data=b"close"))
-        async def close(event):
-            await event.edit("**Menu di tutup!**\n**Kalo mau liat Menu, Ketik** `.helpme`", buttons=Button.clear())
-
-
     except BaseException:
         LOGS.info(
-            "**Mode Inline Bot lu nonaktif pea.**"
-            "**Aktifin dulu, Caranya Pergi Ke** @BotFather **Trus, Settings Bot > Pilih Mode Inline > Turn On.**")
+            "Mode Inline Bot lu Nonaktif. "
+            "Buat Mengaktifkannya, Lu Pergi Ke @BotFather Trus, Settings Bot > Pilih Mode Inline > Turn On. ")
     try:
         bot.loop.run_until_complete(check_botlog_chatid())
     except BaseException:
         LOGS.info(
             "BOTLOG_CHATID Environment Variable Isn't a "
-            "Valid Entity. Please Check Your Environment variables/config.env File."
-        )
+            "Valid Entity. Please Check Your Environment variables/config.env File.")
         quit(1)
