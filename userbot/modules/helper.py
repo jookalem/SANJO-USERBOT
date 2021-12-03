@@ -15,8 +15,8 @@ async def usit(e):
         f"✰ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
         f"✰ **Channel support :** [Fanda Project](t.me/fandaproject)\n"
         f"✰ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
-        f"✰ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n\n"
-        f"__Powered by Fanda Project__\n"
+        f"✰ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n\n\n"
+        f"__Powered by Fanda Project__"
     )
 
 
