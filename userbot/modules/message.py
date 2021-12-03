@@ -39,7 +39,7 @@ async def fastpurger(purg):
     if BOTLOG:
         await purg.client.send_message(
             BOTLOG_CHATID,
-            "Berhasil Menghapus Pesan " + str(count) + " Pesan Berhasil  Dibersihkan.")
+            "__Successfully Delete Message__ " + str(count) + " __Message Cleared Successfully.__")
     """
     await sleep(2)
     await done.delete()
@@ -59,13 +59,13 @@ async def purgeme(delme):
 
     smsg = await delme.client.send_message(
         delme.chat_id,
-        "`Berhasil Menghilangkan Jejak Chatsex,` " + str(count) + " `Jejak Chatsex telah terhapus`",
+        "__Successfully Eliminate Nuclear Code__ " + str(count) + " __Nuclear code has been erased__",
     )
     """
     if BOTLOG:
         await delme.client.send_message(
             BOTLOG_CHATID,
-            "`Telah Menghapus Pesan,` " + str(count) + " Pesan Telah Dihapus`")
+            "__Telah Menghapus Pesan__ " + str(count) + " __Message Has Been Deleted__")
     """
     await sleep(2)
     i = 1
