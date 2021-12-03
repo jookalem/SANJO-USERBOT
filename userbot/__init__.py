@@ -176,9 +176,6 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 # Youtube API key
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
-# Untuk Perintah .rambot (alive)
-RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "ㅤ"
-
 # Untuk Melihat Repo
 REPO_NAME = os.environ.get("REPO_NAME") or "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡"
 
@@ -216,7 +213,7 @@ ALIVE_LOGO = os.environ.get(
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/66a8087facde2fb01fa6c.jpg ni"
+   "HELP_LOGO") or "https://telegra.ph/file/a0c7b8690b88092816efb.jpg"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/fatur.285"
