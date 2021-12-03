@@ -28,18 +28,18 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    "╔═════════════════════╗\n"
-    "          ⚠️ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚠️ \n"
-    "╚═════════════════════╝\n"
-    f"• Saya adalah bot yang menjaga room chat ini.\n"
-    f"• Tuan {ALIVE_NAME} belum menyetujui anda untuk PM.\n"
-    f"• Tunggu sampai tuan {ALIVE_NAME} menyetujui PM anda.\n"
-    f"• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
-    f"• Tuan {ALIVE_NAME} adalah orang paling tampan.\n"
-    "╔════════════════════╗\n"
-    "   𝗽𝗲𝘀𝗮𝗻 𝗼𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗯𝘆 - 𝘂𝘀𝗲𝗿𝗯𝗼𝘁\n"
-    "   𝘀𝘂𝗽𝗽𝗼𝗿𝘁 - @fandasupport\n"
-    "╚════════════════════╝"
+    f"╔═════════════════════╗\n"
+    f"          ⚠️ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚠️ \n"
+    f"╚═════════════════════╝\n"
+    f"• __Saya adalah bot yang menjaga room chat ini.__\n"
+    f"• __Tuan {ALIVE_NAME} belum menyetujui anda untuk PM.__\n"
+    f"• __Tunggu sampai tuan {ALIVE_NAME} menyetujui PM anda.__\n"
+    f"• __Jangan Spam Chat atau anda akan otomatis diblokir.__\n"
+    f"• **Tuan {ALIVE_NAME} adalah orang paling tampan.**\n"
+    f"╔════════════════════╗\n"
+    f"   𝗽𝗲𝘀𝗮𝗻 𝗼𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗯𝘆 - 𝘂𝘀𝗲𝗿𝗯𝗼𝘁\n"
+    f"   𝘀𝘂𝗽𝗽𝗼𝗿𝘁 - @fandasupport\n"
+    f"╚════════════════════╝"
 )
 # =================================================================
 
