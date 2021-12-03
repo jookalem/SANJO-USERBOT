@@ -95,7 +95,7 @@ async def killdabot(event):
 @register(outgoing=True, pattern="^.readme$")
 async def reedme(e):
     await e.edit(
-        "Here's something for you to read:\n"
+        "Ini sesuatu untuk kamu baca:\n"
         "\n[DIOR-UBOT Repo](https://github.com/DIORrios285/DIOR-UBOT/blob/DIOR-UBOT/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
@@ -123,13 +123,14 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        f"**Hi**, __saya menggunakan__ {REPO_NAME}\n\n"
-        f"      __Terimakasih telah menggunakan saya__\n\n"
-        f"❍ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
-        f"❍ **Channel support :** [Fanda Project](t.me/fandaproject)\n"
-        f"❍ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
-        f"❍ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
-    )
+        f"Hi, saya menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡\n\n"
+        f"┏━━━━━━━━━━━━━━━━━┓\n"
+        f"▎❍ **Group :** [Fanda Support](t.me/fandasupport)\n"
+        f"▎❍ **Channel :** [Fanda Project](t.me/fandaproject)\n"
+        f"▎❍ **Owner :** [Fatur](t.me/uurfavboys1)\n"
+        f"▎❍ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
+        f"┗━━━━━━━━━━━━━━━━━┛"
+       )
 
 
 @register(outgoing=True, pattern="^.raw$")
