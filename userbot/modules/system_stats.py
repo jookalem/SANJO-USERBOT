@@ -243,17 +243,13 @@ async def amireallyalive(alive):
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
     await alive.edit("__Connecting....__")
-    await alive.edit("__Connecting.__")
-    await alive.edit("__Connecting..__")
-    await alive.edit("__Connecting...__")
-    await alive.edit("__Connecting....__")
     await alive.edit("**Connected ✅**")
     await asyncio.sleep(2)
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
         f"╭┈╾────────────── ·﻿ ﻿ ﻿· ﻿ ·﻿ ﻿ ﻿· ﻿✦\n"
-        f"**  [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT) is Up and Running.**\n"
+        f"┊   **[DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT) is Up and Running.**\n"
         f"╰┈╾────────────── ·﻿ ﻿ ﻿· ﻿ ·﻿ ﻿ ﻿· ﻿✦\n"
         f"╭┈╾╾──────────••───────╮\n"
         f"┊┊❍ **Tuan :** {DEFAULTUSER} \n"
