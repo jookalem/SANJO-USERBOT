@@ -14,7 +14,6 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 
 @register(outgoing=True, pattern="^.gbanb(?: |$)(.*)")
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cgban(?: |$)(.*)")
 async def _(event):
     if G_BAN_LOGGER_GROUP is None:
         await event.edit("Set G_BAN_LOGGER_GROUP in vars otherwise module won't work.")
