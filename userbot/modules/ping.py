@@ -16,17 +16,21 @@ from speedtest import Speedtest
 from userbot import ALIVE_NAME, CMD_HELP, DEVS, StartTime, REPO_NAME
 from userbot.events import register
 
+absen = [
+    "**Hadir Ganteng** 🥵",
+    "**Hadir Dior ganteng** 😎",
+    "**Hadir Kak** 😉",
+    "**Hadir Sayang** 😘",
+    "**Hadir Kak Maap Telat** 🥺",
+]
+
+
 sayang = [
     "**Hallo dior sayang** 😍",
-    "**Eh ada bang dior** 😁",
     "**Hallo kak dior** 😉",
-    "**Eh sayang, apa kabar ayang dior** 😘",
-    "**Hai ganteng** 🥵",
-    "**Love you ayang dior** 😜",
     "**Hadir sayang** 😘",
     "**Sayang kangen** 🥺",
     "**Sayang jangan kemana mana lagi ya** 🥺",
-    "**Duh ada dior, ga kuat aaaa** 😍🤩",
 ]
 
 
@@ -65,7 +69,6 @@ async def _(kontol):
 
 
 @register(outgoing=True, pattern="^.ping$")
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
@@ -88,7 +91,6 @@ async def redis(pong):
 
 
 @register(outgoing=True, pattern="^Ping$")
-@register(incoming=True, from_users=1937084611, pattern=r"^\.cpi$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
