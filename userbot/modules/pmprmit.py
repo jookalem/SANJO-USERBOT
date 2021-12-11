@@ -29,16 +29,16 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
     f"╔═════════════════════╗\n"
-    f"          ⚠️ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚠️ \n"
+    f"           ⚠️ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚠️    \n"
     f"╚═════════════════════╝\n"
-    f"• __Saya adalah bot yang menjaga room chat ini.__\n"
-    f"• __Tuan {ALIVE_NAME} belum menyetujui anda untuk PM.__\n"
-    f"• __Tunggu sampai tuan {ALIVE_NAME} menyetujui PM anda.__\n"
-    f"• __Jangan Spam Chat atau anda akan otomatis diblokir.__\n"
-    f"• **Tuan {ALIVE_NAME} adalah orang paling tampan.**\n"
+    f"• Saya adalah bot yang menjaga room chat ini.\n"
+    f"• Si {ALIVE_NAME} belum menyetujui anda untuk PM.\n"
+    f"• Tunggu sampai si {ALIVE_NAME} menyetujui PM anda.\n"
+    f"• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
+    f"• **Si {ALIVE_NAME} adalah orang paling kece se-telegram.**\n"
     f"╔════════════════════╗\n"
-    f"   𝗽𝗲𝘀𝗮𝗻 𝗼𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗯𝘆 - 𝘂𝘀𝗲𝗿𝗯𝗼𝘁\n"
-    f"   𝘀𝘂𝗽𝗽𝗼𝗿𝘁 - @fandasupport\n"
+    f"  𝗽𝗲𝘀𝗮𝗻 𝗼𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗯𝘆 - 𝘂𝘀𝗲𝗿𝗯𝗼𝘁\n"
+    f"  𝘀𝘂𝗽𝗽𝗼𝗿𝘁 - @fandasupport\n"
     f"╚════════════════════╝"
 )
 # =================================================================
@@ -98,8 +98,8 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
-                    "`EH ANJING KAN UDAH GUA BILANG JANGAN NORAK JANGAN SPAM, GUA BLOKIR LU TAI!!!`\n"
-                    f"`Tunggu {DEFAULTUSER} Bales pler`"
+                    "**EH GOBLOK KAN UDAH GUA BILANG JANGAN SPAM, GUA BLOK LU TAI.**\nApa? Ga seneng share lok anjing!\n\n"
+                    f"`Tunggu {DEFAULTUSER} unblok pler`"
                 )
 
                 try:
@@ -126,7 +126,7 @@ async def permitpm(event):
                         + "](tg://user?id="
                         + str(event.chat_id)
                         + ")"
-                        + "GUA BLOKIR KARENA TOLOL GOBLOK DIBILANG JANGAN SPAM",
+                        + "GUA BLOKIR KARENA SPAM",
                     )
 
 
