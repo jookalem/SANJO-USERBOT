@@ -59,6 +59,10 @@ async def get_readable_time(seconds: int) -> str:
 async def _(dior):
     await dior.reply(random.choice(sayang))
 
+@register(incoming=True, from_users=DEVS, pattern=r"^.absen$")
+async def _(kontol):
+    await kontol.reply(random.choice(absen))
+
 
 @register(outgoing=True, pattern="^.ping$")
 @register(incoming=True, from_users=DEVS, pattern=r"^\.cping$")
