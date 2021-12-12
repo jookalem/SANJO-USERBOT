@@ -61,4 +61,4 @@ src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=he
 *   [Ramadhani](https://github.com/ramadhani892/RAM-UBOT) RAM-UBOT
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
-*   DAN KEPADA USERBOT INDONESIA LAINNYA!.
+*   DAN KEPADA SELURUH USERBOT INDONESIA LAINNYA!.
