@@ -15,8 +15,8 @@ NO_ADMIN = "`Maaf Kamu Bukan Admin!"
 
 async def get_call(event):
     geez = await event.client(getchat(event.chat_id))
-    sky = await event.client(getvc(geez.full_chat.call))
-    return sky.call
+    vcky = await event.client(getvc(geez.full_chat.call))
+    return vcky.call
 
 
 def user_list(l, n):
@@ -25,7 +25,7 @@ def user_list(l, n):
 
 
 @register(outgoing=True, pattern=r"^\.startvc$", groups_only=True)
-async def start_voice(sky):
+async def start_voice(td):
     chat = await td.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
@@ -33,14 +33,14 @@ async def start_voice(sky):
     if not admin and not creator:
         return await td.edit(NO_ADMIN)
     try:
-        await sky.client(startvc(sky.chat_id))
-        await sky.edit("`Voice Chat Started...`")
+        await td.client(startvc(td.chat_id))
+        await td.edit("`Voice Chat Started...`")
     except Exception as ex:
-        await sky.edit(f"`{str(ex)}`")
+        await td.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.stopvc$", groups_only=True)
-async def stop_voice(sky):
+async def stop_voice(td):
     chat = await td.get_chat()
     admin = chat.admin_rights
     creator = chat.creator
@@ -48,24 +48,24 @@ async def stop_voice(sky):
     if not admin and not creator:
         return await td.edit(NO_ADMIN)
     try:
-        await sky.client(stopvc(await get_call(sky)))
-        await sky.edit("`Voice Chat Stopped...`")
+        await td.client(stopvc(await get_call(td)))
+        await td.edit("`Voice Chat Stopped...`")
     except Exception as ex:
-        await sky.edit(f"`{str(ex)}`")
+        await td.edit(f"`{str(ex)}`")
 
 
 @register(outgoing=True, pattern=r"^\.vcinvite", groups_only=True)
-async def vc_invite(sky):
+async def vc_invite(td):
     await td.edit("`Sedang Mengivinte Member...`")
     users = []
     z = 0
-    async for x in sky.client.iter_participants(sky.chat_id):
+    async for x in td.client.iter_participants(td.chat_id):
         if not x.bot:
             users.append(x.id)
     hmm = list(user_list(users, 6))
     for p in hmm:
         try:
-            await td.client(invitetovc(call=await get_call(sky), users=p))
+            await td.client(invitetovc(call=await get_call(td), users=p))
             z += 6
         except BaseException:
             pass
