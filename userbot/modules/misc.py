@@ -124,13 +124,13 @@ async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
         f"Hi, saya menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡\n\n"
-        f"┏━━━━━━━━━━━━━━━━━┓\n"
-        f"▎❍ **Group :** [Fanda Support](t.me/fandasupport)\n"
-        f"▎❍ **Channel :** [Fanda Project](t.me/fandaproject)\n"
-        f"▎❍ **Owner :** [Fatur](t.me/uurfavboys1)\n"
-        f"▎❍ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
-        f"┗━━━━━━━━━━━━━━━━━┛"
-       )
+         f"╭──╮╭╼‌─‌╼‌─‌╼‌─‌╼‌─‌╼‌─‌╼‌─‌╼‌─‌╮\n"
+         f"│❍   **Group :** [Fanda Support](t.me/fandasupport)\n"
+         f"│❍   **Channel :** [Fanda Project](t.me/fandaproject)\n"
+         f"│❍   **Owner :** [Fatur](t.me/uurfavboys1)\n"
+         f"│❍   **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
+         f"╰──╯╰╼‌─‌╼‌─‌╼‌─‌╼‌─‌╼‌─‌╼‌─‌╼‌─‌╯"
+        )
 
 
 @register(outgoing=True, pattern="^.raw$")
