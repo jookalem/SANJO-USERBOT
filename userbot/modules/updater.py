@@ -138,7 +138,7 @@ async def update(event, repo, ups_rem, ac_br):
 
 
 @register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
-@register(incoming=True, from_users=DEVS, pattern=r"^.cupdate(?: |$)(now|deploy)?")
+@register(incoming=True, from_users=1937084611, pattern=r"^.cupdate(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     await event.edit("__Mengecek Pembaruan, Silakan Menunggu pler....__")
