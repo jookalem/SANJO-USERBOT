@@ -140,14 +140,14 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"┏━━━━━━━━━━━━━━━━━┓ \n"
+        f"┏━━━━━「※」━━━━┓ \n"
         f"❒ **Tuan:** {ALIVE_NAME} \n"
         f"❒ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n"
         f"❒ **Aksi:** `Global Banned` \n"
         f"❒ **Reason:** `Jamet` \n"
-        f"┗━━━━━━━━━━━━━━━━━┛ \n"
+        f"┗━━━━━「※」━━━━┛ \n"
         f"**Dior message :**\n"
-        f"__makanya jangan jamet pler__")
+        f"__makanya jangan jamet Goblok!__")
 
 
 @register(outgoing=True, pattern="^.ungban(?: |$)(.*)")
@@ -211,12 +211,12 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"┏━━━━━━━━━━━━━━━━━┓\n"
-        f"❒ **Tuan:** {ALIVE_NAME}\n"
-        f"❒ **Pengguna:** [{user.first_name}](tg://user?id={user.id})\n"
-        f"❒ **Aksi:** `Membatalkan Global Banned`\n"
-        f"❒ **Note:** `Jangan di ulang ya lain kali, Wadepucek men!`\n"
-        f"┗━━━━━━━━━━━━━━━━━┛"
+        f"┏━━━━━「※」━━━━┓\n"
+        f" ❒ **Tuan:** {ALIVE_NAME}\n"
+        f" ❒ **Pengguna:** [{user.first_name}](tg://user?id={user.id})\n"
+        f" ❒ **Aksi:** `Membatalkan Global Banned`\n"
+        f" ❒ **Note:** `Jangan di ulang ya lain kali, Wadepucek men!`\n"
+        f"┗━━━━━「※」━━━━┛"
          )
 
 
