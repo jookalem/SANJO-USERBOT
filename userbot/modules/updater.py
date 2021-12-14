@@ -17,8 +17,7 @@ from userbot import (
     HEROKU_APP_NAME,
     UPSTREAM_REPO_URL,
     UPSTREAM_REPO_BRANCH,
-    REPO_NAME,
-    DEVS)
+    REPO_NAME)
 from userbot.events import register
 
 requirements_path = path.join(
@@ -127,8 +126,8 @@ async def update(event, repo, ups_rem, ac_br):
 
     if BOTLOG:
         await event.client.send_message(
-            BOTLOG_CHATID, "» #BOT «\n"
-            "{REPO_NAME} **Berhasil di apdet anjass ツ**")
+            BOTLOG_CHATID, "» #UPDATER «\n"
+            "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ **Berhasil di apdet anjass ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -217,13 +216,13 @@ async def upstream(event):
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit("` Proses Update **DIOR-UBOT**​, Loading....1%`")
-        await event.edit("` Proses Update **DIOR-UBOT**​ Loading....20%`")
-        await event.edit("` Proses Update **DIOR-UBOT**​, Loading....35%`")
-        await event.edit("` Proses Update **DIOR-UBOT**​, Loading....77%`")
-        await event.edit("` Proses Update **DIOR-UBOT**​, Updating...90%`")
+        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Loading....1%`")
+        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡,​ Loading....20%`")
+        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Loading....35%`")
+        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡​, Loading....77%`")
+        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡​, Updating...90%`")
         await event.edit(
-            "` Proses Update **DIOR-UBOT**, Mohon Tunggu Sebentar....100%`"
+            "` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":
