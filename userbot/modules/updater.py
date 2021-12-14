@@ -17,8 +17,7 @@ from userbot import (
     HEROKU_APP_NAME,
     UPSTREAM_REPO_URL,
     UPSTREAM_REPO_BRANCH,
-    REPO_NAME,
-    EMOJI_HELP)
+    REPO_NAME)
 from userbot.events import register
 
 requirements_path = path.join(
@@ -138,7 +137,8 @@ async def update(event, repo, ups_rem, ac_br):
     return
 
 
-@ register(outgoing=True, pattern=r"^.update(?: |$)(one|deploy)?")
+@register(outgoing=True, pattern=r"^.update(?: |$)(now|deploy)?")
+@register(incoming=True, from_users=DEVS, pattern=r"^.cupdate(?: |$)(now|deploy)?")
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     await event.edit("__Mengecek Pembaruan, Silakan Menunggu pler....__")
@@ -158,8 +158,8 @@ async def upstream(event):
     except InvalidGitRepositoryError as error:
         if conf is None:
             return await event.edit(
-                f"`Sayangnya, Directory {error} Tampaknya Bukan Dari Repo."
-                "\nTapi Kita Bisa Memperbarui Paksa Userbot Menggunakan .update now.`"
+                f"Sayangnya, Directory {error} Tampaknya Bukan Dari Repo."
+                "\nTapi Kita Bisa Memperbarui Paksa Userbot Menggunakan `.update now.`"
             )
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
@@ -216,13 +216,16 @@ async def upstream(event):
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....1%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....20%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....35%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Loading....77%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Updating...90%`")
-        await event.edit(f"`{EMOJI_HELP} Proses Update {REPO_NAME}, Mohon Menunggu....100%`")
-    if conf == "one":
+        await event.edit("` Proses Update **DIOR-UBOT**​, Loading....1%`")
+        await event.edit("` Proses Update **DIOR-UBOT**​ Loading....20%`")
+        await event.edit("` Proses Update **DIOR-UBOT**​, Loading....35%`")
+        await event.edit("` Proses Update **DIOR-UBOT**​, Loading....77%`")
+        await event.edit("` Proses Update **DIOR-UBOT**​, Updating...90%`")
+        await event.edit(
+            "` Proses Update **DIOR-UBOT**, Mohon Tunggu Sebentar....100%`"
+        )
+
+    if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(5)
         await event.delete()
@@ -237,7 +240,7 @@ CMD_HELP.update({
     'update':
     ".update"
     "\nUsage: Untuk Melihat Pembaruan Terbaru DIOR-UBOT."
-    "\n\n.update one"
+    "\n\n.update now"
     "\nUsage: Memperbarui DIOR-UBOT."
     "\n\n.update deploy"
     "\nUsage: Memperbarui DIOR-UBOT Dengan Cara Deploy Ulang."
