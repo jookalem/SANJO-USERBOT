@@ -25,7 +25,7 @@ async def help(diorbot):
         if args in CMD_HELP:
             await diorbot.edit(str(CMD_HELP[args]))
         else:
-            await diorbot.edit("**`NGETIK APAANSI TOLOL!`**")
+            await diorbot.edit("**NGETIK APAANSI TOLOL!**")
             await asyncio.sleep(50)
             await diorbot.delete()
     else:
@@ -38,9 +38,9 @@ async def help(diorbot):
                          f"│**➩ ᴏᴡɴᴇʀ ʙᴏᴛ : {DEFAULTUSER}**\n"
                          f"│**➩  ᴍᴏᴅᴜʟᴇs : {len(modules)}**\n"
                          f"╰──╯╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼╯\n\n"
-                         f"**▬▬▬▬▬❒ᴍᴇɴᴜ ʟɪsᴛ❒▬▬▬▬▬**\n\n"
-                         f"{EMOJI_HELP} {string}\n\n ▬▬▬▬▬▬▬▩⃟꣄ꪾ❁⃟݄ࣾ݃⊣▬▬▬▬▬▬▬\n\n\n"
+                         f"**PLUGINS LIST :**\n"
+                         f"{EMOJI_HELP} {string}\n\n\n"
                          f"__Powered by Fanda Project__")
-        await diorbot.reply(f"\n**Contoh** : Ketik ⟨`.help ping`⟩ Untuk Informasi Pengunaan.")
+        await diorbot.reply(f"\n**Contoh** : Ketik ⟨`.help roasting`⟩ Untuk Informasi Pengunaan.")
         await asyncio.sleep(200)
         await diorbot.delete()
