@@ -13,14 +13,8 @@ GCAST_BLACKLIST = [
     -1001481357570,  # UsergeOnTopic
     -1001459701099,  # CatUserbotSupport
     -1001109837870,  # TelegramBotIndonesia
+    -1001752592753,  # Skyzusupport
     -1001549206558,  # FandaSupport
-    -1001752592753,  # SkyzuSupport
-    -1001626554919,  # EmikoSupport
-    -1001329986872,  # Yuki•BlackKnights
-    -1001728834311,  # FlicksSupport
-    -1001578091827,  # PrimeSupport
-    -1001350427774,  # SayonaraSupport
-    -1001611385446,  # SolidProjectsSupport
 ]
 
 # Kalo fork atau coppy blacklist jangan dihapus bangsat,
@@ -35,9 +29,9 @@ async def gcast(event):
     elif event.is_reply:
         msg = await event.get_reply_message()
     else:
-        await event.edit("**Berikan Sebuah Pesan atau Reply**")
+        await event.edit("**Berikan Sebuah Pesan atau Balas ke pesan**")
         return
-    kk = await event.edit("`Memulai nyebarin aib bapak lo...`")
+    kk = await event.edit("`Globally Broadcasting Msg...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -52,7 +46,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil nyebarin aib Ke** `{done}` **Grup**\n **Aibnya jelek gabisa disebarin ke** `{er}` **Grup**"
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
     )
 
 
@@ -60,10 +54,10 @@ async def gcast(event):
 async def gucast(event):
     xx = event.pattern_match.group(1)
     if not xx:
-        return await event.edit("`Pesan nya Mana Coba?`")
+        return await event.edit("**Berikan Sebuah Pesan atau Balas ke pesan**")
     tt = event.text
     msg = tt[7:]
-    kk = await event.edit("`Sedang Mengirim pesan secara global...`")
+    kk = await event.edit("`Globally Broadcasting Msg...`")
     er = 0
     done = 0
     async for x in bot.iter_dialogs():
@@ -74,17 +68,24 @@ async def gucast(event):
                 await bot.send_message(chat, msg)
             except BaseException:
                 er += 1
-    await kk.edit(f"Berhasil Mengirim Pesan Ke `{done}` obrolan, kesalahan dalam `{er}` obrolan(s)")
-
-
-CMD_HELP.update(
-    {
-        "gcast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gcast`\
-         \n↳ : Mengirim Pesan Group Secara Global."})
+    await kk.edit(
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **chats, Gagal Mengirim Pesan Ke** `{er}` **chats**"
+    )
 
 CMD_HELP.update(
     {
-         "gucast": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gucast`\
-         \n↳ : Mengirim Pesan Pribadi Secara Global."
+        "gcast": "**Plugin : **`gcast`\
+        \n\n  •  **Syntax :** `.gcast` <text/reply media>\
+        \n  •  **Function : **Mengirim Global Broadcast pesan ke Seluruh Grup yang kamu masuk. (Bisa Mengirim Media/Sticker)\
+    "
+    }
+)
+
+CMD_HELP.update(
+    {
+        "gucast": "**Plugin : **`gucast`\
+        \n\n  •  **Syntax :** `.gucast` <text/reply media>\
+        \n  •  **Function : **Mengirim Global Broadcast pesan ke Seluruh Private Massage / PC yang masuk. (Bisa Mengirim Media/Sticker)\
+    "
     }
 )
