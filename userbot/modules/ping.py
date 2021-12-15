@@ -222,7 +222,7 @@ async def pingme(pong):
 
 
 CMD_HELP.update({
-    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.Ping` | `.xping` | `.sinyal`\
+    "ping": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ping` | `.xping` | `.sinyal`\
          \n↳ : Untuk Menunjukkan Ping Bot Anda.\
          \n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.speed`\
          \n↳ : Untuk Menunjukkan Kecepatan Jaringan Anda.\
