@@ -142,7 +142,7 @@ async def gben(userbot):
     return await dark.edit(
          f"❒ **Tuan:** {ALIVE_NAME} \n"
          f"❒ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n"
-         f"❒ **Aksi:** `Global Banned` \n
+         f"❒ **Aksi:** `Global Banned` \n"
          f"❒ **Reason:** `Jamet` \n\n"
          f"__Gbanned by ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡__")
       
