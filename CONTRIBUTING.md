@@ -1,4 +1,4 @@
-Gw juga ga tau buat paan
+Special thx to:
 
 - DIORrios285
 - Muhammadrizky16
