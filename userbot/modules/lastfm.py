@@ -219,8 +219,8 @@ async def lastlog(lstlog):
 
 
 CMD_HELP.update({"lastfm": ">`.lastfm`"
-                 "\nUsage: Shows currently scrobbling track or most recent scrobbles if nothing is playing."
+                 "\nUsage: Menampilkan trek scrobbling saat ini atau scrobble terbaru jika tidak ada yang diputar."
                  "\n\n>`.lastbio <on/off>`"
-                 "\nUsage: Enables/Disables last.fm current playing to bio."
+                 "\nUsage: Mengaktifkan / Menonaktifkan pemutaran last.fm saat ini ke bio."
                  "\n\n>`.lastlog <on/off>`"
-                 "\nUsage: Enable/Disable last.fm bio logging in the bot-log group."})
+                 "\nUsage: Aktifkan/Nonaktifkan log bio last.fm di grup bot-log."})
