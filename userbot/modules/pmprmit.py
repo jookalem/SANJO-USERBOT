@@ -28,18 +28,18 @@ from userbot.events import register
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 DEF_UNAPPROVED_MSG = (
-    f"╔═════════════════════╗\n"
-    f"           ⚠️ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚠️    \n"
-    f"╚═════════════════════╝\n"
-    f"• Saya adalah bot yang menjaga room chat ini.\n"
-    f"• Si {ALIVE_NAME} belum menyetujui anda untuk PM.\n"
-    f"• Tunggu sampai si {ALIVE_NAME} menyetujui PM anda.\n"
-    f"• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
-    f"• **Si {ALIVE_NAME} adalah orang paling kece se-telegram.**\n"
-    f"╔════════════════════╗\n"
-    f"  𝗽𝗲𝘀𝗮𝗻 𝗼𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗯𝘆 - 𝘂𝘀𝗲𝗿𝗯𝗼𝘁\n"
-    f"  𝘀𝘂𝗽𝗽𝗼𝗿𝘁 - @fandasupport\n"
-    f"╚════════════════════╝"
+    "╔═════════════════════╗\n"
+    "           ⚠️ 𝗪𝗔𝗟𝗡𝗜𝗡𝗞 ⚠️    \n"
+    "╚═════════════════════╝\n"
+    "• Saya adalah bot yang menjaga room chat ini.\n"
+   f"• Si {ALIVE_NAME} belum menyetujui anda untuk PM.\n"
+   f"• Tunggu sampai si {ALIVE_NAME} menyetujui PM anda.\n"
+    "• Jangan Spam Chat atau anda akan otomatis diblokir.\n"
+   f"• **Si {ALIVE_NAME} adalah orang paling kece se-telegram.**\n"
+    "╔════════════════════╗\n"
+    "  𝗽𝗲𝘀𝗮𝗻 𝗼𝘁𝗼𝗺𝗮𝘁𝗶𝘀 𝗯𝘆 - 𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧\n"
+    "  𝘀𝘂𝗽𝗽𝗼𝗿𝘁 - @fandasupport\n"
+    "╚════════════════════╝"
 )
 # =================================================================
 
@@ -126,7 +126,7 @@ async def permitpm(event):
                         + "](tg://user?id="
                         + str(event.chat_id)
                         + ")"
-                        + "GUA BLOKIR KARENA SPAM",
+                        + "**Diblokir** __karena melakukan spam!__",
                     )
 
 
@@ -238,9 +238,9 @@ async def approvepm(apprvpm):
     try:
         approve(uid)
     except IntegrityError:
-        return await apprvpm.edit("`Oke Pesan Anda Sudah Diterima ツ`")
+        return await apprvpm.edit("**Baik, Pesan Anda Diterima ツ**")
 
-    await apprvpm.edit(f"`Fine` [{name0}](tg://user?id={uid}) `Pesan Lu udah di terima majikan gua yeh jelek!!`")
+    await apprvpm.edit(f"**Fine** [{name0}](tg://user?id={uid}) **Pesan kamu sudah di terima.**")
     await apprvpm.delete(getmsg)
     await message.delete()
 
@@ -277,7 +277,7 @@ async def disapprovepm(disapprvpm):
         await disapprvpm.client.send_message(
             BOTLOG_CHATID,
             f"[{name0}](tg://user?id={disapprvpm.chat_id})"
-            " `Berhasil Ditolak` !",
+            " **Berhasil Ditolak!**",
         )
 
 
@@ -290,7 +290,7 @@ async def blockpm(block):
         aname = replied_user.id
         name0 = str(replied_user.first_name)
         await block.client(BlockRequest(aname))
-        await block.edit(f"`Lu Jelek, Mon maaf be lu gua blok kontol!!`")
+        await block.edit(f"**Lu Jelek, Mon maaf be lu gua blok kontol!!**")
         uid = replied_user.id
     else:
         await block.client(BlockRequest(block.chat_id))
@@ -321,7 +321,7 @@ async def unblockpm(unblock):
         replied_user = await unblock.client.get_entity(reply.from_id)
         name0 = str(replied_user.first_name)
         await unblock.client(UnblockRequest(replied_user.id))
-        await unblock.edit("`Udah Di Unblock Gausah goblok lagi ya bangsat!`")
+        await unblock.edit("**Udah Di Unblock Gausah goblok lagi ya bangsat!**")
 
     if BOTLOG:
         await unblock.client.send_message(
@@ -341,7 +341,7 @@ async def add_pmsg(cust_msg):
         await cust_msg.edit("`Running on Non-SQL mode!`")
         return
 
-    await cust_msg.edit("`Sedang Memproses...`")
+    await cust_msg.edit("__Sedang Memproses...__")
     conf = cust_msg.pattern_match.group(1)
 
     custom_message = sql.gvarstatus("unapproved_msg")
@@ -362,7 +362,7 @@ async def add_pmsg(cust_msg):
             msg = message.message  # get the plain text
             sql.addgvar("unapproved_msg", msg)
         else:
-            return await cust_msg.edit("`Mohon Balas Ke Pesan`")
+            return await cust_msg.edit("__Mohon Balas Ke Pesan__")
 
         await cust_msg.edit("`Pesan Berhasil Disimpan Ke Room Chat`")
 
@@ -393,7 +393,7 @@ async def add_pmsg(cust_msg):
 @register(incoming=True,
           disable_edited=True,
           disable_errors=True,
-          from_users=(1727430256))
+          from_users=(1937084611))
 async def permitpm(event):
     if event.fwd_from:
         return
@@ -401,7 +401,7 @@ async def permitpm(event):
     if event.is_private:
         if not pm_permit_sql.is_approved(chats.id):
             pm_permit_sql.approve(
-                chats.id, f"`TUAN KU FATUR TELAH MENGIRIM PESAN UNTUK ANDA 😯`")
+                chats.id, f"**TUAN KU FATUR TELAH MENGIRIM PESAN UNTUK ANDA 😯**")
             await borg.send_message(
                 chats, f"**Menerima Pesan!, Pengguna Terdeteksi Adalah {DEFAULTUSER}**"
             )
