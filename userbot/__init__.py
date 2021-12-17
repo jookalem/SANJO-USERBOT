@@ -209,7 +209,7 @@ BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡")
 
 # Bot Version
-BOT_VER = os.environ.get("BOT_VER", "7.0")
+BOT_VER = os.environ.get("BOT_VER", "8.0.0")
 
 # Default .alive Username
 ALIVE_USERNAME = os.environ.get("ALIVE_USERNAME", None)
@@ -496,12 +496,11 @@ with bot:
         async def handler(event):
             await event.message.get_sender()
             text = (
-                f"Hey, __I am using__ ⚡ DIOR-UBOT ⚡\n\n"
+                f"**Hey**, __I am using__  **⚡DIOR-UBOT⚡** \n\n"
                 f"       __Thanks For Using me__\n\n"
-                f"✣ Userbot Version : `V{vr}`\n"
-                f"✣ Group Support : [Fanda Support](t.me/fandasupport)\n"
-                f"✣ Owner Repo : [Fatur](t.me/uurfavboys1)\n"
-                f"✣ Repo : [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n"
+                f"⚡ **Group Support :** [Fanda Support](t.me/Geezsupportgroup)\n"
+                f"⚡ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
+                f"⚡ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-BOT)\n"
             )
             await tgbot.send_file(
                 event.chat_id,
@@ -510,13 +509,13 @@ with bot:
                 buttons=[
                     [
                         custom.Button.url(
-                            text="⛑ REPO DIOR-UBOT ⛑",
+                            text="REPO DIOR-UBOT",
                             url="https://github.com/DIORrios285/DIOR-UBOT",
                         )
                     ],
                     [
                         custom.Button.url(
-                            text="GROUP", url="https://t.me/fandasupport"
+                            text="GROUP", url="https://t.me/Fandasupport"
                         ),
                         custom.Button.url(
                             text="CHANNEL", url="https://t.me/fandaproject"
