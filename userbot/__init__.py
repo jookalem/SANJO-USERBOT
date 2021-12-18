@@ -480,7 +480,7 @@ with bot:
                     await event.delete()
                 else:
                     await event.edit(
-                        "`Botnya tidak berfungsi! Silahkan atur Bot Token dan Username dengan benar. Modul telah dihentikan.`"
+                        "`Botnya lu berfungsi! cacad aowkaokw, Silahkan atur Bot Token dan Username dengan benar. Modul telah dihentikan.`"
                     )
             except Exception:
                 return await event.edit(
@@ -497,7 +497,10 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"**Halo [{get_display_name(u)}](tg://user?id={u.id})!**\n\nAku adalah bot yang tidak berguna:p",
+                    f"**Hey**, __I am using__  **⚡DIOR-UBOT⚡** \n\n"
+                f"⚡ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
+                f"⚡ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
+                f"⚡ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-BOT)\n",
                     buttons=[
                         [
                              Button.url(f"𝗦𝘂𝗽𝗽𝗼𝗿𝘁",
@@ -558,7 +561,7 @@ with bot:
                                           )
             await event.answer([result] if result else None)
 
-        @tgbot.on(
+        @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_next\((.+?)\)")
             )
@@ -575,33 +578,39 @@ with bot:
                 reply_pop_up_alert = f"🚫!WARNING!🚫 Jangan Menggunakan Milik {DEFAULTUSER}."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-
-        @tgbot.on(
+        @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
                 data=re.compile(rb"helpme_close\((.+?)\)")
             )
         )
         async def on_plug_in_callback_query_handler(event):
-            if event.query.user_id == uid:  # @Dior-ubot
+            if event.query.user_id == uid:  # @Dior_ubot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
                     file=diorlogo,
                     link_preview=True,
                     buttons=[
                         [
-                            Button.url(f"{REPO_NAME}",
-                                       "https://github.com/DIORrios285/DIOR-UBOT"),
-                            Button.url(f"{EMOJI_HELP} SUPPORT {EMOJI_HELP} ", 
-                                       "t.me/fandasupport")],
-                        [Button.url(f"{EMOJI_HELP} OWNER {EMOJI_HELP} ",
-                                    f"{OWNER_BOT}"),
-                            Button.url(f"{EMOJI_HELP} INSTAGRAM {EMOJI_HELP} ",
-                                   f"{IG_ALIVE}")],
+                            Button.url("Sumbang Kosa kata",
+                                       "t.me/requestkatakatalubot"),],
+                        [
+                            Button.url("Support",
+                                       "t.me/fandasupport"),
+                            Button.url("Updates",
+                                       "t.me/fandaproject")],
                         [custom.Button.inline(
-                            f"{EMOJI_HELP} 𝗘𝗫𝗜𝗧 {EMOJI_HELP}", b"close")],
-                       ]
+                            "Open Menu", data="open_plugin")],
+                        [custom.Button.inline(
+                            "Close", b"close")],
+                    ]
                 )
 
+        @ tgbot.on(events.CallbackQuery(data=b"close"))
+        async def close(event):
+            buttons = [
+                (custom.Button.inline("Open Menu", data="open_plugin"),),
+            ]
+            await event.edit(f"Menu Ditutup! ", buttons=buttons)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
