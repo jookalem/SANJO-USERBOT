@@ -43,5 +43,5 @@ async def yardim(event):
             )
     except Exception:
         return await event.edit(
-            "lu ga bisa make perintah `.helpme` (Mungkin lu Belum hidupin Inline Mode Dan Inline Location Data)`"
+            "lu ga bisa make perintah `.helpme` (Mungkin lu Belum hidupin Inline Mode Dan Inline Location Data)\n lu bisa gunain perintah `.inlineon`"
         )
