@@ -50,7 +50,7 @@ src="https://img.shields.io/badge/Generate%20String%20Sesion-000000?style=flat&l
 
 ## DEPLOY TO HEROKU 💜
 <p align="center"><a 
-href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT/"> <img 
+href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIOR-UBOT"> <img 
 src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
 </a></p>
 
