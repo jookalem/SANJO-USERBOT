@@ -65,7 +65,7 @@ async def set_afk(afk_e):
         AFKREASON = string
         await afk_e.edit(f"{REPO_NAME}\n╭━━━━━━━━━━━━━━━━━╮\n┣ {ALIVE_NAME} __𝐒𝐞𝐝𝐚𝐧𝐠 𝐀 𝐅 𝐊__\n┣ ALASAN : {AFKREASON}\n╰━━━━━━━━━━━━━━━━━╯")
     else:
-        await afk_e.edit("⚡ 𝘼 𝙁 𝙆 ⚡\n╭━━━━━━━━━━━━━━━━━╮ \n┣ __𝐒𝐞𝐝𝐚𝐧𝐠 𝐀 𝐅 𝐊__ \n╰━━━━━━━━━━━━━━━━━╯")
+        await afk_e.edit("⚡ 𝘼 𝙁 𝙆 ⚡\n╭━━━━━━━━━━━━━━━━━╮ \n┣ __𝐒𝐞𝐝𝐚𝐧𝐠 𝐀 𝐅 𝐊__ \n┣**Dia lagi nonton live show**\n╰━━━━━━━━━━━━━━━━━╯")
     if user.last_name:
         await afk_e.client(UpdateProfileRequest(first_name=user.first_name, last_name=user.last_name + " 𝐀 𝐅 𝐊  "))
     else:
@@ -99,7 +99,7 @@ async def type_afk_is_not_true(notafk):
     if ISAFK:
         ISAFK = False
         msg = await notafk.respond("⚡𝗕𝗮𝗰𝗸 𝗢𝗻𝗹𝗶𝗻𝗲...")
-        time.sleep(5)
+        time.sleep(4)
         await msg.delete()
         await notafk.client(UpdateProfileRequest(first_name=user.first_name, last_name=last1))
         if BOTLOG:
