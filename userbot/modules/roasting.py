@@ -138,28 +138,28 @@ async def typewriter(typew):
 
 CMD_HELP.update({
     "pantun":
-    "pt\
+    ".pt\
 \nUsage: Pantun berdamage mks smsm.\
-    \n\nptn\
+    \n\n.ptn\
 \nUsage: Pantun berdamage mks smsm.\
-    \n\npn\
+    \n\n.pn\
 \nUsage: Pantun berdamage mks smsm.\
-    \n\npan\
+    \n\n.pan\
 \nUsage: Pantun berdamage mks smsm."
 })
         
 CMD_HELP.update({
     "roasting":
-    "ros\
+    ".ros\
 \nUsage: War ngentot mks smsm.\
-    \n\nwr\
+    \n\n.wr\
 \nUsage: War ngentot mks smsm.\
-    \n\nro\
+    \n\n.ro\
 \nUsage: War ngentot mks smsm.\
-    \n\ntitle\
+    \n\n.title\
 \nUsage: Hina si maruk title taik anjing.\
-    \n\nro\
+    \n\n.ro\
 \nUsage: Hina manusia norak/alay.\
-    \n\nalay\
+    \n\n.alay\
 \nUsage: War ngentot mks smsm."
 })
