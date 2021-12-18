@@ -40,16 +40,8 @@ href="https://www.python.org" target="_blank"> <img
 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="150" height="150"/> 
 </a> </p>
 
-
-
-## AMBIL STRING LU DISINI:
-<p align="center"><a 
-href="https://replit.com/@DIORrios285/DIOR-UBOT-STRING?v=1"><img 
-src="https://img.shields.io/badge/Generate%20String%20Sesion-000000?style=flat&logo=replit&logoColor=white" width="250" height="38.60" />
-</a></p>
-
 ## DEPLOY TO HEROKU 💜
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/Deploy-DIORrios285">
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DIORrios285-Deploy">
 <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
 </a></p>
 
