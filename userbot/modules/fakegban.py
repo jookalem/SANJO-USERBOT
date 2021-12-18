@@ -59,7 +59,10 @@ async def gbun(event):
         await event.reply(mention)
     await event.delete()
 
-CMD_HELP.update({
-    "fakegban": "`.fgban`\
-    \nUsage: Type .fgban atau Balas alasan .fgban dan lihat sendiri. "
-})
+
+CMD_HELP.update(
+    {
+        "faction": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.fgban`"
+        "\n• : .fgban atau Balas alasan .fgban dan lihat sendiri"
+    }
+)
