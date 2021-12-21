@@ -510,7 +510,6 @@ with bot:
                              [Button.url("𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿",
                                         "t.me/uurfavboys1")],
                         ]
-                      link_preview=False,
                       )
 
 
