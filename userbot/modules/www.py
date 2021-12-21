@@ -26,11 +26,11 @@ absen = [
 
 
 sayang = [
-    "**Hallo dior sayang** 😍",
-    "**Hallo kak dior** 😉",
-    "**Hadir sayang** 😘",
-    "**Sayang kangen** 🥺",
-    "**Sayang jangan kemana mana lagi ya** 🥺",
+    "hallo dior sayang 😍",
+    "hallo kak dior 😉",
+    "hadir sayang 😘",
+    "sayang kangen 🥺",
+    "sayang jangan kemana mana lagi ya 🥺",
 ]
 
 
@@ -113,7 +113,6 @@ async def redis(pong):
 
 
 @register(outgoing=True, pattern="^.ping$")
-@register(incoming=True, from_users=DEVS, pattern="^.cping$")
 async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
