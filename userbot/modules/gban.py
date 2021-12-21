@@ -209,11 +209,11 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"╭╼──╼───╼──╼──╼╼
+        f"╭╼──╼───╼──╼──╼╼\n"
         f"││➩ **Tuan:** `{ALIVE_NAME}` \n" 
         f"││➩ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n" 
         f"││➩ **Aksi:** `Membatalkan perintah Global Banned` \n\n" 
-        f"╰─╼──╼──╼──╼──╼╼
+        f"╰─╼──╼──╼──╼──╼╼\n\n"
         f"__Gbanned by ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡__")
 
 CMD_HELP.update(
