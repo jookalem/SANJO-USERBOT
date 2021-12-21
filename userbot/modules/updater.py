@@ -92,7 +92,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!\n" "Restarting, Sabar nyet.....`")
+            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!`\n" "__Restarting, Sabar nyet.....__")
             await asyncio.sleep(15)
             await event.delete()
 
