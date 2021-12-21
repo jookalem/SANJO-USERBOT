@@ -140,12 +140,12 @@ async def gben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-         f"❒ **Tuan:** {ALIVE_NAME} \n"
-         f"❒ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n"
-         f"❒ **Aksi:** `Global Banned` \n"
-         f"❒ **Reason:** `Jamet` \n\n"
+         f"╭╼──╼───╼──╼──╼╼\n"
+         f"││➩ **Tuan:** `{ALIVE_NAME}` \n" 
+         f"││➩ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n" 
+         f"││➩ **Aksi:** `Global Banned` \n"
+         f"╰─╼──╼──╼──╼──╼╼\n\n"
          f"__Gbanned by ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡__")
-      
 
 
 @register(outgoing=True, pattern="^.ungban(?: |$)(.*)")
@@ -209,11 +209,12 @@ async def gunben(userbot):
     except BaseException:
         pass
     return await dark.edit(
-        f"❒ **Tuan:** {ALIVE_NAME} \n"
-         f"❒ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n"
-         f"❒ **Aksi:** `Membatalkan perintah Global Banned` \n\n"
-         f"__Gbanned by ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡__")
-
+        f"╭╼──╼───╼──╼──╼╼
+        f"││➩ **Tuan:** `{ALIVE_NAME}` \n" 
+        f"││➩ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n" 
+        f"││➩ **Aksi:** `Membatalkan perintah Global Banned` \n\n" 
+        f"╰─╼──╼──╼──╼──╼╼
+        f"__Gbanned by ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡__")
 
 CMD_HELP.update(
     {
@@ -222,5 +223,13 @@ CMD_HELP.update(
 \n**Penjelasan:** Melakukan Banned Secara Global Ke Semua Grup Dimana Anda Sebagai Admin\
 \n\n**Perintah:** `.ungban`\
 \n**Penjelasan:** Membatalkan Global Banned"
+    }
+)
+CMD_HELP.update(
+    {
+        "gban": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gban`"
+        \n↳ : Melakukan Banned Secara Global Ke Semua Grup Dimana kamu menjadi Admin."
+        "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.ungban`"
+        \n↳ : Membatalkan Global Banned."
     }
 )
