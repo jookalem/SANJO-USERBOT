@@ -480,7 +480,7 @@ with bot:
                     await event.delete()
                 else:
                     await event.edit(
-                        "`Botnya lu berfungsi! cacad aowkaokw, Silahkan atur Bot Token dan Username dengan benar. Modul telah dihentikan.`"
+                        "`Botnya ga berfungsi! cacad aowkaokw, Silahkan atur Bot Token dan Username dengan benar. Modul telah dihentikan.`"
                     )
             except Exception:
                 return await event.edit(
@@ -509,8 +509,9 @@ with bot:
                                         "t.me/fandaproject")],
                              [Button.url("𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿",
                                         "t.me/uurfavboys1")],
-                    ]
-                )
+                        ]
+                      link_preview=False,
+                      )
 
 
         @tgbot.on(events.NewMessage(pattern="/ping"))
@@ -524,12 +525,69 @@ with bot:
                     f"**OY PLERR!!**\n `{ms}ms`",
                 )
 
+        @tgbot.on(events.InlineQuery)
+        async def inline_handler(event):
+            builder = event.builder
+            result = None
+            query = event.text
+            if event.query.user_id == uid and query.startswith("@Dior_ubot"):
+                buttons = paginate_help(0, dugmeler, "helpme")
+                result = builder.photo(
+                    file=diorlogo,
+                    link_preview=False,
+                    text=f"**inline DIOR-UBOT**\n\n**Owner** [FATUR](t.me/uurfavboys1)\n**Jumlah** `{len(dugmeler)}` Modules",
+                    buttons=buttons,
+                )
+            elif query.startswith("repo"):
+                result = builder.article(
+                    title="Repository",
+                    description="Repository ⚡DIOR-UBOT⚡",
+                    url="https://t.me/fandaproject",
+                    text="**⚡DIOR-UBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [FATUR](https://t.me/uurfavboys1)\n**Repository :** [⚡DIOR-UBOT⚡](https://github.com/DIORrios285/DIOR-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    buttons=[
+                        [
+                            custom.Button.url("ɢʀᴏᴘ", "https://t.me/fandasupport"),
+                            custom.Button.url(
+                                "ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"
+                            ),
+                        ],
+                    ],
+                    link_preview=False,
+                )
+            else:
+                result = builder.article(
+                    title="⚡ DIOR-UBOT ⚡",
+                    description="DIOR-UBOT | Telethon",
+                    url="https://t.me/fandasupport",
+                    text=f"**DIOR-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n**OWNER:** [FATUR](t.me/uurfavboys1)\n**Bot of:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖",
+                    buttons=[
+                        [
+                            custom.Button.url("ɢʀᴜᴘ", "https://t.me/fandasupport"),
+                            custom.Button.url(
+                                "ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"
+                            ),
+                        ],
+                    ],
+                    link_preview=False,
+                )
+            await event.answer(
+                [result], switch_pm="👥 USERBOT PORTAL", switch_pm_param="start"
+            )
 
-        @ tgbot.on(
+        @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
-                data=re.compile(f"open_plugin")
+                data=re.compile(rb"nepo")
             )
         )
+        async def on_plug_in_callback_query_handler(event):
+            current_page_number = int(looters)
+            buttons = paginate_help(current_page_number, dugmeler, "helpme")
+            await event.edit(
+                file=diorlogo,
+                buttons=buttons,
+                link_preview=False,
+            )
+
         @tgbot.on(events.InlineQuery)  # pylint:disable=E0602
         async def inline_handler(event):
             builder = event.builder
