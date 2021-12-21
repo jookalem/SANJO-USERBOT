@@ -216,15 +216,7 @@ async def gunben(userbot):
         f"╰─╼──╼──╼──╼──╼╼\n\n"
         f"__Gbanned by ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡__")
 
-CMD_HELP.update(
-    {
-        "gban": "\
-**Modules:** __Global Banned__\n\n**Perintah:** `.gban`\
-\n**Penjelasan:** Melakukan Banned Secara Global Ke Semua Grup Dimana Anda Sebagai Admin\
-\n\n**Perintah:** `.ungban`\
-\n**Penjelasan:** Membatalkan Global Banned"
-    }
-)
+
 CMD_HELP.update(
     {
         "gban": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.gban`"
