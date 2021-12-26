@@ -1,5 +1,4 @@
-<h1 align="center">⚡ DIOR-UBOT ⚡</h1>
-
+<h1 align="center">GeGe Gaming Ga Ges</h1>
 
 <p align="center">
     <a href="https://github.com/DIORrios285/DIOR-UBOT/commits/DIOR-UBOT"><img 
@@ -13,10 +12,9 @@ src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=
 
 [![Sparkline](https://stars.medv.io/DIORrios285/DIOR-UBOT.svg)](https://stars.medv.io/DIORrios285/DIOR-UBOT)
 
+Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT), [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot), [KEN-UBOT](https://github.com/Kennedy-ex/KEN-UBOT), dengan fungsi untuk mempermudah pengelolaan (grup chat) serta menyediakan beberapa fitur (otomatis) yang membuat penggunaan telegram lebih menyenangkan 
 
 ## DISCLAIMER
-
-Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT), [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot), [KEN-UBOT](https://github.com/Kennedy-ex/KEN-UBOT), dengan fungsi untuk mempermudah pengelolaan (grup chat) serta menyediakan beberapa fitur (otomatis) dan membuat penggunaan telegram lebih menyenangkan 
 
 ```
 Saya tidak bertanggung jawab atas penyalahgunaan bot ini.
@@ -47,7 +45,7 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/pyth
 
 ## © Credits
 
- **TERIMAKASIH BANYAK KEPADA**
+🙏 **TERIMAKASIH BANYAK BANYAK BANYAK BANYAK BANGET DAH KEPADA**
 *   [Fatur](https://github.com/DIORros285/DIOR-UBOT) DIOR-UBOT 
 *   [Ramadhani](https://github.com/ramadhani892/RAM-UBOT) RAM-UBOT
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
