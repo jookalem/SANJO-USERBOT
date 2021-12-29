@@ -34,10 +34,10 @@ async def help(diorbot):
             string += "`" + str(i)
             string += f"`\t {EMOJI_HELP}  "
         await diorbot.edit(f"**             {REPO_NAME}**\n\n"
-                         f"╭──╮╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼╮\n"
-                         f"│**➩ ᴏᴡɴᴇʀ ʙᴏᴛ : {DEFAULTUSER}**\n"
-                         f"│**➩  ᴍᴏᴅᴜʟᴇs : {len(modules)}**\n"
-                         f"╰──╯╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼◠۫╼╯\n\n"
+                         f"╭┈┈╮─────────────╼\n"
+                         f"│➩ **ᴏᴡɴᴇʀ ʙᴏᴛ : {DEFAULTUSER}**\n"
+                         f"│➩  **ᴍᴏᴅᴜʟᴇs : {len(modules)}**\n"
+                         f"╰┈┈╯─────────────╼\n\n"
                          f"**PLUGINS LIST :**\n"
                          f"{EMOJI_HELP} {string}\n\n\n"
                          f"__Powered by Fanda Project__")
