@@ -242,7 +242,7 @@ async def kang(args):
                 await bot.send_read_acknowledge(conv.chat_id)
 
         await args.edit(
-            f"Tikel dicolong!\n\n╭━━━━━━━━╮\n[ENTOT](t.me/addstickers/{packname})\n╰━━━━━━━━╯\n\nBuat liat tikel kamu.",
+            f"Tikel dicolong!\n\n╭━━━━━━━━╮\n            [ENTOT](t.me/addstickers/{packname})\n╰━━━━━━━━╯\n\nBuat liat tikel kamu.",
             parse_mode="md",
         )
 
