@@ -1,4 +1,4 @@
-<h1 align="center">GeGe Gaming Ga Ges</h1>
+<h1 align="center">KALO FORK TUH KASIH LAH BINTANG 🤨</h1>
 
 <p align="center">
     <a href="https://github.com/DIORrios285/DIOR-UBOT/commits/DIOR-UBOT"><img 
