@@ -37,7 +37,7 @@ DEF_UNAPPROVED_MSG = (
     f"│┝ ᴘᴇsᴀɴ sᴘᴀᴍ ᴀᴋᴀɴ ᴅɪʙʟᴏᴋɪʀ​. \n"
     f"│┝ ᴛᴜɴɢɢᴜ {ALIVE_NAME} ᴍᴇɴʏᴇᴛᴜᴊᴜɪ ᴘᴇsᴀɴ ᴋᴀᴍᴜ​. \n"
     f"╰┈────────────────────━ \n\n"
-    f"❂ __**Pesan otomatis by** - DIOR-UBOT__ \n"
+    f"❂ __**Pesan otomatis by** - 𝗗𝗜𝗢𝗥-𝗨𝗕𝗢𝗧__ \n"
     f"❂ __**Grup support** - @Fandasupport__"
 )
 # =================================================================
@@ -97,7 +97,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
-                    "**EH GOBLOK KAN UDAH GUA BILANG JANGAN SPAM, GUA BLOK LU TAI.**\nApa? Ga seneng share lok anjing!\n\n"
+                    "**EH GOBLOK KAN UDAH GUA BILANG JANGAN SPAM DISINI, GUA BLOK LU TAI.**\nApa? Ga seneng sharelok anjing!\n\n"
                     f"`Tunggu {DEFAULTUSER} unblok pler`"
                 )
 
@@ -325,7 +325,7 @@ async def unblockpm(unblock):
     if BOTLOG:
         await unblock.client.send_message(
             BOTLOG_CHATID,
-            f"[{name0}](tg://user?id={replied_user.id})" " Udah kaga Diblokir.",
+            f"[{name0}](tg://user?id={replied_user.id})" " Udah Ga Diblokir.",
         )
 
 
