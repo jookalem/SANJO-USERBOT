@@ -529,8 +529,8 @@ async def rm_deletedacc(show):
                 await sleep(1)
         if del_u > 0:
             del_status = (
-                f"`Menemukan` **{del_u}** `Akun Hantu/Terhapus/Zombie Dalam Grup Ini,"
-                "\nBersihkan Menggunakan Perintah .zombies clean`")
+                f"Menemukan **{del_u} Zombie/Akun Terhapus** Dalam Grup Ini,"
+                "\nBersihkan Menggunakan Perintah `.zombies clean`")
         return await show.edit(del_status)
 
     # Here laying the sanity check
@@ -575,8 +575,8 @@ async def rm_deletedacc(show):
     if BOTLOG:
         await show.client.send_message(
             BOTLOG_CHATID,
-            "» #MEMBERSIHKAN «\n"
-            f"CLEANER **{del_u}** Akun Terhapus!"
+            "» #ZOMBIESCLEAN «\n"
+            f"Membersihkan **{del_u}** Akun Terhapus!"
             f"\nGRUP: {show.chat.title}(`{show.chat_id}`)",
         )
 
