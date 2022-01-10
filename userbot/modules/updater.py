@@ -67,7 +67,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 f'{txt}\n`Kredensial Heroku tidak valid untuk deploy DIOR-UBOT dyno.`'
             )
             return repo.__del__()
-        await event.edit(f'[HEROKU]:'
+        await event.edit(f'**[HEROKU] :**'
                          f'\n{REPO_NAME} **Lagi di apdet pler!**\n`Ga lama kok sejam doang, canda jelek`'
                          )
         ups_rem.fetch(ac_br)
@@ -99,7 +99,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "» #BOTUPDATE «\n"
-                "`{REPO_NAME} Berhasil Di Update nyet`")
+                "**{REPO_NAME} Berhasil Di Update nyet**")
 
     else:
         await event.edit('[HEROKU]:'
@@ -127,7 +127,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "» #UPDATER «\n"
-            "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ **Berhasil di apdet anjass ツ**")
+            "**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil di apdet anjass ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -195,7 +195,7 @@ async def upstream(event):
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f"**Pembaruan Untuk** {REPO_NAME} :\n\n🚀 **Pembaruan:**\n`{changelog}`"
+        changelog_str = f"**Pembaruan Untuk {REPO_NAME} :**\n\n🚀 **Pembaruan:**\n`{changelog}`"
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -220,8 +220,7 @@ async def upstream(event):
         await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Loading....35%`")
         await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡​, Loading....77%`")
         await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡​, Updating...90%`")
-        await event.edit(
-            "` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Mohon Tunggu Sebentar....100%`"
+        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":
