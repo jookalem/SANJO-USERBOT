@@ -272,14 +272,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     await alive.edit("__Introducing the repo...__")
     output = (
-        f"   **Userbot powered by ⚡FANDA - PROJECT⚡** \n\n"
+        f"   **Userbot powered by ⚡FANDA-PROJECT⚡** \n\n"
         f"❒ **ᴏᴡɴᴇʀ   :** [FATUR](https://t.me/uurfavboys1)    \n"
         f"❒ **ꜱʏꜱᴛᴇᴍ  :** `Android 10`   \n"
         f"❒ **ᴛᴇʟᴇᴛʜᴏɴ :** `v{version.__version__}`   \n"
         f"❒ **ᴘʏᴛʜᴏɴ  :** `v{python_version()}` ㅤ\n"
         f"❒ **ʙᴏᴛ ᴠᴇʀ :** `v{BOT_VER}`           \n"
         f"❒ **ᴍᴏᴅᴜʟᴇ  :** `{len(modules)}` ㅤ\n\n"
-        f"        [𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT) | [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport) | [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](Instagram.com/fatur.285)"
+        f"   [𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT) | [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport) | [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](Instagram.com/fatur.285)"
     )
     if ALIVE_LOGO:
         try:
