@@ -499,7 +499,7 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"**Hey**, __I am using__  **⚡DIOR-UBOT⚡** \n\n"
+                    f"__Hey, I am using__  **⚡DIOR-UBOT⚡** \n\n"
                 f"⚡ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
                 f"⚡ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
                 f"⚡ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-BOT)\n",
@@ -557,16 +557,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="⚡ DIOR-UBOT ⚡",
+                    title="⚡DIOR-UBOT⚡",
                     description="DIOR-UBOT | Telethon",
                     url="https://t.me/fandasupport",
                     text=f"**DIOR-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n**OWNER:** [FATUR](t.me/uurfavboys1)\n**Bot of:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴜᴘ", "https://t.me/fandasupport"),
-                            custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"
-                            ),
+                            custom.Button.url("ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"),
                         ],
                     ],
                     link_preview=False,
@@ -606,13 +604,13 @@ with bot:
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    f"Bantuan Dari ⚡𝐃𝐈𝐎𝐑-𝐔𝐁𝐎𝐓⚡",
+                    f"Bantuan Dari {REPO_NAME}",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
-                result = builder.article(" **⚡𝐃𝐈𝐎𝐑-𝐔𝐁𝐎𝐓⚡**",
-                                         text="""°𝐃𝐈𝐎𝐑-𝐔𝐁𝐎𝐓°""",
+                result = builder.article("{REPO_NAME}",
+                                         text="""𝐃𝐈𝐎𝐑-𝐔𝐁𝐎𝐓""",
                                          buttons=[[custom.Button.url("ꜰᴀᴛᴜʀ​",
                                                                      "t.me/uurfavboys1"),
                                                    custom.Button.url("ɢʀᴜᴘ​",
@@ -675,7 +673,7 @@ with bot:
             buttons = [
                 (custom.Button.inline("Open Menu", data="open_plugin"),),
             ]
-            await event.edit(f"Menu Ditutup! ", buttons=buttons)
+            await event.edit(f"Menu Ditutup!", buttons=buttons)
 
         @tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
