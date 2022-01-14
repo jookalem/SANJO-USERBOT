@@ -157,7 +157,7 @@ async def promote(promt):
     if BOTLOG:
         await promt.client.send_message(
             BOTLOG_CHATID,
-            "#PROMOSI\n"
+            "» #PROMOTE «\n"
             f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
             f"GRUP: {promt.chat.title}(`{promt.chat_id}`)",
         )
@@ -206,7 +206,7 @@ async def demote(dmod):
     if BOTLOG:
         await dmod.client.send_message(
             BOTLOG_CHATID,
-            "#MENURUNKAN\n"
+            "» #DEMOTE «\n"
             f"PENGGUNA: [{user.first_name}](tg://user?id={user.id})\n"
             f"GRUP: {dmod.chat.title}(`{dmod.chat_id}`)",
         )
@@ -585,7 +585,7 @@ async def rm_deletedacc(show):
 async def get_admin(show):
     info = await show.client.get_entity(show.chat_id)
     title = info.title if info.title else "Grup Ini"
-    mentions = f"<b>✥ Daftar Admin Grup {title}:</b> \n"
+    mentions = f"<b>✥ Daftar Admin Di {title}:</b> \n"
     try:
         async for user in show.client.iter_participants(
             show.chat_id, filter=ChannelParticipantsAdmins
