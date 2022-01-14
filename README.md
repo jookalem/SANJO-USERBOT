@@ -12,7 +12,7 @@ src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=
 
 [![Sparkline](https://stars.medv.io/DIORrios285/DIOR-UBOT.svg)](https://stars.medv.io/DIORrios285/DIOR-UBOT)
 
-Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT), [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot), [KEN-UBOT](https://github.com/Kennedy-ex/KEN-UBOT), dengan fungsi untuk mempermudah pengelolaan (grup chat) serta menyediakan beberapa fitur (otomatis) yang membuat penggunaan telegram lebih menyenangkan 
+Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT) dan [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot) dengan fungsi untuk mempermudah pengelolaan (grup chat) serta menyediakan beberapa fitur (otomatis) yang membuat penggunaan telegram lebih menyenangkan 
 
 ## DISCLAIMER
 
@@ -39,7 +39,7 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/pyth
 </a> </p>
 
 ## DEPLOY TO HEROKU 💜
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/DeployDior/tree/main">
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/deployyor">
 <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
 </a></p>
 
