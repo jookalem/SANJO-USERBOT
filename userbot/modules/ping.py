@@ -130,7 +130,7 @@ async def redis(pong):
         f"**PING!!!🍀**\n"
         f"✣ **Pinger** - `%sms`\n"
         f"✣ **Uptime** - `{uptime}`\n"
-        f"**✦҈͜͡Owner   :** `{ALIVE_NAME}` \n" % (duration)
+        f"**✦҈͜͡Owner   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
     )
 
 
