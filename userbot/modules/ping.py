@@ -28,8 +28,8 @@ absen = [
 sayang = [
     "hallo dior sayang 😍",
     "hallo kak dior 😉",
-    "hadir sayang 😘",
-    "sayang kangen 🥺",
+    "hadir ayang dior😘",
+    "ayangnya dior disini 🥺",
     "sayang jangan kemana mana lagi ya 🥺",
 ]
 
@@ -127,10 +127,10 @@ async def redis(pong):
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**PING!!!🍀**\n"
+        f"**PONG!!!🍀**\n"
         f"✣ **Pinger** - `%sms`\n"
         f"✣ **Uptime** - `{uptime}`\n"
-        f"**✦҈͜͡Owner   :** [{user.first_name}](tg://user?id={user.id})" % (duration)
+        f"**✦҈͜͡Owner   :** [{ALIVE_NAME}](tg://user?id={user.id})" % (duration)
     )
 
 
