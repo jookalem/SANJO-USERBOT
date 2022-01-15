@@ -239,11 +239,11 @@ async def amireallyalive(alive):
         f"╰┈─────────────── ·﻿ ﻿ ﻿· ﻿ ·﻿ ﻿ ﻿· ﻿✦\n"
         f"╭┈────────────••───────━\n"
         f"││❍ **Bot of :** {DEFAULTUSER} \n"
-        f"││❍ **Modules :** {len(modules)} Modules \n"
+        f"││❍ **Modules :** {len(modules)} \n"
         f"││❍ **Bot Version :** v{BOT_VER} \n"
         f"││❍ **Python Version :** v{python_version()} \n"
         f"││❍ **Telethon Version :** v{version.__version__} \n"
-        f"╰┈───────••────────────━\n\n"
+        f"╰┈───────••────────────━\n"
         f"       [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/fandasupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/fandaproject) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/uurfavboys1)"
     )
     if ALIVE_LOGO:
@@ -272,8 +272,8 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     await alive.edit("__Introducing the repo...__")
     output = (
-        f"   **Userbot powered by ⚡FANDA-PROJECT⚡** \n\n"
-        f"❒ **ᴏᴡɴᴇʀ   :** [FATUR](https://t.me/uurfavboys1)    \n"
+        f"   **Userbot powered by FANDA-PROJECT** \n\n"
+        f"❒ **ᴏᴡɴᴇʀ   :** [Owner](https://t.me/uurfavboys1)    \n"
         f"❒ **ꜱʏꜱᴛᴇᴍ  :** `Android 10`   \n"
         f"❒ **ᴛᴇʟᴇᴛʜᴏɴ :** `v{version.__version__}`   \n"
         f"❒ **ᴘʏᴛʜᴏɴ  :** `v{python_version()}` ㅤ\n"
