@@ -195,7 +195,7 @@ async def upstream(event):
         return repo.__del__()
 
     if conf is None and force_update is False:
-        changelog_str = f"**Pembaruan Untuk {REPO_NAME} :**\n\n🚀 **Pembaruan:**\n`{changelog}`\n\n**Perintah untuk memperbarui** {REPO_NAME}\n >`.update one`\n >`.update deploy`\n\n**Report:** [Group Support](https://t.me/fandasupport)"
+        changelog_str = f"**Pembaruan Untuk {REPO_NAME} :**\n\n🚀 **Pembaruan:**\n`{changelog}`"
         if len(changelog_str) > 4096:
             await event.edit("`Changelog Terlalu Besar, Lihat File Untuk Melihatnya.`")
             file = open("output.txt", "w+")
@@ -207,7 +207,10 @@ async def upstream(event):
                 reply_to=event.id,
             )
             remove("output.txt")
-        
+        else:
+            await event.edit(changelog_str)
+        return await event.respond(f"**Perintah untuk memperbarui** {REPO_NAME}\n >`.update one`\n >`.update deploy`\n\n**Report:** [Group Support](https://t.me/fandasupport)")
+
     if force_update:
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
