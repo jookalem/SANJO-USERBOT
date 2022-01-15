@@ -123,19 +123,19 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        f"Hi, saya menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡\n\n"
-        f"**Channel :** [Fanda Project](t.me/fandaproject)\n"
-        f"**Group :** [Fanda Support](t.me/fandasupport)\n"
-        f"**Owner :** [Fatur](t.me/uurfavboys1)\n"
-        f"**Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)"
+        f"**Hi, saya menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡**\n\n"
+        f"**Channel :** [Channel](t.me/fandaproject)\n"
+        f"**Group :** [Group](t.me/fandasupport)\n"
+        f"**Owner :** [Owner](t.me/uurfavboys1)\n"
+        f"**Repo :** [Repo](https://github.com/DIORrios285/DIOR-UBOT)"
         )
 
 
 @register(outgoing=True, pattern="^.deploy$")
 async def deploy_repo(dep):
     await dep.edit(
-        f"**Ingin menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ ?**\n\n"
-        f"**deploy disini**\n━━━━━\n[[DEPLOY DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)]\n━━━━━\n**Support group -** [Fanda Support](https://t.me/fandasupport)"
+        f"**Ingin menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡?**\n\n"
+        f"**deploy disini**\n━━━━━\n[DEPLOY DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)]\n━━━━━\n**Support group -** [Fanda Support](https://t.me/fandasupport)"
         )
 
 
