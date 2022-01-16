@@ -234,7 +234,7 @@ async def amireallyalive(alive):
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
-        f"❖ **[𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙](https://github.com/jookalem/SANJO-USERBOT)** __is Up and Running.__\n"
+        f"❖ [𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙](https://github.com/jookalem/SANJO-USERBOT) __is Up and Running.__\n"
         f"╭┈────────────••───────━\n"
         f"││❍ **Bot of :** {DEFAULTUSER} \n"
         f"││❍ **Modules :** {len(modules)} \n"
