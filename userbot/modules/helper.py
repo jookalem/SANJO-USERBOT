@@ -12,11 +12,11 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else uname().node
 async def usit(e):
     await e.edit(
         f"__Hai {DEFAULTUSER} Kalau lu ga Tau cara buat__ **Memerintah** gua **Ketik** `.helpme` Atau `.help` atau Minta **Bantuan** __Ke:__\n"
-        f"✰ **Channel support :** [Fanda Project](t.me/fandaproject)\n"
-        f"✰ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
-        f"✰ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
-        f"✰ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n\n\n"
-        f"__Powered by Fanda Project__"
+        f"✰ **Channel support :** [Sanjo](t.me/gbtnyajo)\n"
+        f"✰ **Group Support :** [Sanjo Support](t.me/sanjosupport)\n"
+        f"✰ **Owner Repo :** [SANJO](t.me/jooneverdie)\n"
+        f"✰ **Repo :** [SANJO-USERBOT](https://github.com/DIORrios285/DIOR-UBOT)\n\n\n"
+        f"__Powered by 𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙__"
     )
 
 
@@ -31,7 +31,7 @@ async def var(m):
 CMD_HELP.update({
     "helper":
     "`.helpmy`\
-\nUsage: Bantuan Untuk DIOR-UBOT.\
+\nUsage: Bantuan Untuk SANJO-USERBOT.\
 \n`.rvars`\
 \nUsage: Untuk Melihat Beberapa Daftar Vars."
 })
