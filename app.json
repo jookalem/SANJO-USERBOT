@@ -1,7 +1,7 @@
 {
-  "name": "DIOR-UBOT",
-  "description": "[DIOR-UBOT] DEPLOY CUMAN BUAT GCAST NGENTOT ALAY GOBLOK!.",
-  "logo": "https://telegra.ph/file/5e0c4d6ff521d55d164e7.jpg",
+  "name": "SANJO-USERBOT",
+  "description": "[SANJO-USERBOT] DEPLOY CUMAN BUAT GCAST NGENTOT ALAY GOBLOK!.",
+  "logo": "https://telegra.ph/file/0813a5eeaaa87150f4d9a.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/DIORrios285/DIOR-UBOT",
-  "telegram": "https://t.me/uurfavboys1",
-  "success_url": "https://t.me/fandasupport",
+  "repository": "https://github.com/jookalem/SANJO-USERBOT",
+  "telegram": "https://t.me/jooneverdie",
+  "success_url": "https://t.me/sanjosupport",
   "stack": "container",
   "env": {
     "API_KEY": {
