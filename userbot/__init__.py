@@ -84,6 +84,7 @@ DEVS = (
     1977874449,
     1784606556,
     5041451209,
+    2078891795,
 )
 
 # Telegram App KEY and HASH
@@ -123,9 +124,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/DIORrios285/DIOR-UBOT")
+    "https://github.com/jookalem/SANJO-USERBOT")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "DIOR-UBOT")
+    "UPSTREAM_REPO_BRANCH", "JOO-USERBOT")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -190,7 +191,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡"
+REPO_NAME = os.environ.get("REPO_NAME") or "⚡𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛⚡"
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -209,7 +210,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡𝘚𝘈𝘕𝘑𝘖 𝘜𝘉𝘖𝘛⚡")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "8.0.0")
@@ -222,30 +223,30 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/584ab6a5e75e9899f6408.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/0813a5eeaaa87150f4d9a.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/a0c7b8690b88092816efb.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/0813a5eeaaa87150f4d9a.jpg"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/fatur.285"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ikhsantarjo"
 
 # Default emoji help
 EMOJI_HELP = os.environ.get("EMOJI_HELP") or "✰"
 
 # Default .alive Group
 GROUP_LINK = os.environ.get(
-    "GROUP_LINK") or "t.me/fandasupport"
+    "GROUP_LINK") or "t.me/sanjosupport"
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/uurfavboys1"
+    "OWNER_BOT") or "t.me/jooneverdie"
 
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⚡𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛⚡"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -287,7 +288,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil Di Aktifkan**\n━━━━━━\n➠ **Bot Version:** `V8.0.0`\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━━━━━\n➠ **Group:** @fandasupport\n━━━━━━"
+    "BOTLOG_MSG") or "**⚡𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛⚡ Berhasil Di Aktifkan**\n━━━━━━\n➠ **Bot Version:** `V8.0.0`\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━━━━━\n➠ **Group:** @fandasupport\n━━━━━━"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -500,18 +501,18 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"__Hey, I am using__  **⚡DIOR-UBOT⚡** \n\n"
-                f"⚡ **Group Support :** [Fanda Support](t.me/fandasupport)\n"
-                f"⚡ **Owner Repo :** [Fatur](t.me/uurfavboys1)\n"
-                f"⚡ **Repo :** [DIOR-UBOT](https://github.com/DIORrios285/DIOR-BOT)\n",
+                    f"__Hey, I am using__  **⚡𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛⚡** \n\n"
+                f"⚡ **Group Support :** [SANJO Support](t.me/sanjoupport)\n"
+                f"⚡ **Owner Repo :** [Joo](t.me/jooneverdie)\n"
+                f"⚡ **Repo :** [SANJO-USERBOT](https://github.com/jookalem/SANJO-USERBOT)\n",
                     buttons=[
                         [
                              Button.url(f"𝗦𝘂𝗽𝗽𝗼𝗿𝘁",
-                                        "t.me/fandasupport"),
+                                        "t.me/sanjosupport"),
                              Button.url(f"𝗨𝗽𝗱𝗮𝘁𝗲𝘀",
-                                        "t.me/fandaproject")],
+                                        "t.me/sanjoproject")],
                              [Button.url("𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿",
-                                        "t.me/uurfavboys1")],
+                                        "t.me/jooneverdie")],
                         ]
                       )
 
@@ -543,9 +544,9 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository ⚡DIOR-UBOT⚡",
-                    url="https://t.me/fandaproject",
-                    text="**⚡DIOR-UBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [FATUR](https://t.me/uurfavboys1)\n**Repository :** [⚡DIOR-UBOT⚡](https://github.com/DIORrios285/DIOR-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    description="Repository ⚡SANJO-UBOT⚡",
+                    url="https://t.me/sanjiproject",
+                    text="**⚡SANJO-UBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [FATUR](https://t.me/uurfavboys1)\n**Repository :** [⚡DIOR-UBOT⚡](https://github.com/DIORrios285/DIOR-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
                             custom.Button.url("ɢʀᴏᴘ", "https://t.me/fandasupport"),
@@ -558,14 +559,14 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="⚡DIOR-UBOT⚡",
-                    description="DIOR-UBOT | Telethon",
-                    url="https://t.me/fandasupport",
-                    text=f"**DIOR-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n**OWNER:** [FATUR](t.me/uurfavboys1)\n**Bot of:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖",
+                    title="⚡SANJO-UBOT⚡",
+                    description="SANJO-UBOT | Telethon",
+                    url="https://t.me/sanjosupport",
+                    text=f"**SANJO-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n**OWNER:** [JOO](t.me/jooneverdie)\n**Bot of:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴜᴘ", "https://t.me/fandasupport"),
-                            custom.Button.url("ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"),
+                            custom.Button.url("ɢʀᴜᴘ", "https://t.me/jooneverdie"),
+                            custom.Button.url("ʀᴇᴘᴏ", "https://github.com/jookalem/SANJO-USERBOT"),
                         ],
                     ],
                     link_preview=False,
@@ -611,14 +612,14 @@ with bot:
                     link_preview=True)
             else:
                 result = builder.article("{REPO_NAME}",
-                                         text="""𝐃𝐈𝐎𝐑-𝐔𝐁𝐎𝐓""",
+                                         text="""𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛""",
                                          buttons=[[custom.Button.url("ꜰᴀᴛᴜʀ​",
-                                                                     "t.me/uurfavboys1"),
+                                                                     "t.me/jooneverdie1"),
                                                    custom.Button.url("ɢʀᴜᴘ​",
-                                                                     "t.me/fandasupport"),
+                                                                     "t.me/sanjosupport"),
                                                    ],
                                                   [custom.Button.url("ʟɪᴄᴇɴsᴇ​",
-                                                                     "https://github.com/DIORrios285/DIOR-UBOT/LICENSE",
+                                                                     "https://github.com/jookalem/SANJO-USERBOT/LICENSE",
                                                                      )],
                                                   ],
                                           link_preview=False,
