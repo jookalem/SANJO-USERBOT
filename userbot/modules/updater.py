@@ -54,7 +54,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if HEROKU_APP_NAME is None:
             await event.edit(
                 '`[HEROKU]: Harap Siapkan Variabel` **HEROKU_APP_NAME** `'
-                ' untuk dapat deploy perubahan terbaru dari DIOR-UBOT.`'
+                ' untuk dapat deploy perubahan terbaru dari SANJO-UBOT.`'
             )
             repo.__del__()
             return
@@ -68,7 +68,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             )
             return repo.__del__()
         await event.edit(f'**[HEROKU] :**'
-                         f'\n{REPO_NAME} **Lagi di apdet pler!**\n`Ga lama kok sejam doang, canda jelek`'
+                         f'\n{REPO_NAME} **Lagi di apdet pler!**\n`Ga lama kok duajam doang, canda jelek`'
                          )
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -92,14 +92,14 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             await asyncio.sleep(5)
             return await event.delete()
         else:
-            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!`\n" "__Restarting, Sabar nyet.....__")
+            await event.edit(f"`{REPO_NAME} Berhasil Di Deploy!`\n" "__Restarting, Sabar kontol.....__")
             await asyncio.sleep(15)
             await event.delete()
 
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "» #BOTUPDATE «\n"
-                "**{REPO_NAME} Berhasil Di Update nyet**")
+                "**{REPO_NAME} Berhasil Di Update kontol**")
 
     else:
         await event.edit('[HEROKU]:'
@@ -127,7 +127,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "» #UPDATER «\n"
-            "**⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡ Berhasil di apdet anjass ツ**")
+            "**⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡ Berhasil di apdet anjass ツ**")
         await asyncio.sleep(100)
         await event.delete()
 
@@ -215,12 +215,12 @@ async def upstream(event):
         await event.edit(
             '`Sinkronisasi Paksa Ke Kode Userbot Stabil Terbaru, Harap Tunggu .....`')
     else:
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Loading....1%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡,​ Loading....20%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Loading....35%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡​, Loading....77%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡​, Updating...90%`")
-        await event.edit("` Proses Update ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡, Mohon Tunggu Sebentar....100%`"
+        await event.edit("` Proses Update ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡, Loading....1%`")
+        await event.edit("` Proses Update ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡,​ Loading....20%`")
+        await event.edit("` Proses Update ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡, Loading....35%`")
+        await event.edit("` Proses Update ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡​, Loading....75%`")
+        await event.edit("` Proses Update ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡​, Updating...90%`")
+        await event.edit("` Proses Update ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡, Mohon Tunggu Sebentar....100%`"
         )
 
     if conf == "now":
@@ -237,9 +237,9 @@ async def upstream(event):
 CMD_HELP.update({
     'update':
     ".update"
-    "\nUsage: Untuk Melihat Pembaruan Terbaru DIOR-UBOT."
+    "\nUsage: Untuk Melihat Pembaruan Terbaru SANJO-USERBOT."
     "\n\n.update now"
-    "\nUsage: Memperbarui DIOR-UBOT."
+    "\nUsage: Memperbarui SANJO-USERBOT."
     "\n\n.update deploy"
-    "\nUsage: Memperbarui DIOR-UBOT Dengan Cara Deploy Ulang."
+    "\nUsage: Memperbarui SANJO-USERBOT Dengan Cara Deploy Ulang."
 })
