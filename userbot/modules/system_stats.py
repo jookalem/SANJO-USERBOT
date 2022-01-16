@@ -234,7 +234,7 @@ async def amireallyalive(alive):
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
-        f"❖ **[DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)** __is Up and Running.__\n"
+        f"❖ **[𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙](https://github.com/jookalem/SANJO-USERBOT)** __is Up and Running.__\n"
         f"╭┈────────────••───────━\n"
         f"││❍ **Bot of :** {DEFAULTUSER} \n"
         f"││❍ **Modules :** {len(modules)} \n"
@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"││❍ **Python Version :** v{python_version()} \n"
         f"││❍ **Telethon Version :** v{version.__version__} \n"
         f"╰┈───────••────────────━\n"
-        f"       [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/fandasupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/fandaproject) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/uurfavboys1)"
+        f"       [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/sanjosupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/gbtnyajo) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/jooneverdie)"
     )
     if ALIVE_LOGO:
         try:
