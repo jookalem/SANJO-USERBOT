@@ -2,9 +2,9 @@
 
 on:
   push:
-    branches: [ DIOR-UBOT ]
+    branches: [ JOO-USERBOT ]
   pull_request:
-    branches: [ DIOR-UBOT ]
+    branches: [ JOO-USERBOT ]
 
 jobs:
   build:
@@ -34,4 +34,4 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-[![Python package](https://github.com/DIORrios285/RAM-UBOT/actions/workflows/python-package.yml/badge.svg?branch=DIOR-UBOT&event=workflow_dispatch)](https://github.com/DIORrios285/DIOR-UBOT/actions/workflows/python-package.yml)
+[![Python package](https://github.com/jookalem/RAM-UBOT/actions/workflows/python-package.yml/badge.svg?branch=JOO-USERBOT&event=workflow_dispatch)](https://github.com/jookalem/SANJO-USERBOT/actions/workflows/python-package.yml)
