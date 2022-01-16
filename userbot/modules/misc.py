@@ -135,7 +135,7 @@ async def repo_is_here(wannasee):
 async def deploy_repo(dep):
     await dep.edit(
         f"**Ingin menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡?**\n\n"
-        f"**deploy disini**\n━━━━━\n[DEPLOY DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)]\n━━━━━\n**Support group -** [Fanda Support](https://t.me/fandasupport)"
+        f"**deploy disini**\n━━━━━\n[DEPLOY DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n━━━━━\n**Support group -** [Fanda Support](https://t.me/fandasupport)"
         )
 
 
@@ -294,6 +294,9 @@ CMD_HELP.update({
     "repo":
     ">`.repo`\
     \nUsage: Github Repo of this bot",
+    "deploy":
+    ">`.deploy`\
+    \nUsage: Deploy link of this bot",
     "readme":
     ">`.readme`\
     \nUsage: Provide links to setup the userbot and it's modules.",
