@@ -128,9 +128,11 @@ async def redis(pong):
     duration = (end - start).microseconds / 1000
     await pong.edit(
         f"**PONG!!!🍀**\n"
-        f"✣ **Pinger** - `%sms`\n"
-        f"✣ **Uptime** - `{uptime}`\n"
-        f"**✦҈͜͡Owner   :** [{ALIVE_NAME}](tg://user?id={user.id})" % (duration)
+        f"✣ **Ping** - "
+        f"`%sms` \n"
+        f"✣ **Uptime** - "
+        f"`{uptime}` \n"
+        f"**✦҈͜͡Owner   :** `{ALIVE_NAME}`" % (duration)
     )
 
 
