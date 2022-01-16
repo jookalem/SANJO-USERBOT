@@ -145,7 +145,7 @@ async def gben(userbot):
          f"││➩ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n" 
          f"││➩ **Aksi:** `Global Banned` \n"
          f"╰┈─────────────━\n\n"
-         f"❂ __Gbanned by ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡__")
+         f"❂ __Gbanned by ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡__")
 
 
 @register(outgoing=True, pattern="^.ungban(?: |$)(.*)")
@@ -214,7 +214,7 @@ async def gunben(userbot):
         f"││➩ **Pengguna:** [{user.first_name}](tg://user?id={user.id}) \n" 
         f"││➩ **Aksi:** `Membatalkan perintah Global Banned` \n\n" 
         f"╰┈─────────────━\n\n"
-        f"❂ __Gbanned by ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡__")
+        f"❂ __Gbanned by ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡__")
 
 
 CMD_HELP.update(
