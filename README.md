@@ -1,4 +1,4 @@
-<h1 align="center">KALO FORK TUH KASIH LAH BINTANG 🤨</h1>
+<h1 align="center">KALO FORK TUH KASIH BINTANG KONTOL 🤨</h1>
 
 <p align="center">
     <a href="https://github.com/DIORrios285/DIOR-UBOT/commits/DIOR-UBOT"><img 
@@ -25,9 +25,9 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
     <p align="center"> 
-    <a href="https://t.me/fandasupport" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
-    <a href="https://t.me/fandaproject" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
-    <a href="https://instagram.com/fatur.285" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
+    <a href="https://t.me/sanjosupport" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://t.me/gbtnyajo" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://instagram.com/ikhsan" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
@@ -39,7 +39,7 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/pyth
 </a> </p>
 
 ## DEPLOY TO HEROKU 💜
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/DIORrios285/deployyor">
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/jookalem/deployyor">
 <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-DE1EFB?style=flat&logo=heroku" width="250" height="38.60" />
 </a></p>
 
