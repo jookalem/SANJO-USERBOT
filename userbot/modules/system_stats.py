@@ -234,9 +234,7 @@ async def amireallyalive(alive):
     await alive.edit("⚡")
     await asyncio.sleep(3)
     output = (
-        f"╭┈─────────────── ·﻿ ﻿ ﻿· ﻿ ·﻿ ﻿ ﻿· ﻿✦\n"
-        f"│ **[DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)** __is Up and Running.__\n"
-        f"╰┈─────────────── ·﻿ ﻿ ﻿· ﻿ ·﻿ ﻿ ﻿· ﻿✦\n"
+        f"❖ **[DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)** __is Up and Running.__\n"
         f"╭┈────────────••───────━\n"
         f"││❍ **Bot of :** {DEFAULTUSER} \n"
         f"││❍ **Modules :** {len(modules)} \n"
