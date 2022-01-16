@@ -70,9 +70,9 @@ async def killdabot(event):
         await event.client.send_message(
             BOTLOG_CHATID,
             "**#SHUTDOWN** \n"
-            "**DIOR-UBOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
+            "**SANJO-USERBOT** telah di matikan!\nJika ingin menghidupkan kembali silahkan buka heroku",
         )
-    await event.edit("`DIOR-UBOT Berhasil di matikan!`")
+    await event.edit("`SANJO-USERBOT Berhasil di matikan!`")
     if HEROKU_APP is not None:
         HEROKU_APP.process_formation()["worker"].scale(0)
     else:
@@ -81,10 +81,10 @@ async def killdabot(event):
 
 @register(outgoing=True, pattern="^.restart$")
 async def killdabot(event):
-    await event.edit("**DIOR-UBOT Berhasil di Restart**")
+    await event.edit("**USERBOT-USERBOT Berhasil di Restart**")
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "» #RESTARTBOT «\n"
-                                        "**DIOR-UBOT Berhasil Di Restart**")
+                                        "**SANJO-USERBOT Berhasil Di Restart**")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
@@ -96,7 +96,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Ini sesuatu untuk kamu baca:\n"
-        "\n[DIOR-UBOT Repo](https://github.com/DIORrios285/DIOR-UBOT/blob/DIOR-UBOT/README.md)"
+        "\n[SANJO-USERBOT Repo](https://github.com/jookalem/SANJO-USERBOT/blob/DIOR-UBOT/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -123,7 +123,7 @@ async def repeat(rep):
 async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
-        f"**Hi, saya menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡**\n\n"
+        f"**Hi, saya menggunakan ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡**\n\n"
         f"**Channel :** [Channel](t.me/fandaproject)\n"
         f"**Group :** [Group](t.me/fandasupport)\n"
         f"**Owner :** [Owner](t.me/uurfavboys1)\n"
@@ -134,8 +134,8 @@ async def repo_is_here(wannasee):
 @register(outgoing=True, pattern="^.deploy$")
 async def deploy_repo(dep):
     await dep.edit(
-        f"**Ingin menggunakan ⚡𝕯𝖎𝖔𝖗-𝖀𝖇𝖔𝖙⚡?**\n\n"
-        f"**deploy disini**\n━━━━━\n[DEPLOY DIOR-UBOT](https://github.com/DIORrios285/DIOR-UBOT)\n━━━━━\n**Support group -** [Fanda Support](https://t.me/fandasupport)"
+        f"**Ingin menggunakan ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡?**\n\n"
+        f"**deploy disini**\n━━━━━\n[DEPLOY SANJO-USERBOT](https://github.com/jookalem/SANJO-USERBOT)\n━━━━━\n**Support group -** [Sanjo Support](https://t.me/sanjosupport)"
         )
 
 
