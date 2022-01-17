@@ -6,6 +6,7 @@ import codecs
 import heroku3
 import aiohttp
 import math
+
 import os
 import requests
 import asyncio
@@ -203,17 +204,17 @@ async def _(dyno):
         app = Heroku.app(HEROKU_APP_NAME)
     except BaseException:
         return await dyno.reply(
-            "`Harap pastikan Kunci API Heroku Anda, Nama Aplikasi Anda dikonfigurasi dengan benar di heroku var.`"
+            "`Please make sure your Heroku API Key, Your App name are configured correctly in the heroku var.`"
         )
     await dyno.edit("`Sedang Mengambil Logs Anda`")
     with open("logs.txt", "w") as log:
         log.write(app.get_log())
-    fd = codecs.open("logs.txt", "r", encoding="utf-8")
-    data = fd.read()
-    key = (requests.post("https://nekobin.com/api/documents",
-                         json={"content": data}) .json() .get("result") .get("key"))
-    url = f"https://nekobin.com/raw/{key}"
-    await dyno.edit(f"`Ini Logs Heroku Anda :`\n\nPaste Ke: [Nekobin]({url})")
+    await dyno.delete()
+    await dyno.client.send_file(
+        dyno.chat_id,
+        file="logs.txt",
+        caption="`Ini Logs Heroku anda`",
+    )
     return os.remove("logs.txt")
 
 
