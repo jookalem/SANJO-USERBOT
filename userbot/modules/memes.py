@@ -163,7 +163,7 @@ async def _(event):
     await asyncio.sleep(0.5)
     await event.edit("▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n▪️▪️▪️▪️ \n😵😵😵😵 \n")
     await asyncio.sleep(0.5)
-    await event.edit("RIP PLOX...")
+    await event.edit("RIP SANJO...")
     await asyncio.sleep(2)
     await event.delete()
 
@@ -205,7 +205,7 @@ async def _(event):
             "⬜⬜⬜⬜\n⬜⬜⬜⬜\n⬜⬜⬜⬜\n⬜⬜⬜⬜",
             "⬜⬜⬜\n⬜⬜⬜\n⬜⬜⬜",
             "⬜⬜\n⬜⬜",
-            "[🎁](http://bokephub.icu/)"]
+            "[🎁](https://t.me/kontol)"]
 
         for i in animation_ttl:
 
@@ -283,7 +283,7 @@ async def _(event):
             "------------------>",
             "------>;(^。^)ノ",
             "(￣ー￣) MENINGGAL",
-            "**Mati Lu Anjing 😵😵**",
+            "**Mati Lu Anjing Kontol 😵😵**",
         ]
 
         for i in animation_ttl:
@@ -551,7 +551,7 @@ async def _(event):
         await asyncio.sleep(2)
         await event.edit("😎😎😎")
         await asyncio.sleep(1)
-        await event.edit("Mau ga gua bunuh? Woi kontol 😎😎😎")
+        await event.edit("Mau Ga Gua Bunuh? Woi kontol 😎😎😎")
 
 
 @bot.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
@@ -582,7 +582,7 @@ async def _(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
             "`Hacking... 100%\n█████████HACKED███████████ `",
-            f"`Targeted Account Hacked...\n\nPay 9999$ To @{DEFAULTUSER} or gib a pizza party 🍕 To Remove This Hack`"]
+            f"`Targeted Account Hacked...\n\nPay 9999$ To @{DEFAULTUSER} or give premium heroku 🛍️ To Remove This Hack`"]
 
         for i in animation_ttl:
 
