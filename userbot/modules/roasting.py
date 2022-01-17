@@ -11,7 +11,7 @@ from userbot.events import register
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("**beli vakum dibalikpapan assalamualaikum biar sopan**")
+    await typew.edit("**Beli vakum dibalikpapan assalamualaikum biar sopan**")
 # dior cakep
 
 @register(outgoing=True, pattern='^.ptn(?: |$)(.*)')
