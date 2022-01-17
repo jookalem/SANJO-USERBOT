@@ -23,10 +23,10 @@ from userbot.events import register
 # CPING
 
 cping = [
-    "**Hadir cping** `100.696` ",
-    "**Hadir speed** `999.999` ",
-    "**Hadir boosted** `538.939` ",
-    "**Hadir pingers power** `889.999` ",
+    "**Hadir Bang Joo Cping** `100.696` ",
+    "**Hadir Bang Skyzo Speed** `999.999` ",
+    "**Hadir Bang Joo Boosted** `538.939` ",
+    "**Hadir Bang Skyzo Pingers Power** `889.999` ",
 ]
 
 async def get_readable_time(seconds: int) -> str:
