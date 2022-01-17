@@ -226,13 +226,13 @@ async def amireallyalive(alive):
     await asyncio.sleep(1)
     await alive.edit("__Connecting..__")
     await alive.edit("__Connecting...__")
-    await alive.edit("**DIOR GANTENG**")
+    await alive.edit("**JOO GANTENG**")
     await alive.edit("__Connecting.__")
     await alive.edit("__Connecting..__")
     await alive.edit("**Connected ✅**")
-    await asyncio.sleep(2)
+    await asyncio.sleep(1)
     await alive.edit("⚡")
-    await asyncio.sleep(3)
+    await asyncio.sleep(2)
     output = (
         f"❖ [𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙](https://github.com/jookalem/SANJO-USERBOT) __is Up and Running.__\n"
         f"╭┈────────────••───────━\n"
@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"││❍ **Python Version :** v{python_version()} \n"
         f"││❍ **Telethon Version :** v{version.__version__} \n"
         f"╰┈───────••────────────━\n"
-        f"       [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/sanjosupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/gbtnyajo) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/jooneverdie)"
+        f"      [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/sanjosupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/gbtnyajo) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/jooneverdie)"
     )
     if ALIVE_LOGO:
         try:
@@ -270,14 +270,14 @@ async def amireallyalive(alive):
     await get_readable_time((time.time() - StartTime))
     await alive.edit("__Introducing the repo...__")
     output = (
-        f"   **Userbot powered by FANDA-PROJECT** \n\n"
-        f"❒ **ᴏᴡɴᴇʀ   :** [Owner](https://t.me/uurfavboys1)    \n"
+        f"   **Userbot powered by SANJO-USERBOT** \n\n"
+        f"❒ **ᴏᴡɴᴇʀ   :** [OWNER](https://t.me/jooneverdie)    \n"
         f"❒ **ꜱʏꜱᴛᴇᴍ  :** `Android 10`   \n"
         f"❒ **ᴛᴇʟᴇᴛʜᴏɴ :** `v{version.__version__}`   \n"
         f"❒ **ᴘʏᴛʜᴏɴ  :** `v{python_version()}` ㅤ\n"
         f"❒ **ʙᴏᴛ ᴠᴇʀ :** `v{BOT_VER}`           \n"
         f"❒ **ᴍᴏᴅᴜʟᴇ  :** `{len(modules)}` ㅤ\n\n"
-        f"   [𝗥𝗘𝗣𝗢](https://github.com/DIORrios285/DIOR-UBOT) | [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/fandasupport) | [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](Instagram.com/fatur.285)"
+        f"   [𝗥𝗘𝗣𝗢](https://github.com/jookalem/SANJO-USERBOT) | [𝗦𝗨𝗣𝗣𝗢𝗥𝗧](t.me/sanjosupport) | [𝗜𝗡𝗦𝗧𝗔𝗚𝗥𝗔𝗠](Instagram.com/ikhsantarjo)"
     )
     if ALIVE_LOGO:
         try:
