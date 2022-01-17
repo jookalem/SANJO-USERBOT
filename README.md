@@ -47,6 +47,7 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/pyth
 
 🙏 **TERIMAKASIH BANYAK BANYAK BANYAK BANYAK BANGET DAH KEPADA**
 *   [Fatur](https://github.com/DIORros285/DIOR-UBOT) DIOR-UBOT 
+*   [Skyzo](https://github.com/ridho17-ind/SkyzoMusicBot)    Dev Flicks - Bot
 *   [Ramadhani](https://github.com/ramadhani892/RAM-UBOT) RAM-UBOT
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
