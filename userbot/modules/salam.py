@@ -27,13 +27,13 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^I(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**IH WIBUU, RUN BUDDY**")
+    await typew.edit("**IH WIBUU, RUN JOO**")
 
 
 @register(outgoing=True, pattern='^D(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**DONGO BAT SI LU...PASTI DIDIKAN WAHYU**")
+    await typew.edit("**DONGO BAT SI LU...PASTI DIDIKAN SANJO**")
 
 
 @register(outgoing=True, pattern='^E(?: |$)(.*)')
@@ -51,7 +51,7 @@ async def typewriter(typew):
 @register(outgoing=True, pattern='^F(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
-    await typew.edit("**PADA INTINYA FATUR EMANG PALING CAKEP!**")
+    await typew.edit("**PADA INTINYA SKYZO SAMA SANJO EMANG PALING CAKEP!**")
 
 
 @register(outgoing=True, pattern='^R(?: |$)(.*)')
