@@ -191,7 +191,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Melihat Repo
-REPO_NAME = os.environ.get("REPO_NAME") or "⚡𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛⚡"
+REPO_NAME = os.environ.get("REPO_NAME") or "⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡"
 
 # Default .alive Name
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
@@ -210,7 +210,7 @@ ZIP_DOWNLOAD_DIRECTORY = os.environ.get("ZIP_DOWNLOAD_DIRECTORY", "./zips")
 BITLY_TOKEN = os.environ.get("BITLY_TOKEN", None)
 
 # Bot Name
-TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡𝘚𝘈𝘕𝘑𝘖 𝘜𝘉𝘖𝘛⚡")
+TERM_ALIAS = os.environ.get("TERM_ALIAS", "⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡")
 
 # Bot Version
 BOT_VER = os.environ.get("BOT_VER", "8.0.0")
@@ -246,7 +246,7 @@ OWNER_BOT = os.environ.get(
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
-DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⚡𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛⚡"
+DEFAULT_BIO = os.environ.get("DEFAULT_BIO") or "⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡"
 
 LASTFM_API = os.environ.get("LASTFM_API", None)
 LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
@@ -288,7 +288,7 @@ QUOTES_API_TOKEN = os.environ.get("QUOTES_API_TOKEN", None)
 
 # Defaul botlog msg
 BOTLOG_MSG = os.environ.get(
-    "BOTLOG_MSG") or "**⚡𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛⚡ Berhasil Di Aktifkan**\n━━━━━━\n➠ **Bot Version:** `V8.0.0`\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━━━━━\n➠ **Group:** @fandasupport\n━━━━━━"
+    "BOTLOG_MSG") or "**⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡ Berhasil Di Aktifkan Memek!..**\n━━━━━━\n➠ **Bot Version:** `V8.0.0`\n➠ **Ketik** `.alive` **untuk Mengecek Bot**\n━━━━━━\n➠ **Group:** @sanjosupport\n━━━━━━"
 
 # Deezloader
 DEEZER_ARL_TOKEN = os.environ.get("DEEZER_ARL_TOKEN", None)
@@ -501,16 +501,16 @@ with bot:
             if event.message.from_id != uid:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"__Hey, I am using__  **⚡𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛⚡** \n\n"
+                    f"__Hey, I am using__  **⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡** \n\n"
                 f"⚡ **Group Support :** [SANJO Support](t.me/sanjoupport)\n"
-                f"⚡ **Owner Repo :** [Joo](t.me/jooneverdie)\n"
+                f"⚡ **Owner Repo :** [SANJO](t.me/jooneverdie)\n"
                 f"⚡ **Repo :** [SANJO-USERBOT](https://github.com/jookalem/SANJO-USERBOT)\n",
                     buttons=[
                         [
                              Button.url(f"𝗦𝘂𝗽𝗽𝗼𝗿𝘁",
                                         "t.me/sanjosupport"),
                              Button.url(f"𝗨𝗽𝗱𝗮𝘁𝗲𝘀",
-                                        "t.me/sanjoproject")],
+                                        "t.me/sanjosupport")],
                              [Button.url("𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿",
                                         "t.me/jooneverdie")],
                         ]
@@ -544,14 +544,14 @@ with bot:
             elif query.startswith("repo"):
                 result = builder.article(
                     title="Repository",
-                    description="Repository ⚡SANJO-UBOT⚡",
+                    description="Repository ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡",
                     url="https://t.me/sanjiproject",
-                    text="**⚡SANJO-UBOT⚡**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [FATUR](https://t.me/uurfavboys1)\n**Repository :** [⚡DIOR-UBOT⚡](https://github.com/DIORrios285/DIOR-UBOT)\n➖➖➖➖➖➖➖➖➖➖",
+                    text="**⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [JOO](https://t.me/ikhsantarjo)\n**Repository :** [⚡SANJO-UBOT⚡](https://github.com/jookalem/SANJO-USERBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴘ", "https://t.me/fandasupport"),
+                            custom.Button.url("ɢʀᴏᴘ", "https://t.me/sanjosupport"),
                             custom.Button.url(
-                                "ʀᴇᴘᴏ", "https://github.com/DIORrios285/DIOR-UBOT"
+                                "ʀᴇᴘᴏ", "https://github.com/jookalem/SANJO-USERBOT"
                             ),
                         ],
                     ],
@@ -559,7 +559,7 @@ with bot:
                 )
             else:
                 result = builder.article(
-                    title="⚡SANJO-UBOT⚡",
+                    title="⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡",
                     description="SANJO-UBOT | Telethon",
                     url="https://t.me/sanjosupport",
                     text=f"**SANJO-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n**OWNER:** [JOO](t.me/jooneverdie)\n**Bot of:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖",
