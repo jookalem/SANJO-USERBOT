@@ -2,105 +2,105 @@ from time import sleep
 from userbot.events import register
 
 
-@register(outgoing=True, pattern='^.dior(?: |$)(.*)')
+@register(outgoing=True, pattern='^.joo(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
     await typew.edit("✨ `introduce my self...`")
     sleep(2)
-    await typew.edit("`kenalin gua dior`")
+    await typew.edit("`kenalin gua joo`")
     sleep(2)
     await typew.edit("`bocah tele gabut`")
     sleep(2)
-    await typew.edit("`pen meet ama gua, sokin kalimantan...`")
+    await typew.edit("`pen meet ama gua, sokin bogor...`")
     sleep(3)
     await typew.edit("`gua sambut lo dengan hangat sehangat pejuh yg baru dikeluarin dari dalem kontol!`")
     sleep(3)
-    await typew.edit("**salam kenal yeh**")
+    await typew.edit("**salam kenal jelek**")
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.beby(?: |$)(.*)')
+@register(outgoing=True, pattern='^.cumi(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
     await typew.edit("`Heyy!`")
     sleep(3)
-    await typew.edit("`beby disini...`")
+    await typew.edit("`cecan disini...`")
     sleep(3)
-    await typew.edit("`orang Palembang nih bang:)..`")
+    await typew.edit("`orang Jawa nih bang:)..`")
     sleep(2)
-    await typew.edit("**Saya tidak cantik, Tapi kalo jadi cantiknya kamu sabi kali ya...anjayy srepet!**")
+    await typew.edit("**Cumi Nih Bos, paling cantik setelegram...anjayy srepet!**")
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.papoy(?: |$)(.*)')
+@register(outgoing=True, pattern='^.peler(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Hai,Papoy disini...`")
+    await typew.edit("`DARR DEER DORR`")
     sleep(3)
-    await typew.edit("`17 tahun`")
+    await typew.edit("`MUKA LU KEK PELER`")
     sleep(3)
-    await typew.edit("`Tinggal Di Kalimantan`")
+    await typew.edit("`LEHER LU BANYAK DAKI`")
     sleep(2)
-    await typew.edit("**Saya tidak cantik, Tapi kalo jadi cantiknya kamu sabi kali... Ajakin sleepcall dong bang🤣**")
+    await typew.edit("**BOCAH JELEK MIRIP BABI, MENDING LU PULANG JUALAN KAOS KAKI**")
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.kiaa(?: |$)(.*)')
+@register(outgoing=True, pattern='^.jelek(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Kenalin nama gua kiaa`")
+    await typew.edit("`EHH BOCAH JELEK`")
     sleep(3)
-    await typew.edit("`17 tahun`")
+    await typew.edit("`BADAN BAU KELEK`")
     sleep(3)
-    await typew.edit("`Tinggal Di Palembang, Salam Kenal ya:)`")
+    await typew.edit("`MATA LU GAPERNAH MELEK`")
     sleep(2)
-    await typew.edit("**Kiaa jomblo ni bg pacarin dong!**")
+    await typew.edit("**DASAR BOCAH SIPIT BANYAK BELEK**")
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.farhan(?: |$)(.*)')
+@register(outgoing=True, pattern='^.gabut(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Kenalin nama gua farhan`")
+    await typew.edit("`jiahk bocah gabut`")
     sleep(3)
-    await typew.edit("`Bocah bogor`")
+    await typew.edit("`sering garuk garuk`")
     sleep(3)
-    await typew.edit("`Gua lagi cari doi ngentot`")
+    await typew.edit("`muka jelek mirip beruk`")
     sleep(2)
-    await typew.edit("**Farhan ni bang senggol dong**")
+    await typew.edit("**yahaha anjay srepett..**")
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.panjul(?: |$)(.*)')
+@register(outgoing=True, pattern='^.hina(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`kenalin nih`")
+    await typew.edit("`ehh bocah hina`")
     sleep(3)
-    await typew.edit("**PANJUL**")
+    await typew.edit("**muka mirip peler kuda**")
     sleep(3)
-    await typew.edit("`panjul bocah tele!`")
+    await typew.edit("`seringnya nyewa janda`")
     sleep(2)
-    await typew.edit("**PANJUL OPEN WAR BUAT BOCAH SAMPAH KEK LU LU PADA!**")
+    await typew.edit("**kontol lu tajem mirip badak bercula**")
 # Create by myself @localheart
 
 
-@register(outgoing=True, pattern='^.ivan(?: |$)(.*)')
+@register(outgoing=True, pattern='^.anjir(?: |$)(.*)')
 async def typewriter(typew):
     typew.pattern_match.group(1)
     sleep(1)
-    await typew.edit("`Kenalin nih IVANN`")
+    await typew.edit("`muka lu jelek anjir`")
     sleep(3)
-    await typew.edit("`Bocah Tanggerang`")
+    await typew.edit("`rumah lu noh banjir`")
     sleep(3)
-    await typew.edit("`Lu senggol gua sambit pake kontol ragil`")
+    await typew.edit("`sini gua tampar pake kontol ragil`")
     sleep(2)
-    await typew.edit("**IVAN JOMBLO NI MBA PACARIN DONG!**")
+    await typew.edit("**yahaha anjay slemek slentot...**")
 # Create by myself @localheart
 
 
