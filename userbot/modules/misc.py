@@ -96,7 +96,7 @@ async def killdabot(event):
 async def reedme(e):
     await e.edit(
         "Ini sesuatu untuk kamu baca:\n"
-        "\n[SANJO-USERBOT Repo](https://github.com/jookalem/SANJO-USERBOT/blob/DIOR-UBOT/README.md)"
+        "\n[SANJO-USERBOT Repo](https://github.com/jookalem/SANJO-USERBOT/blob/SANJO-UBOT/README.md)"
         "\n[Setup Guide - Basic](https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02)"
         "\n[Setup Guide - Google Drive](https://telegra.ph/How-To-Setup-GDrive-11-02)"
         "\n[Setup Guide - LastFM Module](https://telegra.ph/How-to-set-up-LastFM-module-for-Paperplane-userbot-11-02)"
@@ -124,10 +124,10 @@ async def repo_is_here(wannasee):
     """ For .repo command, just returns the repo URL. """
     await wannasee.edit(
         f"**𝘏𝘢𝘪 𝘗𝘭𝘦𝘳! 𝘚𝘢𝘺𝘢 𝘔𝘦𝘯𝘨𝘨𝘶𝘯𝘢𝘬𝘢𝘯 ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡**\n\n"
-        f"**Channel :** [CHANNEL](t.me/gbtnyajo)\n"
-        f"**Group :** [GROUP](t.me/sanjosupport)\n"
-        f"**Owner :** [OWNER](t.me/jooneverdie)\n"
-        f"**Repo :** [REPO](https://github.com/jookalem/SANJO-USERBOT)"
+        f"**𝕮𝖍𝖆𝖓𝖓𝖊𝖑 :** [CHANNEL](t.me/gbtnyajo)\n"
+        f"**𝕲𝖗𝖔𝖚𝖕 :** [SUPPORT](t.me/sanjosupport)\n"
+        f"**𝕺𝖜𝖓𝖊𝖗 :** [JOO](t.me/jooneverdie)\n"
+        f"**𝕽𝖊𝖕𝖔 :** [REPO](https://github.com/jookalem/SANJO-USERBOT)"
         )
 
 
