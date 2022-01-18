@@ -230,7 +230,7 @@ async def amireallyalive(alive):
     await alive.edit("__Connecting.__")
     await alive.edit("__Connecting..__")
     await alive.edit("**Connected ✅**")
-    await asyncio.sleep(1)
+    await asyncio.sleep(2)
     await alive.edit("⚡")
     await asyncio.sleep(2)
     output = (
@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"││❍ **Python Version :** v{python_version()} \n"
         f"││❍ **Telethon Version :** v{version.__version__} \n"
         f"╰┈───────••────────────━\n"
-        f"      [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/sanjosupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/gbtnyajo) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/jooneverdie)"
+        f"       [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/sanjosupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/gbtnyajo) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/jooneverdie)"
     )
     if ALIVE_LOGO:
         try:
