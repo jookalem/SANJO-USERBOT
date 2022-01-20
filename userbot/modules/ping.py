@@ -117,20 +117,20 @@ async def redis(pong):
     """ For .ping command, ping the userbot from any chat.  """
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("**Assalamualaikum...Yesus memberkati...**")
+    await pong.edit("**Assalamualaikum Kontooolll....**")
     await asyncio.sleep(2)
     await pong.edit("✣✣")
     await pong.edit("✣✣✣")
     await pong.edit("✣✣✣✣")
-    await pong.edit("**YO NGENTOT!!!**")
+    await pong.edit("**Ahh yamete**")
     await asyncio.sleep(2)
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
-        f"**PONG!!!⚡**\n"
-        f"✣ **Ping** - "
+        f"**𝘚𝘌𝘗𝘖𝘕𝘎!!!⚡**\n"
+        f"♤ **𝕻𝖎𝖓𝖌** - "
         f"`%sms` \n"
-        f"✣ **Uptime** - "
+        f"♤ **𝖀𝖕𝖙𝖎𝖒𝖊** - "
         f"`{uptime}` \n"
         f"**✦҈͜͡Owner   :** `{ALIVE_NAME}`" % (duration)
     )
@@ -141,15 +141,15 @@ async def redis(pong):
     """For .ping command, ping the userbot from any chat."""
     uptime = await get_readable_time((time.time() - StartTime))
     start = datetime.now()
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat...__")
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat.__")
-    await pong.edit("__Sedang Memuat...__")
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat.__")
-    await pong.edit("__Sedang Memuat..__")
-    await pong.edit("__Sedang Memuat...__")
+    await pong.edit("__sayang aku masukin...__")
+    await pong.edit("__iyaa sayang...__")
+    await pong.edit("__ahh enak sayang..__")
+    await pong.edit("__ahh ahh.__")
+    await pong.edit("__emmmh ahhh...__")
+    await pong.edit("__sayangg enakk..__")
+    await pong.edit("__uhh ahhh.__")
+    await pong.edit("__sayangggg..__")
+    await pong.edit("_crottt ahh enak sayang...__")
     end = datetime.now()
     duration = (end - start).microseconds / 1000
     await pong.edit(
@@ -205,18 +205,18 @@ def speed_convert(size):
 async def pingme(pong):
     """ For .ping command, ping the userbot from any chat.  """
     start = datetime.now()
-    await pong.edit("`Pong🍁...........`")
-    await pong.edit("`Pong.🍁..........`")
-    await pong.edit("`Pong..🍁.........`")
-    await pong.edit("`Pong...🍁........`")
-    await pong.edit("`Pong....🍁.......`")
-    await pong.edit("`Pong.....🍁......`")
-    await pong.edit("`Pong......🍁.....`")
-    await pong.edit("`Pong.......🍁....`")
-    await pong.edit("`Pong........🍁...`")
-    await pong.edit("`Pong.........🍁..`")
-    await pong.edit("`Pong..........🍁.`")
-    await pong.edit("`Pong...........🍁`")
+    await pong.edit("`Pong🌪...........`")
+    await pong.edit("`Pong.🌪..........`")
+    await pong.edit("`Pong..🌪.........`")
+    await pong.edit("`Pong...🌪........`")
+    await pong.edit("`Pong....🌪.......`")
+    await pong.edit("`Pong.....🌪......`")
+    await pong.edit("`Pong......🌪.....`")
+    await pong.edit("`Pong.......🌪....`")
+    await pong.edit("`Pong........🌪...`")
+    await pong.edit("`Pong.........🌪..`")
+    await pong.edit("`Pong..........🌪.`")
+    await pong.edit("`Pong...........🌪`")
     end = datetime.now()
     duration = (end - start).microseconds / 9000
     await pong.edit(f"**✦҈͜͡Owner : {ALIVE_NAME}**\n📈 `%sms`" % (duration))
