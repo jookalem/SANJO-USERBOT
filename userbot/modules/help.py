@@ -25,7 +25,7 @@ async def help(diorbot):
         if args in CMD_HELP:
             await diorbot.edit(str(CMD_HELP[args]))
         else:
-            await diorbot.edit("**NGETIK APAANSI GOBLOK!**")
+            await diorbot.edit("**NGETIK APAANSI KONTOL!**")
             await asyncio.sleep(30)
             await diorbot.delete()
     else:
