@@ -33,9 +33,9 @@ DEF_UNAPPROVED_MSG = (
     f"╰────────────── ・ ・ ・ ・ ✦ \n"
     f"          **⚠️  W A R N I N G ⚠️** \n"
     f"╭┈────────────────────━ \n"
-    f"│┝ ᴊᴀɴɢᴀɴ ᴍᴇʟᴀᴋᴜᴋᴀɴ sᴘᴀᴍ ᴅɪsɪɴɪ.​ \n"
-    f"│┝ ᴘᴇsᴀɴ sᴘᴀᴍ ᴀᴋᴀɴ ᴅɪʙʟᴏᴋɪʀ​. \n"
-    f"│┝ ᴛᴜɴɢɢᴜ {ALIVE_NAME} ᴍᴇɴʏᴇᴛᴜᴊᴜɪ ᴘᴇsᴀɴ ᴋᴀᴍᴜ​. \n"
+    f"ᴊᴀɴɢᴀɴ sᴘᴀᴍ ᴛᴜᴀɴ ɢᴜᴀ ᴛᴏʟᴏʟ.​ \n"
+    f"ᴛᴜᴀɴ ɢᴜᴀ ʟᴀɢɪ sɪʙᴜᴋ. \n"
+    f"ᴛᴜɴɢɢᴜ sᴀᴍᴘᴀɪ {ALIVE_NAME} ɴᴇʀɪᴍᴀ ᴘᴇsᴀɴ ʟᴜ​. \n"
     f"╰┈────────────────────━ \n\n"
     f"❂ __**Pesan otomatis by** - 𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙__ \n"
 )
@@ -96,7 +96,7 @@ async def permitpm(event):
 
             if COUNT_PM[event.chat_id] > 5:
                 await event.respond(
-                    "**EH GOBLOK KAN UDAH GUA BILANG JANGAN SPAM DISINI, GUA BLOK LU TAI.**\nApa? Ga seneng sharelok anjing!\n\n"
+                    "**EH GOBLOK KAN UDAH GUA BILANG JANGAN SPAM TUAN GUA BEGO, GUA BLOK LU TAI.**\nApa? Ga seneng sharelok anjing!\n\n"
                     f"`Tunggu {DEFAULTUSER} unblok pler`"
                 )
 
