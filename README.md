@@ -10,7 +10,7 @@ src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.6-purple?style=for-the-badge&logo=appveyor&logoColor=green"/>
     </p>
 
-[![Sparkline](https://stars.medv.io/DIORrios285/DIOR-UBOT.svg)](https://stars.medv.io/DIORrios285/DIOR-UBOT)
+[![Sparkline](https://stars.medv.io/jookalem/SANJO-USERBOT.svg)](https://stars.medv.io/jookalem/SANJO-USERBOT)
 
 Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT) dan [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot) dengan fungsi untuk mempermudah pengelolaan (grup chat) serta menyediakan beberapa fitur (otomatis) yang membuat penggunaan telegram lebih menyenangkan 
 
@@ -26,8 +26,8 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
     <p align="center"> 
     <a href="https://t.me/sanjosupport" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
-    <a href="https://t.me/gbtnyajo" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
-    <a href="https://instagram.com/ikhsan" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
+    <a href="https://t.me/notturarea" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://instagram.com/ikhsantarjo" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
