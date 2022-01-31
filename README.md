@@ -1,10 +1,10 @@
 <h1 align="center">KALO FORK TUH KASIH BINTANG KONTOL 🤨</h1>
 
 <p align="center">
-    <a href="https://github.com/DIORrios285/DIOR-UBOT/commits/DIOR-UBOT"><img 
-src="https://img.shields.io/github/last-commit/DIORrios285/DIOR-UBOT?color=ff0000&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/jookalem/SANJO-USERBOT/commits/DIOR-UBOT"><img 
+src="https://img.shields.io/github/last-commit/jookalem/SANJO-USERBOT?color=ff0000&logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://github.com/DIORrios285/DIOR-UBOT"> <img 
-src="https://img.shields.io/github/repo-size/DIORrios285/DIOR-UBOT?logo=github&logoColor=green&style=for-the-badge" /></a>
+src="https://img.shields.io/github/repo-size/jookalem/SANJO-USERBOT?logo=github&logoColor=green&style=for-the-badge" /></a>
     <a href="https://pypi.org/project/Telethon/"><img 
 src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
     <img alt="PYTHON" src="https://img.shields.io/badge/PYTHON-v3.9.6-purple?style=for-the-badge&logo=appveyor&logoColor=green"/>
@@ -25,7 +25,7 @@ Gunakan bot ini dengan risiko Anda sendiri, dan gunakan dengan bijak.
 </p>
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
     <p align="center"> 
-    <a href="https://t.me/sanjosupport" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
+    <a href="https://t.me/sanjosupportt" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
     <a href="https://t.me/notturarea" target="blank"><img src="https://img.icons8.com/nolan/55/telegram-app.png" /></a>
     <a href="https://instagram.com/ikhsantarjo" target="blank"><img src="https://img.icons8.com/nolan/55/instagram-new.png" /></a>
 </p>
