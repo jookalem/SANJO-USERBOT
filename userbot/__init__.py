@@ -227,11 +227,11 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive Logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/c449a8a44ecb7ea5a8616.jpg"
+    "ALIVE_LOGO") or "https://telegra.ph/file/fa0c2b9aa4a55f5d8f82a.jpg"
 
 # Default .helpme logo
 HELP_LOGO = os.environ.get(
-   "HELP_LOGO") or "https://telegra.ph/file/c449a8a44ecb7ea5a8616.jpg"
+   "HELP_LOGO") or "https://telegra.ph/file/fa0c2b9aa4a55f5d8f82a.jpg"
 
 # Default .alive Instagram
 IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ikhsantarjo"
@@ -245,7 +245,7 @@ GROUP_LINK = os.environ.get(
 
 # Default .repo Bot
 OWNER_BOT = os.environ.get(
-    "OWNER_BOT") or "t.me/jooneverdie"
+    "OWNER_BOT") or "t.me/ikhsanntarjo"
 
 
 # Last.fm Module
@@ -506,15 +506,15 @@ with bot:
                 u = await event.client.get_entity(event.chat_id)
                 await event.reply(
                     f"__Hey, I am using__  **⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡** \n\n"
-                f"⚡ **Group Support :** [SANJO Support](t.me/sanjoupport)\n"
+                f"⚡ **Group Support :** [SANJO Support](t.me/sanjoupportt)\n"
                 f"⚡ **Owner Repo :** [SANJO](t.me/jooneverdie)\n"
                 f"⚡ **Repo :** [SANJO-USERBOT](https://github.com/jookalem/SANJO-USERBOT)\n",
                     buttons=[
                         [
                              Button.url(f"𝗦𝘂𝗽𝗽𝗼𝗿𝘁",
-                                        "t.me/sanjosupport"),
+                                        "t.me/sanjosupportt"),
                              Button.url(f"𝗨𝗽𝗱𝗮𝘁𝗲𝘀",
-                                        "t.me/sanjosupport")],
+                                        "t.me/sanjosupportt")],
                              [Button.url("𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿",
                                         "t.me/jooneverdie")],
                         ]
@@ -549,11 +549,11 @@ with bot:
                 result = builder.article(
                     title="Repository",
                     description="Repository ⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡",
-                    url="https://t.me/sanjiproject",
+                    url="https://t.me/sanjosupportt",
                     text="**⚡𝕾𝖆𝖓𝖏𝖔-𝖀𝖇𝖔𝖙⚡**\n➖➖➖➖➖➖➖➖➖➖\n**Owner :** [JOO](https://t.me/ikhsantarjo)\n**Repository :** [⚡SANJO-UBOT⚡](https://github.com/jookalem/SANJO-USERBOT)\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴏᴘ", "https://t.me/sanjosupport"),
+                            custom.Button.url("ɢʀᴏᴘ", "https://t.me/sanjosupportt"),
                             custom.Button.url(
                                 "ʀᴇᴘᴏ", "https://github.com/jookalem/SANJO-USERBOT"
                             ),
@@ -569,7 +569,7 @@ with bot:
                     text=f"**SANJO-UBOT**\n➖➖➖➖➖➖➖➖➖➖\n**OWNER:** [JOO](t.me/jooneverdie)\n**Bot of:** {tgbotusername}\n➖➖➖➖➖➖➖➖➖➖",
                     buttons=[
                         [
-                            custom.Button.url("ɢʀᴜᴘ", "https://t.me/jooneverdie"),
+                            custom.Button.url("ɢʀᴜᴘ", "https://t.me/ikhsanntarjo"),
                             custom.Button.url("ʀᴇᴘᴏ", "https://github.com/jookalem/SANJO-USERBOT"),
                         ],
                     ],
@@ -618,9 +618,9 @@ with bot:
                 result = builder.article("{REPO_NAME}",
                                          text="""𝘚𝘈𝘕𝘑𝘖-𝘜𝘉𝘖𝘛""",
                                          buttons=[[custom.Button.url("ꜰᴀᴛᴜʀ​",
-                                                                     "t.me/jooneverdie1"),
+                                                                     "t.ikhsanntarjo"),
                                                    custom.Button.url("ɢʀᴜᴘ​",
-                                                                     "t.me/sanjosupport"),
+                                                                     "t.me/sanjosupportt"),
                                                    ],
                                                   [custom.Button.url("ʟɪᴄᴇɴsᴇ​",
                                                                      "https://github.com/jookalem/SANJO-USERBOT/LICENSE",
