@@ -242,7 +242,7 @@ async def amireallyalive(alive):
         f"││❍ **Python Version :** v{python_version()} \n"
         f"││❍ **Telethon Version :** v{version.__version__} \n"
         f"╰┈───────••────────────━\n"
-        f"       [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/sanjosupport) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/gbtnyajo) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/jooneverdie)"
+        f"       [𝗦𝘂𝗽𝗽𝗼𝗿𝘁](https://t.me/sanjosupportt) | [𝗖𝗵𝗮𝗻𝗻𝗲𝗹](https://t.me/notturarea) | [𝗢𝘄𝗻𝗲𝗿](https://t.me/ikhsanntarjo)"
     )
     if ALIVE_LOGO:
         try:
@@ -271,7 +271,7 @@ async def amireallyalive(alive):
     await alive.edit("__Introducing the repo...__")
     output = (
         f"   **Userbot powered by SANJO-USERBOT** \n\n"
-        f"❒ **ᴏᴡɴᴇʀ   :** [OWNER](https://t.me/jooneverdie)    \n"
+        f"❒ **ᴏᴡɴᴇʀ   :** [OWNER](https://t.me/ikhsanntarjo)    \n"
         f"❒ **ꜱʏꜱᴛᴇᴍ  :** `Android 10`   \n"
         f"❒ **ᴛᴇʟᴇᴛʜᴏɴ :** `v{version.__version__}`   \n"
         f"❒ **ᴘʏᴛʜᴏɴ  :** `v{python_version()}` ㅤ\n"
