@@ -315,7 +315,7 @@ async def typewriter(typew):
     sleep(2)
     await typew.edit("__Paku, Pisau, Gunting Jembut, Tanah Kuburan Bapak Lu, Tagihan Kost Udh Gua Masukin Di Badan Lu__")
     sleep(5)
-    await typew.edit("__Si Jelek Udah Disantet Onlen:)__")
+    await typew.edit("__Si Jelek Udah Disantet Onlen__")
 
 
 CMD_HELP.update({
