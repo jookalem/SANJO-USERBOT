@@ -16,6 +16,7 @@ GCAST_BLACKLIST = [
     -1001752592753,  # Skyzusupport
     -1001549206558,  # FandaSupport
     -1001728834311,  # Flicks Bot Support
+    -1001606097524,  # SanjoSupport
 ]
 
 # Kalo fork atau coppy blacklist jangan dihapus bangsat,
@@ -32,7 +33,7 @@ async def gcast(event):
     else:
         await event.edit("**Berikan Sebuah Pesan atau Balas ke pesan**")
         return
-    kk = await event.edit("`Sedang Mengirim Pesan Ke Semua Grup...`")
+    kk = await event.edit("`Sedang Mengirim Pesan Ke Semua Grup Ampas Tuan...`")
     er = 0
     done = 0
     async for x in event.client.iter_dialogs():
@@ -58,7 +59,7 @@ async def gucast(event):
         return await event.edit("**Berikan Sebuah Pesan atau Balas ke pesan**")
     tt = event.text
     msg = tt[7:]
-    kk = await event.edit("`Sedang Mengirim Pesan Ke Semua Private Chats...`")
+    kk = await event.edit("`Sedang Mengirim Pesan Ke Semua Private Chats Tuan...`")
     er = 0
     done = 0
     async for x in bot.iter_dialogs():
