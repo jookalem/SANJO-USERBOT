@@ -12,7 +12,7 @@ src="https://img.shields.io/pypi/v/telethon?color=important&label=telethon&logo=
 
 [![Sparkline](https://stars.medv.io/jookalem/SANJO-USERBOT.svg)](https://stars.medv.io/jookalem/SANJO-USERBOT)
 
-Userbot yang berbasis [RAM-UBOT](https://github.com/ramadhani892/RAM-UBOT) dan [Man-Userbot](https://github.com/mrismanaziz/Man-Userbot) dengan fungsi untuk mempermudah pengelolaan (grup chat) serta menyediakan beberapa fitur (otomatis) yang membuat penggunaan telegram lebih menyenangkan 
+**Userbot Terkeren Setelegram Tapi Boong Hayu Papale Papale**
 
 ## DISCLAIMER
 
