@@ -183,13 +183,13 @@ async def dyno_usage(dyno):
             AppMinutes = math.floor(AppQuotaUsed % 60)
 
             await dyno.edit(
-            f"     ✥ **Informasi Dyno :**\n"
+            f"     ✥ **ɪɴғᴏʀᴍᴀsɪ ᴅʏɴᴏ :**\n"
             f"\n╔════════════════════╗\n"
-            f" ➠ **Penggunaan Dyno Saat Ini :**\n"
+            f" ➠ **ᴘᴇɴɢɢᴜɴᴀᴀɴ ᴅʏɴᴏ sᴀᴀᴛ ɪɴɪ :**\n"
             f"     •  `{AppHours}`**Jam**  `{AppMinutes}`**Menit** "
             f"|  [`{AppPercentage}`**%**]"
             f"\n◖════════════════════◗\n"
-            f" ➠ **Sisa Kuota Dyno Bulan Ini** :\n"
+            f" ➠ **sɪsᴀ ᴋᴜᴏᴛᴀ ᴅʏɴᴏ ʙᴜʟᴀɴ ɪɴɪ** :\n"
             f"     •  `{hours}`**Jam**  `{minutes}`**Menit** "
             f"|  [`{percentage}`**%**]"
             f"\n╚════════════════════╝"
@@ -222,7 +222,7 @@ CMD_HELP.update({"herokuapp": "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.usage` atau `.kuo
                  "\n↳ : Check Quota Dyno Heroku"
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.set var <NEW VAR> <VALUE>`"
                  "\n↳ : Tambahkan Variabel Baru Atau Memperbarui Variabel"
-                 "\nSetelah Menyetel Variabel Tersebut, Geez-Userbot Akan Di Restart."
+                 "\nSetelah Menyetel Variabel Tersebut, ᴊᴏᴏ-ᴜsᴇʀʙᴏᴛ Akan Di Restart."
                  "\n\n𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.get var atau .get var <VAR>`"
                  "\n↳ : Dapatkan Variabel Yang Ada, !!PERINGATAN!! Gunakanlah Di Grup Privasi Anda."
                  "\nIni Mengembalikan Semua Informasi Pribadi Anda, Harap berhati-hati."
