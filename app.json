@@ -10,7 +10,7 @@
     "productivity"
   ],
   "repository": "https://github.com/jookalem/SANJO-USERBOT",
-  "telegram": "https://t.me/jooneverdie",
+  "telegram": "https://t.me/ikhsanntarjo",
   "success_url": "https://t.me/sanjosupport",
   "stack": "container",
   "env": {
@@ -50,35 +50,9 @@
       "value": "-1001220971181",
       "required": true
     },
-    "COUNTRY": {
-      "description": "Atur Negara Anda untuk digunakan dalam perintah .time dan .date.",
-      "value": "ID",
-      "required": true
-    },
     "PM_AUTO_BAN": {
       "description": "Ini berguna Untuk Mengaktifkan pesan otomatis di room chat anda.",
       "value": "true",
-      "required": true
-    },
-    "ANTI_SPAMBOT": {
-      "description": "Menendang robot spam dari grup setelah mereka bergabung. [Membutuhkan kekuatan admin dalam grup untuk menendang.]",
-      "value": "False"
-    },
-    "ANTI_SPAMBOT_SHOUT": {
-      "description": "Laporkan robot spam ke @admin dalam grup setelah mereka bergabung, untuk berjaga-jaga jika Anda tidak memiliki kekuatan admin untuk menyelesaikannya sendiri.",
-      "value": "False"
-    },
-    "TMP_DOWNLOAD_DIRECTORY": {
-      "description": "Unduh lokasi untuk banyak modul (GDrive, .download etc..)",
-      "value": "./downloads/"
-    },
-    "CLEAN_WELCOME": {
-      "description": "Ketika orang baru bergabung, pesan selamat datang yang lama akan dihapus.",
-      "value": "True"
-    },
-    "HEROKU_MEMEZ": {
-      "description": "Ini seharusnya Benar jika bot pengguna berjalan di Heroku Dyno.",
-      "value": "True",
       "required": true
     },
     "ALIVE_NAME": {
