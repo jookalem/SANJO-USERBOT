@@ -11,7 +11,7 @@
   ],
   "repository": "https://github.com/jookalem/SANJO-USERBOT",
   "telegram": "https://t.me/ikhsanntarjo",
-  "success_url": "https://t.me/sanjosupport",
+  "success_url": "https://t.me/sanjosupportt",
   "stack": "container",
   "env": {
     "API_KEY": {
