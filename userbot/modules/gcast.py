@@ -17,6 +17,7 @@ GCAST_BLACKLIST = [
     -1001549206558,  # FandaSupport
     -1001728834311,  # Flicks Bot Support
     -1001606097524,  # SanjoSupport
+    -1001687155877,  # CilikSupport
 ]
 
 # Kalo fork atau coppy blacklist jangan dihapus bangsat,
