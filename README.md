@@ -55,4 +55,5 @@ src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/pyth
 *   [Ramadhani](https://github.com/ramadhani892/RAM-UBOT) RAM-UBOT
 *   [VCKYOU](https://github.com/Vckyou/Geez-Project)    Geez - Project
 *   [Koala](https://github.com/ManusiaRakitan/Kampang-Bot)    Kampang - Bot
+*   [Kyura](https://github.com/Kyuraxp/kyura-userbot) Kyura-Userbot
 *   DAN KEPADA SELURUH USERBOT INDONESIA LAINNYA!.
