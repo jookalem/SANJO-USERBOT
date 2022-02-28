@@ -53,13 +53,13 @@ CMD_HELP.update(
     {
         "asupan": "**Plugin : **`asupan`\
         \n\n  •  **Syntax :** `.asupan`\
-        \n  •  **Function : **Untuk Mengirim video asupan secara random.\
+        \n  •  **Function : **Untuk Mengirim Video Asupan secara random.\
         \n\n  •  **Syntax :** `.wibu`\
-        \n  •  **Function : **Untuk Mengirim video wibu secara random.\
+        \n  •  **Function : **Untuk Mengirim Video Wibu secara random.\
         \n\n  •  **Syntax :** `.chika`\
-        \n  •  **Function : **Untuk Mengirim video chikakiku secara random.\
+        \n  •  **Function : **Untuk Mengirim Video Chikakiku secara random.\
         \n\n  •  **Syntax :** `.bocil`\
-        \n  •  **Function : **Untuk Mengirim video bocil secara random.\
+        \n  •  **Function : **Untuk Mengirim Video Bocil secara random.\
     "
     }
 )
