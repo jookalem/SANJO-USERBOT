@@ -105,15 +105,15 @@ async def typewriter(typew):
 CMD_HELP.update({
     "animasi":
     ".heu\
-\nUsage: gambar monyet.\
+\nUsage: Gambar Monyet Besar.\
     \n\n.hem\
 \nUsage: Hem Mencurigakan.\
-    \n\n.wle\
+    \n\n.wlee\
 \nUsage: Anjing Melet.\
     \n\n.peler\
 \nUsage: Gambar Titit.\
     \n\n.ahh\
-\nUsage: uh ah uh ah."
+\nUsage: Aht Ahh Aht."
 
 })
 
