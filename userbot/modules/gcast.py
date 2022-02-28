@@ -50,7 +50,7 @@ async def gcast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup, Gagal Mengirim Pesan Ke** `{er}` **Grup**"
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **Grup Ampas, Gagal Mengirim Pesan Ke** `{er}` **Grup Pejabat**"
     )
 
 
@@ -61,7 +61,7 @@ async def gucast(event):
         return await event.edit("**Berikan Sebuah Pesan atau Balas ke pesan**")
     tt = event.text
     msg = tt[7:]
-    kk = await event.edit("`Sedang Mengirim Pesan Ke Semua Private Chats Tuan...`")
+    kk = await event.edit("`Sedang Mengirim Pesan Ke Semua Private Chat Tuan...`")
     er = 0
     done = 0
     async for x in bot.iter_dialogs():
@@ -73,7 +73,7 @@ async def gucast(event):
             except BaseException:
                 er += 1
     await kk.edit(
-        f"**Berhasil Mengirim Pesan Ke** `{done}` **chats, Gagal Mengirim Pesan Ke** `{er}` **chats**"
+        f"**Berhasil Mengirim Pesan Ke** `{done}` **chat, Gagal Mengirim Pesan Ke** `{er}` **chat**"
     )
 
 CMD_HELP.update(
