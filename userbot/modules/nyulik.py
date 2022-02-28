@@ -86,5 +86,5 @@ async def get_users(event):
 CMD_HELP.update({
     "nyulik":
         "𝘾𝙤𝙢𝙢𝙖𝙣𝙙: `.inviteall (groups username)`\
-          \n📌 : __Mengikis pengguna dari obrolan yang diberikan ke grup Anda__."
+          \n📌 : __Menculik pengguna dari obrolan yang diberikan ke grup Anda__."
 })
