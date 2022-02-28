@@ -84,7 +84,7 @@ async def killdabot(event):
     await event.edit("**USERBOT-USERBOT Berhasil di Restart**")
     if BOTLOG:
         await event.client.send_message(BOTLOG_CHATID, "» #RESTARTBOT «\n"
-                                        "**SANJO-USERBOT Berhasil Di Restart**")
+                                        "**SANJO-USERBOT Berhasil Di Restart Tod!**")
     await bot.disconnect()
     # Spin a new instance of bot
     execl(sys.executable, sys.executable, *sys.argv)
