@@ -21,14 +21,9 @@
     "API_HASH": {
       "description": "Dapatkan Api Hash Di Web my.telegram.org.",
       "required": true
-    },
-    "ALIVE_LOGO": {
-      "description": "BUAT ALIVE LOGO MU SENDIRI.",
-      "value": "https://telegra.ph/file/c449a8a44ecb7ea5a8616.jpg",
-      "required": true
      },
      "STRING_SESSION": {
-      "description": "Ambil String Session di @stringmanrobot dengan cara ketik #string.",
+      "description": "Ambil String Session di @stringmanrobot dengan cara ketik /get string.",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -58,15 +53,6 @@
     "ALIVE_NAME": {
       "description": "Nama untuk menunjukan pesan .alive",
       "required": true
-    },
-    "S_PACK_NAME": {
-      "description": "Nama Sticker Pack Mu",
-      "required": false
-    },
-    "G_BAN_LOGGER_GROUP": {
-      "description": "Buatlah sebuah grup Publik, Lalu masukan @MissRose_bot trs ketik /id, Copy dan delete id dibawah ini, trs paste.",
-      "value": "-1001220971181",
-      "required": false
     },
     "LOGSPAMMER": {
       "description": "Setel ini ke True jika Anda ingin log kesalahan disimpan di grup log userbot, alih-alih mengeluarkan file dalam obrolan saat ini, membutuhkan BOTLOG_CHATID yang valid untuk disetel.",
