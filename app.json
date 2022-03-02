@@ -15,7 +15,7 @@
   "stack": "container",
   "env": {
     "API_KEY": {
-      "description": "Dapatkan Api Key di web my.telegram.org.",
+      "description": "Dapatkan Api Key Di Web my.telegram.org.",
       "required": true
     },
     "API_HASH": {
@@ -23,48 +23,47 @@
       "required": true
      },
      "STRING_SESSION": {
-      "description": "Ambil String Session di @stringmanrobot dengan cara ketik /get string.",
+      "description": "Ambil String Session di @stringmanrobot Dengan Cara Ketik #string.",
       "required": true
     },
     "HEROKU_APP_NAME": {
-      "description": "Isi dengan nama App yang paling pertama di isi (liat paling atas)",
+      "description": "Isi Dengan Nama App Yang Paling Atas.",
       "required": true
     },
     "HEROKU_API_KEY": {
       "description": "Heroku API KEY mu, dapatkan dari web 'https://dashboard.heroku.com/account'",
-      "value": "Check Di Heroku Dashboard Mu",
       "required": true
     },
     "BOTLOG": {
-      "description": "Kalo Mau Off in BOTLOG Ganti False",
+      "description": "Kalo Mau Di Nonaktifkan Silahkan Isi False",
       "value": "True",
       "required": true
     },
     "BOTLOG_CHATID": {
-      "description": "Buatlah sebuah grup Publik, Lalu masukan @MissRose_bot trus ketik /id, Copy dan delete id dibawah ini, trs paste.",
-      "value": "-1001220971181",
+      "description": "Buatlah Sebuah Grup Publik, Lalu Masukan @MissRose_bot Lalu Ketik /id Salin Dan Hapus Pesan Dibawah Ini.",
+      "value": "Isi Dengan Awalan -100",
       "required": true
     },
     "PM_AUTO_BAN": {
-      "description": "Ini berguna Untuk Mengaktifkan pesan otomatis di room chat anda.",
-      "value": "true",
+      "description": "Ini Berguna Untuk Mengaktifkan Pesan Otomatis Di Room Chat Anda.",
+      "value": "True",
       "required": true
     },
     "ALIVE_NAME": {
-      "description": "Nama untuk menunjukan pesan .alive",
+      "description": "Nama Untuk Menunjukan .alive",
       "required": true
     },
     "LOGSPAMMER": {
-      "description": "Setel ini ke True jika Anda ingin log kesalahan disimpan di grup log userbot, alih-alih mengeluarkan file dalam obrolan saat ini, membutuhkan BOTLOG_CHATID yang valid untuk disetel.",
+      "description": "Setel Ini Ke True Jika Anda Ingin Log Kesalahan Disimpan Di Grup Log Userbot, Alih-Alih Mengeluarkan File Dalam Obrolan Saat Ini, Membutuhkan BOTLOG_CHATID Yang Valid Untuk Disetel.",
       "value": "True",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Untuk menampilkam mode tombol .helpme, Ambil token di @BotFather",
+      "description": "Untuk Menampilkan .helpme, Silahkan Ambil Di @BotFather",
       "required": false
     },
     "BOT_USERNAME": {
-      "description": "isi dengan username bot mu yang dari @BotFather",
+      "description": "Isi Dengan Username Bot Mu Yang Dari @BotFather",
       "required": false
     }
   },
