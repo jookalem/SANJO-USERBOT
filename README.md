@@ -1,4 +1,4 @@
-<h1 align="center">SANJO USERBOT DULU YGY🥴</h1>
+<h1 align="center">SANJO USERBOT</h1>
 
 <p align="center">
     <a href="https://github.com/jookalem/SANJO-USERBOT/commits/DIOR-UBOT"><img 
