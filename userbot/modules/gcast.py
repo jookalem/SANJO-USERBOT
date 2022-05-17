@@ -19,6 +19,7 @@ GCAST_BLACKLIST = [
     -1001606097524,  # SanjoSupport
     -1001687155877,  # CilikSupport
     -1001380293847,  # NastySuppport
+    -1001795125065,  # BagasKontoll
     -1001705349543,  # KyuraSupport2
 ]
 
